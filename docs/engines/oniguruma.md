@@ -1863,44 +1863,44 @@ A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matc
 [Callouts]: #feature-callouts
 [Callout]: #feature-callouts
 
-[article:Flags]: ../features/[object Object].md
-[article:Anchors]: ../features/[object Object].md
-[article:Buffer Boundaries]: ../features/[object Object].md
-[article:Word Boundaries]: ../features/[object Object].md
-[article:Text Segment Boundaries]: ../features/[object Object].md
-[article:Continuation Escape]: ../features/[object Object].md
-[article:Alternatives]: ../features/[object Object].md
-[article:Wildcard]: ../features/[object Object].md
-[article:Character Classes]: ../features/[object Object].md
-[article:Posix Character Classes]: ../features/[object Object].md
-[article:Negated Posix Character Classes]: ../features/[object Object].md
-[article:Collating Elements]: ../features/[object Object].md
-[article:Equivalence Classes]: ../features/[object Object].md
-[article:Character Class Escapes]: ../features/[object Object].md
-[article:Line Endings Escape]: ../features/[object Object].md
-[article:Character Property Escapes]: ../features/[object Object].md
-[article:Character Class Nested Set]: ../features/[object Object].md
-[article:Character Class Intersection]: ../features/[object Object].md
-[article:Character Class Subtraction]: ../features/[object Object].md
-[article:Quoted Characters]: ../features/[object Object].md
-[article:Quantifiers]: ../features/[object Object].md
-[article:Lazy Quantifiers]: ../features/[object Object].md
-[article:Possessive Quantifiers]: ../features/[object Object].md
-[article:Capturing Groups]: ../features/[object Object].md
-[article:Named Capturing Groups]: ../features/[object Object].md
-[article:Non-Capturing Groups]: ../features/[object Object].md
-[article:Backreferences]: ../features/[object Object].md
-[article:Comments]: ../features/[object Object].md
-[article:Line Comments]: ../features/[object Object].md
-[article:Modifiers]: ../features/[object Object].md
-[article:Branch Reset]: ../features/[object Object].md
-[article:Lookahead]: ../features/[object Object].md
-[article:Lookbehind]: ../features/[object Object].md
-[article:Non-Backtracking Expressions]: ../features/[object Object].md
-[article:Recursion]: ../features/[object Object].md
-[article:Conditional Expressions]: ../features/[object Object].md
-[article:Subroutines]: ../features/[object Object].md
-[article:Callouts]: ../features/[object Object].md
+[article:Flags]: ../features/flags.md
+[article:Anchors]: ../features/anchors.md
+[article:Buffer Boundaries]: ../features/buffer-boundaries.md
+[article:Word Boundaries]: ../features/word-boundaries.md
+[article:Text Segment Boundaries]: ../features/text-segment-boundaries.md
+[article:Continuation Escape]: ../features/continuation-escape.md
+[article:Alternatives]: ../features/alternatives.md
+[article:Wildcard]: ../features/wildcard.md
+[article:Character Classes]: ../features/character-classes.md
+[article:Posix Character Classes]: ../features/posix-character-classes.md
+[article:Negated Posix Character Classes]: ../features/negated-posix-character-classes.md
+[article:Collating Elements]: ../features/collating-elements.md
+[article:Equivalence Classes]: ../features/equivalence-classes.md
+[article:Character Class Escapes]: ../features/character-class-escapes.md
+[article:Line Endings Escape]: ../features/line-endings-escape.md
+[article:Character Property Escapes]: ../features/character-property-escapes.md
+[article:Character Class Nested Set]: ../features/character-class-nested-set.md
+[article:Character Class Intersection]: ../features/character-class-intersection.md
+[article:Character Class Subtraction]: ../features/character-class-subtraction.md
+[article:Quoted Characters]: ../features/quoted-characters.md
+[article:Quantifiers]: ../features/quantifiers.md
+[article:Lazy Quantifiers]: ../features/lazy-quantifiers.md
+[article:Possessive Quantifiers]: ../features/possessive-quantifiers.md
+[article:Capturing Groups]: ../features/capturing-groups.md
+[article:Named Capturing Groups]: ../features/named-capturing-groups.md
+[article:Non-Capturing Groups]: ../features/non-capturing-groups.md
+[article:Backreferences]: ../features/backreferences.md
+[article:Comments]: ../features/comments.md
+[article:Line Comments]: ../features/line-comments.md
+[article:Modifiers]: ../features/modifiers.md
+[article:Branch Reset]: ../features/branch-reset.md
+[article:Lookahead]: ../features/lookahead.md
+[article:Lookbehind]: ../features/lookbehind.md
+[article:Non-Backtracking Expressions]: ../features/non-backtracking-expressions.md
+[article:Recursion]: ../features/recursion.md
+[article:Conditional Expressions]: ../features/conditional-expressions.md
+[article:Subroutines]: ../features/subroutines.md
+[article:Callouts]: ../features/callouts.md
 
 [Reference]: https://github.com/kkos/oniguruma
 [reference:Flags]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L265-L289
