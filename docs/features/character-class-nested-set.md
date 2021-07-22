@@ -66,7 +66,7 @@ Is equivalent to:
 - [Collating Elements]
 - [Equivalence Classes]
 - [Character Class Escapes]
-- []
+- [Line Endings Escape]
 - [Character Property Escapes]
 - [Character Class Intersection]
 - [Character Class Subtraction]

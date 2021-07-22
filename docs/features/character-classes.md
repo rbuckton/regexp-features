@@ -46,7 +46,7 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 - [Collating Elements]
 - [Equivalence Classes]
 - [Character Class Escapes]
-- []
+- [Line Endings Escape]
 - [Character Property Escapes]
 - [Character Class Nested Set]
 - [Character Class Intersection]

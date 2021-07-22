@@ -11,7 +11,7 @@ see_also:
 - collating-elements
 - equivalence-classes
 - character-class-escapes
-- line-ending-escape
+- line-endings-escape
 - character-class-nested-set
 - character-class-intersection
 - character-class-subtraction

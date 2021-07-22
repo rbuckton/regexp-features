@@ -10,7 +10,7 @@ see_also:
 - negated-posix-character-classes
 - equivalence-classes
 - character-class-escapes
-- line-ending-escape
+- line-endings-escape
 - character-property-escapes
 - character-class-nested-set
 - character-class-intersection

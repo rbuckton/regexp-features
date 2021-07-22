@@ -44,7 +44,7 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 - [Collating Elements]
 - [Equivalence Classes]
 - [Character Class Escapes]
-- []
+- [Line Endings Escape]
 - [Character Property Escapes]
 - [Character Class Nested Set]
 - [Character Class Intersection]

@@ -9,7 +9,7 @@ see_also:
 - collating-elements
 - equivalence-classes
 - character-class-escapes
-- line-ending-escape
+- line-endings-escape
 - character-property-escapes
 - character-class-intersection
 - character-class-subtraction

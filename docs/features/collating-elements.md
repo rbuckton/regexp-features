@@ -44,7 +44,7 @@ A <dfn>Collating Element</dfn> is one or more characters that collate as a singl
 - [Negated Posix Character Classes]
 - [Equivalence Classes]
 - [Character Class Escapes]
-- []
+- [Line Endings Escape]
 - [Character Property Escapes]
 - [Character Class Nested Set]
 - [Character Class Intersection]

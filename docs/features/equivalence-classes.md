@@ -44,7 +44,7 @@ An <dfn>Equivalence Class</dfn> matches any character or collating element with 
 - [Negated Posix Character Classes]
 - [Collating Elements]
 - [Character Class Escapes]
-- []
+- [Line Endings Escape]
 - [Character Property Escapes]
 - [Character Class Nested Set]
 - [Character Class Intersection]

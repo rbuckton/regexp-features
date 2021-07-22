@@ -48,7 +48,7 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 - [Collating Elements]
 - [Equivalence Classes]
 - [Character Class Escapes]
-- []
+- [Line Endings Escape]
 - [Character Class Nested Set]
 - [Character Class Intersection]
 - [Character Class Subtraction]

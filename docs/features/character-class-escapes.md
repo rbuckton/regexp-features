@@ -49,7 +49,7 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
 - [Negated Posix Character Classes]
 - [Collating Elements]
 - [Equivalence Classes]
-- []
+- [Line Endings Escape]
 - [Character Property Escapes]
 - [Character Class Nested Set]
 - [Character Class Intersection]
