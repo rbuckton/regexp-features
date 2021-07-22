@@ -75,7 +75,7 @@
   - [](../../src/features/flags-and-modifiers/flags.yml)
 -->
 
-[Main article][article:Flags] | [Reference][reference:Flags]
+[Main article][article:Flags] \| [Reference][reference:Flags]
 
 <!--
 'reference' sources:
@@ -120,7 +120,7 @@ The following flags are supported:
   - [](../../src/features/anchors-and-boundaries/anchors.yml)
 -->
 
-[Main article][article:Anchors] | [Reference][reference:Anchors]
+[Main article][article:Anchors] \| [Reference][reference:Anchors]
 
 <!--
 'reference' sources:
@@ -163,7 +163,7 @@ The following flags are supported:
   - [](../../src/features/anchors-and-boundaries/buffer-boundaries.yml)
 -->
 
-[Main article][article:Buffer Boundaries] | [Reference][reference:Buffer Boundaries]
+[Main article][article:Buffer Boundaries] \| [Reference][reference:Buffer Boundaries]
 
 <!--
 'reference' sources:
@@ -207,7 +207,7 @@ A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of t
   - [](../../src/features/anchors-and-boundaries/word-boundaries.yml)
 -->
 
-[Main article][article:Word Boundaries] | [Reference][reference:Word Boundaries]
+[Main article][article:Word Boundaries] \| [Reference][reference:Word Boundaries]
 
 <!--
 'reference' sources:
@@ -252,7 +252,7 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
   - [](../../src/features/anchors-and-boundaries/text-segment-boundaries.yml)
 -->
 
-[Main article][article:Text Segment Boundaries] | [Reference][reference:Text Segment Boundaries]
+[Main article][article:Text Segment Boundaries] \| [Reference][reference:Text Segment Boundaries]
 
 <!--
 'supported' sources:
@@ -287,7 +287,7 @@ A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the en
   - [](../../src/features/anchors-and-boundaries/continuation-escape.yml)
 -->
 
-[Main article][article:Continuation Escape] | [Reference][reference:Continuation Escape]
+[Main article][article:Continuation Escape] \| [Reference][reference:Continuation Escape]
 
 <!--
 'reference' sources:
@@ -329,7 +329,7 @@ A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either t
   - [](../../src/features/alternatives/alternatives.yml)
 -->
 
-[Main article][article:Alternatives] | [Reference][reference:Alternatives]
+[Main article][article:Alternatives] \| [Reference][reference:Alternatives]
 
 <!--
 'reference' sources:
@@ -359,7 +359,7 @@ An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first
   - [](../../src/features/wildcard.yml)
 -->
 
-[Main article][article:Wildcard] | [Reference][reference:Wildcard]
+[Main article][article:Wildcard] \| [Reference][reference:Wildcard]
 
 <!--
 'reference' sources:
@@ -389,7 +389,7 @@ A <dfn>Wildcard</dfn> matches a single, non-newline character.
   - [](../../src/features/character-classes/character-classes.md)
 -->
 
-[Main article][article:Character Classes] | [Reference][reference:Character Classes]
+[Main article][article:Character Classes] \| [Reference][reference:Character Classes]
 
 <!--
 'reference' sources:
@@ -439,7 +439,7 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
   - [](../../src/features/character-classes/posix-character-classes.md)
 -->
 
-[Main article][article:Posix Character Classes] | [Reference][reference:Posix Character Classes]
+[Main article][article:Posix Character Classes] \| [Reference][reference:Posix Character Classes]
 
 <!--
 'reference' sources:
@@ -487,7 +487,7 @@ A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that s
   - [](../../src/features/character-classes/negated-posix-character-classes.md)
 -->
 
-[Main article][article:Negated Posix Character Classes] | [Reference][reference:Negated Posix Character Classes]
+[Main article][article:Negated Posix Character Classes] \| [Reference][reference:Negated Posix Character Classes]
 
 <!--
 'reference' sources:
@@ -535,7 +535,7 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
   - [](../../src/features/character-classes/collating-elements.md)
 -->
 
-[Main article][article:Collating Elements] | [Reference][reference:Collating Elements]
+[Main article][article:Collating Elements] \| [Reference][reference:Collating Elements]
 
 <!--
 'supported' sources:
@@ -576,7 +576,7 @@ A <dfn>Collating Element</dfn> is one or more characters that collate as a singl
   - [](../../src/features/character-classes/equivalence-classes.md)
 -->
 
-[Main article][article:Equivalence Classes] | [Reference][reference:Equivalence Classes]
+[Main article][article:Equivalence Classes] \| [Reference][reference:Equivalence Classes]
 
 <!--
 'supported' sources:
@@ -617,7 +617,7 @@ An <dfn>Equivalence Class</dfn> matches any character or collating element with 
   - [](../../src/features/character-classes/character-class-escapes.md)
 -->
 
-[Main article][article:Character Class Escapes] | [Reference][reference:Character Class Escapes]
+[Main article][article:Character Class Escapes] \| [Reference][reference:Character Class Escapes]
 
 <!--
 'reference' sources:
@@ -675,7 +675,7 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
   - [](../../src/features/character-classes/line-endings-escape.md)
 -->
 
-[Main article][article:Line Endings Escape] | [Reference][reference:Line Endings Escape]
+[Main article][article:Line Endings Escape] \| [Reference][reference:Line Endings Escape]
 
 <!--
 'reference' sources:
@@ -723,7 +723,7 @@ A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending chara
   - [](../../src/features/character-classes/character-property-escapes.md)
 -->
 
-[Main article][article:Character Property Escapes] | [Reference][reference:Character Property Escapes]
+[Main article][article:Character Property Escapes] \| [Reference][reference:Character Property Escapes]
 
 <!--
 'reference' sources:
@@ -774,7 +774,7 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
   - [](../../src/features/character-classes/character-class-nested-set.md)
 -->
 
-[Main article][article:Character Class Nested Set] | [Reference][reference:Character Class Nested Set]
+[Main article][article:Character Class Nested Set] \| [Reference][reference:Character Class Nested Set]
 
 <!--
 'supported' sources:
@@ -815,7 +815,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
   - [](../../src/features/character-classes/character-class-intersection.md)
 -->
 
-[Main article][article:Character Class Intersection] | [Reference][reference:Character Class Intersection]
+[Main article][article:Character Class Intersection] \| [Reference][reference:Character Class Intersection]
 
 <!--
 'supported' sources:
@@ -856,7 +856,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
   - [](../../src/features/character-classes/character-class-subtraction.md)
 -->
 
-[Main article][article:Character Class Subtraction] | [Reference][reference:Character Class Subtraction]
+[Main article][article:Character Class Subtraction] \| [Reference][reference:Character Class Subtraction]
 
 <!--
 'supported' sources:
@@ -897,7 +897,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
   - [](../../src/features/quoted-characters.yml)
 -->
 
-[Main article][article:Quoted Characters] | [Reference][reference:Quoted Characters]
+[Main article][article:Quoted Characters] \| [Reference][reference:Quoted Characters]
 
 <!--
 'reference' sources:
@@ -928,7 +928,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
   - [](../../src/features/quantifiers/quantifiers.yml)
 -->
 
-[Main article][article:Quantifiers] | [Reference][reference:Quantifiers]
+[Main article][article:Quantifiers] \| [Reference][reference:Quantifiers]
 
 <!--
 'reference' sources:
@@ -973,7 +973,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
   - [](../../src/features/quantifiers/lazy-quantifiers.yml)
 -->
 
-[Main article][article:Lazy Quantifiers] | [Reference][reference:Lazy Quantifiers]
+[Main article][article:Lazy Quantifiers] \| [Reference][reference:Lazy Quantifiers]
 
 <!--
 'reference' sources:
@@ -1018,7 +1018,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
   - [](../../src/features/quantifiers/possessive-quantifiers.yml)
 -->
 
-[Main article][article:Possessive Quantifiers] | [Reference][reference:Possessive Quantifiers]
+[Main article][article:Possessive Quantifiers] \| [Reference][reference:Possessive Quantifiers]
 
 <!--
 'reference' sources:
@@ -1062,7 +1062,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
   - [](../../src/features/groups-and-backtracking/capturing-groups.yml)
 -->
 
-[Main article][article:Capturing Groups] | [Reference][reference:Capturing Groups]
+[Main article][article:Capturing Groups] \| [Reference][reference:Capturing Groups]
 
 <!--
 'reference' sources:
@@ -1105,7 +1105,7 @@ A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom*
   - [](../../src/features/groups-and-backtracking/named-capturing-groups.yml)
 -->
 
-[Main article][article:Named Capturing Groups] | [Reference][reference:Named Capturing Groups]
+[Main article][article:Named Capturing Groups] \| [Reference][reference:Named Capturing Groups]
 
 <!--
 'reference' sources:
@@ -1150,7 +1150,7 @@ A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and r
   - [](../../src/features/groups-and-backtracking/non-capturing-groups.yml)
 -->
 
-[Main article][article:Non-Capturing Groups] | [Reference][reference:Non-Capturing Groups]
+[Main article][article:Non-Capturing Groups] \| [Reference][reference:Non-Capturing Groups]
 
 <!--
 'reference' sources:
@@ -1190,7 +1190,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
   - [](../../src/features/groups-and-backtracking/backreferences.yml)
 -->
 
-[Main article][article:Backreferences] | [Reference][reference:Backreferences]
+[Main article][article:Backreferences] \| [Reference][reference:Backreferences]
 
 <!--
 'reference' sources:
@@ -1242,7 +1242,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
   - [](../../src/features/comments/comments.yml)
 -->
 
-[Main article][article:Comments] | [Reference][reference:Comments]
+[Main article][article:Comments] \| [Reference][reference:Comments]
 
 <!--
 'reference' sources:
@@ -1281,7 +1281,7 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
   - [](../../src/features/comments/line-comments.yml)
 -->
 
-[Main article][article:Line Comments] | [Reference][reference:Line Comments]
+[Main article][article:Line Comments] \| [Reference][reference:Line Comments]
 
 <!--
 'reference' sources:
@@ -1320,7 +1320,7 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
   - [](../../src/features/flags-and-modifiers/modifiers.yml)
 -->
 
-[Main article][article:Modifiers] | [Reference][reference:Modifiers]
+[Main article][article:Modifiers] \| [Reference][reference:Modifiers]
 
 <!--
 'reference' sources:
@@ -1362,7 +1362,7 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
   - [](../../src/features/alternatives/branch-reset.yml)
 -->
 
-[Main article][article:Branch Reset] | [Reference][reference:Branch Reset]
+[Main article][article:Branch Reset] \| [Reference][reference:Branch Reset]
 
 <!--
 'reference' sources:
@@ -1392,7 +1392,7 @@ A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [A
   - [](../../src/features/lookaround/lookahead.yml)
 -->
 
-[Main article][article:Lookahead] | [Reference][reference:Lookahead]
+[Main article][article:Lookahead] \| [Reference][reference:Lookahead]
 
 <!--
 'reference' sources:
@@ -1432,7 +1432,7 @@ A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pa
   - [](../../src/features/lookaround/lookbehind.yml)
 -->
 
-[Main article][article:Lookbehind] | [Reference][reference:Lookbehind]
+[Main article][article:Lookbehind] \| [Reference][reference:Lookbehind]
 
 <!--
 'reference' sources:
@@ -1472,7 +1472,7 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
   - [](../../src/features/groups-and-backtracking/non-backtracking-expressions.yml)
 -->
 
-[Main article][article:Non-Backtracking Expressions] | [Reference][reference:Non-Backtracking Expressions]
+[Main article][article:Non-Backtracking Expressions] \| [Reference][reference:Non-Backtracking Expressions]
 
 <!--
 'reference' sources:
@@ -1502,7 +1502,7 @@ A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring p
   - [](../../src/features/groups-and-backtracking/recursion.yml)
 -->
 
-[Main article][article:Recursion] | [Reference][reference:Recursion]
+[Main article][article:Recursion] \| [Reference][reference:Recursion]
 
 <!--
 'reference' sources:
@@ -1538,7 +1538,7 @@ A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capt
   - [](../../src/features/alternatives/conditional-expressions.yml)
 -->
 
-[Main article][article:Conditional Expressions] | [Reference][reference:Conditional Expressions]
+[Main article][article:Conditional Expressions] \| [Reference][reference:Conditional Expressions]
 
 <!--
 'reference' sources:
@@ -1585,7 +1585,7 @@ The following conditions are supported:
   - [](../../src/features/groups-and-backtracking/subroutines.yml)
 -->
 
-[Main article][article:Subroutines] | [Reference][reference:Subroutines]
+[Main article][article:Subroutines] \| [Reference][reference:Subroutines]
 
 <!--
 'reference' sources:
@@ -1637,7 +1637,7 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
   - [](../../src/features/callouts.yml)
 -->
 
-[Main article][article:Callouts] | [Reference][reference:Callouts]
+[Main article][article:Callouts] \| [Reference][reference:Callouts]
 
 <!--
 'reference' sources:
