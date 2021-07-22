@@ -1,3 +1,7 @@
+# Regular Expression Feature Comparisons
+
+This provides a comparison of features between various regular expression engines.
+
 # Table of Contents
 
 - [Languages](languages.md)
@@ -7,10 +11,10 @@
 # Support Table
 
 {{#each featureMatrixes}}
-| Engine |{{#each columns}} [{{name}}](features/{{id}}.md) |{{/each}}
+|  |{{#each columns}} [{{name}}](engines/{{id}}.md) |{{/each}}
 |:-|{{#each columns}}:-:|{{/each}}
 {{#each rows}}
-| [{{engine.name}}](engines/{{engine.id}}.md) |{{#each cells}} [{{#if supported}}✔{{else}}❌{{/if}}](engines/{{../engine.id}}.md#feature-{{hlink feature.id}}) |{{/each}}
+| [{{feature.name}}](features/{{feature.id}}.md) |{{#each cells}} [{{#if supported}}✔{{else}}❌{{/if}}](engines/{{engine.id}}.md#feature-{{hlink feature.id}}) |{{/each}}
 {{/each}}
 
 

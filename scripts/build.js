@@ -419,30 +419,30 @@ class DocumentationBuilder {
         //     - create a cell for each feature in the matrix and the engine
 
         data.featureMatrixes.length = 0;
-        const matrixCount = Math.ceil(data.features.length / MATRIX_COLUMN_COUNT);
+        const matrixCount = Math.ceil(data.engines.length / MATRIX_COLUMN_COUNT);
         for (let matrixIndex = 0; matrixIndex < matrixCount; matrixIndex++) {
             /** @type {import("./templateTypes.js").FeatureMatrixRow[]} */
             const rows = [];
-            /** @type {import("./templateTypes.js").FeatureTemplateData[]} */
+            /** @type {import("./templateTypes.js").EngineTemplateData[]} */
             const columns = [];
             /** @type {import("./templateTypes.js").FeatureMatrix} */
             const matrix = { columns, rows };
             const start = matrixIndex * MATRIX_COLUMN_COUNT;
-            const end = Math.min(start + MATRIX_COLUMN_COUNT, data.features.length);
+            const end = Math.min(start + MATRIX_COLUMN_COUNT, data.engines.length);
             for (let i = start; i < end; i++) {
-                columns.push(data.features[i]);
+                columns.push(data.engines[i]);
             }
-            for (const engine of data.engines) {
+            for (const feature of data.features) {
                 /** @type {(import("./templateTypes.js").EngineFeatureTemplateData | undefined)[]} */
                 const cells = [];
                 for (let i = start; i < end; i++) {
-                    const feature = data.features[i];
+                    const engine = data.engines[i];
                     const engineFeature = engine.features?.find(engineFeature => engineFeature.feature === feature);
                     cells.push(engineFeature);
                 }
     
                 /** @type {import("./templateTypes.js").FeatureMatrixRow} */
-                const row = { engine, cells };
+                const row = { feature, cells };
                 rows.push(row);
             }
             data.featureMatrixes.push(matrix);

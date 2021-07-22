@@ -11,13 +11,13 @@ export {};
 
 /**
  * @typedef FeatureMatrix
- * @property {readonly FeatureTemplateData[]} columns
+ * @property {readonly EngineTemplateData[]} columns
  * @property {readonly FeatureMatrixRow[]} rows
  */
 
 /**
  * @typedef FeatureMatrixRow
- * @property {EngineTemplateData} engine
+ * @property {FeatureTemplateData} feature
  * @property {readonly (EngineFeatureTemplateData | undefined)[]} cells
  */
 
