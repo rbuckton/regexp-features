@@ -1,0 +1,9 @@
+### YamlMime:Feature
+feature: line-comments
+name: Line Comments
+aliases:
+- Line Comment
+- x-mode Comments
+- x-mode Comment
+see_also:
+- comments

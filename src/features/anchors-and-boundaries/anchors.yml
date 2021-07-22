@@ -1,0 +1,10 @@
+### YamlMime:Feature
+feature: anchors
+name: Anchors
+aliases:
+- Anchor
+see_also:
+- buffer-boundaries
+- word-boundaries
+- text-segment-boundaries
+- continuation-escape

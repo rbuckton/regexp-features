@@ -1,0 +1,15 @@
+---
+### YamlMime:EngineFeature
+engine: pcre
+feature: named-capturing-groups
+supported: true
+reference: http://www.pcre.org/current/doc/html/pcre2pattern.html#SEC16
+#description: *content.description
+syntax: *content.syntax
+#example: *content.example
+---
+#### Syntax
+
+- <code>(?\<*name*\> … )</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
+- <code>(?'*name*' … )</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
+- <code>(?P\<*name*\> … )</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.

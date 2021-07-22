@@ -1,0 +1,10 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "HrefLinkDefinition",
+    "type": "object",
+    "properties": {
+        "href": { "type": "string" },
+        "name": { "type": "string" }
+    },
+    "required": ["href"]
+}

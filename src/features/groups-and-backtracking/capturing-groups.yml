@@ -1,0 +1,13 @@
+### YamlMime:Feature
+feature: capturing-groups
+name: Capturing Groups
+aliases:
+- Capturing Group
+- Capture Groups
+- Capture Group
+see_also:
+- named-capturing-groups
+- non-capturing-groups
+- backreferences
+- recursion
+- subroutines

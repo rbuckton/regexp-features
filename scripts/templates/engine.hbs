@@ -1,0 +1,76 @@
+# Engine: {{name}}
+
+{{> sources sources=nameSources name='name' ~}}
+
+[Reference]
+
+{{> sources sources=referenceSources name='reference' ~}}
+
+{{#if description~}}
+{{> sources sources=descriptionSources name='description' }}
+{{{description}}}
+
+{{/if}}
+## Languages
+
+{{> sources sources=languagesSources name='languages' ~}}
+
+{{#each languages}}
+- [{{name}}]
+{{else}}
+- *\<none\>*
+{{/each}}
+
+## Features
+
+<a id="supported-features"></a>The following features are supported:
+
+{{#each supported_features}}
+- ✔ [{{name}}]
+{{else}}
+- *\<none\>*
+{{/each}}
+
+<a id="not-supported-features"></a>The following features are *not* supported:
+
+{{#each unsupported_features}}
+- ❌ [{{name}}]
+{{else}}
+- *\<none\>*
+{{/each}}
+
+{{#each features}}
+{{{content}}}
+
+{{/each}}
+
+{{#each features}}
+[{{name}}]: #feature-{{hlink name}}
+{{#each aliases}}
+[{{.}}]: #feature-{{hlink ../name}}
+{{/each}}
+{{#each links}}
+[{{name}}]: {{href}}
+{{/each}}
+
+{{/each}}
+{{#each features}}
+[article:{{name}}]: ../features/{{feature}}.md
+{{/each}}
+
+{{#if reference}}
+[Reference]: {{reference}}
+{{else}}
+[Reference]: #
+{{/if}}
+{{#each features}}
+{{#if reference}}
+[reference:{{name}}]: {{reference}}
+{{else}}
+[reference:{{name}}]: #not-supported-features
+{{/if}}
+{{/each}}
+
+{{#each languages}}
+[{{name}}]: ../languages/{{language}}.md
+{{/each}}

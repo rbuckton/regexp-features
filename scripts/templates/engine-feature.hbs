@@ -1,0 +1,46 @@
+## Feature: {{name}}
+
+{{> sources sources=nameSources name='name' ~}}
+
+[Main article][article:{{name}}] | [Reference][reference:{{name}}]
+
+{{> sources sources=referenceSources name='reference' ~}}
+
+{{#unless supported~}}
+{{> sources sources=supportedSources name='supported' }}
+> ❌ This feature is not supported.
+
+{{/unless}}
+{{#if description~}}
+{{> sources sources=descriptionSources name='description' }}
+{{{description}}}
+
+{{/if}}
+{{#if supported~}}
+{{#if syntax~}}
+#### Syntax
+
+{{> sources sources=syntaxSources name='syntax' }}
+{{{syntax}}}
+
+{{/if}}
+{{#if example~}}
+#### Example
+
+{{> sources sources=exampleSources name='example' }}
+{{{example}}}
+
+{{/if}}
+{{~/if}}
+{{#if see_also~}}
+#### See Also
+
+{{> sources sources=see_alsoSources name='see_also' }}
+{{#if (isArray see_also)~}}
+{{#each see_also}}
+- [{{name}}]
+{{/each}}
+{{~else~}}
+{{{see_also}}}
+{{~/if}}
+{{~/if}}

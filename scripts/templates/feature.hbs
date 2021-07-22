@@ -1,0 +1,55 @@
+# Feature: {{name}}
+
+{{> sources sources=nameSources name='name' ~}}
+
+{{#if description~}}
+{{> sources sources=descriptionSources name='description' }}
+{{{description}}}
+
+{{/if}}
+{{#if syntax~}}
+#### Syntax
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+
+{{> sources sources=syntaxSources name='syntax' }}
+{{{syntax}}}
+
+{{/if}}
+{{#if example~}}
+#### Example
+
+> NOTE: The following example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+
+{{> sources sources=exampleSources name='example' }}
+{{{example}}}
+
+{{/if}}
+## Engines
+
+| Engine | Supported |
+|:-------|:---------:|
+{{#each engines}}
+| [{{engine.name}}](../engines/{{engine.id}}.md) | {{#if supported}}✔{{else}}❌{{/if}} |
+{{/each}}
+
+{{#if see_also~}}
+#### See Also
+
+{{> sources sources=see_alsoSources name='see_also' }}
+{{#if (isArray see_also)~}}
+{{#each see_also}}
+- [{{name}}]
+{{/each}}
+{{~else~}}
+{{{see_also}}}
+{{~/if}}
+{{~/if}}
+
+{{#each @root.docs.features}}
+[{{name}}]: ./{{feature}}.md
+{{/each}}
+
+{{#each @root.docs.features}}
+[article:{{name}}]: ./{{feature}}.md
+{{/each}}

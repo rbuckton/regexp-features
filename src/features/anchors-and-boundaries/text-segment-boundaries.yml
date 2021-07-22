@@ -1,0 +1,10 @@
+### YamlMime:Feature
+feature: text-segment-boundaries
+name: Text Segment Boundaries
+aliases:
+- Text Segment Boundary
+see_also:
+- anchors
+- buffer-boundaries
+- word-boundaries
+- continuation-escape

@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "Engine",
+    "type": "object",
+    "properties": {
+        "engine": { "type": "string" },
+        "name": { "type": "string" },
+        "priority": { "type": "number" },
+        "reference": { "type": "string" },
+        "description": { "type": "string" },
+        "see_also": {
+            "oneOf": [
+                { "type": "string" },
+                { "type": "array", "items": { "$ref": "Link" } }
+            ]
+        },
+        "languages": {
+            "type": "array",
+            "items": { "type": "string" }
+        },
+        "content": { "type": "string" }
+    },
+    "required": ["engine"]
+}

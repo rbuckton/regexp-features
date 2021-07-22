@@ -1,0 +1,17 @@
+# Table of Contents
+
+- [Languages](languages.md)
+- [Features](features.md)
+- [Engines](engines.md)
+
+# Support Table
+
+{{#each featureMatrixes}}
+| Engine |{{#each columns}} {{name}} |{{/each}}
+|:-|{{#each columns}}:-:|{{/each}}
+{{#each rows}}
+| [{{engine.name}}](engines/{{engine.id}}.md) |{{#each cells}} [{{#if supported}}✔{{else}}❌{{/if}}](engines/{{../engine.id}}.md#feature-{{hlink feature.id}}) |{{/each}}
+{{/each}}
+
+
+{{/each}}

@@ -1,0 +1,9 @@
+### YamlMime:Feature
+feature: flags
+name: Flags
+aliases:
+- Flag
+- RegExp Flags
+- RegExp Flag
+see_also:
+- modifiers

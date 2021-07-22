@@ -1,0 +1,14 @@
+# Language: {{name}}
+
+{{> sources sources=nameSources name='name' ~}}
+
+{{#if description~}}
+{{> sources sources=descriptionSources name='description' }}
+{{{description}}}
+
+{{/if}}
+## Engines
+
+{{#each engines}}
+- [{{name}}](../engines/{{id}}.md)
+{{/each}}

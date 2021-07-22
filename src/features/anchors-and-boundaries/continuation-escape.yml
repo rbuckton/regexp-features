@@ -1,0 +1,8 @@
+### YamlMime:Feature
+feature: continuation-escape
+name: Continuation Escape
+see_also:
+- anchors
+- buffer-boundaries
+- word-boundaries
+- text-segment-boundaries

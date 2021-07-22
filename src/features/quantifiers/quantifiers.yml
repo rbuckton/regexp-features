@@ -1,0 +1,8 @@
+### YamlMime:Feature
+feature: quantifiers
+name: Quantifiers
+aliases:
+- Quantifier
+see_also:
+- lazy-quantifiers
+- possessive-quantifiers

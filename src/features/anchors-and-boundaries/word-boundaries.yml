@@ -1,0 +1,10 @@
+### YamlMime:Feature
+feature: word-boundaries
+name: Word Boundaries
+aliases:
+- Word Boundary
+see_also:
+- anchors
+- buffer-boundaries
+- text-segment-boundaries
+- continuation-escape

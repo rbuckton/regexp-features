@@ -1,0 +1,7 @@
+{
+    "[markdown]": {
+        "editor.wordWrap": "off"
+    },
+    "javascript.preferences.quoteStyle": "double",
+    "javascript.preferences.importModuleSpecifierEnding": "js"
+}
