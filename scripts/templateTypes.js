@@ -87,6 +87,8 @@ export {};
  * @property {import("./types.js").URIString} [reference]
  * @property {import("./types.js").MarkdownString} [description]
  * @property {import("./types.js").MarkdownString | readonly import("./yamlTypes.js").YamlLinkDefinition[]} [see_also]
+ * @property {readonly EngineFeatureTemplateData[]} [supported_features]
+ * @property {readonly EngineFeatureTemplateData[]} [unsupported_features]
  * @property {readonly EngineFeatureTemplateData[]} [features]
  * @property {readonly { language: string, name: string }[]} [languages]
  * @property {readonly import("./yamlTypes.js").YamlHrefLinkDefinition[]} [links]

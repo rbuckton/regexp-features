@@ -1610,6 +1610,8 @@ class Engine extends Node {
             data.reference = reference;
             data.description = trimLines(description);
             data.see_also = typeof see_also === "string" ? see_also : see_also?.map(link => typeof link === "string" ? { engine: link, name: this.docs.engines.get(link)?.name } : link);
+            data.supported_features = features.filter(feature => !!feature.supported);
+            data.unsupported_features = features.filter(feature => !feature.supported);
             data.features = features;
             data.languages = this.orderedLanguages.map(language => language.buildGraph(builder));
             data.links = links;

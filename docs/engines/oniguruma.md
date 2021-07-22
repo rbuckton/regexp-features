@@ -26,11 +26,47 @@
 
 <a id="supported-features"></a>The following features are supported:
 
-- *\<none\>*
+- ✔ [Flags]
+- ✔ [Anchors]
+- ✔ [Buffer Boundaries]
+- ✔ [Word Boundaries]
+- ✔ [Text Segment Boundaries]
+- ✔ [Continuation Escape]
+- ✔ [Alternatives]
+- ✔ [Wildcard]
+- ✔ [Character Classes]
+- ✔ [Posix Character Classes]
+- ✔ [Negated Posix Character Classes]
+- ✔ [Character Class Escapes]
+- ✔ [Line Endings Escape]
+- ✔ [Character Property Escapes]
+- ✔ [Character Class Nested Set]
+- ✔ [Character Class Intersection]
+- ✔ [Character Class Subtraction]
+- ✔ [Quantifiers]
+- ✔ [Lazy Quantifiers]
+- ✔ [Possessive Quantifiers]
+- ✔ [Capturing Groups]
+- ✔ [Named Capturing Groups]
+- ✔ [Non-Capturing Groups]
+- ✔ [Backreferences]
+- ✔ [Comments]
+- ✔ [Modifiers]
+- ✔ [Lookahead]
+- ✔ [Lookbehind]
+- ✔ [Non-Backtracking Expressions]
+- ✔ [Recursion]
+- ✔ [Conditional Expressions]
+- ✔ [Subroutines]
+- ✔ [Callouts]
 
 <a id="not-supported-features"></a>The following features are *not* supported:
 
-- *\<none\>*
+- ❌ [Collating Elements]
+- ❌ [Equivalence Classes]
+- ❌ [Quoted Characters]
+- ❌ [Line Comments]
+- ❌ [Branch Reset]
 
 ## Feature: Flags
 
