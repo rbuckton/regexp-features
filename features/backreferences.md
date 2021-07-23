@@ -1,25 +1,36 @@
 # Feature: Backreferences
+<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.md)</sup>
+
+<!--
+'Backreferences' sources:
+  - [](../../src/features/groups-and-backtracking/backreferences.yml)
+  - [](../../src/features/groups-and-backtracking/backreferences.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/groups-and-backtracking/backreferences.yml)
 -->
 
+
 <!--
 'description' sources:
-  - [](../../src/features/groups-and-backtracking/backreferences.description.md)
+  - [](../../src/features/groups-and-backtracking/backreferences.md)
 -->
 
 <dfn>Backreferences</dfn> allow a pattern to re-match a previously matched capture group<sup>[1][Capturing Groups] [2][Named Capturing Groups]</sup> either by number (_n_) or by _name_.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/groups-and-backtracking/backreferences.syntax.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - <code>\\*n*</code> &mdash; Where *n* is a decimal digit in the range 1-9. Matches the same string as the [capture group] *n*.
 - <code>\\k\<*name*\></code> &mdash; Matches the same string as the [named capture group] with the name *name*.
@@ -28,12 +39,14 @@
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ✔ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-backreferences) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-backreferences) |
+| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-backreferences) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-backreferences) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.yml)</sup>
 
 <!--
 'see_also' sources:

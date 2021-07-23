@@ -1,9 +1,18 @@
 # Feature: Named Capturing Groups
+<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/named-capturing-groups.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/named-capturing-groups.description.md)</sup>
+
+<!--
+'Named Capturing Groups' sources:
+  - [](../../src/features/groups-and-backtracking/named-capturing-groups.yml)
+  - [](../../src/features/groups-and-backtracking/named-capturing-groups.description.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/groups-and-backtracking/named-capturing-groups.yml)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +21,16 @@
 
 A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and returned by the matching algorithm. A Named Capturing Group is also an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by name.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/named-capturing-groups.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/groups-and-backtracking/named-capturing-groups.syntax.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - <code>(?\<*name*\>…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
 - <code>(?'*name*'…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
@@ -28,12 +39,14 @@ A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and r
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ✔ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-named-capturing-groups) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-named-capturing-groups) |
+| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-named-capturing-groups) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-named-capturing-groups) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/named-capturing-groups.yml)</sup>
 
 <!--
 'see_also' sources:

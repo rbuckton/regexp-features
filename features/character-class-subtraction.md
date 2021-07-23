@@ -1,9 +1,17 @@
 # Feature: Character Class Subtraction
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-subtraction.md)</sup>
+
+<!--
+'Character Class Subtraction' sources:
+  - [](../../src/features/character-classes/character-class-subtraction.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/character-classes/character-class-subtraction.md)
 -->
+
 
 <!--
 'description' sources:
@@ -16,12 +24,14 @@
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ❌ |
-| [Boost.Regex](../engines/boost.regex.md) | ❌ |
-| [.NET](../engines/dotnet.md) | ✔ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [❌](engines/pcre.md#feature-character-class-subtraction) |
+| [Boost.Regex](../engines/boost.regex.md) | [❌](engines/boost.regex.md#feature-character-class-subtraction) |
+| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-character-class-subtraction) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-character-class-subtraction) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-subtraction.md)</sup>
 
 <!--
 'see_also' sources:

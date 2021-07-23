@@ -1,9 +1,17 @@
 # Feature: Line Endings Escape
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/line-endings-escape.md)</sup>
+
+<!--
+'Line Endings Escape' sources:
+  - [](../../src/features/character-classes/line-endings-escape.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/character-classes/line-endings-escape.md)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +20,16 @@
 
 A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending character sequence.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/line-endings-escape.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/character-classes/line-endings-escape.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - `\R` &mdash; Equivalent to `(?>\r\n?|[\x0A-\x0C\x85\u{2028}\u{2029}])`
 
@@ -27,12 +37,14 @@ A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending chara
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ❌ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-line-endings-escape) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-line-endings-escape) |
+| [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-line-endings-escape) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-line-endings-escape) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/line-endings-escape.md)</sup>
 
 <!--
 'see_also' sources:

@@ -1,9 +1,17 @@
 # Feature: Character Property Escapes
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-property-escapes.md)</sup>
+
+<!--
+'Character Property Escapes' sources:
+  - [](../../src/features/character-classes/character-property-escapes.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/character-classes/character-property-escapes.md)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +20,16 @@
 
 A <dfn>Character Property Escape</dfn> is an escape sequence used to match a character with a specific character property.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-property-escapes.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/character-classes/character-property-escapes.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - <code>\\p*X*</code> &mdash; Where *X* is a single character. Matches a character that has the property *X*.
 - <code>\\p{*name*}</code> &mdash; Where *name* is a predefined property name. Matches a character that has the property *name*.
@@ -30,12 +40,14 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ✔ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-character-property-escapes) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-character-property-escapes) |
+| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-character-property-escapes) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-character-property-escapes) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-property-escapes.md)</sup>
 
 <!--
 'see_also' sources:

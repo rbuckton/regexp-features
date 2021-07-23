@@ -1,9 +1,18 @@
 # Feature: Non-Backtracking Expressions
+<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-backtracking-expressions.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-backtracking-expressions.description.md)</sup>
+
+<!--
+'Non-Backtracking Expressions' sources:
+  - [](../../src/features/groups-and-backtracking/non-backtracking-expressions.yml)
+  - [](../../src/features/groups-and-backtracking/non-backtracking-expressions.description.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/groups-and-backtracking/non-backtracking-expressions.yml)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +21,16 @@
 
 A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring patterns, and will not backtrack in the event of a failed match. This is often used to improve performance.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-backtracking-expressions.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/groups-and-backtracking/non-backtracking-expressions.syntax.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - `(?>…)` &mdash; Matches the provided pattern, but no backtracking is performed if the match fails.
 
@@ -27,10 +38,10 @@ A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring p
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ✔ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-non-backtracking-expressions) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-non-backtracking-expressions) |
+| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-non-backtracking-expressions) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-non-backtracking-expressions) |
 
 
 [Anchors]: ./anchors.md

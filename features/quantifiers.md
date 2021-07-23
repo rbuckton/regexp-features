@@ -1,9 +1,18 @@
 # Feature: Quantifiers
+<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/quantifiers.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/quantifiers.description.md)</sup>
+
+<!--
+'Quantifiers' sources:
+  - [](../../src/features/quantifiers/quantifiers.yml)
+  - [](../../src/features/quantifiers/quantifiers.description.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/quantifiers/quantifiers.yml)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +21,16 @@
 
 <dfn>Quantifiers</dfn> specify repetition of an *Atom*. By default, quantifiers are "greedy" in that they attempt to match as many instances of the preceding *Atom* as possible to satisfy the pattern before backtracking.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/quantifiers.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/quantifiers/quantifiers.syntax.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - `*` &mdash; Matches the preceding *Atom* zero or more times. Example: `a*b` matches `b`, `ab`, `aab`, `aaab`, etc.
 - `+` &mdash; Matches the preceding *Atom* one or more times. Example: `a+b` matches `ab`, `aab`, `aaab`, etc., but not `b`.
@@ -32,12 +43,14 @@
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ✔ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-quantifiers) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-quantifiers) |
+| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-quantifiers) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-quantifiers) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/quantifiers.yml)</sup>
 
 <!--
 'see_also' sources:

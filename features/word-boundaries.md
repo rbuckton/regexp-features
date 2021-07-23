@@ -1,9 +1,18 @@
 # Feature: Word Boundaries
+<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.description.md)</sup>
+
+<!--
+'Word Boundaries' sources:
+  - [](../../src/features/anchors-and-boundaries/word-boundaries.yml)
+  - [](../../src/features/anchors-and-boundaries/word-boundaries.description.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/anchors-and-boundaries/word-boundaries.yml)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +21,16 @@
 
 A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a word.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/anchors-and-boundaries/word-boundaries.syntax.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - `\b` &mdash; Matches the start or the end of a word.
 - `\B` &mdash; Matches when *not* at the start or the end of a word.
@@ -28,12 +39,14 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ✔ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-word-boundaries) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-word-boundaries) |
+| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-word-boundaries) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-word-boundaries) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.yml)</sup>
 
 <!--
 'see_also' sources:

@@ -1,9 +1,17 @@
 # Feature: Negated Posix Character Classes
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/negated-posix-character-classes.md)</sup>
+
+<!--
+'Negated Posix Character Classes' sources:
+  - [](../../src/features/character-classes/negated-posix-character-classes.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/character-classes/negated-posix-character-classes.md)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +20,16 @@
 
 A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] set that specifies a named, pre-defined set of excluded characters.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/negated-posix-character-classes.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/character-classes/negated-posix-character-classes.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - <code>\[\[:^*name*:\]\]</code> &mdash; Where *name* is in a set of predefined names. Matches any character not in the set.
 
@@ -27,12 +37,14 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ❌ |
-| [.NET](../engines/dotnet.md) | ❌ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-negated-posix-character-classes) |
+| [Boost.Regex](../engines/boost.regex.md) | [❌](engines/boost.regex.md#feature-negated-posix-character-classes) |
+| [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-negated-posix-character-classes) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-negated-posix-character-classes) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/negated-posix-character-classes.md)</sup>
 
 <!--
 'see_also' sources:

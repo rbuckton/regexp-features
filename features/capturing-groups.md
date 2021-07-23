@@ -1,9 +1,18 @@
 # Feature: Capturing Groups
+<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.description.md)</sup>
+
+<!--
+'Capturing Groups' sources:
+  - [](../../src/features/groups-and-backtracking/capturing-groups.yml)
+  - [](../../src/features/groups-and-backtracking/capturing-groups.description.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/groups-and-backtracking/capturing-groups.yml)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +21,16 @@
 
 A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by index. A Capturing Group can be captured and returned by the matching algorithm.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/groups-and-backtracking/capturing-groups.syntax.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - `(…)` &mdash; Groups the subexpression as a single *Atom*. The result is captured and returned by the matching algorithm.
 
@@ -27,12 +38,14 @@ A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom*
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ✔ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-capturing-groups) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-capturing-groups) |
+| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-capturing-groups) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-capturing-groups) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.yml)</sup>
 
 <!--
 'see_also' sources:

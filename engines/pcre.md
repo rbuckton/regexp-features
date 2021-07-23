@@ -1,18 +1,23 @@
 # Engine: PCRE
 
+<sup>[Reference] \| </sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/engine.md)</sup>
+
+
 <!--
 'name' sources:
   - [](../../src/engines/pcre/engine.md)
 -->
 
-[Reference]
 
 <!--
 'reference' sources:
   - [](../../src/engines/pcre/engine.md)
 -->
 
+
 ## Languages
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/engine.md)</sup>
 
 <!--
 'languages' sources:
@@ -75,26 +80,32 @@
   - [](../../src/features/flags-and-modifiers/flags.yml)
 -->
 
-[Main article][article:Flags] \| [Reference][reference:Flags]
+<sup>[Main article][article:Flags] \| [Reference][reference:Flags] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/flags.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/flags.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/flags.description.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/flags.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/flags-and-modifiers/flags.description.md)
 -->
 
+
 <dfn>Flags</dfn> control certain aspects of the matching behavior of a pattern.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/flags.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/engines/pcre/features/flags.md)
 -->
+
 
 The following flags are supported:
 - `i` &mdash; Ignore Case. Matches [character classes] using a case-insensitive comparison.
@@ -104,12 +115,14 @@ The following flags are supported:
 - `x` &mdash; Extended Mode. Ignores whitespace in a pattern. Spaces must instead be represented by `\s` or `\ ` (an escaped space).
 - `xx` &mdash; "Extended More" Mode. Same as `x` but unescaped spaces and horizontal tab characters are also ignored inside [character classes].
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/flags.yml)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/flags-and-modifiers/flags.yml)
 -->
+
 
 - [Modifiers]
 
@@ -120,36 +133,44 @@ The following flags are supported:
   - [](../../src/features/anchors-and-boundaries/anchors.yml)
 -->
 
-[Main article][article:Anchors] \| [Reference][reference:Anchors]
+<sup>[Main article][article:Anchors] \| [Reference][reference:Anchors] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/anchors.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/anchors.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/anchors.description.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/anchors.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/anchors-and-boundaries/anchors.description.md)
 -->
 
+
 <dfn>Anchors</dfn> match the start or end of a line.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/anchors.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/anchors-and-boundaries/anchors.syntax.md)
 -->
 
+
 - `^` &mdash; Matches the start of a line when the `m` (multiline) [flag] is set. Otherwise, matches the start of the input.
 - `$` &mdash; Matches the end of a line when the `m` (multiline) [flag] is set. Otherwise, matches the end of the input.
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/anchors.yml)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/anchors-and-boundaries/anchors.yml)
 -->
+
 
 - [Buffer Boundaries]
 - [Word Boundaries]
@@ -163,37 +184,45 @@ The following flags are supported:
   - [](../../src/features/anchors-and-boundaries/buffer-boundaries.yml)
 -->
 
-[Main article][article:Buffer Boundaries] \| [Reference][reference:Buffer Boundaries]
+<sup>[Main article][article:Buffer Boundaries] \| [Reference][reference:Buffer Boundaries] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/buffer-boundaries.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.description.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/buffer-boundaries.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/anchors-and-boundaries/buffer-boundaries.description.md)
 -->
 
+
 A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of the input. This differs slightly from `^` and `$` which can be affected by [RegExp flags] like `m`.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/anchors-and-boundaries/buffer-boundaries.syntax.md)
 -->
 
+
 - `\A` &mdash; Matches the start of the input.
 - `\z` &mdash; Matches the end of the input.
 - `\Z` &mdash; A zero-width assertion consisting of an optional newline at the end of the buffer. Equivalent to `(?=\n?\z)`.
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.yml)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/anchors-and-boundaries/buffer-boundaries.yml)
 -->
+
 
 - [Anchors]
 - [Word Boundaries]
@@ -207,38 +236,46 @@ A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of t
   - [](../../src/features/anchors-and-boundaries/word-boundaries.yml)
 -->
 
-[Main article][article:Word Boundaries] \| [Reference][reference:Word Boundaries]
+<sup>[Main article][article:Word Boundaries] \| [Reference][reference:Word Boundaries] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/word-boundaries.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.description.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/word-boundaries.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/anchors-and-boundaries/word-boundaries.description.md)
 -->
 
+
 A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a word.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/word-boundaries.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/engines/pcre/features/word-boundaries.md)
 -->
 
+
 - `\b` &mdash; Matches the start or the end of a word.
 - `\B` &mdash; Matches when *not* at the start or the end of a word.
 - `[[:<:]]` &mdash; Matches the start of a word. Equivalent to: `\b(?=\w)`
 - `[[:>:]]` &mdash; Matches the end of a word. Equivalent to: `\b(?<=\w)`
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.yml)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/anchors-and-boundaries/word-boundaries.yml)
 -->
+
 
 - [Anchors]
 - [Buffer Boundaries]
@@ -252,7 +289,10 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
   - [](../../src/features/anchors-and-boundaries/text-segment-boundaries.yml)
 -->
 
-[Main article][article:Text Segment Boundaries] \| [Reference][reference:Text Segment Boundaries]
+<sup>[Main article][article:Text Segment Boundaries] \| [Reference][reference:Text Segment Boundaries] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/text-segment-boundaries.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/text-segment-boundaries.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/text-segment-boundaries.description.md)</sup>
+
+
 
 <!--
 'supported' sources:
@@ -261,19 +301,23 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 
 > ❌ This feature is not supported.
 
+
 <!--
 'description' sources:
   - [](../../src/features/anchors-and-boundaries/text-segment-boundaries.description.md)
 -->
 
+
 A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the end of a text segment.
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/text-segment-boundaries.yml)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/anchors-and-boundaries/text-segment-boundaries.yml)
 -->
+
 
 - [Anchors]
 - [Buffer Boundaries]
@@ -287,35 +331,43 @@ A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the en
   - [](../../src/features/anchors-and-boundaries/continuation-escape.yml)
 -->
 
-[Main article][article:Continuation Escape] \| [Reference][reference:Continuation Escape]
+<sup>[Main article][article:Continuation Escape] \| [Reference][reference:Continuation Escape] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/continuation-escape.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.description.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/continuation-escape.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/anchors-and-boundaries/continuation-escape.description.md)
 -->
 
+
 A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either the start of the input or the start of the last match.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/anchors-and-boundaries/continuation-escape.syntax.md)
 -->
 
+
 - `\G` &mdash; Matches either the start of the input or the start of the last match.
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.yml)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/anchors-and-boundaries/continuation-escape.yml)
 -->
+
 
 - [Anchors]
 - [Buffer Boundaries]
@@ -329,26 +381,32 @@ A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either t
   - [](../../src/features/alternatives/alternatives.yml)
 -->
 
-[Main article][article:Alternatives] \| [Reference][reference:Alternatives]
+<sup>[Main article][article:Alternatives] \| [Reference][reference:Alternatives] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/alternatives.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/alternatives.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/alternatives.description.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/alternatives.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/alternatives/alternatives.description.md)
 -->
 
+
 An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first branch of a pattern fails to match, each alternative is attempted from left to right until a match is found.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/alternatives.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/alternatives/alternatives.syntax.md)
 -->
+
 
 - `…|…` &mdash; Matches the pattern to the left of the `|`. If that fails, matches the pattern to the right of `|`.
 
@@ -359,26 +417,32 @@ An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first
   - [](../../src/features/wildcard.yml)
 -->
 
-[Main article][article:Wildcard] \| [Reference][reference:Wildcard]
+<sup>[Main article][article:Wildcard] \| [Reference][reference:Wildcard] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/wildcard.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/wildcard.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/wildcard.description.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/wildcard.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/wildcard.description.md)
 -->
 
+
 A <dfn>Wildcard</dfn> matches a single, non-newline character.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/wildcard.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/wildcard.syntax.md)
 -->
+
 
 - `.` &mdash; Matches any character except newline characters. If the `s` (single-line) [flag] is set then this matches any character.
 
@@ -389,37 +453,45 @@ A <dfn>Wildcard</dfn> matches a single, non-newline character.
   - [](../../src/features/character-classes/character-classes.md)
 -->
 
-[Main article][article:Character Classes] \| [Reference][reference:Character Classes]
+<sup>[Main article][article:Character Classes] \| [Reference][reference:Character Classes] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-classes.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/character-classes.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/character-classes.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/character-classes/character-classes.md)
 -->
 
+
 A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to match a single character in the set.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-classes.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/character-classes/character-classes.md)
 -->
 
+
 - `[…]` &mdash; Where `…` is one or more single characters or character class escapes, excluding `^` at the start and `-` between two entries in the set. Matches a character in the set. Example: `[abc]` matches `a`, `b`, or `c`.
 - <a id="negated-character-class"></a>`[^…]` &mdash; Where `…` is one or more single characters or character class escapes, excluding `-` between two entries in the set. Matches any character not in the set. Example: `[^abc]` matches `d`, `e`, or `f`, etc., but not `a`, `b`, or `c`.
 - <a id="character-class-range"></a><code>[*a*-*z*]</code> &mdash; Where *a* and *z* are single characters or character escapes. Matches any character in the range between *a* and *z* (inclusive). Example: `[a-c]` matches `a`, `b`, or `c`, but not `d`.
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-classes.md)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/character-classes/character-classes.md)
 -->
+
 
 - [Posix Character Classes]
 - [Negated Posix Character Classes]
@@ -439,35 +511,43 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
   - [](../../src/features/character-classes/posix-character-classes.md)
 -->
 
-[Main article][article:Posix Character Classes] \| [Reference][reference:Posix Character Classes]
+<sup>[Main article][article:Posix Character Classes] \| [Reference][reference:Posix Character Classes] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/posix-character-classes.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/posix-character-classes.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/posix-character-classes.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/character-classes/posix-character-classes.md)
 -->
 
+
 A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that specifies a named, pre-defined set of characters.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/posix-character-classes.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/character-classes/posix-character-classes.md)
 -->
 
+
 - <code>\[\[:*name*:\]\]</code> &mdash; Where *name* is in a set of predefined names. Matches any character in the set.
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/posix-character-classes.md)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/character-classes/posix-character-classes.md)
 -->
+
 
 - [Character Classes]
 - [Negated Posix Character Classes]
@@ -487,35 +567,43 @@ A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that s
   - [](../../src/features/character-classes/negated-posix-character-classes.md)
 -->
 
-[Main article][article:Negated Posix Character Classes] \| [Reference][reference:Negated Posix Character Classes]
+<sup>[Main article][article:Negated Posix Character Classes] \| [Reference][reference:Negated Posix Character Classes] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/negated-posix-character-classes.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/negated-posix-character-classes.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/negated-posix-character-classes.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/character-classes/negated-posix-character-classes.md)
 -->
 
+
 A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] set that specifies a named, pre-defined set of excluded characters.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/negated-posix-character-classes.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/character-classes/negated-posix-character-classes.md)
 -->
 
+
 - <code>\[\[:^*name*:\]\]</code> &mdash; Where *name* is in a set of predefined names. Matches any character not in the set.
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/negated-posix-character-classes.md)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/character-classes/negated-posix-character-classes.md)
 -->
+
 
 - [Character Classes]
 - [Posix Character Classes]
@@ -535,7 +623,10 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
   - [](../../src/features/character-classes/collating-elements.md)
 -->
 
-[Main article][article:Collating Elements] \| [Reference][reference:Collating Elements]
+<sup>[Main article][article:Collating Elements] \| [Reference][reference:Collating Elements] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/collating-elements.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/collating-elements.md)</sup>
+
+
 
 <!--
 'supported' sources:
@@ -544,19 +635,23 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 
 > ❌ This feature is not supported.
 
+
 <!--
 'description' sources:
   - [](../../src/features/character-classes/collating-elements.md)
 -->
 
+
 A <dfn>Collating Element</dfn> is one or more characters that collate as a single unit.
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/collating-elements.md)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/character-classes/collating-elements.md)
 -->
+
 
 - [Character Classes]
 - [Posix Character Classes]
@@ -576,7 +671,10 @@ A <dfn>Collating Element</dfn> is one or more characters that collate as a singl
   - [](../../src/features/character-classes/equivalence-classes.md)
 -->
 
-[Main article][article:Equivalence Classes] \| [Reference][reference:Equivalence Classes]
+<sup>[Main article][article:Equivalence Classes] \| [Reference][reference:Equivalence Classes] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/equivalence-classes.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/equivalence-classes.md)</sup>
+
+
 
 <!--
 'supported' sources:
@@ -585,19 +683,23 @@ A <dfn>Collating Element</dfn> is one or more characters that collate as a singl
 
 > ❌ This feature is not supported.
 
+
 <!--
 'description' sources:
   - [](../../src/features/character-classes/equivalence-classes.md)
 -->
 
+
 An <dfn>Equivalence Class</dfn> matches any character or collating element with the same primary sort key as the provided collating element.
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/equivalence-classes.md)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/character-classes/equivalence-classes.md)
 -->
+
 
 - [Character Classes]
 - [Posix Character Classes]
@@ -617,26 +719,32 @@ An <dfn>Equivalence Class</dfn> matches any character or collating element with 
   - [](../../src/features/character-classes/character-class-escapes.md)
 -->
 
-[Main article][article:Character Class Escapes] \| [Reference][reference:Character Class Escapes]
+<sup>[Main article][article:Character Class Escapes] \| [Reference][reference:Character Class Escapes] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-escapes.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/character-class-escapes.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/character-class-escapes.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/character-classes/character-class-escapes.md)
 -->
 
+
 A <dfn>Character Class Escape</dfn> is a single character escape that represents an entire character class. They can be used as an element of a [Character Class] or as an *Atom*. It is often the case that a lower-case escape character is the inclusive set, while an upper-case variant of the same character excludes that set.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/character-class-escapes.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/engines/pcre/features/character-class-escapes.md)
 -->
+
 
 - `\d` &mdash; A decimal digit character in the range 0-9. Equivalent to `[0-9]`.
 - `\D` &mdash; Any character not in the range 0-9. Equivalent to `[^0-9]`.
@@ -650,12 +758,14 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
 - `\V` &mdash; Any non-vertical whitespace character.
 - `\N` &mdash; Any character that is not a newline. Similar to `.`, but is not affected by the `s` [RegExp flag].
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-escapes.md)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/character-classes/character-class-escapes.md)
 -->
+
 
 - [Character Classes]
 - [Posix Character Classes]
@@ -675,35 +785,43 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
   - [](../../src/features/character-classes/line-endings-escape.md)
 -->
 
-[Main article][article:Line Endings Escape] \| [Reference][reference:Line Endings Escape]
+<sup>[Main article][article:Line Endings Escape] \| [Reference][reference:Line Endings Escape] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/line-endings-escape.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/line-endings-escape.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/line-endings-escape.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/character-classes/line-endings-escape.md)
 -->
 
+
 A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending character sequence.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/line-endings-escape.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/character-classes/line-endings-escape.md)
 -->
 
+
 - `\R` &mdash; Equivalent to `(?>\r\n?|[\x0A-\x0C\x85\u{2028}\u{2029}])`
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/line-endings-escape.md)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/character-classes/line-endings-escape.md)
 -->
+
 
 - [Character Classes]
 - [Posix Character Classes]
@@ -723,38 +841,46 @@ A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending chara
   - [](../../src/features/character-classes/character-property-escapes.md)
 -->
 
-[Main article][article:Character Property Escapes] \| [Reference][reference:Character Property Escapes]
+<sup>[Main article][article:Character Property Escapes] \| [Reference][reference:Character Property Escapes] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-property-escapes.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/character-property-escapes.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/character-property-escapes.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/character-classes/character-property-escapes.md)
 -->
 
+
 A <dfn>Character Property Escape</dfn> is an escape sequence used to match a character with a specific character property.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-property-escapes.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/character-classes/character-property-escapes.md)
 -->
 
+
 - <code>\\p*X*</code> &mdash; Where *X* is a single character. Matches a character that has the property *X*.
 - <code>\\p{*name*}</code> &mdash; Where *name* is a predefined property name. Matches a character that has the property *name*.
 - <code>\\P*X*</code> &mdash; Where *X* is a single character. Matches a character that does not have the property *X*.
 - <code>\\P{*name*}</code> &mdash; Where *name* is a predefined property name. Matches a character that does not have the property *name*.
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-property-escapes.md)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/character-classes/character-property-escapes.md)
 -->
+
 
 - [Character Classes]
 - [Posix Character Classes]
@@ -774,7 +900,10 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
   - [](../../src/features/character-classes/character-class-nested-set.md)
 -->
 
-[Main article][article:Character Class Nested Set] \| [Reference][reference:Character Class Nested Set]
+<sup>[Main article][article:Character Class Nested Set] \| [Reference][reference:Character Class Nested Set] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-nested-set.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/character-class-nested-set.md)</sup>
+
+
 
 <!--
 'supported' sources:
@@ -783,19 +912,23 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 > ❌ This feature is not supported.
 
+
 <!--
 'description' sources:
   - [](../../src/features/character-classes/character-class-nested-set.md)
 -->
 
+
 A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [character class] inside of a [character class].
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-nested-set.md)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/character-classes/character-class-nested-set.md)
 -->
+
 
 - [Character Classes]
 - [Posix Character Classes]
@@ -815,7 +948,10 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
   - [](../../src/features/character-classes/character-class-intersection.md)
 -->
 
-[Main article][article:Character Class Intersection] \| [Reference][reference:Character Class Intersection]
+<sup>[Main article][article:Character Class Intersection] \| [Reference][reference:Character Class Intersection] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-intersection.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/character-class-intersection.md)</sup>
+
+
 
 <!--
 'supported' sources:
@@ -824,19 +960,23 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 
 > ❌ This feature is not supported.
 
+
 <!--
 'description' sources:
   - [](../../src/features/character-classes/character-class-intersection.md)
 -->
 
+
 <dfn>Character Class Intersection</dfn> allows you to indicate that only characters that are in both [character classes] should match.
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-intersection.md)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/character-classes/character-class-intersection.md)
 -->
+
 
 - [Character Classes]
 - [Posix Character Classes]
@@ -856,7 +996,10 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
   - [](../../src/features/character-classes/character-class-subtraction.md)
 -->
 
-[Main article][article:Character Class Subtraction] \| [Reference][reference:Character Class Subtraction]
+<sup>[Main article][article:Character Class Subtraction] \| [Reference][reference:Character Class Subtraction] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-subtraction.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/character-class-subtraction.md)</sup>
+
+
 
 <!--
 'supported' sources:
@@ -865,19 +1008,23 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 
 > ❌ This feature is not supported.
 
+
 <!--
 'description' sources:
   - [](../../src/features/character-classes/character-class-subtraction.md)
 -->
 
+
 <dfn>Character Class Subtraction</dfn> allows you to exclude a class of characters from another class of characters in a [character class].
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-subtraction.md)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/character-classes/character-class-subtraction.md)
 -->
+
 
 - [Character Classes]
 - [Posix Character Classes]
@@ -897,26 +1044,32 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
   - [](../../src/features/quoted-characters.yml)
 -->
 
-[Main article][article:Quoted Characters] \| [Reference][reference:Quoted Characters]
+<sup>[Main article][article:Quoted Characters] \| [Reference][reference:Quoted Characters] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quoted-characters.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/quoted-characters.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/quoted-characters.description.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/quoted-characters.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/quoted-characters.description.md)
 -->
 
+
 <dfn>Quoted Characters</dfn> are a sequence of characters treated as literal characters rather than RegExp characters.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quoted-characters.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/quoted-characters.syntax.md)
 -->
+
 
 - `\Q … \E` &mdash; All characters following `\Q` and preceding the next `\E` are treated as literal characters. Example: `\Q.+\E` matches `.+` but not `aa`.
 - `\Q … ` &mdash; If there is no trailing `\E`,  all characters until the end of the pattern are treated as literal characters.
@@ -928,26 +1081,32 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
   - [](../../src/features/quantifiers/quantifiers.yml)
 -->
 
-[Main article][article:Quantifiers] \| [Reference][reference:Quantifiers]
+<sup>[Main article][article:Quantifiers] \| [Reference][reference:Quantifiers] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/quantifiers.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/quantifiers.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/quantifiers.description.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/quantifiers.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/quantifiers/quantifiers.description.md)
 -->
 
+
 <dfn>Quantifiers</dfn> specify repetition of an *Atom*. By default, quantifiers are "greedy" in that they attempt to match as many instances of the preceding *Atom* as possible to satisfy the pattern before backtracking.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/quantifiers.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/quantifiers/quantifiers.syntax.md)
 -->
+
 
 - `*` &mdash; Matches the preceding *Atom* zero or more times. Example: `a*b` matches `b`, `ab`, `aab`, `aaab`, etc.
 - `+` &mdash; Matches the preceding *Atom* one or more times. Example: `a+b` matches `ab`, `aab`, `aaab`, etc., but not `b`.
@@ -956,12 +1115,14 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 - <code>{*n*,}</code> &mdash; Where *n* is an integer. Matches the preceding *Atom* at-least *n* times. Example: `a{2,}` matches `aa`, `aaa`, `aaaa`, etc., but not `a`.
 - <code>{*n*,*m*}</code> &mdash; Where *n* and *m* are integers, and *m* >= *n*. Matches the preceding *Atom* at-least *n* times and at-most *m* times. Example: `a{2,3}` matches `aa`, `aaa`, `aaaa`, etc., but not `a` or `aaaa`.
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/quantifiers.yml)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/quantifiers/quantifiers.yml)
 -->
+
 
 - [Lazy Quantifiers]
 - [Possessive Quantifiers]
@@ -973,26 +1134,32 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
   - [](../../src/features/quantifiers/lazy-quantifiers.yml)
 -->
 
-[Main article][article:Lazy Quantifiers] \| [Reference][reference:Lazy Quantifiers]
+<sup>[Main article][article:Lazy Quantifiers] \| [Reference][reference:Lazy Quantifiers] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/lazy-quantifiers.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/lazy-quantifiers.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/lazy-quantifiers.description.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/lazy-quantifiers.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/quantifiers/lazy-quantifiers.description.md)
 -->
 
+
 <dfn>Lazy Quantifiers</dfn> specify repetition of an *Atom*, but attempt to match as few instances of the preceding *Atom* as possible to satisfy the pattern before advancing.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/lazy-quantifiers.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/quantifiers/lazy-quantifiers.syntax.md)
 -->
+
 
 - `*?` &mdash; Matches the preceding *Atom* zero or more times.
 - `+?` &mdash; Matches the preceding *Atom* one or more times.
@@ -1001,12 +1168,14 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 - <code>{*n*,}?</code> &mdash; Where *n* is an integer. Matches the preceding *Atom* at-least *n* times.
 - <code>{*n*,*m*}?</code> &mdash; Where *n* and *m* are integers, and *m* >= *n*. Matches the preceding *Atom* at-least *n* times and at-most *m* times.
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/lazy-quantifiers.yml)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/quantifiers/lazy-quantifiers.yml)
 -->
+
 
 - [Quantifiers]
 - [Possessive Quantifiers]
@@ -1018,26 +1187,32 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
   - [](../../src/features/quantifiers/possessive-quantifiers.yml)
 -->
 
-[Main article][article:Possessive Quantifiers] \| [Reference][reference:Possessive Quantifiers]
+<sup>[Main article][article:Possessive Quantifiers] \| [Reference][reference:Possessive Quantifiers] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/possessive-quantifiers.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.description.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/possessive-quantifiers.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/quantifiers/possessive-quantifiers.description.md)
 -->
 
+
 <dfn>Possessive Quantifiers</dfn> are like greedy (i.e., regular) [quantifiers], except that backtracking is not performed.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/quantifiers/possessive-quantifiers.syntax.md)
 -->
+
 
 - `*+` &mdash; Match zero or more characters without backtracking.
 - `++` &mdash; Match one or more characters without backtracking.
@@ -1045,12 +1220,14 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 - `{n,}+` &mdash; Match _n_ or more characters without backtracking.
 - `{n,m}+` &mdash; Match between _n_ and _m_ characters without backtracking.
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.yml)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/quantifiers/possessive-quantifiers.yml)
 -->
+
 
 - [Quantifiers]
 - [Lazy Quantifiers]
@@ -1062,35 +1239,43 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
   - [](../../src/features/groups-and-backtracking/capturing-groups.yml)
 -->
 
-[Main article][article:Capturing Groups] \| [Reference][reference:Capturing Groups]
+<sup>[Main article][article:Capturing Groups] \| [Reference][reference:Capturing Groups] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/capturing-groups.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.description.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/capturing-groups.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/groups-and-backtracking/capturing-groups.description.md)
 -->
 
+
 A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by index. A Capturing Group can be captured and returned by the matching algorithm.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/groups-and-backtracking/capturing-groups.syntax.md)
 -->
 
+
 - `(…)` &mdash; Groups the subexpression as a single *Atom*. The result is captured and returned by the matching algorithm.
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.yml)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/groups-and-backtracking/capturing-groups.yml)
 -->
+
 
 - [Named Capturing Groups]
 - [Non-Capturing Groups]
@@ -1105,37 +1290,45 @@ A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom*
   - [](../../src/features/groups-and-backtracking/named-capturing-groups.yml)
 -->
 
-[Main article][article:Named Capturing Groups] \| [Reference][reference:Named Capturing Groups]
+<sup>[Main article][article:Named Capturing Groups] \| [Reference][reference:Named Capturing Groups] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/named-capturing-groups.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/named-capturing-groups.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/named-capturing-groups.description.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/named-capturing-groups.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/groups-and-backtracking/named-capturing-groups.description.md)
 -->
 
+
 A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and returned by the matching algorithm. A Named Capturing Group is also an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by name.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/named-capturing-groups.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/engines/pcre/features/named-capturing-groups.md)
 -->
 
+
 - <code>(?\<*name*\> … )</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
 - <code>(?'*name*' … )</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
 - <code>(?P\<*name*\> … )</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/named-capturing-groups.yml)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/groups-and-backtracking/named-capturing-groups.yml)
 -->
+
 
 - [Capturing Groups]
 - [Non-Capturing Groups]
@@ -1150,35 +1343,43 @@ A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and r
   - [](../../src/features/groups-and-backtracking/non-capturing-groups.yml)
 -->
 
-[Main article][article:Non-Capturing Groups] \| [Reference][reference:Non-Capturing Groups]
+<sup>[Main article][article:Non-Capturing Groups] \| [Reference][reference:Non-Capturing Groups] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-capturing-groups.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/non-capturing-groups.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-capturing-groups.description.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/non-capturing-groups.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/groups-and-backtracking/non-capturing-groups.description.md)
 -->
 
+
 A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] but cannot be referenced using [Backreferences]. A Non-capturing Group is not captured by the matching algorithm.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-capturing-groups.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/groups-and-backtracking/non-capturing-groups.syntax.md)
 -->
 
+
 - `(?:…)` &mdash; Groups the subexpression as a single *Atom*.
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-capturing-groups.yml)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/groups-and-backtracking/non-capturing-groups.yml)
 -->
+
 
 - [Capturing Groups]
 - [Named Capturing Groups]
@@ -1190,26 +1391,32 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
   - [](../../src/features/groups-and-backtracking/backreferences.yml)
 -->
 
-[Main article][article:Backreferences] \| [Reference][reference:Backreferences]
+<sup>[Main article][article:Backreferences] \| [Reference][reference:Backreferences] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/backreferences.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/backreferences.md)
 -->
 
+
 <!--
 'description' sources:
-  - [](../../src/features/groups-and-backtracking/backreferences.description.md)
+  - [](../../src/features/groups-and-backtracking/backreferences.md)
 -->
+
 
 <dfn>Backreferences</dfn> allow a pattern to re-match a previously matched capture group<sup>[1][Capturing Groups] [2][Named Capturing Groups]</sup> either by number (_n_) or by _name_.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/backreferences.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/engines/pcre/features/backreferences.md)
 -->
+
 
 - <code>\\*n*</code> &mdash; Where *n* is an integer >= 1. Matches the same string as the [capture group] *n*.
   - NOTE: If the *n* is > 8 it will instead be interpreted as an octal literal.
@@ -1225,12 +1432,14 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 - <code>\\k'*name*'</code> &mdash; Matches the [named capture group] with the name *name*.
 - <code>(?P=*name*)</code> &mdash; Matches the [named capture group] with the name *name*.
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.yml)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/groups-and-backtracking/backreferences.yml)
 -->
+
 
 - [Capturing Groups]
 - [Named Capturing Groups]
@@ -1242,35 +1451,43 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
   - [](../../src/features/comments/comments.yml)
 -->
 
-[Main article][article:Comments] \| [Reference][reference:Comments]
+<sup>[Main article][article:Comments] \| [Reference][reference:Comments] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/comments.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/comments.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/comments.description.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/comments.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/comments/comments.description.md)
 -->
 
+
 A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matching and can be used to document a pattern.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/comments.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/comments/comments.syntax.md)
 -->
 
+
 - `(?#…)` &mdash; The entire expression is removed from the pattern. A comment may not contain other `(` or `)` characters.
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/comments.yml)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/comments/comments.yml)
 -->
+
 
 - [Line Comments]
 
@@ -1281,35 +1498,43 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
   - [](../../src/features/comments/line-comments.yml)
 -->
 
-[Main article][article:Line Comments] \| [Reference][reference:Line Comments]
+<sup>[Main article][article:Line Comments] \| [Reference][reference:Line Comments] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/line-comments.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/line-comments.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/line-comments.description.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/line-comments.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/comments/line-comments.description.md)
 -->
 
+
 A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and ending with `\n` (or the end of the pattern) that is ignored by pattern matching and can be used to document a pattern.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/line-comments.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/engines/pcre/features/line-comments.md)
 -->
 
+
 - <code># … **\\n**</code> &mdash; The rest of the line is removed from the pattern. Only supported when either the `x` (extended mode) or `xx` (extended more mode) [RegExp flags] are set.
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/line-comments.yml)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/comments/line-comments.yml)
 -->
+
 
 - [Comments]
 
@@ -1320,38 +1545,46 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
   - [](../../src/features/flags-and-modifiers/modifiers.yml)
 -->
 
-[Main article][article:Modifiers] \| [Reference][reference:Modifiers]
+<sup>[Main article][article:Modifiers] \| [Reference][reference:Modifiers] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/modifiers.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/modifiers.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/modifiers.description.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/modifiers.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/flags-and-modifiers/modifiers.description.md)
 -->
 
+
 <dfn>Modifiers</dfn> allow you to change the currently active [RegExp flags] within a subexpression.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/modifiers.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/engines/pcre/features/modifiers.md)
 -->
 
+
 - `(?imnsxx-imnsxx)` - Sets or unsets (using `-`) the specified [RegExp flags] starting at the current position until the next closing `)` or the end of the pattern. Example: `(?-i)A(?i)B(?-i)C` matches `ABC`, `AbC`.
 - `(?imnsxx-imnsxx: … )` - Sets or unsets (using `-`) the specified [RegExp flags] for the subexpression. Example: `(?-i:A(?i:B)C)` matches `ABC`, `AbC`.
 - `(?^)` - Unsets all [RegExp flags].
 - `(?^imnsxx)` - Unsets all [RegExp flags] and sets the requested flags.
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/modifiers.yml)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/flags-and-modifiers/modifiers.yml)
 -->
+
 
 - [Flags]
 
@@ -1362,26 +1595,32 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
   - [](../../src/features/alternatives/branch-reset.yml)
 -->
 
-[Main article][article:Branch Reset] \| [Reference][reference:Branch Reset]
+<sup>[Main article][article:Branch Reset] \| [Reference][reference:Branch Reset] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/branch-reset.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/branch-reset.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/branch-reset.description.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/branch-reset.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/alternatives/branch-reset.description.md)
 -->
 
+
 A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [Alternative] (`|`), which affects numbering for [Backreferences] and captured results returned from the matching algorithm.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/branch-reset.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/alternatives/branch-reset.syntax.md)
 -->
+
 
 - `(?|…)` &mdash; Resets the subexpression count at the start of each [Alternative].
 
@@ -1392,36 +1631,44 @@ A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [A
   - [](../../src/features/lookaround/lookahead.yml)
 -->
 
-[Main article][article:Lookahead] \| [Reference][reference:Lookahead]
+<sup>[Main article][article:Lookahead] \| [Reference][reference:Lookahead] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/lookahead.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.description.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/lookahead.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/lookaround/lookahead.description.md)
 -->
 
+
 A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pattern would match the characters to the right of the current position.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/lookaround/lookahead.syntax.md)
 -->
 
+
 - <a id="positive-lookahead"></a>`(?=…)` &mdash; Matches if the provided pattern would match but does not advance the current position.
 - <a id="negative-lookahead"></a>`(?!…)` &mdash; Matches if the provided pattern would not match, but does not advance the current position.
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.yml)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/lookaround/lookahead.yml)
 -->
+
 
 - [Lookbehind]
 
@@ -1432,36 +1679,44 @@ A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pa
   - [](../../src/features/lookaround/lookbehind.yml)
 -->
 
-[Main article][article:Lookbehind] \| [Reference][reference:Lookbehind]
+<sup>[Main article][article:Lookbehind] \| [Reference][reference:Lookbehind] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookbehind.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/lookbehind.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookbehind.description.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/lookbehind.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/lookaround/lookbehind.description.md)
 -->
 
+
 A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided pattern would match the characters to the left of the current position.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookbehind.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/lookaround/lookbehind.syntax.md)
 -->
 
+
 - <a id="positive-lookbehind"></a>`(?<=…)` &mdash; Matches if the provided pattern would match the preceding characters, but does not advance the current position. The pattern must have a fixed length (unbounded [quantifiers] are not permitted).
 - <a id="negative-lookbehind"></a>`(?<!…)` &mdash; Matches if the provided pattern would not match the preceding characters, but does not advance the current position. The pattern must have a fixed length (unbounded [quantifiers] are not permitted).
 
-#### See Also
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookbehind.yml)</sup>
 
 <!--
 'see_also' sources:
   - [](../../src/features/lookaround/lookbehind.yml)
 -->
+
 
 - [Lookahead]
 
@@ -1472,26 +1727,32 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
   - [](../../src/features/groups-and-backtracking/non-backtracking-expressions.yml)
 -->
 
-[Main article][article:Non-Backtracking Expressions] \| [Reference][reference:Non-Backtracking Expressions]
+<sup>[Main article][article:Non-Backtracking Expressions] \| [Reference][reference:Non-Backtracking Expressions] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-backtracking-expressions.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/non-backtracking-expression.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-backtracking-expressions.description.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/non-backtracking-expression.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/groups-and-backtracking/non-backtracking-expressions.description.md)
 -->
 
+
 A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring patterns, and will not backtrack in the event of a failed match. This is often used to improve performance.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-backtracking-expressions.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/groups-and-backtracking/non-backtracking-expressions.syntax.md)
 -->
+
 
 - `(?>…)` &mdash; Matches the provided pattern, but no backtracking is performed if the match fails.
 
@@ -1502,26 +1763,32 @@ A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring p
   - [](../../src/features/groups-and-backtracking/recursion.yml)
 -->
 
-[Main article][article:Recursion] \| [Reference][reference:Recursion]
+<sup>[Main article][article:Recursion] \| [Reference][reference:Recursion] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/recursion.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/recursion.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/recursion.description.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/recursion.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/groups-and-backtracking/recursion.description.md)
 -->
 
+
 A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capture group] inside of itself, to handle cases such as matching balanced parenthesis or brackets, etc.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/recursion.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/engines/pcre/features/recursion.md)
 -->
+
 
 - <code>(?R)</code> &mdash; Reevaluates the entire pattern starting at the current position.
 - <code>(?0)</code> &mdash; Reevaluates the entire pattern starting at the current position.
@@ -1538,26 +1805,32 @@ A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capt
   - [](../../src/features/alternatives/conditional-expressions.yml)
 -->
 
-[Main article][article:Conditional Expressions] \| [Reference][reference:Conditional Expressions]
+<sup>[Main article][article:Conditional Expressions] \| [Reference][reference:Conditional Expressions] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/conditional-expressions.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/conditional-expressions.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/conditional-expressions.description.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/conditional-expressions.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/alternatives/conditional-expressions.description.md)
 -->
 
+
 A <dfn>Conditional Expression</dfn> checks a condition and evaluates its first alternative if the condition is **true**; otherwise, it evaluates its second alternative.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/conditional-expressions.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/engines/pcre/features/conditional-expressions.md)
 -->
+
 
 - <code>(?(*condition*)*yes-pattern*|*no-pattern*)</code> &mdash; Matches *yes-pattern* if *condition* is **true**; otherwise, matches *no-pattern*.
 - <code>(?(*condition*)*yes-pattern*)</code> &mdash; Matches *yes-pattern* if *condition* is **true**; otherwise, matches the empty string.
@@ -1585,27 +1858,33 @@ The following conditions are supported:
   - [](../../src/features/groups-and-backtracking/subroutines.yml)
 -->
 
-[Main article][article:Subroutines] \| [Reference][reference:Subroutines]
+<sup>[Main article][article:Subroutines] \| [Reference][reference:Subroutines] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/subroutines.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/subroutines.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/subroutines.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/engines/pcre/features/subroutines.md)
 -->
 
+
 A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group] that can be reused in multiple places within the pattern. These [capture groups] can optionally be placed in a
 [DEFINE condition].
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/subroutines.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/engines/pcre/features/subroutines.md)
 -->
+
 
 - `(?(DEFINE) … )` &mdash; Defines a set of reusable [capture groups] that can be referenced elsewhere in the pattern.
 - <code>(?*n*)</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is *n*.
@@ -1614,12 +1893,14 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 - <code>(?&*name*)</code> &mdash; Evaluates the [named capture group] with the provided *name*.
 - <code>\\g\<*name*\></code> &mdash; Evaluates the [named capture group] with the provided *name*.
 
-#### Example
+### Example
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/subroutines.example.md)</sup>
 
 <!--
 'example' sources:
   - [](../../src/features/groups-and-backtracking/subroutines.example.md)
 -->
+
 
 ```re
 (?(DEFINE)
@@ -1637,26 +1918,32 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
   - [](../../src/features/callouts.yml)
 -->
 
-[Main article][article:Callouts] \| [Reference][reference:Callouts]
+<sup>[Main article][article:Callouts] \| [Reference][reference:Callouts] \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/callouts.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/callouts.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/callouts.description.md)</sup>
+
 
 <!--
-'reference' sources:
+'name' sources:
   - [](../../src/engines/pcre/features/callouts.md)
 -->
+
 
 <!--
 'description' sources:
   - [](../../src/features/callouts.description.md)
 -->
 
+
 A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matching.
 
-#### Syntax
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/pcre/features/callouts.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/engines/pcre/features/callouts.md)
 -->
+
 
 - <code>(?C)</code> &mdash; Invokes the user defined function with the argument `0`.
 - <code>(?C*n*)</code> &mdash; Where *n* is an integer. Invokes the user defined function with the argument *n*.

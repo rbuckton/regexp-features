@@ -1,9 +1,17 @@
 # Feature: Character Class Nested Set
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-nested-set.md)</sup>
+
+<!--
+'Character Class Nested Set' sources:
+  - [](../../src/features/character-classes/character-class-nested-set.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/character-classes/character-class-nested-set.md)
 -->
+
 
 <!--
 'description' sources:
@@ -12,27 +20,31 @@
 
 A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [character class] inside of a [character class].
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-nested-set.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/character-classes/character-class-nested-set.md)
 -->
 
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+
 - `[[…]]` &mdash; Matches any character in the set, just like a normal [character class].
 - `[[^…]]` &mdash; Where `…` is one or more single characters or character class escapes, excluding `-` between two entries in the set. Matches any character not in the set, just like a normal [negated character class].
 - <code>[[*a*-*z*]]</code> &mdash; Where *a* and *z* are single characters or character escapes. Matches any character in the range between *a* and *z* (inclusive), just like a normal [character class range].
 
-#### Example
-
-> NOTE: The following example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Example
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-nested-set.md)</sup>
 
 <!--
 'example' sources:
   - [](../../src/features/character-classes/character-class-nested-set.md)
 -->
+
+
+> NOTE: The following example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 ```
 [a-z&&[^d-q]]
@@ -48,12 +60,14 @@ Is equivalent to:
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ❌ |
-| [Boost.Regex](../engines/boost.regex.md) | ❌ |
-| [.NET](../engines/dotnet.md) | ❌ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [❌](engines/pcre.md#feature-character-class-nested-set) |
+| [Boost.Regex](../engines/boost.regex.md) | [❌](engines/boost.regex.md#feature-character-class-nested-set) |
+| [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-character-class-nested-set) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-character-class-nested-set) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-nested-set.md)</sup>
 
 <!--
 'see_also' sources:

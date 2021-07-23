@@ -1,9 +1,18 @@
 # Feature: Buffer Boundaries
+<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.description.md)</sup>
+
+<!--
+'Buffer Boundaries' sources:
+  - [](../../src/features/anchors-and-boundaries/buffer-boundaries.yml)
+  - [](../../src/features/anchors-and-boundaries/buffer-boundaries.description.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/anchors-and-boundaries/buffer-boundaries.yml)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +21,16 @@
 
 A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of the input. This differs slightly from `^` and `$` which can be affected by [RegExp flags] like `m`.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/anchors-and-boundaries/buffer-boundaries.syntax.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - `\A` &mdash; Matches the start of the input.
 - `\z` &mdash; Matches the end of the input.
@@ -29,12 +40,14 @@ A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of t
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ✔ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-buffer-boundaries) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-buffer-boundaries) |
+| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-buffer-boundaries) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-buffer-boundaries) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.yml)</sup>
 
 <!--
 'see_also' sources:

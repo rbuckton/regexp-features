@@ -1,9 +1,18 @@
 # Feature: Alternatives
+<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/alternatives.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/alternatives.description.md)</sup>
+
+<!--
+'Alternatives' sources:
+  - [](../../src/features/alternatives/alternatives.yml)
+  - [](../../src/features/alternatives/alternatives.description.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/alternatives/alternatives.yml)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +21,16 @@
 
 An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first branch of a pattern fails to match, each alternative is attempted from left to right until a match is found.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/alternatives.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/alternatives/alternatives.syntax.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - `…|…` &mdash; Matches the pattern to the left of the `|`. If that fails, matches the pattern to the right of `|`.
 
@@ -27,10 +38,10 @@ An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ✔ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-alternatives) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-alternatives) |
+| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-alternatives) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-alternatives) |
 
 
 [Anchors]: ./anchors.md

@@ -1,9 +1,18 @@
 # Feature: Wildcard
+<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/wildcard.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/wildcard.description.md)</sup>
+
+<!--
+'Wildcard' sources:
+  - [](../../src/features/wildcard.yml)
+  - [](../../src/features/wildcard.description.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/wildcard.yml)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +21,16 @@
 
 A <dfn>Wildcard</dfn> matches a single, non-newline character.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/wildcard.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/wildcard.syntax.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - `.` &mdash; Matches any character except newline characters. If the `s` (single-line) [flag] is set then this matches any character.
 
@@ -27,10 +38,10 @@ A <dfn>Wildcard</dfn> matches a single, non-newline character.
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ✔ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-wildcard) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-wildcard) |
+| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-wildcard) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-wildcard) |
 
 
 [Anchors]: ./anchors.md

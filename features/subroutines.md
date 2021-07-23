@@ -1,9 +1,18 @@
 # Feature: Subroutines
+<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/subroutines.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/subroutines.description.md)</sup>
+
+<!--
+'Subroutines' sources:
+  - [](../../src/features/groups-and-backtracking/subroutines.yml)
+  - [](../../src/features/groups-and-backtracking/subroutines.description.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/groups-and-backtracking/subroutines.yml)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +21,16 @@
 
 A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group] that can be reused in multiple places within the pattern to re-evaluate the subexpression from the group.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/subroutines.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/groups-and-backtracking/subroutines.syntax.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - `(?(DEFINE) … )` &mdash; Defines a set of reusable [capture groups] that can be referenced elsewhere in the pattern.
 - <code>(?*n*)</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is *n*.
@@ -27,14 +38,16 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 - <code>(?+*n*)</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*. Example: `(?+1)` would evaluate the next declared [capture group].
 - <code>(?&*name*)</code> &mdash; Evaluates the [named capture group] with the provided *name*.
 
-#### Example
-
-> NOTE: The following example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Example
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/subroutines.example.md)</sup>
 
 <!--
 'example' sources:
   - [](../../src/features/groups-and-backtracking/subroutines.example.md)
 -->
+
+
+> NOTE: The following example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 ```re
 (?(DEFINE)
@@ -49,10 +62,10 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ❌ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-subroutines) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-subroutines) |
+| [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-subroutines) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-subroutines) |
 
 
 [Anchors]: ./anchors.md

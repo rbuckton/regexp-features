@@ -1,9 +1,18 @@
 # Feature: Possessive Quantifiers
+<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.description.md)</sup>
+
+<!--
+'Possessive Quantifiers' sources:
+  - [](../../src/features/quantifiers/possessive-quantifiers.yml)
+  - [](../../src/features/quantifiers/possessive-quantifiers.description.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/quantifiers/possessive-quantifiers.yml)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +21,16 @@
 
 <dfn>Possessive Quantifiers</dfn> are like greedy (i.e., regular) [quantifiers], except that backtracking is not performed.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/quantifiers/possessive-quantifiers.syntax.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - `*+` &mdash; Match zero or more characters without backtracking.
 - `++` &mdash; Match one or more characters without backtracking.
@@ -31,12 +42,14 @@
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ❌ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-possessive-quantifiers) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-possessive-quantifiers) |
+| [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-possessive-quantifiers) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-possessive-quantifiers) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.yml)</sup>
 
 <!--
 'see_also' sources:

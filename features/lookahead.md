@@ -1,9 +1,18 @@
 # Feature: Lookahead
+<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.description.md)</sup>
+
+<!--
+'Lookahead' sources:
+  - [](../../src/features/lookaround/lookahead.yml)
+  - [](../../src/features/lookaround/lookahead.description.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/lookaround/lookahead.yml)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +21,16 @@
 
 A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pattern would match the characters to the right of the current position.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/lookaround/lookahead.syntax.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - <a id="positive-lookahead"></a>`(?=…)` &mdash; Matches if the provided pattern would match but does not advance the current position.
 - <a id="negative-lookahead"></a>`(?!…)` &mdash; Matches if the provided pattern would not match, but does not advance the current position.
@@ -28,12 +39,14 @@ A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pa
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ✔ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-lookahead) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-lookahead) |
+| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-lookahead) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-lookahead) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.yml)</sup>
 
 <!--
 'see_also' sources:

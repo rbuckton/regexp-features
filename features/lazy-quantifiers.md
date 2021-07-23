@@ -1,9 +1,18 @@
 # Feature: Lazy Quantifiers
+<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/lazy-quantifiers.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/lazy-quantifiers.description.md)</sup>
+
+<!--
+'Lazy Quantifiers' sources:
+  - [](../../src/features/quantifiers/lazy-quantifiers.yml)
+  - [](../../src/features/quantifiers/lazy-quantifiers.description.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/quantifiers/lazy-quantifiers.yml)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +21,16 @@
 
 <dfn>Lazy Quantifiers</dfn> specify repetition of an *Atom*, but attempt to match as few instances of the preceding *Atom* as possible to satisfy the pattern before advancing.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/lazy-quantifiers.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/quantifiers/lazy-quantifiers.syntax.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - `*?` &mdash; Matches the preceding *Atom* zero or more times.
 - `+?` &mdash; Matches the preceding *Atom* one or more times.
@@ -32,12 +43,14 @@
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ✔ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-lazy-quantifiers) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-lazy-quantifiers) |
+| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-lazy-quantifiers) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-lazy-quantifiers) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/lazy-quantifiers.yml)</sup>
 
 <!--
 'see_also' sources:

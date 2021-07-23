@@ -1,9 +1,18 @@
 # Feature: Flags
+<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/flags.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/flags.description.md)</sup>
+
+<!--
+'Flags' sources:
+  - [](../../src/features/flags-and-modifiers/flags.yml)
+  - [](../../src/features/flags-and-modifiers/flags.description.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/flags-and-modifiers/flags.yml)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +21,16 @@
 
 <dfn>Flags</dfn> control certain aspects of the matching behavior of a pattern.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/flags.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/flags-and-modifiers/flags.syntax.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 The following flags are supported:
 - `i` &mdash; Ignore Case. Matches [character classes] using a case-insensitive comparison.
@@ -31,12 +42,14 @@ The following flags are supported:
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ✔ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-flags) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-flags) |
+| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-flags) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-flags) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/flags.yml)</sup>
 
 <!--
 'see_also' sources:

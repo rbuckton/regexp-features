@@ -1,9 +1,18 @@
 # Feature: Comments
+<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/comments.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/comments.description.md)</sup>
+
+<!--
+'Comments' sources:
+  - [](../../src/features/comments/comments.yml)
+  - [](../../src/features/comments/comments.description.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/comments/comments.yml)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +21,16 @@
 
 A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matching and can be used to document a pattern.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/comments.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/comments/comments.syntax.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - `(?#…)` &mdash; The entire expression is removed from the pattern. A comment may not contain other `(` or `)` characters.
 
@@ -27,12 +38,14 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ✔ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-comments) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-comments) |
+| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-comments) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-comments) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/comments.yml)</sup>
 
 <!--
 'see_also' sources:

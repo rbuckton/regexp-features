@@ -1,9 +1,17 @@
 # Feature: Equivalence Classes
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/equivalence-classes.md)</sup>
+
+<!--
+'Equivalence Classes' sources:
+  - [](../../src/features/character-classes/equivalence-classes.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/character-classes/equivalence-classes.md)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +20,16 @@
 
 An <dfn>Equivalence Class</dfn> matches any character or collating element with the same primary sort key as the provided collating element.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/equivalence-classes.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/character-classes/equivalence-classes.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - <code>\[\[=*col*=\]\]</code> &mdash; Matches any character with the same primary sort key as *col*. Example: `[[=a=]]` matches `a`, `À`, `Á`, `Â`, `Ã`, `Ä`, `Å`, `A`, `à`, `á`, `â`, etc.
 
@@ -27,12 +37,14 @@ An <dfn>Equivalence Class</dfn> matches any character or collating element with 
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ❌ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ❌ |
-| [Oniguruma](../engines/oniguruma.md) | ❌ |
+| [PCRE](../engines/pcre.md) | [❌](engines/pcre.md#feature-equivalence-classes) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-equivalence-classes) |
+| [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-equivalence-classes) |
+| [Oniguruma](../engines/oniguruma.md) | [❌](engines/oniguruma.md#feature-equivalence-classes) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/equivalence-classes.md)</sup>
 
 <!--
 'see_also' sources:

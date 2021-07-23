@@ -1,9 +1,17 @@
 # Feature: Character Classes
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-classes.md)</sup>
+
+<!--
+'Character Classes' sources:
+  - [](../../src/features/character-classes/character-classes.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/character-classes/character-classes.md)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +20,16 @@
 
 A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to match a single character in the set.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-classes.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/character-classes/character-classes.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - `[…]` &mdash; Where `…` is one or more single characters or character class escapes, excluding `^` at the start and `-` between two entries in the set. Matches a character in the set. Example: `[abc]` matches `a`, `b`, or `c`.
 - <a id="negated-character-class"></a>`[^…]` &mdash; Where `…` is one or more single characters or character class escapes, excluding `-` between two entries in the set. Matches any character not in the set. Example: `[^abc]` matches `d`, `e`, or `f`, etc., but not `a`, `b`, or `c`.
@@ -29,12 +39,14 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ✔ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-character-classes) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-character-classes) |
+| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-character-classes) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-character-classes) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-classes.md)</sup>
 
 <!--
 'see_also' sources:

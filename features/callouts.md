@@ -1,9 +1,18 @@
 # Feature: Callouts
+<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/callouts.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/callouts.description.md)</sup>
+
+<!--
+'Callouts' sources:
+  - [](../../src/features/callouts.yml)
+  - [](../../src/features/callouts.description.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/callouts.yml)
 -->
+
 
 <!--
 'description' sources:
@@ -16,10 +25,10 @@ A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matc
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ❌ |
-| [.NET](../engines/dotnet.md) | ❌ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-callouts) |
+| [Boost.Regex](../engines/boost.regex.md) | [❌](engines/boost.regex.md#feature-callouts) |
+| [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-callouts) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-callouts) |
 
 
 [Anchors]: ./anchors.md

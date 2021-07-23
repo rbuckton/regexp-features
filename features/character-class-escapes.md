@@ -1,9 +1,17 @@
 # Feature: Character Class Escapes
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-escapes.md)</sup>
+
+<!--
+'Character Class Escapes' sources:
+  - [](../../src/features/character-classes/character-class-escapes.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/character-classes/character-class-escapes.md)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +20,16 @@
 
 A <dfn>Character Class Escape</dfn> is a single character escape that represents an entire character class. They can be used as an element of a [Character Class] or as an *Atom*. It is often the case that a lower-case escape character is the inclusive set, while an upper-case variant of the same character excludes that set.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-escapes.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/character-classes/character-class-escapes.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - `\d` &mdash; A decimal digit character in the range 0-9. Equivalent to `[0-9]`.
 - `\D` &mdash; Any character not in the range 0-9. Equivalent to `[^0-9]`.
@@ -32,12 +42,14 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ✔ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-character-class-escapes) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-character-class-escapes) |
+| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-character-class-escapes) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-character-class-escapes) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-escapes.md)</sup>
 
 <!--
 'see_also' sources:

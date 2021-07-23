@@ -1,9 +1,18 @@
 # Feature: Modifiers
+<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/modifiers.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/modifiers.description.md)</sup>
+
+<!--
+'Modifiers' sources:
+  - [](../../src/features/flags-and-modifiers/modifiers.yml)
+  - [](../../src/features/flags-and-modifiers/modifiers.description.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/flags-and-modifiers/modifiers.yml)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +21,16 @@
 
 <dfn>Modifiers</dfn> allow you to change the currently active [RegExp flags] within a subexpression.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/modifiers.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/flags-and-modifiers/modifiers.syntax.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - `(?imsx-imsx)` - Sets or unsets (using `-`) the specified [RegExp flags] starting at the current position until the next closing `)` or the end of the pattern. Example: `(?-i)A(?i)B(?-i)C` matches `ABC`, `AbC`.
 - `(?imsx-imsx:…)` - Sets or unsets (using `-`) the specified [RegExp flags] for the subexpression. Example: `(?-i:A(?i:B)C)` matches `ABC`, `AbC`.
@@ -28,12 +39,14 @@
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ✔ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-modifiers) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-modifiers) |
+| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-modifiers) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-modifiers) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/modifiers.yml)</sup>
 
 <!--
 'see_also' sources:

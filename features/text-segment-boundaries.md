@@ -1,9 +1,18 @@
 # Feature: Text Segment Boundaries
+<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/text-segment-boundaries.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/text-segment-boundaries.description.md)</sup>
+
+<!--
+'Text Segment Boundaries' sources:
+  - [](../../src/features/anchors-and-boundaries/text-segment-boundaries.yml)
+  - [](../../src/features/anchors-and-boundaries/text-segment-boundaries.description.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/anchors-and-boundaries/text-segment-boundaries.yml)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +21,16 @@
 
 A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the end of a text segment.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/text-segment-boundaries.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/anchors-and-boundaries/text-segment-boundaries.syntax.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - `\y` &mdash; Matches the start or the end of a text segment.
 - `\Y` &mdash; Matches when *not* at the start or the end of a text segment.
@@ -28,12 +39,14 @@ A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the en
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ❌ |
-| [Boost.Regex](../engines/boost.regex.md) | ❌ |
-| [.NET](../engines/dotnet.md) | ❌ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [❌](engines/pcre.md#feature-text-segment-boundaries) |
+| [Boost.Regex](../engines/boost.regex.md) | [❌](engines/boost.regex.md#feature-text-segment-boundaries) |
+| [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-text-segment-boundaries) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-text-segment-boundaries) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/text-segment-boundaries.yml)</sup>
 
 <!--
 'see_also' sources:

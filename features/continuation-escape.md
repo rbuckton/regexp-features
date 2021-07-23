@@ -1,9 +1,18 @@
 # Feature: Continuation Escape
+<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.description.md)</sup>
+
+<!--
+'Continuation Escape' sources:
+  - [](../../src/features/anchors-and-boundaries/continuation-escape.yml)
+  - [](../../src/features/anchors-and-boundaries/continuation-escape.description.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/anchors-and-boundaries/continuation-escape.yml)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +21,16 @@
 
 A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either the start of the input or the start of the last match.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/anchors-and-boundaries/continuation-escape.syntax.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - `\G` &mdash; Matches either the start of the input or the start of the last match.
 
@@ -27,12 +38,14 @@ A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either t
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ✔ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-continuation-escape) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-continuation-escape) |
+| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-continuation-escape) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-continuation-escape) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.yml)</sup>
 
 <!--
 'see_also' sources:

@@ -1,9 +1,18 @@
 # Feature: Line Comments
+<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/line-comments.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/line-comments.description.md)</sup>
+
+<!--
+'Line Comments' sources:
+  - [](../../src/features/comments/line-comments.yml)
+  - [](../../src/features/comments/line-comments.description.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/comments/line-comments.yml)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +21,16 @@
 
 A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and ending with `\n` (or the end of the pattern) that is ignored by pattern matching and can be used to document a pattern.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/line-comments.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/comments/line-comments.syntax.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - <code>#…**\\n**</code> &mdash; The rest of the line starting from `#` is removed from the pattern. Only supported when the `x` (extended mode) [RegExp flag] is set.
 
@@ -27,12 +38,14 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ❌ |
-| [.NET](../engines/dotnet.md) | ✔ |
-| [Oniguruma](../engines/oniguruma.md) | ❌ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-line-comments) |
+| [Boost.Regex](../engines/boost.regex.md) | [❌](engines/boost.regex.md#feature-line-comments) |
+| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-line-comments) |
+| [Oniguruma](../engines/oniguruma.md) | [❌](engines/oniguruma.md#feature-line-comments) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/line-comments.yml)</sup>
 
 <!--
 'see_also' sources:

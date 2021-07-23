@@ -1,9 +1,18 @@
 # Feature: Branch Reset
+<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/branch-reset.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/branch-reset.description.md)</sup>
+
+<!--
+'Branch Reset' sources:
+  - [](../../src/features/alternatives/branch-reset.yml)
+  - [](../../src/features/alternatives/branch-reset.description.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/alternatives/branch-reset.yml)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +21,16 @@
 
 A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [Alternative] (`|`), which affects numbering for [Backreferences] and captured results returned from the matching algorithm.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/branch-reset.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/alternatives/branch-reset.syntax.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - `(?|…)` &mdash; Resets the subexpression count at the start of each [Alternative].
 
@@ -27,10 +38,10 @@ A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [A
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ❌ |
-| [Oniguruma](../engines/oniguruma.md) | ❌ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-branch-reset) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-branch-reset) |
+| [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-branch-reset) |
+| [Oniguruma](../engines/oniguruma.md) | [❌](engines/oniguruma.md#feature-branch-reset) |
 
 
 [Anchors]: ./anchors.md

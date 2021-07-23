@@ -1,9 +1,17 @@
 # Feature: Collating Elements
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/collating-elements.md)</sup>
+
+<!--
+'Collating Elements' sources:
+  - [](../../src/features/character-classes/collating-elements.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/character-classes/collating-elements.md)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +20,16 @@
 
 A <dfn>Collating Element</dfn> is one or more characters that collate as a single unit.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/collating-elements.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/character-classes/collating-elements.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - <code>\[\[.*col*.\]\]</code> &mdash; Matches the collating element *col* if *col* is treated as a single collating unit in the current locale. Example: `[[.ae.]-c]` matches a single character in the range "ae"-"c". *col* may also be specified by a symbolic name.
 
@@ -27,12 +37,14 @@ A <dfn>Collating Element</dfn> is one or more characters that collate as a singl
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ❌ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ❌ |
-| [Oniguruma](../engines/oniguruma.md) | ❌ |
+| [PCRE](../engines/pcre.md) | [❌](engines/pcre.md#feature-collating-elements) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-collating-elements) |
+| [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-collating-elements) |
+| [Oniguruma](../engines/oniguruma.md) | [❌](engines/oniguruma.md#feature-collating-elements) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/collating-elements.md)</sup>
 
 <!--
 'see_also' sources:

@@ -1,9 +1,18 @@
 # Feature: Recursion
+<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/recursion.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/recursion.description.md)</sup>
+
+<!--
+'Recursion' sources:
+  - [](../../src/features/groups-and-backtracking/recursion.yml)
+  - [](../../src/features/groups-and-backtracking/recursion.description.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/groups-and-backtracking/recursion.yml)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +21,16 @@
 
 A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capture group] inside of itself, to handle cases such as matching balanced parenthesis or brackets, etc.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/recursion.syntax.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/groups-and-backtracking/recursion.syntax.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - <code>(?R)</code> &mdash; Reevaluates the entire pattern starting at the current position.
 - <code>(?0)</code> &mdash; Reevaluates the entire pattern starting at the current position.
@@ -28,10 +39,10 @@ A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capt
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ✔ |
-| [Boost.Regex](../engines/boost.regex.md) | ✔ |
-| [.NET](../engines/dotnet.md) | ✔ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-recursion) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-recursion) |
+| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-recursion) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-recursion) |
 
 
 [Anchors]: ./anchors.md

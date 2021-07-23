@@ -1,9 +1,17 @@
 # Feature: Character Class Intersection
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-intersection.md)</sup>
+
+<!--
+'Character Class Intersection' sources:
+  - [](../../src/features/character-classes/character-class-intersection.md)
+-->
+
 
 <!--
 'name' sources:
   - [](../../src/features/character-classes/character-class-intersection.md)
 -->
+
 
 <!--
 'description' sources:
@@ -12,14 +20,16 @@
 
 <dfn>Character Class Intersection</dfn> allows you to indicate that only characters that are in both [character classes] should match.
 
-#### Syntax
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-intersection.md)</sup>
 
 <!--
 'syntax' sources:
   - [](../../src/features/character-classes/character-class-intersection.md)
 -->
+
+
+> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - `[…&&…]` &mdash; Matches any character that is in both the left- and right-hand sets of `&&`.
 
@@ -27,12 +37,14 @@
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | ❌ |
-| [Boost.Regex](../engines/boost.regex.md) | ❌ |
-| [.NET](../engines/dotnet.md) | ❌ |
-| [Oniguruma](../engines/oniguruma.md) | ✔ |
+| [PCRE](../engines/pcre.md) | [❌](engines/pcre.md#feature-character-class-intersection) |
+| [Boost.Regex](../engines/boost.regex.md) | [❌](engines/boost.regex.md#feature-character-class-intersection) |
+| [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-character-class-intersection) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-character-class-intersection) |
 
-#### See Also
+### See Also
+
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-intersection.md)</sup>
 
 <!--
 'see_also' sources:
