@@ -1,32 +1,31 @@
 # Feature: Text Segment Boundaries
-<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/text-segment-boundaries.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/text-segment-boundaries.description.md)</sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/text-segment-boundaries.md)</sup>
 
 <!--
 'Text Segment Boundaries' sources:
-  - [](../../src/features/anchors-and-boundaries/text-segment-boundaries.yml)
-  - [](../../src/features/anchors-and-boundaries/text-segment-boundaries.description.md)
+  - [](../../src/features/anchors-and-boundaries/text-segment-boundaries.md)
 -->
 
 
 <!--
 'name' sources:
-  - [](../../src/features/anchors-and-boundaries/text-segment-boundaries.yml)
+  - [](../../src/features/anchors-and-boundaries/text-segment-boundaries.md)
 -->
 
 
 <!--
 'description' sources:
-  - [](../../src/features/anchors-and-boundaries/text-segment-boundaries.description.md)
+  - [](../../src/features/anchors-and-boundaries/text-segment-boundaries.md)
 -->
 
 A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the end of a text segment.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/text-segment-boundaries.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/text-segment-boundaries.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/anchors-and-boundaries/text-segment-boundaries.syntax.md)
+  - [](../../src/features/anchors-and-boundaries/text-segment-boundaries.md)
 -->
 
 
@@ -46,11 +45,11 @@ A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the en
 
 ### See Also
 
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/text-segment-boundaries.yml)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/text-segment-boundaries.md)</sup>
 
 <!--
 'see_also' sources:
-  - [](../../src/features/anchors-and-boundaries/text-segment-boundaries.yml)
+  - [](../../src/features/anchors-and-boundaries/text-segment-boundaries.md)
 -->
 
 - [Anchors]

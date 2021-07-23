@@ -1,32 +1,31 @@
 # Feature: Lookbehind
-<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookbehind.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookbehind.description.md)</sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookbehind.md)</sup>
 
 <!--
 'Lookbehind' sources:
-  - [](../../src/features/lookaround/lookbehind.yml)
-  - [](../../src/features/lookaround/lookbehind.description.md)
+  - [](../../src/features/lookaround/lookbehind.md)
 -->
 
 
 <!--
 'name' sources:
-  - [](../../src/features/lookaround/lookbehind.yml)
+  - [](../../src/features/lookaround/lookbehind.md)
 -->
 
 
 <!--
 'description' sources:
-  - [](../../src/features/lookaround/lookbehind.description.md)
+  - [](../../src/features/lookaround/lookbehind.md)
 -->
 
 A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided pattern would match the characters to the left of the current position.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookbehind.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookbehind.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/lookaround/lookbehind.syntax.md)
+  - [](../../src/features/lookaround/lookbehind.md)
 -->
 
 
@@ -46,11 +45,11 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
 
 ### See Also
 
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookbehind.yml)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookbehind.md)</sup>
 
 <!--
 'see_also' sources:
-  - [](../../src/features/lookaround/lookbehind.yml)
+  - [](../../src/features/lookaround/lookbehind.md)
 -->
 
 - [Lookahead]

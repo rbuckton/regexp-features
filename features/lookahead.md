@@ -1,32 +1,31 @@
 # Feature: Lookahead
-<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.description.md)</sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.md)</sup>
 
 <!--
 'Lookahead' sources:
-  - [](../../src/features/lookaround/lookahead.yml)
-  - [](../../src/features/lookaround/lookahead.description.md)
+  - [](../../src/features/lookaround/lookahead.md)
 -->
 
 
 <!--
 'name' sources:
-  - [](../../src/features/lookaround/lookahead.yml)
+  - [](../../src/features/lookaround/lookahead.md)
 -->
 
 
 <!--
 'description' sources:
-  - [](../../src/features/lookaround/lookahead.description.md)
+  - [](../../src/features/lookaround/lookahead.md)
 -->
 
 A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pattern would match the characters to the right of the current position.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/lookaround/lookahead.syntax.md)
+  - [](../../src/features/lookaround/lookahead.md)
 -->
 
 
@@ -46,11 +45,11 @@ A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pa
 
 ### See Also
 
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.yml)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.md)</sup>
 
 <!--
 'see_also' sources:
-  - [](../../src/features/lookaround/lookahead.yml)
+  - [](../../src/features/lookaround/lookahead.md)
 -->
 
 - [Lookbehind]

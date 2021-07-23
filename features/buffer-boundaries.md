@@ -1,32 +1,31 @@
 # Feature: Buffer Boundaries
-<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.description.md)</sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.md)</sup>
 
 <!--
 'Buffer Boundaries' sources:
-  - [](../../src/features/anchors-and-boundaries/buffer-boundaries.yml)
-  - [](../../src/features/anchors-and-boundaries/buffer-boundaries.description.md)
+  - [](../../src/features/anchors-and-boundaries/buffer-boundaries.md)
 -->
 
 
 <!--
 'name' sources:
-  - [](../../src/features/anchors-and-boundaries/buffer-boundaries.yml)
+  - [](../../src/features/anchors-and-boundaries/buffer-boundaries.md)
 -->
 
 
 <!--
 'description' sources:
-  - [](../../src/features/anchors-and-boundaries/buffer-boundaries.description.md)
+  - [](../../src/features/anchors-and-boundaries/buffer-boundaries.md)
 -->
 
 A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of the input. This differs slightly from `^` and `$` which can be affected by [RegExp flags] like `m`.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/anchors-and-boundaries/buffer-boundaries.syntax.md)
+  - [](../../src/features/anchors-and-boundaries/buffer-boundaries.md)
 -->
 
 
@@ -47,11 +46,11 @@ A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of t
 
 ### See Also
 
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.yml)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.md)</sup>
 
 <!--
 'see_also' sources:
-  - [](../../src/features/anchors-and-boundaries/buffer-boundaries.yml)
+  - [](../../src/features/anchors-and-boundaries/buffer-boundaries.md)
 -->
 
 - [Anchors]

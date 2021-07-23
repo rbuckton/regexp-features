@@ -1,32 +1,31 @@
 # Feature: Branch Reset
-<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/branch-reset.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/branch-reset.description.md)</sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/branch-reset.md)</sup>
 
 <!--
 'Branch Reset' sources:
-  - [](../../src/features/alternatives/branch-reset.yml)
-  - [](../../src/features/alternatives/branch-reset.description.md)
+  - [](../../src/features/alternatives/branch-reset.md)
 -->
 
 
 <!--
 'name' sources:
-  - [](../../src/features/alternatives/branch-reset.yml)
+  - [](../../src/features/alternatives/branch-reset.md)
 -->
 
 
 <!--
 'description' sources:
-  - [](../../src/features/alternatives/branch-reset.description.md)
+  - [](../../src/features/alternatives/branch-reset.md)
 -->
 
 A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [Alternative] (`|`), which affects numbering for [Backreferences] and captured results returned from the matching algorithm.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/branch-reset.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/branch-reset.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/alternatives/branch-reset.syntax.md)
+  - [](../../src/features/alternatives/branch-reset.md)
 -->
 
 

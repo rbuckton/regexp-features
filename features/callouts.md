@@ -1,22 +1,21 @@
 # Feature: Callouts
-<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/callouts.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/callouts.description.md)</sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/callouts.md)</sup>
 
 <!--
 'Callouts' sources:
-  - [](../../src/features/callouts.yml)
-  - [](../../src/features/callouts.description.md)
+  - [](../../src/features/callouts.md)
 -->
 
 
 <!--
 'name' sources:
-  - [](../../src/features/callouts.yml)
+  - [](../../src/features/callouts.md)
 -->
 
 
 <!--
 'description' sources:
-  - [](../../src/features/callouts.description.md)
+  - [](../../src/features/callouts.md)
 -->
 
 A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matching.

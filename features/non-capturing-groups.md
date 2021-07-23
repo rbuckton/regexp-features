@@ -1,32 +1,31 @@
 # Feature: Non-Capturing Groups
-<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-capturing-groups.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-capturing-groups.description.md)</sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-capturing-groups.md)</sup>
 
 <!--
 'Non-Capturing Groups' sources:
-  - [](../../src/features/groups-and-backtracking/non-capturing-groups.yml)
-  - [](../../src/features/groups-and-backtracking/non-capturing-groups.description.md)
+  - [](../../src/features/groups-and-backtracking/non-capturing-groups.md)
 -->
 
 
 <!--
 'name' sources:
-  - [](../../src/features/groups-and-backtracking/non-capturing-groups.yml)
+  - [](../../src/features/groups-and-backtracking/non-capturing-groups.md)
 -->
 
 
 <!--
 'description' sources:
-  - [](../../src/features/groups-and-backtracking/non-capturing-groups.description.md)
+  - [](../../src/features/groups-and-backtracking/non-capturing-groups.md)
 -->
 
 A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] but cannot be referenced using [Backreferences]. A Non-capturing Group is not captured by the matching algorithm.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-capturing-groups.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-capturing-groups.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/groups-and-backtracking/non-capturing-groups.syntax.md)
+  - [](../../src/features/groups-and-backtracking/non-capturing-groups.md)
 -->
 
 
@@ -45,11 +44,11 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 
 ### See Also
 
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-capturing-groups.yml)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-capturing-groups.md)</sup>
 
 <!--
 'see_also' sources:
-  - [](../../src/features/groups-and-backtracking/non-capturing-groups.yml)
+  - [](../../src/features/groups-and-backtracking/non-capturing-groups.md)
 -->
 
 - [Capturing Groups]

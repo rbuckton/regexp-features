@@ -1,32 +1,31 @@
 # Feature: Continuation Escape
-<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.description.md)</sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.md)</sup>
 
 <!--
 'Continuation Escape' sources:
-  - [](../../src/features/anchors-and-boundaries/continuation-escape.yml)
-  - [](../../src/features/anchors-and-boundaries/continuation-escape.description.md)
+  - [](../../src/features/anchors-and-boundaries/continuation-escape.md)
 -->
 
 
 <!--
 'name' sources:
-  - [](../../src/features/anchors-and-boundaries/continuation-escape.yml)
+  - [](../../src/features/anchors-and-boundaries/continuation-escape.md)
 -->
 
 
 <!--
 'description' sources:
-  - [](../../src/features/anchors-and-boundaries/continuation-escape.description.md)
+  - [](../../src/features/anchors-and-boundaries/continuation-escape.md)
 -->
 
 A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either the start of the input or the start of the last match.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/anchors-and-boundaries/continuation-escape.syntax.md)
+  - [](../../src/features/anchors-and-boundaries/continuation-escape.md)
 -->
 
 
@@ -45,11 +44,11 @@ A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either t
 
 ### See Also
 
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.yml)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.md)</sup>
 
 <!--
 'see_also' sources:
-  - [](../../src/features/anchors-and-boundaries/continuation-escape.yml)
+  - [](../../src/features/anchors-and-boundaries/continuation-escape.md)
 -->
 
 - [Anchors]

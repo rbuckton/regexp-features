@@ -1,32 +1,31 @@
 # Feature: Possessive Quantifiers
-<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.description.md)</sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.md)</sup>
 
 <!--
 'Possessive Quantifiers' sources:
-  - [](../../src/features/quantifiers/possessive-quantifiers.yml)
-  - [](../../src/features/quantifiers/possessive-quantifiers.description.md)
+  - [](../../src/features/quantifiers/possessive-quantifiers.md)
 -->
 
 
 <!--
 'name' sources:
-  - [](../../src/features/quantifiers/possessive-quantifiers.yml)
+  - [](../../src/features/quantifiers/possessive-quantifiers.md)
 -->
 
 
 <!--
 'description' sources:
-  - [](../../src/features/quantifiers/possessive-quantifiers.description.md)
+  - [](../../src/features/quantifiers/possessive-quantifiers.md)
 -->
 
 <dfn>Possessive Quantifiers</dfn> are like greedy (i.e., regular) [quantifiers], except that backtracking is not performed.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/quantifiers/possessive-quantifiers.syntax.md)
+  - [](../../src/features/quantifiers/possessive-quantifiers.md)
 -->
 
 
@@ -35,8 +34,8 @@
 - `*+` &mdash; Match zero or more characters without backtracking.
 - `++` &mdash; Match one or more characters without backtracking.
 - `?+` &mdash; Match zero or one characters without backtracking.
-- `{n,}+` &mdash; Match _n_ or more characters without backtracking.
-- `{n,m}+` &mdash; Match between _n_ and _m_ characters without backtracking.
+- <code>{<em>n</em>,}+</code> &mdash; Match _n_ or more characters without backtracking.
+- <code>{<em>n</em>,<em>m</em>}+</code> &mdash; Match between _n_ and _m_ characters without backtracking.
 
 ## Engines
 
@@ -49,11 +48,11 @@
 
 ### See Also
 
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.yml)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.md)</sup>
 
 <!--
 'see_also' sources:
-  - [](../../src/features/quantifiers/possessive-quantifiers.yml)
+  - [](../../src/features/quantifiers/possessive-quantifiers.md)
 -->
 
 - [Quantifiers]

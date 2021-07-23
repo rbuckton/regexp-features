@@ -1,32 +1,31 @@
 # Feature: Modifiers
-<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/modifiers.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/modifiers.description.md)</sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/modifiers.md)</sup>
 
 <!--
 'Modifiers' sources:
-  - [](../../src/features/flags-and-modifiers/modifiers.yml)
-  - [](../../src/features/flags-and-modifiers/modifiers.description.md)
+  - [](../../src/features/flags-and-modifiers/modifiers.md)
 -->
 
 
 <!--
 'name' sources:
-  - [](../../src/features/flags-and-modifiers/modifiers.yml)
+  - [](../../src/features/flags-and-modifiers/modifiers.md)
 -->
 
 
 <!--
 'description' sources:
-  - [](../../src/features/flags-and-modifiers/modifiers.description.md)
+  - [](../../src/features/flags-and-modifiers/modifiers.md)
 -->
 
 <dfn>Modifiers</dfn> allow you to change the currently active [RegExp flags] within a subexpression.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/modifiers.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/modifiers.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/flags-and-modifiers/modifiers.syntax.md)
+  - [](../../src/features/flags-and-modifiers/modifiers.md)
 -->
 
 
@@ -46,11 +45,11 @@
 
 ### See Also
 
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/modifiers.yml)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/modifiers.md)</sup>
 
 <!--
 'see_also' sources:
-  - [](../../src/features/flags-and-modifiers/modifiers.yml)
+  - [](../../src/features/flags-and-modifiers/modifiers.md)
 -->
 
 - [Flags]

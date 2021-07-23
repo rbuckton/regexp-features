@@ -1,32 +1,31 @@
 # Feature: Word Boundaries
-<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.description.md)</sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.md)</sup>
 
 <!--
 'Word Boundaries' sources:
-  - [](../../src/features/anchors-and-boundaries/word-boundaries.yml)
-  - [](../../src/features/anchors-and-boundaries/word-boundaries.description.md)
+  - [](../../src/features/anchors-and-boundaries/word-boundaries.md)
 -->
 
 
 <!--
 'name' sources:
-  - [](../../src/features/anchors-and-boundaries/word-boundaries.yml)
+  - [](../../src/features/anchors-and-boundaries/word-boundaries.md)
 -->
 
 
 <!--
 'description' sources:
-  - [](../../src/features/anchors-and-boundaries/word-boundaries.description.md)
+  - [](../../src/features/anchors-and-boundaries/word-boundaries.md)
 -->
 
 A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a word.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/anchors-and-boundaries/word-boundaries.syntax.md)
+  - [](../../src/features/anchors-and-boundaries/word-boundaries.md)
 -->
 
 
@@ -46,11 +45,11 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 
 ### See Also
 
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.yml)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.md)</sup>
 
 <!--
 'see_also' sources:
-  - [](../../src/features/anchors-and-boundaries/word-boundaries.yml)
+  - [](../../src/features/anchors-and-boundaries/word-boundaries.md)
 -->
 
 - [Anchors]

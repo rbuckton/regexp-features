@@ -1,32 +1,31 @@
 # Feature: Flags
-<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/flags.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/flags.description.md)</sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/flags.md)</sup>
 
 <!--
 'Flags' sources:
-  - [](../../src/features/flags-and-modifiers/flags.yml)
-  - [](../../src/features/flags-and-modifiers/flags.description.md)
+  - [](../../src/features/flags-and-modifiers/flags.md)
 -->
 
 
 <!--
 'name' sources:
-  - [](../../src/features/flags-and-modifiers/flags.yml)
+  - [](../../src/features/flags-and-modifiers/flags.md)
 -->
 
 
 <!--
 'description' sources:
-  - [](../../src/features/flags-and-modifiers/flags.description.md)
+  - [](../../src/features/flags-and-modifiers/flags.md)
 -->
 
 <dfn>Flags</dfn> control certain aspects of the matching behavior of a pattern.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/flags.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/flags.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/flags-and-modifiers/flags.syntax.md)
+  - [](../../src/features/flags-and-modifiers/flags.md)
 -->
 
 
@@ -49,11 +48,11 @@ The following flags are supported:
 
 ### See Also
 
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/flags.yml)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/flags.md)</sup>
 
 <!--
 'see_also' sources:
-  - [](../../src/features/flags-and-modifiers/flags.yml)
+  - [](../../src/features/flags-and-modifiers/flags.md)
 -->
 
 - [Modifiers]

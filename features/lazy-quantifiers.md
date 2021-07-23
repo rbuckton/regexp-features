@@ -1,32 +1,31 @@
 # Feature: Lazy Quantifiers
-<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/lazy-quantifiers.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/lazy-quantifiers.description.md)</sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/lazy-quantifiers.md)</sup>
 
 <!--
 'Lazy Quantifiers' sources:
-  - [](../../src/features/quantifiers/lazy-quantifiers.yml)
-  - [](../../src/features/quantifiers/lazy-quantifiers.description.md)
+  - [](../../src/features/quantifiers/lazy-quantifiers.md)
 -->
 
 
 <!--
 'name' sources:
-  - [](../../src/features/quantifiers/lazy-quantifiers.yml)
+  - [](../../src/features/quantifiers/lazy-quantifiers.md)
 -->
 
 
 <!--
 'description' sources:
-  - [](../../src/features/quantifiers/lazy-quantifiers.description.md)
+  - [](../../src/features/quantifiers/lazy-quantifiers.md)
 -->
 
 <dfn>Lazy Quantifiers</dfn> specify repetition of an *Atom*, but attempt to match as few instances of the preceding *Atom* as possible to satisfy the pattern before advancing.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/lazy-quantifiers.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/lazy-quantifiers.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/quantifiers/lazy-quantifiers.syntax.md)
+  - [](../../src/features/quantifiers/lazy-quantifiers.md)
 -->
 
 
@@ -35,9 +34,9 @@
 - `*?` &mdash; Matches the preceding *Atom* zero or more times.
 - `+?` &mdash; Matches the preceding *Atom* one or more times.
 - `??` &mdash; Matches the preceding *Atom* zero or one times.
-- <code>{*n*}?</code> &mdash; Where *n* is an integer. Matches the preceding *Atom* exactly *n* times.
-- <code>{*n*,}?</code> &mdash; Where *n* is an integer. Matches the preceding *Atom* at-least *n* times.
-- <code>{*n*,*m*}?</code> &mdash; Where *n* and *m* are integers, and *m* >= *n*. Matches the preceding *Atom* at-least *n* times and at-most *m* times.
+- <code>{<em>n</em>}?</code> &mdash; Where *n* is an integer. Matches the preceding *Atom* exactly *n* times.
+- <code>{<em>n</em>,}?</code> &mdash; Where *n* is an integer. Matches the preceding *Atom* at-least *n* times.
+- <code>{<em>n</em>,<em>n</em>}?</code> &mdash; Where *n* and *m* are integers, and *m* >= *n*. Matches the preceding *Atom* at-least *n* times and at-most *m* times.
 
 ## Engines
 
@@ -50,11 +49,11 @@
 
 ### See Also
 
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/lazy-quantifiers.yml)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/lazy-quantifiers.md)</sup>
 
 <!--
 'see_also' sources:
-  - [](../../src/features/quantifiers/lazy-quantifiers.yml)
+  - [](../../src/features/quantifiers/lazy-quantifiers.md)
 -->
 
 - [Quantifiers]

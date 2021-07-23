@@ -1,39 +1,38 @@
 # Feature: Quoted Characters
-<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quoted-characters.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/quoted-characters.description.md)</sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/quoted-characters.md)</sup>
 
 <!--
 'Quoted Characters' sources:
-  - [](../../src/features/quoted-characters.yml)
-  - [](../../src/features/quoted-characters.description.md)
+  - [](../../src/features/quoted-characters.md)
 -->
 
 
 <!--
 'name' sources:
-  - [](../../src/features/quoted-characters.yml)
+  - [](../../src/features/quoted-characters.md)
 -->
 
 
 <!--
 'description' sources:
-  - [](../../src/features/quoted-characters.description.md)
+  - [](../../src/features/quoted-characters.md)
 -->
 
 <dfn>Quoted Characters</dfn> are a sequence of characters treated as literal characters rather than RegExp characters.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quoted-characters.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quoted-characters.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/quoted-characters.syntax.md)
+  - [](../../src/features/quoted-characters.md)
 -->
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
 - `\Q … \E` &mdash; All characters following `\Q` and preceding the next `\E` are treated as literal characters. Example: `\Q.+\E` matches `.+` but not `aa`.
-- `\Q … ` &mdash; If there is no trailing `\E`,  all characters until the end of the pattern are treated as literal characters.
+- `\Q … ` &mdash; If there is no trailing `\E`, all characters until the end of the pattern are treated as literal characters.
 
 ## Engines
 

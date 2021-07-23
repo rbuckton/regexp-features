@@ -31,7 +31,7 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-- <code>\[\[:^*name*:\]\]</code> &mdash; Where *name* is in a set of predefined names. Matches any character not in the set.
+- <code>\[\[:^<em>name</em>:\]\]</code> &mdash; Where *name* is in a set of predefined names. Matches any character not in the set.
 
 ## Engines
 

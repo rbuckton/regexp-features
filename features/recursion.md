@@ -1,32 +1,31 @@
 # Feature: Recursion
-<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/recursion.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/recursion.description.md)</sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/recursion.md)</sup>
 
 <!--
 'Recursion' sources:
-  - [](../../src/features/groups-and-backtracking/recursion.yml)
-  - [](../../src/features/groups-and-backtracking/recursion.description.md)
+  - [](../../src/features/groups-and-backtracking/recursion.md)
 -->
 
 
 <!--
 'name' sources:
-  - [](../../src/features/groups-and-backtracking/recursion.yml)
+  - [](../../src/features/groups-and-backtracking/recursion.md)
 -->
 
 
 <!--
 'description' sources:
-  - [](../../src/features/groups-and-backtracking/recursion.description.md)
+  - [](../../src/features/groups-and-backtracking/recursion.md)
 -->
 
 A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capture group] inside of itself, to handle cases such as matching balanced parenthesis or brackets, etc.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/recursion.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/recursion.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/groups-and-backtracking/recursion.syntax.md)
+  - [](../../src/features/groups-and-backtracking/recursion.md)
 -->
 
 

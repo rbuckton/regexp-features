@@ -1,32 +1,31 @@
 # Feature: Comments
-<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/comments.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/comments.description.md)</sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/comments.md)</sup>
 
 <!--
 'Comments' sources:
-  - [](../../src/features/comments/comments.yml)
-  - [](../../src/features/comments/comments.description.md)
+  - [](../../src/features/comments/comments.md)
 -->
 
 
 <!--
 'name' sources:
-  - [](../../src/features/comments/comments.yml)
+  - [](../../src/features/comments/comments.md)
 -->
 
 
 <!--
 'description' sources:
-  - [](../../src/features/comments/comments.description.md)
+  - [](../../src/features/comments/comments.md)
 -->
 
 A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matching and can be used to document a pattern.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/comments.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/comments.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/comments/comments.syntax.md)
+  - [](../../src/features/comments/comments.md)
 -->
 
 
@@ -45,11 +44,11 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 
 ### See Also
 
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/comments.yml)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/comments.md)</sup>
 
 <!--
 'see_also' sources:
-  - [](../../src/features/comments/comments.yml)
+  - [](../../src/features/comments/comments.md)
 -->
 
 - [Line Comments]

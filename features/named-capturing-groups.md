@@ -1,39 +1,38 @@
 # Feature: Named Capturing Groups
-<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/named-capturing-groups.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/named-capturing-groups.description.md)</sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/named-capturing-groups.md)</sup>
 
 <!--
 'Named Capturing Groups' sources:
-  - [](../../src/features/groups-and-backtracking/named-capturing-groups.yml)
-  - [](../../src/features/groups-and-backtracking/named-capturing-groups.description.md)
+  - [](../../src/features/groups-and-backtracking/named-capturing-groups.md)
 -->
 
 
 <!--
 'name' sources:
-  - [](../../src/features/groups-and-backtracking/named-capturing-groups.yml)
+  - [](../../src/features/groups-and-backtracking/named-capturing-groups.md)
 -->
 
 
 <!--
 'description' sources:
-  - [](../../src/features/groups-and-backtracking/named-capturing-groups.description.md)
+  - [](../../src/features/groups-and-backtracking/named-capturing-groups.md)
 -->
 
 A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and returned by the matching algorithm. A Named Capturing Group is also an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by name.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/named-capturing-groups.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/named-capturing-groups.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/groups-and-backtracking/named-capturing-groups.syntax.md)
+  - [](../../src/features/groups-and-backtracking/named-capturing-groups.md)
 -->
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-- <code>(?\<*name*\>…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
-- <code>(?'*name*'…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
+- <code>(?\<<em>name</em>\>…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
+- <code>(?'<em>name</em>'…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
 
 ## Engines
 
@@ -46,11 +45,11 @@ A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and r
 
 ### See Also
 
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/named-capturing-groups.yml)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/named-capturing-groups.md)</sup>
 
 <!--
 'see_also' sources:
-  - [](../../src/features/groups-and-backtracking/named-capturing-groups.yml)
+  - [](../../src/features/groups-and-backtracking/named-capturing-groups.md)
 -->
 
 - [Capturing Groups]

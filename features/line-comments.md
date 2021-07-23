@@ -1,38 +1,37 @@
 # Feature: Line Comments
-<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/line-comments.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/line-comments.description.md)</sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/line-comments.md)</sup>
 
 <!--
 'Line Comments' sources:
-  - [](../../src/features/comments/line-comments.yml)
-  - [](../../src/features/comments/line-comments.description.md)
+  - [](../../src/features/comments/line-comments.md)
 -->
 
 
 <!--
 'name' sources:
-  - [](../../src/features/comments/line-comments.yml)
+  - [](../../src/features/comments/line-comments.md)
 -->
 
 
 <!--
 'description' sources:
-  - [](../../src/features/comments/line-comments.description.md)
+  - [](../../src/features/comments/line-comments.md)
 -->
 
 A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and ending with `\n` (or the end of the pattern) that is ignored by pattern matching and can be used to document a pattern.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/line-comments.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/line-comments.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/comments/line-comments.syntax.md)
+  - [](../../src/features/comments/line-comments.md)
 -->
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-- <code>#…**\\n**</code> &mdash; The rest of the line starting from `#` is removed from the pattern. Only supported when the `x` (extended mode) [RegExp flag] is set.
+- <code>#…<strong>\\n</strong></code> &mdash; The rest of the line starting from `#` is removed from the pattern. Only supported when the `x` (extended mode) [RegExp flag] is set.
 
 ## Engines
 
@@ -45,11 +44,11 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 
 ### See Also
 
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/line-comments.yml)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/line-comments.md)</sup>
 
 <!--
 'see_also' sources:
-  - [](../../src/features/comments/line-comments.yml)
+  - [](../../src/features/comments/line-comments.md)
 -->
 
 - [Comments]

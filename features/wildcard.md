@@ -1,32 +1,31 @@
 # Feature: Wildcard
-<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/wildcard.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/wildcard.description.md)</sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/wildcard.md)</sup>
 
 <!--
 'Wildcard' sources:
-  - [](../../src/features/wildcard.yml)
-  - [](../../src/features/wildcard.description.md)
+  - [](../../src/features/wildcard.md)
 -->
 
 
 <!--
 'name' sources:
-  - [](../../src/features/wildcard.yml)
+  - [](../../src/features/wildcard.md)
 -->
 
 
 <!--
 'description' sources:
-  - [](../../src/features/wildcard.description.md)
+  - [](../../src/features/wildcard.md)
 -->
 
 A <dfn>Wildcard</dfn> matches a single, non-newline character.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/wildcard.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/wildcard.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/wildcard.syntax.md)
+  - [](../../src/features/wildcard.md)
 -->
 
 

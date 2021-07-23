@@ -1,32 +1,31 @@
 # Feature: Non-Backtracking Expressions
-<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-backtracking-expressions.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-backtracking-expressions.description.md)</sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-backtracking-expressions.md)</sup>
 
 <!--
 'Non-Backtracking Expressions' sources:
-  - [](../../src/features/groups-and-backtracking/non-backtracking-expressions.yml)
-  - [](../../src/features/groups-and-backtracking/non-backtracking-expressions.description.md)
+  - [](../../src/features/groups-and-backtracking/non-backtracking-expressions.md)
 -->
 
 
 <!--
 'name' sources:
-  - [](../../src/features/groups-and-backtracking/non-backtracking-expressions.yml)
+  - [](../../src/features/groups-and-backtracking/non-backtracking-expressions.md)
 -->
 
 
 <!--
 'description' sources:
-  - [](../../src/features/groups-and-backtracking/non-backtracking-expressions.description.md)
+  - [](../../src/features/groups-and-backtracking/non-backtracking-expressions.md)
 -->
 
 A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring patterns, and will not backtrack in the event of a failed match. This is often used to improve performance.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-backtracking-expressions.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-backtracking-expressions.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/groups-and-backtracking/non-backtracking-expressions.syntax.md)
+  - [](../../src/features/groups-and-backtracking/non-backtracking-expressions.md)
 -->
 
 

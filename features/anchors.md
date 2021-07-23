@@ -1,32 +1,31 @@
 # Feature: Anchors
-<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/anchors.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/anchors.description.md)</sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/anchors.md)</sup>
 
 <!--
 'Anchors' sources:
-  - [](../../src/features/anchors-and-boundaries/anchors.yml)
-  - [](../../src/features/anchors-and-boundaries/anchors.description.md)
+  - [](../../src/features/anchors-and-boundaries/anchors.md)
 -->
 
 
 <!--
 'name' sources:
-  - [](../../src/features/anchors-and-boundaries/anchors.yml)
+  - [](../../src/features/anchors-and-boundaries/anchors.md)
 -->
 
 
 <!--
 'description' sources:
-  - [](../../src/features/anchors-and-boundaries/anchors.description.md)
+  - [](../../src/features/anchors-and-boundaries/anchors.md)
 -->
 
 <dfn>Anchors</dfn> match the start or end of a line.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/anchors.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/anchors.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/anchors-and-boundaries/anchors.syntax.md)
+  - [](../../src/features/anchors-and-boundaries/anchors.md)
 -->
 
 
@@ -46,11 +45,11 @@
 
 ### See Also
 
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/anchors.yml)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/anchors.md)</sup>
 
 <!--
 'see_also' sources:
-  - [](../../src/features/anchors-and-boundaries/anchors.yml)
+  - [](../../src/features/anchors-and-boundaries/anchors.md)
 -->
 
 - [Buffer Boundaries]

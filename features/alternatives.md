@@ -1,32 +1,31 @@
 # Feature: Alternatives
-<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/alternatives.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/alternatives.description.md)</sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/alternatives.md)</sup>
 
 <!--
 'Alternatives' sources:
-  - [](../../src/features/alternatives/alternatives.yml)
-  - [](../../src/features/alternatives/alternatives.description.md)
+  - [](../../src/features/alternatives/alternatives.md)
 -->
 
 
 <!--
 'name' sources:
-  - [](../../src/features/alternatives/alternatives.yml)
+  - [](../../src/features/alternatives/alternatives.md)
 -->
 
 
 <!--
 'description' sources:
-  - [](../../src/features/alternatives/alternatives.description.md)
+  - [](../../src/features/alternatives/alternatives.md)
 -->
 
 An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first branch of a pattern fails to match, each alternative is attempted from left to right until a match is found.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/alternatives.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/alternatives.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/alternatives/alternatives.syntax.md)
+  - [](../../src/features/alternatives/alternatives.md)
 -->
 
 
