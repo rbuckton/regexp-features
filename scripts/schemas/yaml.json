@@ -19,7 +19,8 @@
                 "links": { "type": "array", "items": { "$ref": "#/definitions/HrefLinkDefinition" } },
                 "content": { "type": "string" }
             },
-            "required": ["language"]
+            "required": ["language"],
+            "additionalProperties": false
         },
         "FeatureToc": {
             "$id": "#FeatureToc",
@@ -40,7 +41,8 @@
                 "links": { "type": "array", "items": { "$ref": "#/definitions/HrefLinkDefinition" } },
                 "content": { "type": "string" }
             },
-            "required": ["feature"]
+            "required": ["feature"],
+            "additionalProperties": false
         },
         "EngineToc": {
             "$id": "#EngineToc",
@@ -78,7 +80,8 @@
                 "links": { "type": "array", "items": { "$ref": "#/definitions/HrefLinkDefinition" } },
                 "content": { "type": "string" }
             },
-            "required": ["engine", "feature"]
+            "required": ["engine", "feature"],
+            "additionalProperties": false
         },
 
         "LanguageLinkDefinition": {
@@ -87,7 +90,8 @@
                 "language": { "type": "string" },
                 "name": { "type": "string" }
             },
-            "required": ["language"]
+            "required": ["language"],
+            "additionalProperties": false
         },
         "FeatureLinkDefinition": {
             "type": "object",
@@ -95,7 +99,8 @@
                 "feature": { "type": "string" },
                 "name": { "type": "string" }
             },
-            "required": ["feature"]
+            "required": ["feature"],
+            "additionalProperties": false
         },
         "EngineLinkDefinition": {
             "type": "object",
@@ -103,7 +108,8 @@
                 "engine": { "type": "string" },
                 "name": { "type": "string" }
             },
-            "required": ["engine"]
+            "required": ["engine"],
+            "additionalProperties": false
         },
         "HrefLinkDefinition": {
             "type": "object",
@@ -111,7 +117,8 @@
                 "href": { "type": "string" },
                 "name": { "type": "string" }
             },
-            "required": ["href"]
+            "required": ["href"],
+            "additionalProperties": false
         },
         "LinkDefinition": {
             "oneOf": [
