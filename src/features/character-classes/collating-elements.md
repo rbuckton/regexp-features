@@ -22,4 +22,4 @@ syntax: *content.syntax
 A <dfn>Collating Element</dfn> is one or more characters that collate as a single unit.
 
 # syntax
-- <code>\[\[.*col*.\]\]</code> &mdash; Matches the collating element *col* if *col* is treated as a single collating unit in the current locale. Example: `[[.ae.]-c]` matches a single character in the range "ae"-"c". *col* may also be specified by a symbolic name.
+- <code>\[\[.<em>col</em>.\]\]</code> &mdash; Matches the collating element *col* if *col* is treated as a single collating unit in the current locale. Example: `[[.ae.]-c]` matches a single character in the range "ae"-"c". *col* may also be specified by a symbolic name.

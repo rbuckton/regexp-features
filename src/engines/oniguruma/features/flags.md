@@ -18,6 +18,6 @@ The following flags are supported:
 - `D` &mdash; ASCII-only digits (when using `\d`, `\p{Digit}`, `[[:digit:]]`)
 - `S` &mdash; ASCII-only space (when using `\s`, `\p{Space}`, `[[:space:]]`)
 - `P` &mdash; ASCII-only POSIX properties (includes `W`, `D`, and `S` flags)
-- <code>y{*?*}</code> &mdash; Changes meaning of `\X`, `\y`, and `\Y` in unicode mode:
+- <code>y{<em>?</em>}</code> &mdash; Changes meaning of `\X`, `\y`, and `\Y` in unicode mode:
   - `y{g}` &mdash; Extended Grapheme Cluster mode
   - `y{w}` &mdash; Word mode.

@@ -1,8 +1,0 @@
-### YamlMime:Feature
-feature: possessive-quantifiers
-name: Possessive Quantifiers
-aliases:
-- Possessive Quantifier
-see_also:
-- quantifiers
-- lazy-quantifiers

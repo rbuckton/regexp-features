@@ -9,22 +9,22 @@ syntax: *content.syntax
 #example: *content.example
 ---
 # syntax
-- <code>\\k\<*n*+*level*\></code> &mdash; Where *n* is an integer >= 1 and *level* is an integer >= 0. Matches the same string as the [capture group] *n* at the recursion level relative to the referenced [capture group].
-- <code>\\k'*n*+*level*'</code> &mdash; Where *n* is an integer >= 1 and *level* is an integer >= 0. Matches the same string as the [capture group] *n* at the recursion level relative to the referenced [capture group].
-- <code>\\k\<*n*-*level*\></code> &mdash; Where *n* is an integer >= 1 and *level* is an integer >= 0. Matches the same string as the [capture group] *n* at the recursion level relative to the referenced [capture group].
-- <code>\\k'*n*-*level*'</code> &mdash; Where *n* is an integer >= 1 and *level* is an integer >= 0. Matches the same string as the [capture group] *n* at the recursion level relative to the referenced [capture group].
-- <code>\\k\<*name*\></code> &mdash; Where *level* is an integer >= 0. Matches the same string as the [named capture group] with the name *name* at the recursion level relative to the referenced [named capture group].
-- <code>\\k'*name*'</code> &mdash; Where *level* is an integer >= 0. Matches the same string as the [named capture group] with the name *name* at the recursion level relative to the referenced [named capture group].
-- <code>\\g\<*n*\></code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is *n*.
-- <code>\\g'*n*'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is *n*.
+- <code>\\k\<<em>n</em>+<em>n</em>\></code> &mdash; Where *n* is an integer >= 1 and *level* is an integer >= 0. Matches the same string as the [capture group] *n* at the recursion level relative to the referenced [capture group].
+- <code>\\k'<em>n</em>+<em>n</em>'</code> &mdash; Where *n* is an integer >= 1 and *level* is an integer >= 0. Matches the same string as the [capture group] *n* at the recursion level relative to the referenced [capture group].
+- <code>\\k\<<em>n</em>-<em>n</em>\></code> &mdash; Where *n* is an integer >= 1 and *level* is an integer >= 0. Matches the same string as the [capture group] *n* at the recursion level relative to the referenced [capture group].
+- <code>\\k'<em>n</em>-<em>n</em>'</code> &mdash; Where *n* is an integer >= 1 and *level* is an integer >= 0. Matches the same string as the [capture group] *n* at the recursion level relative to the referenced [capture group].
+- <code>\\k\<<em>name</em>\></code> &mdash; Where *level* is an integer >= 0. Matches the same string as the [named capture group] with the name *name* at the recursion level relative to the referenced [named capture group].
+- <code>\\k'<em>name</em>'</code> &mdash; Where *level* is an integer >= 0. Matches the same string as the [named capture group] with the name *name* at the recursion level relative to the referenced [named capture group].
+- <code>\\g\<<em>n</em>\></code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is *n*.
+- <code>\\g'<em>n</em>'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is *n*.
 - `\g<0>` &mdash; Evaluates the entire pattern at the current position.
 - `\g'0'` &mdash; Evaluates the entire pattern at the current position.
-- <code>\\g\<*-n*\></code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the left of the current *Atom*.
-- <code>\\g'*-n*'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the left of the current *Atom*.
-- <code>\\g\<*+n*\></code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*.
-- <code>\\g'*+n*'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*.
-- <code>\\g\<*name*\></code> &mdash; Evaluates the [named capture group] with the provided *name*.
-- <code>\\g'*name*'</code> &mdash; Evaluates the [named capture group] with the provided *name*.
+- <code>\\g\<<em>-n</em>\></code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the left of the current *Atom*.
+- <code>\\g'<em>-n</em>'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the left of the current *Atom*.
+- <code>\\g\<<em>+n</em>\></code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*.
+- <code>\\g'<em>+n</em>'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*.
+- <code>\\g\<<em>name</em>\></code> &mdash; Evaluates the [named capture group] with the provided *name*.
+- <code>\\g'<em>name</em>'</code> &mdash; Evaluates the [named capture group] with the provided *name*.
 
 > NOTE: Left-most recursive calls are forbidden:
 > - `(?<name>a|\g<name>b)` - error

@@ -17,18 +17,18 @@ For more information on callouts, see the [Oniguruma Callouts API](https://githu
 # syntax
 
 - Callouts of contents:
-  - <code>(?{…*contents*…})</code> &mdash; Invokes the callout with the provided *contents*.
-  - <code>(?{…*contents*…}*D*)</code> &mdash; Invokes the callout with the provided *contents* and direction flag character *D*. The direction flag must be one of:
+  - <code>(?{…<em>contents</em>…})</code> &mdash; Invokes the callout with the provided *contents*.
+  - <code>(?{…<em>contents</em>…}<em>D</em>)</code> &mdash; Invokes the callout with the provided *contents* and direction flag character *D*. The direction flag must be one of:
     - `X` &mdash; Invoked while progressing and retracting.
     - `<` &mdash; Invoked while retracting.
     - `>` &mdash; Invoked while progressing.
-  - <code>(?{…*contents*…}[*tag*])</code> &mdash; Invokes the callout with the provided *contents* and *tag*.
-  - <code>(?{…*contents*…}[*tag*]*D*)</code> &mdash; Invokes the callout with the provided *contents*, *tag*, and direction flag character *D*. The direction flag must be one of:
+  - <code>(?{…<em>contents</em>…}[<em>tag</em>])</code> &mdash; Invokes the callout with the provided *contents* and *tag*.
+  - <code>(?{…<em>contents</em>…}[<em>tag</em>]<em>D</em>)</code> &mdash; Invokes the callout with the provided *contents*, *tag*, and direction flag character *D*. The direction flag must be one of:
     - `X` &mdash; Invoked while progressing and retracting.
     - `<` &mdash; Invoked while retracting.
     - `>` &mdash; Invoked while progressing.
 - Callouts of *name*:
- - <code>(\**name*)</code> &mdash; Invokes the callout with the provided *name*.
- - <code>(\**name*{*args*…})</code> &mdash; Invokes the callout with the provided *name* and *args*.
- - <code>(\**name*[*tag*])</code> &mdash; Invokes the callout with the provided *name* and *tag*.
- - <code>(\**name*[*tag*]{*args*…})</code> &mdash; Invokes the callout with the provided *name*, *tag*, and *args*.
+ - <code>(\*<em>name</em>)</code> &mdash; Invokes the callout with the provided *name*.
+ - <code>(\*<em>name</em>{<em>args</em>…})</code> &mdash; Invokes the callout with the provided *name* and *args*.
+ - <code>(\*<em>name</em>[<em>tag</em>])</code> &mdash; Invokes the callout with the provided *name* and *tag*.
+ - <code>(\*<em>name</em>[<em>tag</em>]{<em>args</em>…})</code> &mdash; Invokes the callout with the provided *name*, *tag*, and *args*.

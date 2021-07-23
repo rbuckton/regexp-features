@@ -1,8 +1,0 @@
-### YamlMime:Feature
-feature: non-capturing-groups
-name: Non-Capturing Groups
-aliases:
-- Non-Capturing group
-see_also:
-- capturing-groups
-- named-capturing-groups

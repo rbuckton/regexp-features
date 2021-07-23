@@ -10,5 +10,5 @@ syntax: *content.syntax
 ---
 # syntax
 
-- <code>\\p{*name*}</code> &mdash; Where *name* is a predefined unicode property name. Matches a character that has the unicode property *name*.
-- <code>\\P{*name*}</code> &mdash; Where *name* is a predefined unicode property name. Matches a character that does not have the unicode property *name*.
+- <code>\\p{<em>name</em>}</code> &mdash; Where *name* is a predefined unicode property name. Matches a character that has the unicode property *name*.
+- <code>\\P{<em>name</em>}</code> &mdash; Where *name* is a predefined unicode property name. Matches a character that does not have the unicode property *name*.
