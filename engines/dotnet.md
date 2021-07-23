@@ -481,7 +481,7 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 
 - `[…]` &mdash; Where `…` is one or more single characters or character class escapes, excluding `^` at the start and `-` between two entries in the set. Matches a character in the set. Example: `[abc]` matches `a`, `b`, or `c`.
 - <a id="negated-character-class"></a>`[^…]` &mdash; Where `…` is one or more single characters or character class escapes, excluding `-` between two entries in the set. Matches any character not in the set. Example: `[^abc]` matches `d`, `e`, or `f`, etc., but not `a`, `b`, or `c`.
-- <a id="character-class-range"></a><code>[*a*-*z*]</code> &mdash; Where *a* and *z* are single characters or character escapes. Matches any character in the range between *a* and *z* (inclusive). Example: `[a-c]` matches `a`, `b`, or `c`, but not `d`.
+- <a id="character-class-range"></a><code>[<em>a</em>-<em>z</em>]</code> &mdash; Where *a* and *z* are single characters or character escapes. Matches any character in the range between *a* and *z* (inclusive). Example: `[a-c]` matches `a`, `b`, or `c`, but not `d`.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-classes.md)</sup>
@@ -1180,11 +1180,11 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 
 <!--
 'name' sources:
-  - [](../../src/features/groups-and-backtracking/capturing-groups.yml)
+  - [](../../src/features/groups-and-backtracking/capturing-groups.md)
 -->
 
 <sup>[Main article][article:Capturing Groups] \| [Reference][reference:Capturing Groups] \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/dotnet/features/capturing-groups.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.description.md)</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/dotnet/features/capturing-groups.md)</sup>
 
 
 <!--
@@ -1195,29 +1195,29 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 
 <!--
 'description' sources:
-  - [](../../src/features/groups-and-backtracking/capturing-groups.description.md)
+  - [](../../src/features/groups-and-backtracking/capturing-groups.md)
 -->
 
 
 A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by index. A Capturing Group can be captured and returned by the matching algorithm.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/groups-and-backtracking/capturing-groups.syntax.md)
+  - [](../../src/features/groups-and-backtracking/capturing-groups.md)
 -->
 
 
 - `(…)` &mdash; Groups the subexpression as a single *Atom*. The result is captured and returned by the matching algorithm.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.yml)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.md)</sup>
 
 <!--
 'see_also' sources:
-  - [](../../src/features/groups-and-backtracking/capturing-groups.yml)
+  - [](../../src/features/groups-and-backtracking/capturing-groups.md)
 -->
 
 
@@ -1331,11 +1331,11 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 
 <!--
 'name' sources:
-  - [](../../src/features/groups-and-backtracking/backreferences.yml)
+  - [](../../src/features/groups-and-backtracking/backreferences.md)
 -->
 
 <sup>[Main article][article:Backreferences] \| [Reference][reference:Backreferences] \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/dotnet/features/backreferences.md), [3](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.md)</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/dotnet/features/backreferences.md)</sup>
 
 
 <!--
@@ -1353,11 +1353,11 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 <dfn>Backreferences</dfn> allow a pattern to re-match a previously matched capture group<sup>[1][Capturing Groups] [2][Named Capturing Groups]</sup> either by number (_n_) or by _name_.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/groups-and-backtracking/backreferences.syntax.md)
+  - [](../../src/features/groups-and-backtracking/backreferences.md)
 -->
 
 
@@ -1365,11 +1365,11 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 - <code>\\k\<*name*\></code> &mdash; Matches the same string as the [named capture group] with the name *name*.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.yml)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.md)</sup>
 
 <!--
 'see_also' sources:
-  - [](../../src/features/groups-and-backtracking/backreferences.yml)
+  - [](../../src/features/groups-and-backtracking/backreferences.md)
 -->
 
 

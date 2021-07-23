@@ -1,16 +1,15 @@
 # Feature: Backreferences
-<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.md)</sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.md)</sup>
 
 <!--
 'Backreferences' sources:
-  - [](../../src/features/groups-and-backtracking/backreferences.yml)
   - [](../../src/features/groups-and-backtracking/backreferences.md)
 -->
 
 
 <!--
 'name' sources:
-  - [](../../src/features/groups-and-backtracking/backreferences.yml)
+  - [](../../src/features/groups-and-backtracking/backreferences.md)
 -->
 
 
@@ -22,11 +21,11 @@
 <dfn>Backreferences</dfn> allow a pattern to re-match a previously matched capture group<sup>[1][Capturing Groups] [2][Named Capturing Groups]</sup> either by number (_n_) or by _name_.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/groups-and-backtracking/backreferences.syntax.md)
+  - [](../../src/features/groups-and-backtracking/backreferences.md)
 -->
 
 
@@ -46,11 +45,11 @@
 
 ### See Also
 
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.yml)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.md)</sup>
 
 <!--
 'see_also' sources:
-  - [](../../src/features/groups-and-backtracking/backreferences.yml)
+  - [](../../src/features/groups-and-backtracking/backreferences.md)
 -->
 
 - [Capturing Groups]

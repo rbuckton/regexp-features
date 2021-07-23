@@ -1,32 +1,31 @@
 # Feature: Capturing Groups
-<sup>Improve this article: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.yml), [2](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.description.md)</sup>
+<sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.md)</sup>
 
 <!--
 'Capturing Groups' sources:
-  - [](../../src/features/groups-and-backtracking/capturing-groups.yml)
-  - [](../../src/features/groups-and-backtracking/capturing-groups.description.md)
+  - [](../../src/features/groups-and-backtracking/capturing-groups.md)
 -->
 
 
 <!--
 'name' sources:
-  - [](../../src/features/groups-and-backtracking/capturing-groups.yml)
+  - [](../../src/features/groups-and-backtracking/capturing-groups.md)
 -->
 
 
 <!--
 'description' sources:
-  - [](../../src/features/groups-and-backtracking/capturing-groups.description.md)
+  - [](../../src/features/groups-and-backtracking/capturing-groups.md)
 -->
 
 A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by index. A Capturing Group can be captured and returned by the matching algorithm.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.syntax.md)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.md)</sup>
 
 <!--
 'syntax' sources:
-  - [](../../src/features/groups-and-backtracking/capturing-groups.syntax.md)
+  - [](../../src/features/groups-and-backtracking/capturing-groups.md)
 -->
 
 
@@ -45,11 +44,11 @@ A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom*
 
 ### See Also
 
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.yml)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.md)</sup>
 
 <!--
 'see_also' sources:
-  - [](../../src/features/groups-and-backtracking/capturing-groups.yml)
+  - [](../../src/features/groups-and-backtracking/capturing-groups.md)
 -->
 
 - [Named Capturing Groups]
