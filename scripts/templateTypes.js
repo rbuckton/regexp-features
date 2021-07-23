@@ -2,6 +2,7 @@ export {};
 
 /**
  * @typedef DocumentationTemplateData
+ * @property {string} srcDir
  * @property {string} outDir
  * @property {readonly LanguageTemplateData[]} languages
  * @property {readonly FeatureTemplateData[]} features
@@ -56,7 +57,7 @@ export {};
  * @property {import("./types.js").MarkdownString} [example]
  * @property {import("./types.js").MarkdownString | readonly import("./yamlTypes.js").YamlLinkDefinition[]} [see_also]
  * @property {readonly import("./yamlTypes.js").YamlHrefLinkDefinition[]} [links]
- * @property {readonly FeatureEngineSupportTemplateData[]} [engines]
+ * @property {readonly EngineFeatureTemplateData[]} [engineFeatures]
  * @property {import("./types.js").MarkdownString} [content]
  * @property {readonly string[]} [nameSources]
  * @property {readonly string[]} [prioritySources]
@@ -69,12 +70,6 @@ export {};
  * @property {readonly string[]} [linksSources]
  * @property {string} [outFile]
  * @property {boolean} [built]
- */
-
-/**
- * @typedef FeatureEngineSupportTemplateData
- * @property {EngineTemplateData} engine
- * @property {bool} supported
  */
 
 /**
@@ -130,6 +125,13 @@ export {};
  * @property {readonly string[]} [see_alsoSources]
  * @property {readonly string[]} [linksSources]
  * @property {readonly string[]} [contentSources]
+ * @property {string} [outFile]
+ * @property {boolean} [built]
+ */
+
+/**
+ * @typedef OtherFileTemplateData
+ * @property {DocumentationTemplateData} docs
  * @property {string} [outFile]
  * @property {boolean} [built]
  */

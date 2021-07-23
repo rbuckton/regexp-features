@@ -1,9 +1,9 @@
 # Language: {{name}}
-
-{{> sources sources=nameSources name='name' ~}}
+{{> sources sources=(union nameSources descriptionSources) nocomment=true~}}
+{{~> sources sources=nameSources name='name' nolink=true ~}}
+{{~> sources sources=descriptionSources name='description' nolink=true ~}}
 
 {{#if description~}}
-{{> sources sources=descriptionSources name='description' }}
 {{{description}}}
 
 {{/if}}

@@ -1,18 +1,17 @@
 # Engine: {{name}}
 
-{{> sources sources=nameSources name='name' ~}}
+<sup>[Reference]{{#if (union nameSources (union referenceSources descriptionSources))}} \| {{/if~}}</sup>
+{{> sources sources=(union nameSources (union referenceSources descriptionSources)) label='Improve this article' nocomment=true ~}}
 
-[Reference]
-
-{{> sources sources=referenceSources name='reference' ~}}
+{{~> sources sources=nameSources name='name' nolink=true ~}}
+{{~> sources sources=referenceSources name='reference' nolink=true ~}}
+{{~> sources sources=descriptionSources name='description' nolink=true ~}}
 
 {{#if description~}}
-{{> sources sources=descriptionSources name='description' }}
 {{{description}}}
 
 {{/if}}
 ## Languages
-
 {{> sources sources=languagesSources name='languages' ~}}
 
 {{#each languages}}

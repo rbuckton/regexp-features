@@ -1,27 +1,27 @@
 # Feature: {{name}}
-
-{{> sources sources=nameSources name='name' ~}}
+{{> sources sources=(union nameSources descriptionSources) label='Improve this article' ~}}
+{{> sources sources=nameSources name='name' nolink=true ~}}
+{{> sources sources=descriptionSources name='description' nolink=true ~}}
 
 {{#if description~}}
-{{> sources sources=descriptionSources name='description' }}
 {{{description}}}
 
 {{/if}}
 {{#if syntax~}}
-#### Syntax
+### Syntax
+{{> sources sources=syntaxSources name='syntax' }}
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-{{> sources sources=syntaxSources name='syntax' }}
 {{{syntax}}}
 
 {{/if}}
 {{#if example~}}
-#### Example
+### Example
+{{> sources sources=exampleSources name='example' }}
 
 > NOTE: The following example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-{{> sources sources=exampleSources name='example' }}
 {{{example}}}
 
 {{/if}}
@@ -29,12 +29,12 @@
 
 | Engine | Supported |
 |:-------|:---------:|
-{{#each engines}}
-| [{{engine.name}}](../engines/{{engine.id}}.md) | {{#if supported}}✔{{else}}❌{{/if}} |
+{{#each engineFeatures}}
+| [{{engine.name}}](../engines/{{engine.id}}.md) | [{{#if supported}}✔{{else}}❌{{/if}}](engines/{{engine.id}}.md#feature-{{hlink feature.id}}) |
 {{/each}}
 
 {{#if see_also~}}
-#### See Also
+### See Also
 
 {{> sources sources=see_alsoSources name='see_also' }}
 {{#if (isArray see_also)~}}

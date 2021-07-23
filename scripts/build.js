@@ -89,6 +89,36 @@ const helpers = {
     hlink(value) {
         return `${String(value).toLowerCase().replace(/\W+/g, "-")}`;
     },
+    single(value) {
+        return Array.isArray(value) ? value.length === 1 : !!value
+    },
+    multiple(value) {
+        return Array.isArray(value) && value.length > 1;
+    },
+    add(a, b) {
+        return a + b;
+    },
+    union(a, b) {
+        const set = new Set();
+        if (Array.isArray(a)) {
+            for (const _ of a) set.add(_);
+        }
+        else if (a) {
+            set.add(a);
+        }
+        if (Array.isArray(b)) {
+            for (const _ of b) set.add(_);
+        }
+        else if (b) {
+            set.add(b);
+        }
+        return set.size ? [...set] : undefined
+    },
+    makeRelative(source, outFile) {
+        const relative = path.relative(outFile, source);
+        const result = path.isAbsolute(relative) ? relative : relative.replaceAll("\\", "/");
+        return result;
+    },
     trimLeadingLines,
     trimTrailingLines,
     trimLines,
@@ -311,6 +341,7 @@ class DocumentationBuilder {
     #engineFeatureMap = new Map();
 
     #data = {
+        srcDir: "",
         outDir: "",
         languages: this.#languages,
         features: this.#features,
@@ -319,10 +350,13 @@ class DocumentationBuilder {
     };
 
     /**
+     * @param {string} srcDir
      * @param {string} outDir
      */
-    constructor(outDir) {
+    constructor(srcDir, outDir) {
+        this.srcDir = outDir;
         this.outDir = outDir;
+        this.#data.srcDir = srcDir;
         this.#data.outDir = outDir;
     }
 
@@ -483,7 +517,7 @@ class Documentation {
 
     get orderedEngines() {
         return this.#orderedEngines ??= [...this.#engines.values()]
-            .filter(node => node.isValid)
+            .filter(node => node.isValid && node.id !== "default")
             .sort((a, b) => a.compareTo(b));
     }
 
@@ -793,32 +827,48 @@ class Documentation {
      * @param {import("./templateTypes.js").DocumentationTemplateData} docs
      */
     #buildIndex(docs) {
+        /** @type {import("./templateTypes.js").OtherFileTemplateData} */
+        const data = { docs };
+        data.built = true;
+        data.outFile = "index.md";
         const content = indexTemplate(docs, handlebarsOptions);
-        this.#outputs.set("index.md", content);
+        this.#outputs.set(data.outFile, content);
     }
 
     /**
      * @param {import("./templateTypes.js").DocumentationTemplateData} docs
      */
     #buildLanguagesIndex(docs) {
+        /** @type {import("./templateTypes.js").OtherFileTemplateData} */
+        const data = { docs };
+        data.built = true;
+        data.outFile = "languages.md";
         const content = languageIndexTemplate(docs, handlebarsOptions);
-        this.#outputs.set("languages.md", content);
+        this.#outputs.set(data.outFile, content);
     }
 
     /**
      * @param {import("./templateTypes.js").DocumentationTemplateData} docs
      */
     #buildFeaturesIndex(docs) {
+        /** @type {import("./templateTypes.js").OtherFileTemplateData} */
+        const data = { docs };
+        data.built = true;
+        data.outFile = "features.md";
         const content = featureIndexTemplate(docs, handlebarsOptions);
-        this.#outputs.set("features.md", content);
+        this.#outputs.set(data.outFile, content);
     }
 
     /**
      * @param {import("./templateTypes.js").DocumentationTemplateData} docs
      */
     #buildEnginesIndex(docs) {
+        /** @type {import("./templateTypes.js").OtherFileTemplateData} */
+        const data = { docs };
+        data.built = true;
+        data.outFile = "engines.md";
         const content = engineIndexTemplate(docs, handlebarsOptions);
-        this.#outputs.set("engines.md", content);
+        this.#outputs.set(data.outFile, content);
     }
 
     /**
@@ -839,11 +889,12 @@ class Documentation {
     }
 
     /**
+     * @param {string} srcDir
      * @param {string} outDir
      */
-    build(outDir) {
+    build(srcDir, outDir) {
         this.#outputs.clear();
-        const builder = new DocumentationBuilder(outDir);
+        const builder = new DocumentationBuilder(srcDir, outDir);
         const docs = this.buildGraph(builder);
         for (const language of this.languages.values()) {
             language.build(this.#outputs, builder.getOrAddLanguage(language.id));
@@ -862,11 +913,12 @@ class Documentation {
     }
 
     /**
+     * @param {string} srcDir
      * @param {string} outDir
      */
-    async emit(outDir) {
+    async emit(srcDir, outDir) {
         if (this.#outputs.size === 0) {
-            this.build(outDir);
+            this.build(srcDir, outDir);
         }
 
         try {
@@ -1148,7 +1200,7 @@ class Feature extends Node {
 
     get orderedEngines() {
         return this.#orderedEngines ??= [...this.docs.engines.values()]
-            .filter(engine => engine.isValid && (engine.features.get(this.id)?.isValid ?? false))
+            .filter(engine => engine.id !== "default" && engine.isValid && (engine.features.get(this.id)?.isValid ?? false))
             .sort((a, b) => a.compareTo(b));
     }
 
@@ -1279,15 +1331,11 @@ class Feature extends Node {
             const [see_also, see_alsoSources] = this.getEntry("see_also") ?? missingEntry;
             const [links, linksSources] = this.getEntry("links") ?? missingEntry;
             const [content, contentSources] = this.getEntry("content") ?? missingEntry;
-            const engines = this.orderedEngines
+            const engineFeatures = this.orderedEngines
                 .map(engine => {
-                    const engineFeature = engine.features.get(this.id);
-                    const engineData = engine.buildGraph(builder);
-                    if (engineData.built) {
-                        const [supported = false] = engineFeature?.getEntry("supported") ??
-                            engineFeature?.getDefaultEntry("supported") ??
-                            missingEntry;
-                        return { engine: engineData, supported };
+                    const engineFeatureData = engine.features.get(this.id)?.buildGraph(builder);
+                    if (engineFeatureData?.built) {
+                        return engineFeatureData;
                     }
                 })
                 .filter(isDefined);
@@ -1300,7 +1348,7 @@ class Feature extends Node {
             data.example = trimLines(example);
             data.see_also = typeof see_also === "string" ? see_also : see_also?.map(link => typeof link === "string" ? { feature: link, name: this.docs.features.get(link)?.name } : link);
             data.links = links;
-            data.engines = engines;
+            data.engineFeatures = engineFeatures;
             data.content = trimLines(content);
 
             data.nameSources = relativeSources(nameSources, absoluteOutFile);
@@ -2010,11 +2058,12 @@ function isDefined(value) {
  * @param {string} outFile
  */
 function relativeSources(sources, outFile) {
-    return sources?.map(source => {
-        const relative = path.relative(path.dirname(outFile), source);
-        const result = path.isAbsolute(relative) ? relative : relative.replaceAll("\\", "/");
-        return result;
-    });
+    return sources;
+    // return sources?.map(source => {
+    //     const relative = path.relative(path.dirname(outFile), source);
+    //     const result = path.isAbsolute(relative) ? relative : relative.replaceAll("\\", "/");
+    //     return result;
+    // });
 }
 
 /**
@@ -2041,8 +2090,8 @@ async function build(srcDir, outDir) {
     }
 
     if (errorCount === 0) {
-        docs.build(outDir);
-        await docs.emit(outDir);
+        docs.build(srcDir, outDir);
+        await docs.emit(srcDir, outDir);
     }
 
     return errorCount;
