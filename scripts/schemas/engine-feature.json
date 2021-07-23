@@ -1,23 +1,4 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "EngineFeature",
-    "type": "object",
-    "properties": {
-        "engine": { "type": "string" },
-        "feature": { "type": "string" },
-        "reference": { "type": "string" },
-        "supported": { "type": "boolean" },
-        "description": { "type": "string" },
-        "syntax": { "type": "string" },
-        "example": { "type": "string" },
-        "see_also": {
-            "oneOf": [
-                { "type": "string" },
-                { "type": "array", "items": { "$ref": "Link" } }
-            ]
-        },
-        "links": { "type": "array", "items": { "$ref": "HrefLinkDefinition" } },
-        "content": { "type": "string" }
-    },
-    "required": ["engine", "feature"]
+    "$ref": "yaml.json#/definitions/EngineFeature"
 }

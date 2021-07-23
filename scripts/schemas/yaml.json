@@ -1,0 +1,141 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://rbuckton.github.io/regexp-features/yaml.json",
+    "definitions": {
+        "LanguageToc": {
+            "$id": "#LanguageToc",
+            "$ref": "#/definitions/Toc"
+        },
+        "Language": {
+            "$id": "#Language",
+            "type": "object",
+            "properties": {
+                "language": { "type": "string" },
+                "name": { "type": "string" },
+                "priority": { "type": "number" },
+                "reference": { "type": "string" },
+                "description": { "type": "string" },
+                "see_also": { "$ref": "#/definitions/SeeAlso" },
+                "links": { "type": "array", "items": { "$ref": "#/definitions/HrefLinkDefinition" } },
+                "content": { "type": "string" }
+            },
+            "required": ["language"]
+        },
+        "FeatureToc": {
+            "$id": "#FeatureToc",
+            "$ref": "#/definitions/Toc"
+        },
+        "Feature": {
+            "$id": "#Feature",
+            "type": "object",
+            "properties": {
+                "feature": { "type": "string" },
+                "name": { "type": "string" },
+                "priority": { "type": "number" },
+                "aliases": { "type": "array", "items": { "type": "string" } },
+                "description": { "type": "string" },
+                "syntax": { "type": "string" },
+                "example": { "type": "string" },
+                "see_also": { "$ref": "#/definitions/SeeAlso" },
+                "links": { "type": "array", "items": { "$ref": "#/definitions/HrefLinkDefinition" } },
+                "content": { "type": "string" }
+            },
+            "required": ["feature"]
+        },
+        "EngineToc": {
+            "$id": "#EngineToc",
+            "$ref": "#/definitions/Toc"
+        },
+        "Engine": {
+            "$id": "#Engine",
+            "type": "object",
+            "properties": {
+                "engine": { "type": "string" },
+                "name": { "type": "string" },
+                "priority": { "type": "number" },
+                "reference": { "type": "string" },
+                "description": { "type": "string" },
+                "see_also": { "$ref": "#/definitions/SeeAlso" },
+                "languages": { "type": "array", "items": { "type": "string" } },
+                "links": { "type": "array", "items": { "$ref": "#/definitions/HrefLinkDefinition" } },
+                "content": { "type": "string" }
+            },
+            "required": ["engine"],
+            "additionalProperties": false
+        },
+        "EngineFeature": {
+            "$id": "#EngineFeature",
+            "type": "object",
+            "properties": {
+                "engine": { "type": "string" },
+                "feature": { "type": "string" },
+                "reference": { "type": "string" },
+                "supported": { "type": "boolean" },
+                "description": { "type": "string" },
+                "syntax": { "type": "string" },
+                "example": { "type": "string" },
+                "see_also": { "$ref": "#/definitions/SeeAlso" },
+                "links": { "type": "array", "items": { "$ref": "#/definitions/HrefLinkDefinition" } },
+                "content": { "type": "string" }
+            },
+            "required": ["engine", "feature"]
+        },
+
+        "LanguageLinkDefinition": {
+            "type": "object",
+            "properties": {
+                "language": { "type": "string" },
+                "name": { "type": "string" }
+            },
+            "required": ["language"]
+        },
+        "FeatureLinkDefinition": {
+            "type": "object",
+            "properties": {
+                "feature": { "type": "string" },
+                "name": { "type": "string" }
+            },
+            "required": ["feature"]
+        },
+        "EngineLinkDefinition": {
+            "type": "object",
+            "properties": {
+                "engine": { "type": "string" },
+                "name": { "type": "string" }
+            },
+            "required": ["engine"]
+        },
+        "HrefLinkDefinition": {
+            "type": "object",
+            "properties": {
+                "href": { "type": "string" },
+                "name": { "type": "string" }
+            },
+            "required": ["href"]
+        },
+        "LinkDefinition": {
+            "oneOf": [
+                { "$ref": "#/definitions/LanguageLinkDefinition" },
+                { "$ref": "#/definitions/FeatureLinkDefinition" },
+                { "$ref": "#/definitions/EngineLinkDefinition" },
+                { "$ref": "#/definitions/HrefLinkDefinition" }
+            ]
+        },
+        "Link": {
+            "oneOf": [
+                { "$ref": "#/definitions/LinkDefinition" },
+                { "type": "string" }
+            ]
+        },
+        "Toc": {
+            "type": "array",
+            "items": { "type": "string" }
+        },
+        "SeeAlso": {
+            "oneOf": [
+                { "type": "string" },
+                { "type": "array", "items": { "$ref": "#/definitions/Link" } }
+            ]
+        }
+    }
+}

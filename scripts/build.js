@@ -1,16 +1,16 @@
 // @ts-check
 import Ajv from "ajv";
-import * as fs from "fs/promises";
+import chalk from "chalk";
 import { watch } from "chokidar";
+import * as fs from "fs/promises";
 import matter from "gray-matter";
 import handlebars from "handlebars";
 import * as yaml from "js-yaml";
 import * as path from "path";
+import { clearScreenDown, cursorTo } from "readline";
 import { fileURLToPath, URL } from "url";
 import yargs from "yargs";
-import chalk from "chalk";
 import { hideBin } from 'yargs/helpers';
-import { clearScreenDown, cursorTo } from "readline";
 
 /**
  * @template T
@@ -51,16 +51,7 @@ const contentExampleSymbol = Symbol("*content.example");
 /** @type {YamlEntry<undefined> } */
 const missingEntry = makeYamlEntry(undefined);
 const schemasDir = fileURLToPath(new URL("./schemas/", import.meta.url));
-const languageSchemaFile = path.join(schemasDir, "language.json");
-const languageLinkDefinitionSchemaFile = path.join(schemasDir, "language-link-definition.json");
-const featureSchemaFile = path.join(schemasDir, "feature.json");
-const featureLinkDefinitionSchemaFile = path.join(schemasDir, "feature-link-definition.json");
-const engineSchemaFile = path.join(schemasDir, "engine.json");
-const engineLinkDefinitionSchemaFile = path.join(schemasDir, "engine-link-definition.json");
-const engineFeatureSchemaFile = path.join(schemasDir, "engine-feature.json");
-const hrefLinkDefinitionSchemaFile = path.join(schemasDir, "href-link-definition.json");
-const linkSchemaFile = path.join(schemasDir, "link.json");
-const tocSchemaFile = path.join(schemasDir, "toc.json");
+const yamlSchemaFile = path.join(schemasDir, "yaml.json");
 
 async function reloadSchemas() {
     ajv = await getSchemas();
@@ -75,18 +66,8 @@ async function readJsonSchema(file) {
 async function getSchemas() {
     const ajv = new Ajv({
         allErrors: true,
-        schemas: {
-            Language: await readJsonSchema(languageSchemaFile),
-            LanguageLinkDefinition: await readJsonSchema(languageLinkDefinitionSchemaFile),
-            Feature: await readJsonSchema(featureSchemaFile),
-            FeatureLinkDefinition: await readJsonSchema(featureLinkDefinitionSchemaFile),
-            Engine: await readJsonSchema(engineSchemaFile),
-            EngineLinkDefinition: await readJsonSchema(engineLinkDefinitionSchemaFile),
-            EngineFeature: await readJsonSchema(engineFeatureSchemaFile),
-            HrefLinkDefinition: await readJsonSchema(hrefLinkDefinitionSchemaFile),
-            Link: await readJsonSchema(linkSchemaFile),
-            Toc: await readJsonSchema(tocSchemaFile),
-        }
+        inlineRefs: false,
+        schemas: [await readJsonSchema(yamlSchemaFile)],
     });
     return ajv;
 }
@@ -640,8 +621,7 @@ class Documentation {
      * @param {Record<string, any>} data
      */
     #collectData(filename, mimeType, data) {
-        const schemaId = mimeType === "EngineToc" || mimeType === "LanguageToc" || mimeType === "FeatureToc" ? "Toc" : mimeType;
-        const schema = ajv.getSchema(schemaId);
+        const schema = ajv.getSchema(`https://rbuckton.github.io/regexp-features/yaml.json#${mimeType}`);
         if (!schema) {
             console.warn(`YamlMime '${mimeType}' is not recognized: ${filename}`);
             return;
