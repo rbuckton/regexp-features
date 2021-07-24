@@ -106,8 +106,6 @@
 
 The following flags are supported:
 - `i` &mdash; Ignore Case. Matches [character classes] using a case-insensitive comparison.
-- `m` &mdash; Multiline. Causes the [wildcard] `.` to match newline characters.
-  - NOTE: The `m`-flag in Oniguruma is equivalent to the `s`-flag (i.e., dot all) in Perl, ECMAScript, .NET, etc.
 - `x` &mdash; Extended Mode. Ignores whitespace in a pattern. Spaces must instead be represented by `\s` or `\ ` (an escaped space).
 - `W` &mdash; ASCII-only words (when using `\w`, `\p{Word}`, `[[:word:]]`, `\b`, or `\B`)
 - `D` &mdash; ASCII-only digits (when using `\d`, `\p{Digit}`, `[[:digit:]]`)
@@ -116,6 +114,13 @@ The following flags are supported:
 - <code>y{<em>?</em>}</code> &mdash; Changes meaning of `\X`, `\y`, and `\Y` in unicode mode:
   - `y{g}` &mdash; Extended Grapheme Cluster mode
   - `y{w}` &mdash; Word mode.
+
+Some flags depend on options provided to Oniguruma <sup>[reference](https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L512)</sup>:
+- `ONIG_SYNTAX_ONIGURUMA`:
+  - `m` &mdash; Multiline. Causes the [wildcard] `.` to match newline characters.
+- `ONIG_SYNTAX_PERL` and `ONIG_SYNTAX_JAVA`:
+  - `m` &mdash; Multiline. Causes the [anchors] `^` and `$` to match the start and end of each line (respectively), rather than the start and end of the input.
+  - `s` &mdash; Singleline. Causes the [wildcard] `.` to match newline characters.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/flags.md)</sup>
@@ -1578,9 +1583,11 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 
 
 - `(?imxWDSPy-imxWDSPy)` - Sets or unsets (using `-`) the specified [RegExp flags] starting at the current position until the next closing `)` or the end of the pattern. Example: `(?-i)A(?i)B(?-i)C` matches `ABC`, `AbC`.
-  - NOTE: The `m`-flag in Oniguruma is equivalent to the `s`-flag (i.e., dot all) in Perl, ECMAScript, .NET, etc.
+  - NOTE: When option `ONIG_SYNTAX_ONIGURUMA` is specified, the `m`-flag in Oniguruma is equivalent to the `s`-flag (i.e., dot all) in Perl, ECMAScript, .NET, etc. <sup>[reference](https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L512)</sup>
+  - NOTE: When option `ONIG_SYNTAX_PERL` or `ONIG_SYNTAX_JAVA` are specified, the `m` and `s` flags are equivalent to their Perl/Java counterparts. <sup>[reference](https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L512)</sup>
 - `(?imxWDSPy-imxWDSPy:…)` - Sets or unsets (using `-`) the specified [RegExp flags] for the subexpression. Example: `(?-i:A(?i:B)C)` matches `ABC`, `AbC`.
-  - NOTE: The `m`-flag in Oniguruma is equivalent to the `s`-flag (i.e., dot all) in Perl, ECMAScript, .NET, etc.
+  - NOTE: When option `ONIG_SYNTAX_ONIGURUMA` is specified, the `m`-flag in Oniguruma is equivalent to the `s`-flag (i.e., dot all) in Perl, ECMAScript, .NET, etc. <sup>[reference](https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L512)</sup>
+  - NOTE: When option `ONIG_SYNTAX_PERL` or `ONIG_SYNTAX_JAVA` are specified, the `m` and `s` flags are equivalent to their Perl/Java counterparts. <sup>[reference](https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L512)</sup>
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/modifiers.md)</sup>
