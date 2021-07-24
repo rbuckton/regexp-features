@@ -18,7 +18,7 @@
   - [](../../src/features/anchors-and-boundaries/buffer-boundaries.md)
 -->
 
-A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of the input. This differs slightly from `^` and `$` which can be affected by [RegExp flags] like `m`.
+A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of the input. This differs slightly from `^` and `$` which can be affected by [RegExp flags] like `m`.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.md)</sup>
@@ -31,9 +31,10 @@ A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of t
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
+ax
 - `\A` &mdash; Matches the start of the input.
 - `\z` &mdash; Matches the end of the input.
-- `\Z` &mdash; A zero-width assertion consisting of an optional newline at the end of the buffer. Equivalent to `(?=\n?\z)`.
+- `\Z` &mdash; A zero-width assertion consisting of an optional newline at the end of the buffer. Equivalent to `(?=\n
 
 ## Engines
 

@@ -96,7 +96,7 @@
 -->
 
 
-<dfn>Flags</dfn> control certain aspects of the matching behavior of a pattern.
+<dfn>Flags</dfn> control certain aspects of the matching behavior of a pattern.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/flags.md)</sup>
@@ -118,7 +118,7 @@ The following flags are supported:
 - `P` &mdash; ASCII-only POSIX properties (includes `W`, `D`, and `S` flags)
 - <code>y{<em>?</em>}</code> &mdash; Changes meaning of `\X`, `\y`, and `\Y` in unicode mode:
   - `y{g}` &mdash; Extended Grapheme Cluster mode
-  - `y{w}` &mdash; Word mode.
+  - `y{w}` &mdas
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/flags.md)</sup>
@@ -154,7 +154,7 @@ The following flags are supported:
 -->
 
 
-<dfn>Anchors</dfn> match the start or end of a line.
+<dfn>Anchors</dfn> match the start or end of a line.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/anchors.md)</sup>
@@ -165,8 +165,9 @@ The following flags are supported:
 -->
 
 
+ax
 - `^` &mdash; Matches the start of a line when the `m` (multiline) [flag] is set. Otherwise, matches the start of the input.
-- `$` &mdash; Matches the end of a line when the `m` (multiline) [flag] is set. Otherwise, matches the end of the input.
+- `$` &mdash; Matches the end of a line when the `m` (multiline) [flag] is set. Otherwise, matches the end of the i
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/anchors.md)</sup>
@@ -205,7 +206,7 @@ The following flags are supported:
 -->
 
 
-A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of the input. This differs slightly from `^` and `$` which can be affected by [RegExp flags] like `m`.
+A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of the input. This differs slightly from `^` and `$` which can be affected by [RegExp flags] like `m`.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.md)</sup>
@@ -216,9 +217,10 @@ A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of t
 -->
 
 
+ax
 - `\A` &mdash; Matches the start of the input.
 - `\z` &mdash; Matches the end of the input.
-- `\Z` &mdash; A zero-width assertion consisting of an optional newline at the end of the buffer. Equivalent to `(?=\n?\z)`.
+- `\Z` &mdash; A zero-width assertion consisting of an optional newline at the end of the buffer. Equivalent to `(?=\n
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.md)</sup>
@@ -257,7 +259,7 @@ A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of t
 -->
 
 
-A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a word.
+A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a word.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.md)</sup>
@@ -268,8 +270,9 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 -->
 
 
+ax
 - `\b` &mdash; Matches the start or the end of a word.
-- `\B` &mdash; Matches when *not* at the start or the end of a word.
+- `\B` &mdash; Matches when *not* at the start or the end of a 
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.md)</sup>
@@ -308,7 +311,7 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 -->
 
 
-A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the end of a text segment.
+A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the end of a text segment.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/text-segment-boundaries.md)</sup>
@@ -319,8 +322,9 @@ A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the en
 -->
 
 
+ax
 - `\y` &mdash; Matches the start or the end of a text segment.
-- `\Y` &mdash; Matches when *not* at the start or the end of a text segment.
+- `\Y` &mdash; Matches when *not* at the start or the end of a text seg
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/text-segment-boundaries.md)</sup>
@@ -359,7 +363,7 @@ A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the en
 -->
 
 
-A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either the start of the input or the start of the last match.
+A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either the start of the input or the start of the last match.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.md)</sup>
@@ -370,7 +374,8 @@ A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either t
 -->
 
 
-- `\G` &mdash; Matches either the start of the input or the start of the last match.
+ax
+- `\G` &mdash; Matches either the start of the input or the start of the last ma
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.md)</sup>
@@ -409,7 +414,7 @@ A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either t
 -->
 
 
-An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first branch of a pattern fails to match, each alternative is attempted from left to right until a match is found.
+An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first branch of a pattern fails to match, each alternative is attempted from left to right until a match is found.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/alternatives.md)</sup>
@@ -420,7 +425,8 @@ An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first
 -->
 
 
-- `…|…` &mdash; Matches the pattern to the left of the `|`. If that fails, matches the pattern to the right of `|`.
+ax
+- `…|…` &mdash; Matches the pattern to the left of the `|`. If that fails, matches the pattern to the right of 
 
 ## Feature: Wildcard
 
@@ -445,7 +451,7 @@ An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first
 -->
 
 
-A <dfn>Wildcard</dfn> matches a single, non-newline character.
+A <dfn>Wildcard</dfn> matches a single, non-newline character.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/wildcard.md)</sup>
@@ -457,7 +463,7 @@ A <dfn>Wildcard</dfn> matches a single, non-newline character.
 
 
 - `.` &mdash; Matches any character except newline characters. If the `m` [flag] is set then this matches any character.
-  - NOTE: The `m`-flag in Oniguruma is equivalent to the `s`-flag (i.e., dot all) in Perl, ECMAScript, .NET, etc.
+  - NOTE: The `m`-flag in Oniguruma is equivalent to the `s`-flag (i.e., dot all) in Perl, ECMAScript, .NET, etc
 
 ## Feature: Character Classes
 
@@ -482,7 +488,7 @@ A <dfn>Wildcard</dfn> matches a single, non-newline character.
 -->
 
 
-A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to match a single character in the set.
+A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to match a single character in the set.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-classes.md)</sup>
@@ -493,9 +499,10 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 -->
 
 
+ax
 - `[…]` &mdash; Where `…` is one or more single characters or character class escapes, excluding `^` at the start and `-` between two entries in the set. Matches a character in the set. Example: `[abc]` matches `a`, `b`, or `c`.
 - <a id="negated-character-class"></a>`[^…]` &mdash; Where `…` is one or more single characters or character class escapes, excluding `-` between two entries in the set. Matches any character not in the set. Example: `[^abc]` matches `d`, `e`, or `f`, etc., but not `a`, `b`, or `c`.
-- <a id="character-class-range"></a><code>[<em>a</em>-<em>z</em>]</code> &mdash; Where *a* and *z* are single characters or character escapes. Matches any character in the range between *a* and *z* (inclusive). Example: `[a-c]` matches `a`, `b`, or `c`, but not `d`.
+- <a id="character-class-range"></a><code>[<em>a</em>-<em>z</em>]</code> &mdash; Where *a* and *z* are single characters or character escapes. Matches any character in the range between *a* and *z* (inclusive). Example: `[a-c]` matches `a`, `b`, or `c`, but no
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-classes.md)</sup>
@@ -540,7 +547,7 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 -->
 
 
-A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that specifies a named, pre-defined set of characters.
+A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that specifies a named, pre-defined set of characters.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/posix-character-classes.md)</sup>
@@ -551,7 +558,8 @@ A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that s
 -->
 
 
-- <code>\[\[:<em>name</em>:\]\]</code> &mdash; Where *name* is in a set of predefined names. Matches any character in the set.
+ax
+- <code>\[\[:<em>name</em>:\]\]</code> &mdash; Where *name* is in a set of predefined names. Matches any character in the 
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/posix-character-classes.md)</sup>
@@ -596,7 +604,7 @@ A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that s
 -->
 
 
-A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] set that specifies a named, pre-defined set of excluded characters.
+A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] set that specifies a named, pre-defined set of excluded characters.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/negated-posix-character-classes.md)</sup>
@@ -607,7 +615,8 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 -->
 
 
-- <code>\[\[:^<em>name</em>:\]\]</code> &mdash; Where *name* is in a set of predefined names. Matches any character not in the set.
+ax
+- <code>\[\[:^<em>name</em>:\]\]</code> &mdash; Where *name* is in a set of predefined names. Matches any character not in the 
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/negated-posix-character-classes.md)</sup>
@@ -655,7 +664,7 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 -->
 
 
-A <dfn>Collating Element</dfn> is one or more characters that collate as a single unit.
+A <dfn>Collating Element</dfn> is one or more characters that collate as a single unit.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/collating-elements.md)</sup>
@@ -703,7 +712,7 @@ A <dfn>Collating Element</dfn> is one or more characters that collate as a singl
 -->
 
 
-An <dfn>Equivalence Class</dfn> matches any character or collating element with the same primary sort key as the provided collating element.
+An <dfn>Equivalence Class</dfn> matches any character or collating element with the same primary sort key as the provided collating element.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/equivalence-classes.md)</sup>
@@ -748,7 +757,7 @@ An <dfn>Equivalence Class</dfn> matches any character or collating element with 
 -->
 
 
-A <dfn>Character Class Escape</dfn> is a single character escape that represents an entire character class. They can be used as an element of a [Character Class] or as an *Atom*. It is often the case that a lower-case escape character is the inclusive set, while an upper-case variant of the same character excludes that set.
+A <dfn>Character Class Escape</dfn> is a single character escape that represents an entire character class. They can be used as an element of a [Character Class] or as an *Atom*. It is often the case that a lower-case escape character is the inclusive set, while an upper-case variant of the same character excludes that set
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/character-class-escapes.md)</sup>
@@ -771,7 +780,7 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
   - NOTE: The `m`-flag in Oniguruma is equivalent to the `s`-flag (i.e., dot all) in Perl, ECMAScript, .NET, etc.
 - `\O` &mdash; Any character. Equivalent to `(?m:.)`.
   - NOTE: The `m`-flag in Oniguruma is equivalent to the `s`-flag (i.e., dot all) in Perl, ECMAScript, .NET, etc.
-- `\X` &mdash; Text segment. Equivalent to `(?>\O(?:\Y\O)*)`.
+- `\X` &mdash; Text segment. Equivalent to `(?>\
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-escapes.md)</sup>
@@ -816,7 +825,7 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
 -->
 
 
-A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending character sequence.
+A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending character sequence.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/line-endings-escape.md)</sup>
@@ -827,7 +836,8 @@ A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending chara
 -->
 
 
-- `\R` &mdash; Equivalent to `(?>\r\n?|[\x0A-\x0C\x85\u{2028}\u{2029}])`
+ax
+- `\R` &mdash; Equivalent to `(?>\r\n?|[\x0A-\x0C\x85\u{2028}\u{2029
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/line-endings-escape.md)</sup>
@@ -872,7 +882,7 @@ A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending chara
 -->
 
 
-A <dfn>Character Property Escape</dfn> is an escape sequence used to match a character with a specific character property.
+A <dfn>Character Property Escape</dfn> is an escape sequence used to match a character with a specific character property.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/character-property-escapes.md)</sup>
@@ -885,7 +895,7 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 - <code>\\p{<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that has the property *name*.
 - <code>\\p{^<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that does not have the property *name*.
-- <code>\\P{<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that does not have the property *name*.
+- <code>\\P{<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that does not have the property *nam
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-property-escapes.md)</sup>
@@ -941,9 +951,11 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 -->
 
 
+ax
+
 - `[[…]]` &mdash; Matches any character in the set, just like a normal [character class].
 - `[[^…]]` &mdash; Where `…` is one or more single characters or character class escapes, excluding `-` between two entries in the set. Matches any character not in the set, just like a normal [negated character class].
-- <code>[[<em>a</em>-<em>z</em>]]</code> &mdash; Where *a* and *z* are single characters or character escapes. Matches any character in the range between *a* and *z* (inclusive), just like a normal [character class range].
+- <code>[[<em>a</em>-<em>z</em>]]</code> &mdash; Where *a* and *z* are single characters or character escapes. Matches any character in the range between *a* and *z* (inclusive), just like a normal [character class r
 
 ### Example
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-nested-set.md)</sup>
@@ -954,15 +966,13 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 -->
 
 
+ example
+
 ```
 [a-z&&[^d-q]]
 ```
 
 Is equivalent to:
-
-```re
-[a-cr-z]
-```
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-nested-set.md)</sup>
@@ -1018,7 +1028,9 @@ Is equivalent to:
 -->
 
 
-- `[…&&…]` &mdash; Matches any character that is in both the left- and right-hand sets of `&&`.
+ax
+
+- `[…&&…]` &mdash; Matches any character that is in both the left- and right-hand sets of
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-intersection.md)</sup>
@@ -1065,7 +1077,7 @@ Is equivalent to:
 
 <dfn>Character Class Subtraction</dfn> allows you to exclude a class of characters from another class of characters in a [character class].
 
-> NOTE: Oniguruma does not support character class subtraction directly, instead you must use a combination of [character class intersections] and [character class nested sets]
+> NOTE: Oniguruma does not support character class subtraction directly, instead you must use a combination of [character class intersections] and [character class nested set
 
 ### Example
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/character-class-subtraction.md)</sup>
@@ -1075,6 +1087,8 @@ Is equivalent to:
   - [](../../src/engines/oniguruma/features/character-class-subtraction.md)
 -->
 
+
+mple
 
 ```
 [a-w&&[^c-g]z]
@@ -1092,7 +1106,7 @@ Which reduces to:
 [abh-w]
 ```
 
-Source for this example comes from Oniguruma: [source](https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L212)
+Source for this example comes from Oniguruma: [source](https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-subtraction.md)</sup>
@@ -1140,7 +1154,7 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 -->
 
 
-<dfn>Quoted Characters</dfn> are a sequence of characters treated as literal characters rather than RegExp characters.
+<dfn>Quoted Characters</dfn> are a sequence of characters treated as literal characters rather than RegExp characters.
 
 ## Feature: Quantifiers
 
@@ -1165,7 +1179,7 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 -->
 
 
-<dfn>Quantifiers</dfn> specify repetition of an *Atom*. By default, quantifiers are "greedy" in that they attempt to match as many instances of the preceding *Atom* as possible to satisfy the pattern before backtracking.
+<dfn>Quantifiers</dfn> specify repetition of an *Atom*. By default, quantifiers are "greedy" in that they attempt to match as many instances of the preceding *Atom* as possible to satisfy the pattern before backtracking.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/quantifiers.md)</sup>
@@ -1176,12 +1190,13 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 -->
 
 
+ax
 - `*` &mdash; Matches the preceding *Atom* zero or more times. Example: `a*b` matches `b`, `ab`, `aab`, `aaab`, etc.
 - `+` &mdash; Matches the preceding *Atom* one or more times. Example: `a+b` matches `ab`, `aab`, `aaab`, etc., but not `b`.
 - `?` &mdash; Matches the preceding *Atom* zero or one times. Example: `a?b` matches `b`, `ab`.
 - <code>{<em>n</em>}</code> &mdash; Where *n* is an integer. Matches the preceding *Atom* exactly *n* times. Example: `a{2}` matches `aa` but not `a` or `aaa`.
 - <code>{<em>n</em>,}</code> &mdash; Where *n* is an integer. Matches the preceding *Atom* at-least *n* times. Example: `a{2,}` matches `aa`, `aaa`, `aaaa`, etc., but not `a`.
-- <code>{<em>n</em>,<em>n</em>}</code> &mdash; Where *n* and *m* are integers, and *m* >= *n*. Matches the preceding *Atom* at-least *n* times and at-most *m* times. Example: `a{2,3}` matches `aa`, `aaa`, `aaaa`, etc., but not `a` or `aaaa`.
+- <code>{<em>n</em>,<em>n</em>}</code> &mdash; Where *n* and *m* are integers, and *m* >= *n*. Matches the preceding *Atom* at-least *n* times and at-most *m* times. Example: `a{2,3}` matches `aa`, `aaa`, `aaaa`, etc., but not `a` o
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/quantifiers.md)</sup>
@@ -1218,7 +1233,7 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 -->
 
 
-<dfn>Lazy Quantifiers</dfn> specify repetition of an *Atom*, but attempt to match as few instances of the preceding *Atom* as possible to satisfy the pattern before advancing.
+<dfn>Lazy Quantifiers</dfn> specify repetition of an *Atom*, but attempt to match as few instances of the preceding *Atom* as possible to satisfy the pattern before advancing.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/lazy-quantifiers.md)</sup>
@@ -1229,12 +1244,13 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 -->
 
 
+ax
 - `*?` &mdash; Matches the preceding *Atom* zero or more times.
 - `+?` &mdash; Matches the preceding *Atom* one or more times.
 - `??` &mdash; Matches the preceding *Atom* zero or one times.
 - <code>{<em>n</em>}?</code> &mdash; Where *n* is an integer. Matches the preceding *Atom* exactly *n* times.
 - <code>{<em>n</em>,}?</code> &mdash; Where *n* is an integer. Matches the preceding *Atom* at-least *n* times.
-- <code>{<em>n</em>,<em>n</em>}?</code> &mdash; Where *n* and *m* are integers, and *m* >= *n*. Matches the preceding *Atom* at-least *n* times and at-most *m* times.
+- <code>{<em>n</em>,<em>n</em>}?</code> &mdash; Where *n* and *m* are integers, and *m* >= *n*. Matches the preceding *Atom* at-least *n* times and at-most *
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/lazy-quantifiers.md)</sup>
@@ -1271,7 +1287,7 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 -->
 
 
-<dfn>Possessive Quantifiers</dfn> are like greedy (i.e., regular) [quantifiers], except that backtracking is not performed.
+<dfn>Possessive Quantifiers</dfn> are like greedy (i.e., regular) [quantifiers], except that backtracking is not performed.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.md)</sup>
@@ -1282,11 +1298,12 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 -->
 
 
+ax
 - `*+` &mdash; Match zero or more characters without backtracking.
 - `++` &mdash; Match one or more characters without backtracking.
 - `?+` &mdash; Match zero or one characters without backtracking.
 - <code>{<em>n</em>,}+</code> &mdash; Match _n_ or more characters without backtracking.
-- <code>{<em>n</em>,<em>m</em>}+</code> &mdash; Match between _n_ and _m_ characters without backtracking.
+- <code>{<em>n</em>,<em>m</em>}+</code> &mdash; Match between _n_ and _m_ characters without backt
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.md)</sup>
@@ -1323,7 +1340,7 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 -->
 
 
-A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by index. A Capturing Group can be captured and returned by the matching algorithm.
+A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by index. A Capturing Group can be captured and returned by the matching algorithm.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.md)</sup>
@@ -1334,7 +1351,8 @@ A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom*
 -->
 
 
-- `(…)` &mdash; Groups the subexpression as a single *Atom*. The result is captured and returned by the matching algorithm.
+ax
+- `(…)` &mdash; Groups the subexpression as a single *Atom*. The result is captured and returned by the matching algori
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.md)</sup>
@@ -1374,7 +1392,7 @@ A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom*
 -->
 
 
-A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and returned by the matching algorithm. A Named Capturing Group is also an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by name.
+A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and returned by the matching algorithm. A Named Capturing Group is also an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by name.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/named-capturing-groups.md)</sup>
@@ -1385,8 +1403,9 @@ A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and r
 -->
 
 
+ax
 - <code>(?\<<em>name</em>\>…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
-- <code>(?'<em>name</em>'…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
+- <code>(?'<em>name</em>'…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algor
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/named-capturing-groups.md)</sup>
@@ -1426,7 +1445,7 @@ A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and r
 -->
 
 
-A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] but cannot be referenced using [Backreferences]. A Non-capturing Group is not captured by the matching algorithm.
+A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] but cannot be referenced using [Backreferences]. A Non-capturing Group is not captured by the matching algorithm.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-capturing-groups.md)</sup>
@@ -1437,7 +1456,8 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 -->
 
 
-- `(?:…)` &mdash; Groups the subexpression as a single *Atom*.
+ax
+- `(?:…)` &mdash; Groups the subexpression as a single *At
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-capturing-groups.md)</sup>
@@ -1474,7 +1494,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 -->
 
 
-<dfn>Backreferences</dfn> allow a pattern to re-match a previously matched capture group<sup>[1][Capturing Groups] [2][Named Capturing Groups]</sup> either by number (_n_) or by _name_.
+<dfn>Backreferences</dfn> allow a pattern to re-match a previously matched capture group<sup>[1][Capturing Groups] [2][Named Capturing Groups]</sup> either by number (_n_) or by _name_.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/backreferences.md)</sup>
@@ -1493,7 +1513,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 - <code>\\k\<<em>+n</em>\></code> &mdash; Where *n* is an integer > 0. Matches the *n*th next [capture group].
 - <code>\\k'<em>+n</em>'</code> &mdash; Where *n* is an integer > 0. Matches the *n*th next [capture group].
 - <code>\\k\<<em>name</em>\></code> &mdash; Matches the same string as the [named capture group] with the name *name*.
-- <code>\\k'<em>name</em>'</code> &mdash; Matches the same string as the [named capture group] with the name *name*.
+- <code>\\k'<em>name</em>'</code> &mdash; Matches the same string as the [named capture group] with the name
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.md)</sup>
@@ -1530,7 +1550,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 -->
 
 
-A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matching and can be used to document a pattern.
+A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matching and can be used to document a pattern.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/comments.md)</sup>
@@ -1541,7 +1561,8 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 -->
 
 
-- `(?#…)` &mdash; The entire expression is removed from the pattern. A comment may not contain other `(` or `)` characters.
+ax
+- `(?#…)` &mdash; The entire expression is removed from the pattern. A comment may not contain other `(` or `)` charact
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/comments.md)</sup>
@@ -1580,7 +1601,7 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 -->
 
 
-A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and ending with `\n` (or the end of the pattern) that is ignored by pattern matching and can be used to document a pattern.
+A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and ending with `\n` (or the end of the pattern) that is ignored by pattern matching and can be used to document a pattern.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/line-comments.md)</sup>
@@ -1616,7 +1637,7 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 -->
 
 
-<dfn>Modifiers</dfn> allow you to change the currently active [RegExp flags] within a subexpression.
+<dfn>Modifiers</dfn> allow you to change the currently active [RegExp flags] within a subexpression.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/modifiers.md)</sup>
@@ -1630,7 +1651,7 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 - `(?imxWDSPy-imxWDSPy)` - Sets or unsets (using `-`) the specified [RegExp flags] starting at the current position until the next closing `)` or the end of the pattern. Example: `(?-i)A(?i)B(?-i)C` matches `ABC`, `AbC`.
   - NOTE: The `m`-flag in Oniguruma is equivalent to the `s`-flag (i.e., dot all) in Perl, ECMAScript, .NET, etc.
 - `(?imxWDSPy-imxWDSPy:…)` - Sets or unsets (using `-`) the specified [RegExp flags] for the subexpression. Example: `(?-i:A(?i:B)C)` matches `ABC`, `AbC`.
-  - NOTE: The `m`-flag in Oniguruma is equivalent to the `s`-flag (i.e., dot all) in Perl, ECMAScript, .NET, etc.
+  - NOTE: The `m`-flag in Oniguruma is equivalent to the `s`-flag (i.e., dot all) in Perl, ECMAScript, .NET, e
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/modifiers.md)</sup>
@@ -1669,7 +1690,7 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 -->
 
 
-A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [Alternative] (`|`), which affects numbering for [Backreferences] and captured results returned from the matching algorithm.
+A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [Alternative] (`|`), which affects numbering for [Backreferences] and captured results returned from the matching algorithm.
 
 ## Feature: Lookahead
 
@@ -1694,7 +1715,7 @@ A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [A
 -->
 
 
-A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pattern would match the characters to the right of the current position.
+A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pattern would match the characters to the right of the current position.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.md)</sup>
@@ -1705,8 +1726,9 @@ A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pa
 -->
 
 
+ax
 - <a id="positive-lookahead"></a>`(?=…)` &mdash; Matches if the provided pattern would match but does not advance the current position.
-- <a id="negative-lookahead"></a>`(?!…)` &mdash; Matches if the provided pattern would not match, but does not advance the current position.
+- <a id="negative-lookahead"></a>`(?!…)` &mdash; Matches if the provided pattern would not match, but does not advance the current posi
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.md)</sup>
@@ -1742,7 +1764,7 @@ A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pa
 -->
 
 
-A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided pattern would match the characters to the left of the current position.
+A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided pattern would match the characters to the left of the current position.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookbehind.md)</sup>
@@ -1753,8 +1775,9 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
 -->
 
 
+ax
 - <a id="positive-lookbehind"></a>`(?<=…)` &mdash; Matches if the provided pattern would match the preceding characters, but does not advance the current position. The pattern must have a fixed length (unbounded [quantifiers] are not permitted).
-- <a id="negative-lookbehind"></a>`(?<!…)` &mdash; Matches if the provided pattern would not match the preceding characters, but does not advance the current position. The pattern must have a fixed length (unbounded [quantifiers] are not permitted).
+- <a id="negative-lookbehind"></a>`(?<!…)` &mdash; Matches if the provided pattern would not match the preceding characters, but does not advance the current position. The pattern must have a fixed length (unbounded [quantifiers] are not permit
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookbehind.md)</sup>
@@ -1790,7 +1813,7 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
 -->
 
 
-A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring patterns, and will not backtrack in the event of a failed match. This is often used to improve performance.
+A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring patterns, and will not backtrack in the event of a failed match. This is often used to improve performance.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-backtracking-expressions.md)</sup>
@@ -1801,7 +1824,8 @@ A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring p
 -->
 
 
-- `(?>…)` &mdash; Matches the provided pattern, but no backtracking is performed if the match fails.
+ax
+- `(?>…)` &mdash; Matches the provided pattern, but no backtracking is performed if the match fa
 
 ## Feature: Recursion
 
@@ -1826,7 +1850,7 @@ A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring p
 -->
 
 
-A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capture group] inside of itself, to handle cases such as matching balanced parenthesis or brackets, etc.
+A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capture group] inside of itself, to handle cases such as matching balanced parenthesis or brackets, etc.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/recursion.md)</sup>
@@ -1857,7 +1881,7 @@ A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capt
 > NOTE: Left-most recursive calls are forbidden:
 > - `(?<name>a|\g<name>b)` - error
 > - `(?<name>a|b\g<name>c)` - ok
-> Source for this example comes from Oniguruma: [source](https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L464-L467)
+> Source for this example comes from Oniguruma: [source](https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964c
 
 ## Feature: Conditional Expressions
 
@@ -1882,7 +1906,7 @@ A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capt
 -->
 
 
-A <dfn>Conditional Expression</dfn> checks a condition and evaluates its first alternative if the condition is **true**; otherwise, it evaluates its second alternative.
+A <dfn>Conditional Expression</dfn> checks a condition and evaluates its first alternative if the condition is **true**; otherwise, it evaluates its second alternative.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/conditional-expressions.md)</sup>
@@ -1912,7 +1936,7 @@ The following conditions are supported:
 - <code>(?(\<<em>name</em>-<em>name</em>\>) … )</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
 - <code>(?('<em>name</em>-<em>name</em>') … )</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
 - <code>(?(\<<em>name</em>+<em>name</em>\>) … )</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
-- <code>(?('<em>name</em>+<em>name</em>') … )</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
+- <code>(?('<em>name</em>+<em>name</em>') … )</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, eval
 
 ## Feature: Subroutines
 
@@ -1937,7 +1961,7 @@ The following conditions are supported:
 -->
 
 
-A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group] that can be reused in multiple places within the pattern to re-evaluate the subexpression from the group.
+A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group] that can be reused in multiple places within the pattern to re-evaluate the subexpression from the group.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/subroutines.md)</sup>
@@ -1957,7 +1981,7 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 - <code>\\g\<<em>+n</em>\></code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*.
 - <code>\\g'<em>+n</em>'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*.
 - <code>\\g\<<em>name</em>\></code> &mdash; Evaluates the [named capture group] with the provided *name*.
-- <code>\\g'<em>name</em>'</code> &mdash; Evaluates the [named capture group] with the provided *name*.
+- <code>\\g'<em>name</em>'</code> &mdash; Evaluates the [named capture group] with the provide
 
 ### Example
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/subroutines.md)</sup>
@@ -1968,14 +1992,14 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 -->
 
 
+# example
 ```re
 (?(DEFINE)
   (?<Year>\d{4}|[+-]\d{5,})
   (?<Month>0[1-9]|1[0-2])
   (?<Day>0[1-9]|2[0-9]|3[01])
 )
-(?<Date>(?&Year)-(?&Month)-(?&Day)|(?&Year)(?&Month)(?&Day))
-```
+(?<Date>(?&Year)-(?&Month)-(?&Day)|(?&Year)(?&M
 
 ## Feature: Callouts
 
@@ -2000,7 +2024,7 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 -->
 
 
-A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matching.
+A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matching.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/callouts.md)</sup>
@@ -2010,6 +2034,8 @@ A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matc
   - [](../../src/engines/oniguruma/features/callouts.md)
 -->
 
+
+ntax
 
 - Callouts of contents:
   - <code>(?{…<em>contents</em>…})</code> &mdash; Invokes the callout with the provided *contents*.
@@ -2026,7 +2052,7 @@ A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matc
  - <code>(\*<em>name</em>)</code> &mdash; Invokes the callout with the provided *name*.
  - <code>(\*<em>name</em>{<em>args</em>…})</code> &mdash; Invokes the callout with the provided *name* and *args*.
  - <code>(\*<em>name</em>[<em>tag</em>])</code> &mdash; Invokes the callout with the provided *name* and *tag*.
- - <code>(\*<em>name</em>[<em>tag</em>]{<em>args</em>…})</code> &mdash; Invokes the callout with the provided *name*, *tag*, and *args*.
+ - <code>(\*<em>name</em>[<em>tag</em>]{<em>args</em>…})</code> &mdash; Invokes the callout with the provided *na
 
 
 [Flags]: #feature-flags

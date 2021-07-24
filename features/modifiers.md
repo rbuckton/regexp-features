@@ -18,7 +18,7 @@
   - [](../../src/features/flags-and-modifiers/modifiers.md)
 -->
 
-<dfn>Modifiers</dfn> allow you to change the currently active [RegExp flags] within a subexpression.
+<dfn>Modifiers</dfn> allow you to change the currently active [RegExp flags] within a subexpression.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/modifiers.md)</sup>
@@ -31,8 +31,9 @@
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
+ax
 - `(?imsx-imsx)` - Sets or unsets (using `-`) the specified [RegExp flags] starting at the current position until the next closing `)` or the end of the pattern. Example: `(?-i)A(?i)B(?-i)C` matches `ABC`, `AbC`.
-- `(?imsx-imsx:…)` - Sets or unsets (using `-`) the specified [RegExp flags] for the subexpression. Example: `(?-i:A(?i:B)C)` matches `ABC`, `AbC`.
+- `(?imsx-imsx:…)` - Sets or unsets (using `-`) the specified [RegExp flags] for the subexpression. Example: `(?-i:A(?i:B)C)` matches `ABC`, `
 
 ## Engines
 

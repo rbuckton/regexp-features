@@ -1,10 +1,10 @@
 # Language: C
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/languages/c.yml)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/languages/c.md)</sup>
 
 
 <!--
 'name' sources:
-  - [](../../src/languages/c.yml)
+  - [](../../src/languages/c.md)
 -->
 
 

@@ -18,7 +18,7 @@
   - [](../../src/features/quoted-characters.md)
 -->
 
-<dfn>Quoted Characters</dfn> are a sequence of characters treated as literal characters rather than RegExp characters.
+<dfn>Quoted Characters</dfn> are a sequence of characters treated as literal characters rather than RegExp characters.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quoted-characters.md)</sup>
@@ -31,8 +31,9 @@
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
+ax
 - `\Q … \E` &mdash; All characters following `\Q` and preceding the next `\E` are treated as literal characters. Example: `\Q.+\E` matches `.+` but not `aa`.
-- `\Q … ` &mdash; If there is no trailing `\E`, all characters until the end of the pattern are treated as literal characters.
+- `\Q … ` &mdash; If there is no trailing `\E`, all characters until the end of the pattern are treated as literal charac
 
 ## Engines
 

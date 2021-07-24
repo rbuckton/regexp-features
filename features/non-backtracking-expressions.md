@@ -18,7 +18,7 @@
   - [](../../src/features/groups-and-backtracking/non-backtracking-expressions.md)
 -->
 
-A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring patterns, and will not backtrack in the event of a failed match. This is often used to improve performance.
+A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring patterns, and will not backtrack in the event of a failed match. This is often used to improve performance.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-backtracking-expressions.md)</sup>
@@ -31,7 +31,8 @@ A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring p
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-- `(?>…)` &mdash; Matches the provided pattern, but no backtracking is performed if the match fails.
+ax
+- `(?>…)` &mdash; Matches the provided pattern, but no backtracking is performed if the match fa
 
 ## Engines
 

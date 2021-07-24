@@ -18,7 +18,7 @@
   - [](../../src/features/character-classes/collating-elements.md)
 -->
 
-A <dfn>Collating Element</dfn> is one or more characters that collate as a single unit.
+A <dfn>Collating Element</dfn> is one or more characters that collate as a single unit.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/collating-elements.md)</sup>
@@ -31,7 +31,8 @@ A <dfn>Collating Element</dfn> is one or more characters that collate as a singl
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-- <code>\[\[.<em>col</em>.\]\]</code> &mdash; Matches the collating element *col* if *col* is treated as a single collating unit in the current locale. Example: `[[.ae.]-c]` matches a single character in the range "ae"-"c". *col* may also be specified by a symbolic name.
+ax
+- <code>\[\[.<em>col</em>.\]\]</code> &mdash; Matches the collating element *col* if *col* is treated as a single collating unit in the current locale. Example: `[[.ae.]-c]` matches a single character in the range "ae"-"c". *col* may also be specified by a symbolic n
 
 ## Engines
 

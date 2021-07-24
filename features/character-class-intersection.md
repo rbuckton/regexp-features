@@ -31,7 +31,9 @@
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-- `[…&&…]` &mdash; Matches any character that is in both the left- and right-hand sets of `&&`.
+ax
+
+- `[…&&…]` &mdash; Matches any character that is in both the left- and right-hand sets of
 
 ## Engines
 

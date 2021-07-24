@@ -1,10 +1,10 @@
 # Language: F#
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/languages/fsharp.yml)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/languages/fsharp.md)</sup>
 
 
 <!--
 'name' sources:
-  - [](../../src/languages/fsharp.yml)
+  - [](../../src/languages/fsharp.md)
 -->
 
 

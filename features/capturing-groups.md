@@ -18,7 +18,7 @@
   - [](../../src/features/groups-and-backtracking/capturing-groups.md)
 -->
 
-A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by index. A Capturing Group can be captured and returned by the matching algorithm.
+A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by index. A Capturing Group can be captured and returned by the matching algorithm.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.md)</sup>
@@ -31,7 +31,8 @@ A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom*
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-- `(…)` &mdash; Groups the subexpression as a single *Atom*. The result is captured and returned by the matching algorithm.
+ax
+- `(…)` &mdash; Groups the subexpression as a single *Atom*. The result is captured and returned by the matching algori
 
 ## Engines
 

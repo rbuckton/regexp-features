@@ -18,7 +18,7 @@
   - [](../../src/features/comments/comments.md)
 -->
 
-A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matching and can be used to document a pattern.
+A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matching and can be used to document a pattern.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/comments.md)</sup>
@@ -31,7 +31,8 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-- `(?#…)` &mdash; The entire expression is removed from the pattern. A comment may not contain other `(` or `)` characters.
+ax
+- `(?#…)` &mdash; The entire expression is removed from the pattern. A comment may not contain other `(` or `)` charact
 
 ## Engines
 

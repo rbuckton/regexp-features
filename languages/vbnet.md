@@ -1,10 +1,10 @@
 # Language: VB.net
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/languages/vbnet.yml)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/languages/vbnet.md)</sup>
 
 
 <!--
 'name' sources:
-  - [](../../src/languages/vbnet.yml)
+  - [](../../src/languages/vbnet.md)
 -->
 
 

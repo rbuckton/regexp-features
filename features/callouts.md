@@ -18,7 +18,7 @@
   - [](../../src/features/callouts.md)
 -->
 
-A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matching.
+A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matching.
 
 ## Engines
 

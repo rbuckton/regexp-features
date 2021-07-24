@@ -18,7 +18,7 @@
   - [](../../src/features/character-classes/line-endings-escape.md)
 -->
 
-A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending character sequence.
+A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending character sequence.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/line-endings-escape.md)</sup>
@@ -31,7 +31,8 @@ A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending chara
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-- `\R` &mdash; Equivalent to `(?>\r\n?|[\x0A-\x0C\x85\u{2028}\u{2029}])`
+ax
+- `\R` &mdash; Equivalent to `(?>\r\n?|[\x0A-\x0C\x85\u{2028}\u{2029
 
 ## Engines
 

@@ -18,7 +18,7 @@
   - [](../../src/features/anchors-and-boundaries/anchors.md)
 -->
 
-<dfn>Anchors</dfn> match the start or end of a line.
+<dfn>Anchors</dfn> match the start or end of a line.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/anchors.md)</sup>
@@ -31,8 +31,9 @@
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
+ax
 - `^` &mdash; Matches the start of a line when the `m` (multiline) [flag] is set. Otherwise, matches the start of the input.
-- `$` &mdash; Matches the end of a line when the `m` (multiline) [flag] is set. Otherwise, matches the end of the input.
+- `$` &mdash; Matches the end of a line when the `m` (multiline) [flag] is set. Otherwise, matches the end of the i
 
 ## Engines
 

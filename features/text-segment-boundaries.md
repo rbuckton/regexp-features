@@ -18,7 +18,7 @@
   - [](../../src/features/anchors-and-boundaries/text-segment-boundaries.md)
 -->
 
-A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the end of a text segment.
+A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the end of a text segment.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/text-segment-boundaries.md)</sup>
@@ -31,8 +31,9 @@ A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the en
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
+ax
 - `\y` &mdash; Matches the start or the end of a text segment.
-- `\Y` &mdash; Matches when *not* at the start or the end of a text segment.
+- `\Y` &mdash; Matches when *not* at the start or the end of a text seg
 
 ## Engines
 

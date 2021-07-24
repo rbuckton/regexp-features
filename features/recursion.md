@@ -18,7 +18,7 @@
   - [](../../src/features/groups-and-backtracking/recursion.md)
 -->
 
-A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capture group] inside of itself, to handle cases such as matching balanced parenthesis or brackets, etc.
+A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capture group] inside of itself, to handle cases such as matching balanced parenthesis or brackets, etc.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/recursion.md)</sup>
@@ -31,8 +31,9 @@ A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capt
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
+ax
 - <code>(?R)</code> &mdash; Reevaluates the entire pattern starting at the current position.
-- <code>(?0)</code> &mdash; Reevaluates the entire pattern starting at the current position.
+- <code>(?0)</code> &mdash; Reevaluates the entire pattern starting at the current posi
 
 ## Engines
 

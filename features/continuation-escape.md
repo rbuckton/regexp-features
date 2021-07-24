@@ -18,7 +18,7 @@
   - [](../../src/features/anchors-and-boundaries/continuation-escape.md)
 -->
 
-A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either the start of the input or the start of the last match.
+A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either the start of the input or the start of the last match.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.md)</sup>
@@ -31,7 +31,8 @@ A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either t
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-- `\G` &mdash; Matches either the start of the input or the start of the last match.
+ax
+- `\G` &mdash; Matches either the start of the input or the start of the last ma
 
 ## Engines
 

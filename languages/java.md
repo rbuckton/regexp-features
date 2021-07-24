@@ -1,10 +1,10 @@
 # Language: Java
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/languages/java.yml)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/languages/java.md)</sup>
 
 
 <!--
 'name' sources:
-  - [](../../src/languages/java.yml)
+  - [](../../src/languages/java.md)
 -->
 
 

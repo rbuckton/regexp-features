@@ -18,7 +18,7 @@
   - [](../../src/features/anchors-and-boundaries/word-boundaries.md)
 -->
 
-A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a word.
+A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a word.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.md)</sup>
@@ -31,8 +31,9 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
+ax
 - `\b` &mdash; Matches the start or the end of a word.
-- `\B` &mdash; Matches when *not* at the start or the end of a word.
+- `\B` &mdash; Matches when *not* at the start or the end of a 
 
 ## Engines
 

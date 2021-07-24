@@ -18,7 +18,7 @@
   - [](../../src/features/character-classes/character-class-escapes.md)
 -->
 
-A <dfn>Character Class Escape</dfn> is a single character escape that represents an entire character class. They can be used as an element of a [Character Class] or as an *Atom*. It is often the case that a lower-case escape character is the inclusive set, while an upper-case variant of the same character excludes that set.
+A <dfn>Character Class Escape</dfn> is a single character escape that represents an entire character class. They can be used as an element of a [Character Class] or as an *Atom*. It is often the case that a lower-case escape character is the inclusive set, while an upper-case variant of the same character excludes that set
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-escapes.md)</sup>
@@ -31,12 +31,13 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
+ax
 - `\d` &mdash; A decimal digit character in the range 0-9. Equivalent to `[0-9]`.
 - `\D` &mdash; Any character not in the range 0-9. Equivalent to `[^0-9]`.
 - `\w` &mdash; Any "word" character. Equivalent to `[a-zA-Z0-9_]`.
 - `\W` &mdash; Any non-"word" character. Equivalent to `[^a-zA-Z0-9_]`.
 - `\s` &mdash; Any whitespace character.
-- `\S` &mdash; Any non-whitespace character.
+- `\S` &mdash; Any non-whitespace c
 
 ## Engines
 

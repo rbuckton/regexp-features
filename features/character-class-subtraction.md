@@ -18,7 +18,7 @@
   - [](../../src/features/character-classes/character-class-subtraction.md)
 -->
 
-<dfn>Character Class Subtraction</dfn> allows you to exclude a class of characters from another class of characters in a [character class].
+<dfn>Character Class Subtraction</dfn> allows you to exclude a class of characters from another class of characters in a [character class]
 
 ## Engines
 

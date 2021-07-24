@@ -1,10 +1,10 @@
 # Language: Perl
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/languages/perl.yml)</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/languages/perl.md)</sup>
 
 
 <!--
 'name' sources:
-  - [](../../src/languages/perl.yml)
+  - [](../../src/languages/perl.md)
 -->
 
 

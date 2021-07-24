@@ -18,7 +18,7 @@
   - [](../../src/features/groups-and-backtracking/subroutines.md)
 -->
 
-A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group] that can be reused in multiple places within the pattern to re-evaluate the subexpression from the group.
+A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group] that can be reused in multiple places within the pattern to re-evaluate the subexpression from the group.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/subroutines.md)</sup>
@@ -31,11 +31,12 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
+ax
 - `(?(DEFINE) … )` &mdash; Defines a set of reusable [capture groups] that can be referenced elsewhere in the pattern.
 - <code>(?<em>n</em>)</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is *n*.
 - <code>(?-<em>n</em>)</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the left of the current *Atom*. Example: `(?-1)` would revaluate the last declared [capture group].
 - <code>(?+<em>n</em>)</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*. Example: `(?+1)` would evaluate the next declared [capture group].
-- <code>(?&<em>name</em>)</code> &mdash; Evaluates the [named capture group] with the provided *name*.
+- <code>(?&<em>name</em>)</code> &mdash; Evaluates the [named capture group] with the provided *
 
 ### Example
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/subroutines.md)</sup>
@@ -48,14 +49,14 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 
 > NOTE: The following example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
+# example
 ```re
 (?(DEFINE)
   (?<Year>\d{4}|[+-]\d{5,})
   (?<Month>0[1-9]|1[0-2])
   (?<Day>0[1-9]|2[0-9]|3[01])
 )
-(?<Date>(?&Year)-(?&Month)-(?&Day)|(?&Year)(?&Month)(?&Day))
-```
+(?<Date>(?&Year)-(?&Month)-(?&Day)|(?&Year)(?&M
 
 ## Engines
 
