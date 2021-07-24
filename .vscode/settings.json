@@ -3,7 +3,9 @@
         "editor.wordWrap": "off"
     },
     "yaml.schemas": {
-        "https://json.schemastore.org/github-workflow.json": ["build.yml"]
+        "https://json.schemastore.org/github-workflow.json": [
+            "build.yml"
+        ]
     },
     "javascript.preferences.quoteStyle": "double",
     "javascript.preferences.importModuleSpecifierEnding": "js"
