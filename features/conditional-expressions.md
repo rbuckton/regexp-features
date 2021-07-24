@@ -1,4 +1,5 @@
 # Feature: Conditional Expressions
+<sup>[Home](../index.md) \| [Features](../features)
 <sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/conditional-expressions.md)</sup>
 
 <!--
@@ -18,7 +19,7 @@
   - [](../../src/features/alternatives/conditional-expressions.md)
 -->
 
-A <dfn>Conditional Expression</dfn> checks a condition and evaluates its first alternative if the condition is **true**; otherwise, it evaluates its second alternative.
+A <dfn>Conditional Expression</dfn> checks a condition and evaluates its first alternative if the condition is **true**; otherwise, it evaluates its second alternative.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/conditional-expressions.md)</sup>
@@ -31,7 +32,6 @@ A <dfn>Conditional Expression</dfn> checks a condition and evaluates its first a
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-ax
 - <code>(?(<em>condition</em>)<em>yes-pattern</em>|<em>no-pattern</em>)</code> &mdash; Matches *yes-pattern* if *condition* is **true**; otherwise, matches *no-pattern*.
 - <code>(?(<em>condition</em>)<em>yes-pattern</em>)</code> &mdash; Matches *yes-pattern* if *condition* is **true**; otherwise, matches the empty string.
 
@@ -47,7 +47,7 @@ The following conditions are supported:
 - <code>(?(R) … )</code> &mdash; Evaluates to **true** if inside a [recursive expression]; Otherwise, evaluates to **false**.
 - <code>(?(R<em>n</em>) … )</code> &mdash; Evaluates to **true** if inside a [recursive expression] for the [capture group] at offset *n*; Otherwise, evaluates to **false**.
 - <code>(?(R&<em>name</em>) … )</code> &mdash; Evaluates to **true** if inside a [recursive expression] for the [named capture group] with the name *name*; Otherwise, evaluates to **false**.
-- <a name="define-condition"></a><code>(?(DEFINE) … )</code> &mdash; Always evaluates to **false**. This allows you to de
+- <a name="define-condition"></a><code>(?(DEFINE) … )</code> &mdash; Always evaluates to **false**. This allows you to define [Subroutines].
 
 ## Engines
 

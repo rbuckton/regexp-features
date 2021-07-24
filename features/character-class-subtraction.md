@@ -1,4 +1,5 @@
 # Feature: Character Class Subtraction
+<sup>[Home](../index.md) \| [Features](../features)
 <sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-subtraction.md)</sup>
 
 <!--
@@ -18,7 +19,7 @@
   - [](../../src/features/character-classes/character-class-subtraction.md)
 -->
 
-<dfn>Character Class Subtraction</dfn> allows you to exclude a class of characters from another class of characters in a [character class]
+<dfn>Character Class Subtraction</dfn> allows you to exclude a class of characters from another class of characters in a [character class].
 
 ## Engines
 

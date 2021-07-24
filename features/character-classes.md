@@ -1,4 +1,5 @@
 # Feature: Character Classes
+<sup>[Home](../index.md) \| [Features](../features)
 <sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-classes.md)</sup>
 
 <!--
@@ -18,7 +19,7 @@
   - [](../../src/features/character-classes/character-classes.md)
 -->
 
-A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to match a single character in the set.
+A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to match a single character in the set.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-classes.md)</sup>
@@ -31,10 +32,9 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-ax
 - `[…]` &mdash; Where `…` is one or more single characters or character class escapes, excluding `^` at the start and `-` between two entries in the set. Matches a character in the set. Example: `[abc]` matches `a`, `b`, or `c`.
 - <a id="negated-character-class"></a>`[^…]` &mdash; Where `…` is one or more single characters or character class escapes, excluding `-` between two entries in the set. Matches any character not in the set. Example: `[^abc]` matches `d`, `e`, or `f`, etc., but not `a`, `b`, or `c`.
-- <a id="character-class-range"></a><code>[<em>a</em>-<em>z</em>]</code> &mdash; Where *a* and *z* are single characters or character escapes. Matches any character in the range between *a* and *z* (inclusive). Example: `[a-c]` matches `a`, `b`, or `c`, but no
+- <a id="character-class-range"></a><code>[<em>a</em>-<em>z</em>]</code> &mdash; Where *a* and *z* are single characters or character escapes. Matches any character in the range between *a* and *z* (inclusive). Example: `[a-c]` matches `a`, `b`, or `c`, but not `d`.
 
 ## Engines
 

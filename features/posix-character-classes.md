@@ -1,4 +1,5 @@
 # Feature: Posix Character Classes
+<sup>[Home](../index.md) \| [Features](../features)
 <sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/posix-character-classes.md)</sup>
 
 <!--
@@ -18,7 +19,7 @@
   - [](../../src/features/character-classes/posix-character-classes.md)
 -->
 
-A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that specifies a named, pre-defined set of characters.
+A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that specifies a named, pre-defined set of characters.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/posix-character-classes.md)</sup>
@@ -31,8 +32,7 @@ A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that s
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-ax
-- <code>\[\[:<em>name</em>:\]\]</code> &mdash; Where *name* is in a set of predefined names. Matches any character in the 
+- <code>\[\[:<em>name</em>:\]\]</code> &mdash; Where *name* is in a set of predefined names. Matches any character in the set.
 
 ## Engines
 

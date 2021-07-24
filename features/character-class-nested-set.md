@@ -1,4 +1,5 @@
 # Feature: Character Class Nested Set
+<sup>[Home](../index.md) \| [Features](../features)
 <sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-nested-set.md)</sup>
 
 <!--
@@ -31,11 +32,9 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-ax
-
 - `[[…]]` &mdash; Matches any character in the set, just like a normal [character class].
 - `[[^…]]` &mdash; Where `…` is one or more single characters or character class escapes, excluding `-` between two entries in the set. Matches any character not in the set, just like a normal [negated character class].
-- <code>[[<em>a</em>-<em>z</em>]]</code> &mdash; Where *a* and *z* are single characters or character escapes. Matches any character in the range between *a* and *z* (inclusive), just like a normal [character class r
+- <code>[[<em>a</em>-<em>z</em>]]</code> &mdash; Where *a* and *z* are single characters or character escapes. Matches any character in the range between *a* and *z* (inclusive), just like a normal [character class range].
 
 ### Example
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-nested-set.md)</sup>
@@ -48,13 +47,15 @@ ax
 
 > NOTE: The following example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
- example
-
 ```
 [a-z&&[^d-q]]
 ```
 
 Is equivalent to:
+
+```re
+[a-cr-z]
+```
 
 ## Engines
 

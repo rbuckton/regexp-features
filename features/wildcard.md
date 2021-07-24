@@ -1,4 +1,5 @@
 # Feature: Wildcard
+<sup>[Home](../index.md) \| [Features](../features)
 <sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/wildcard.md)</sup>
 
 <!--
@@ -18,7 +19,7 @@
   - [](../../src/features/wildcard.md)
 -->
 
-A <dfn>Wildcard</dfn> matches a single, non-newline character.
+A <dfn>Wildcard</dfn> matches a single, non-newline character.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/wildcard.md)</sup>
@@ -31,8 +32,7 @@ A <dfn>Wildcard</dfn> matches a single, non-newline character.
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-ax
-- `.` &mdash; Matches any character except newline characters. If the `s` (single-line) [flag] is set then this matches any charac
+- `.` &mdash; Matches any character except newline characters. If the `s` (single-line) [flag] is set then this matches any character.
 
 ## Engines
 

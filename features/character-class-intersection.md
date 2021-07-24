@@ -1,4 +1,5 @@
 # Feature: Character Class Intersection
+<sup>[Home](../index.md) \| [Features](../features)
 <sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-intersection.md)</sup>
 
 <!--
@@ -31,9 +32,7 @@
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-ax
-
-- `[…&&…]` &mdash; Matches any character that is in both the left- and right-hand sets of
+- `[…&&…]` &mdash; Matches any character that is in both the left- and right-hand sets of `&&`.
 
 ## Engines
 

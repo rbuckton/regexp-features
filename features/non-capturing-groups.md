@@ -1,4 +1,5 @@
 # Feature: Non-Capturing Groups
+<sup>[Home](../index.md) \| [Features](../features)
 <sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-capturing-groups.md)</sup>
 
 <!--
@@ -18,7 +19,7 @@
   - [](../../src/features/groups-and-backtracking/non-capturing-groups.md)
 -->
 
-A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] but cannot be referenced using [Backreferences]. A Non-capturing Group is not captured by the matching algorithm.
+A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] but cannot be referenced using [Backreferences]. A Non-capturing Group is not captured by the matching algorithm.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-capturing-groups.md)</sup>
@@ -31,8 +32,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-ax
-- `(?:…)` &mdash; Groups the subexpression as a single *At
+- `(?:…)` &mdash; Groups the subexpression as a single *Atom*.
 
 ## Engines
 

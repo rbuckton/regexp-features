@@ -1,4 +1,5 @@
 # Feature: Backreferences
+<sup>[Home](../index.md) \| [Features](../features)
 <sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.md)</sup>
 
 <!--
@@ -18,7 +19,7 @@
   - [](../../src/features/groups-and-backtracking/backreferences.md)
 -->
 
-<dfn>Backreferences</dfn> allow a pattern to re-match a previously matched capture group<sup>[1][Capturing Groups] [2][Named Capturing Groups]</sup> either by number (_n_) or by _name_.
+<dfn>Backreferences</dfn> allow a pattern to re-match a previously matched capture group<sup>[1][Capturing Groups] [2][Named Capturing Groups]</sup> either by number (_n_) or by _name_.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.md)</sup>
@@ -31,9 +32,8 @@
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-ax
 - <code>\\<em>n</em></code> &mdash; Where *n* is a decimal digit in the range 1-9. Matches the same string as the [capture group] *n*.
-- <code>\\k\<<em>name</em>\></code> &mdash; Matches the same string as the [named capture group] with the name *n
+- <code>\\k\<<em>name</em>\></code> &mdash; Matches the same string as the [named capture group] with the name *name*.
 
 ## Engines
 

@@ -1,4 +1,5 @@
 # Feature: Callouts
+<sup>[Home](../index.md) \| [Features](../features)
 <sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/callouts.md)</sup>
 
 <!--
@@ -18,7 +19,7 @@
   - [](../../src/features/callouts.md)
 -->
 
-A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matching.
+A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matching.
 
 ## Engines
 

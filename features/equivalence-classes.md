@@ -1,4 +1,5 @@
 # Feature: Equivalence Classes
+<sup>[Home](../index.md) \| [Features](../features)
 <sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/equivalence-classes.md)</sup>
 
 <!--
@@ -18,7 +19,7 @@
   - [](../../src/features/character-classes/equivalence-classes.md)
 -->
 
-An <dfn>Equivalence Class</dfn> matches any character or collating element with the same primary sort key as the provided collating element.
+An <dfn>Equivalence Class</dfn> matches any character or collating element with the same primary sort key as the provided collating element.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/equivalence-classes.md)</sup>
@@ -31,8 +32,7 @@ An <dfn>Equivalence Class</dfn> matches any character or collating element with 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-ax
-- <code>\[\[=<em>col</em>=\]\]</code> &mdash; Matches any character with the same primary sort key as *col*. Example: `[[=a=]]` matches `a`, `À`, `Á`, `Â`, `Ã`, `Ä`, `Å`, `A`, `à`, `á`, `â`, 
+- <code>\[\[=<em>col</em>=\]\]</code> &mdash; Matches any character with the same primary sort key as *col*. Example: `[[=a=]]` matches `a`, `À`, `Á`, `Â`, `Ã`, `Ä`, `Å`, `A`, `à`, `á`, `â`, etc.
 
 ## Engines
 

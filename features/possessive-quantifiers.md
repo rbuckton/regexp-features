@@ -1,4 +1,5 @@
 # Feature: Possessive Quantifiers
+<sup>[Home](../index.md) \| [Features](../features)
 <sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.md)</sup>
 
 <!--
@@ -18,7 +19,7 @@
   - [](../../src/features/quantifiers/possessive-quantifiers.md)
 -->
 
-<dfn>Possessive Quantifiers</dfn> are like greedy (i.e., regular) [quantifiers], except that backtracking is not performed.
+<dfn>Possessive Quantifiers</dfn> are like greedy (i.e., regular) [quantifiers], except that backtracking is not performed.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.md)</sup>
@@ -31,12 +32,11 @@
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-ax
 - `*+` &mdash; Match zero or more characters without backtracking.
 - `++` &mdash; Match one or more characters without backtracking.
 - `?+` &mdash; Match zero or one characters without backtracking.
 - <code>{<em>n</em>,}+</code> &mdash; Match _n_ or more characters without backtracking.
-- <code>{<em>n</em>,<em>m</em>}+</code> &mdash; Match between _n_ and _m_ characters without backt
+- <code>{<em>n</em>,<em>m</em>}+</code> &mdash; Match between _n_ and _m_ characters without backtracking.
 
 ## Engines
 

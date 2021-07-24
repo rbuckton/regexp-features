@@ -1,4 +1,5 @@
 # Feature: Branch Reset
+<sup>[Home](../index.md) \| [Features](../features)
 <sup>[Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/branch-reset.md)</sup>
 
 <!--
@@ -18,7 +19,7 @@
   - [](../../src/features/alternatives/branch-reset.md)
 -->
 
-A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [Alternative] (`|`), which affects numbering for [Backreferences] and captured results returned from the matching algorithm.
+A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [Alternative] (`|`), which affects numbering for [Backreferences] and captured results returned from the matching algorithm.
 
 ### Syntax
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/branch-reset.md)</sup>
@@ -31,8 +32,7 @@ A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [A
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-ax
-- `(?|…)` &mdash; Resets the subexpression count at the start of each [Alternati
+- `(?|…)` &mdash; Resets the subexpression count at the start of each [Alternative].
 
 ## Engines
 

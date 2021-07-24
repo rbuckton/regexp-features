@@ -4,11 +4,12 @@ This provides a comparison of features between various regular expression engine
 
 # Table of Contents
 
-- [Languages](languages.md)
-- [Features](features.md)
-- [Engines](engines.md)
+- [Languages](languages/index.md)
+- [Features](features/index.md)
+- [Engines](engines/index.md)
 
 # Support Table
+<sup>[Improve this table](https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md)</sup>
 
 |  | [Boost.Regex](engines/boost.regex.md) | [.NET](engines/dotnet.md) | [Oniguruma](engines/oniguruma.md) | [PCRE](engines/pcre.md) |
 |:-|:-:|:-:|:-:|:-:|
