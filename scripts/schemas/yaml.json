@@ -10,14 +10,14 @@
             "$id": "#Language",
             "type": "object",
             "properties": {
-                "language": { "type": "string" },
+                "language": { "$ref": "#/definitions/Identifier" },
                 "name": { "type": "string" },
-                "priority": { "type": "number" },
-                "reference": { "type": "string" },
-                "description": { "type": "string" },
+                "priority": { "type": "integer" },
+                "reference": { "$ref": "#/definitions/URIString" },
+                "description": { "$ref": "#/definitions/MarkdownString" },
                 "see_also": { "$ref": "#/definitions/SeeAlso" },
                 "links": { "type": "array", "items": { "$ref": "#/definitions/HrefLinkDefinition" } },
-                "content": { "type": "string" }
+                "content": { "$ref": "#/definitions/MarkdownString" }
             },
             "required": ["language"],
             "additionalProperties": false
@@ -30,16 +30,16 @@
             "$id": "#Feature",
             "type": "object",
             "properties": {
-                "feature": { "type": "string" },
+                "feature": { "$ref": "#/definitions/Identifier" },
                 "name": { "type": "string" },
-                "priority": { "type": "number" },
+                "priority": { "type": "integer" },
                 "aliases": { "type": "array", "items": { "type": "string" } },
-                "description": { "type": "string" },
-                "syntax": { "type": "string" },
-                "example": { "type": "string" },
+                "description": { "$ref": "#/definitions/MarkdownString" },
+                "syntax": { "$ref": "#/definitions/MarkdownString" },
+                "example": { "$ref": "#/definitions/MarkdownString" },
                 "see_also": { "$ref": "#/definitions/SeeAlso" },
                 "links": { "type": "array", "items": { "$ref": "#/definitions/HrefLinkDefinition" } },
-                "content": { "type": "string" }
+                "content": { "$ref": "#/definitions/MarkdownString" }
             },
             "required": ["feature"],
             "additionalProperties": false
@@ -52,15 +52,15 @@
             "$id": "#Engine",
             "type": "object",
             "properties": {
-                "engine": { "type": "string" },
+                "engine": { "$ref": "#/definitions/Identifier" },
                 "name": { "type": "string" },
-                "priority": { "type": "number" },
-                "reference": { "type": "string" },
-                "description": { "type": "string" },
+                "priority": { "type": "integer" },
+                "reference": { "$ref": "#/definitions/URIString" },
+                "description": { "$ref": "#/definitions/MarkdownString" },
                 "see_also": { "$ref": "#/definitions/SeeAlso" },
                 "languages": { "type": "array", "items": { "type": "string" } },
                 "links": { "type": "array", "items": { "$ref": "#/definitions/HrefLinkDefinition" } },
-                "content": { "type": "string" }
+                "content": { "$ref": "#/definitions/MarkdownString" }
             },
             "required": ["engine"],
             "additionalProperties": false
@@ -69,16 +69,16 @@
             "$id": "#EngineFeature",
             "type": "object",
             "properties": {
-                "engine": { "type": "string" },
-                "feature": { "type": "string" },
-                "reference": { "type": "string" },
+                "engine": { "$ref": "#/definitions/Identifier" },
+                "feature": { "$ref": "#/definitions/Identifier" },
+                "reference": { "$ref": "#/definitions/URIString" },
                 "supported": { "type": "boolean" },
-                "description": { "type": "string" },
-                "syntax": { "type": "string" },
-                "example": { "type": "string" },
+                "description": { "$ref": "#/definitions/MarkdownString" },
+                "syntax": { "$ref": "#/definitions/MarkdownString" },
+                "example": { "$ref": "#/definitions/MarkdownString" },
                 "see_also": { "$ref": "#/definitions/SeeAlso" },
                 "links": { "type": "array", "items": { "$ref": "#/definitions/HrefLinkDefinition" } },
-                "content": { "type": "string" }
+                "content": { "$ref": "#/definitions/MarkdownString" }
             },
             "required": ["engine", "feature"],
             "additionalProperties": false
@@ -87,7 +87,7 @@
         "LanguageLinkDefinition": {
             "type": "object",
             "properties": {
-                "language": { "type": "string" },
+                "language": { "$ref": "#/definitions/Identifier" },
                 "name": { "type": "string" }
             },
             "required": ["language"],
@@ -96,7 +96,7 @@
         "FeatureLinkDefinition": {
             "type": "object",
             "properties": {
-                "feature": { "type": "string" },
+                "feature": { "$ref": "#/definitions/Identifier" },
                 "name": { "type": "string" }
             },
             "required": ["feature"],
@@ -105,7 +105,7 @@
         "EngineLinkDefinition": {
             "type": "object",
             "properties": {
-                "engine": { "type": "string" },
+                "engine": { "$ref": "#/definitions/Identifier" },
                 "name": { "type": "string" }
             },
             "required": ["engine"],
@@ -131,18 +131,29 @@
         "Link": {
             "oneOf": [
                 { "$ref": "#/definitions/LinkDefinition" },
-                { "type": "string" }
+                { "$ref": "#/definitions/Identifier" }
             ]
         },
         "Toc": {
             "type": "array",
-            "items": { "type": "string" }
+            "items": { "$ref": "#/definitions/Identifier" }
         },
         "SeeAlso": {
             "oneOf": [
-                { "type": "string" },
+                { "$ref": "#/definitions/MarkdownString" },
                 { "type": "array", "items": { "$ref": "#/definitions/Link" } }
             ]
+        },
+        "Identifier": {
+            "type": "string",
+            "pattern": "^[a-z][-.a-z0-9]*$"
+        },
+        "MarkdownString": {
+            "type": "string"
+        },
+        "URIString": {
+            "type": "string",
+            "format": "uri-reference"
         }
     }
 }

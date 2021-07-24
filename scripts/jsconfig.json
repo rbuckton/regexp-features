@@ -3,8 +3,9 @@
         "target": "esnext",
         "module": "esnext",
         "moduleResolution": "node",
+        "checkJs": true,
         "useDefineForClassFields": true,
         "strictNullChecks": true
     },
-    "include": ["*.js"]
+    "include": ["**/*.js"]
 }
