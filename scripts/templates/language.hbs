@@ -1,5 +1,6 @@
 # Language: {{name}}
-{{> sources sources=(union nameSources descriptionSources) nocomment=true~}}
+<sup>[Home](../index.md) \| [Languages](./index.md){{#if (union nameSources descriptionSources)}} \| {{/if}}</sup>
+{{~> sources sources=(union nameSources descriptionSources) nocomment=true~}}
 {{~> sources sources=nameSources name='name' nolink=true ~}}
 {{~> sources sources=descriptionSources name='description' nolink=true ~}}
 

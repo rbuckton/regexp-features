@@ -1,6 +1,8 @@
 import matter from "gray-matter";
-import marked from "marked";
 import yaml from "js-yaml";
+import { fromMarkdown } from "mdast-util-from-markdown";
+import { gfmFromMarkdown } from "mdast-util-gfm";
+import { gfm } from "micromark-extension-gfm";
 import { trimLines } from "./utils.js";
 
 /**
@@ -28,22 +30,39 @@ function buildAnchorMap(anchors, text, path, fragment) {
  */
 
 /**
+ * @param {import("mdast").Content} content 
+ */
+function getText(content) {
+    if ("value" in content) {
+        return content.value;
+    }
+    if ("children" in content) {
+        let text = "";
+        for (const child of content.children) {
+            text += getText(child);
+        }
+        return text;
+    }
+    return "";
+}
+
+/**
  * @param {string} text
  * @returns {Record<string, any>}
  */
 function parseMarkdownAnchors(text) {
-    const tokens = marked.lexer(text, { gfm: true });
+    const ast = fromMarkdown(text, "utf8", { extensions: [gfm()], mdastExtensions: [gfmFromMarkdown] });
     /** @type {MarkdownFragment | undefined} */
     let content = { pos: 0, end: text.length, depth: 0 };
     /** @type {MarkdownFragment[]} */
     const stack = [];
     let pos = 0;
-    for (const token of tokens) {
-        if (token.type === "heading") {
-            const heading = token.text.trim().toLowerCase();
+    for (const node of ast.children) {
+        if (node.type === "heading") {
+            const heading = getText(node).trim().toLowerCase();
             // as long as the new heading has a lower depth than the current heading,
             // pop the heading off the stack and update it.
-            while (token.depth <= content.depth && stack.length) {
+            while (node.depth <= content.depth && stack.length) {
                 content.end = pos;
                 content = stack.pop();
                 if (!content) throw new Error("Illegal operation");
@@ -53,12 +72,16 @@ function parseMarkdownAnchors(text) {
             content.headings ??= /** @type {Record<string, MarkdownFragment>} */(Object.create(null));
             if (!(heading in content.headings)) {
                 stack.push(content);
-                pos += token.raw.length;
-                content = content.headings[heading] = { pos, end: pos, depth: token.depth };
+                const offset = node.position?.end.offset;
+                if (offset === undefined) throw new Error("Illegal operation");
+                pos = offset;
+                content = content.headings[heading] = { pos, end: pos, depth: node.depth };
                 continue;
             }
         }
-        pos += token.raw.length;
+        const offset = node.position?.end.offset;
+        if (offset === undefined) throw new Error("Illegal operation");
+        pos = offset;
         content.end = pos;
     }
 

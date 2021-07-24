@@ -371,7 +371,7 @@ export class Documentation {
         /** @type {import("../templateTypes.js").OtherFileTemplateData} */
         const data = { docs };
         data.built = true;
-        data.outFile = "languages.md";
+        data.outFile = "languages/index.md";
         const content = applyTemplate("LanguageIndex", data);
         this.#outputs.set(data.outFile, content);
     }
@@ -383,7 +383,7 @@ export class Documentation {
         /** @type {import("../templateTypes.js").OtherFileTemplateData} */
         const data = { docs };
         data.built = true;
-        data.outFile = "features.md";
+        data.outFile = "features/index.md";
         const content = applyTemplate("FeatureIndex", data);
         this.#outputs.set(data.outFile, content);
     }
@@ -395,7 +395,7 @@ export class Documentation {
         /** @type {import("../templateTypes.js").OtherFileTemplateData} */
         const data = { docs };
         data.built = true;
-        data.outFile = "engines.md";
+        data.outFile = "engines/index.md";
         const content = applyTemplate("EngineIndex", data);
         this.#outputs.set(data.outFile, content);
     }
