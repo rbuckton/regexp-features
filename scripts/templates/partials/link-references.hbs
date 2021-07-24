@@ -1,0 +1,51 @@
+
+{{#if (eq @root.type "Engine")}}
+{{!-- In an Engine, emit links using anchors --}}
+{{#each features}}
+[{{name}}]: #feature-{{hlink name}}
+{{#each aliases}}
+[{{.}}]: #feature-{{hlink ../name}}
+{{/each}}
+{{/each}}
+{{else}}
+{{!-- Anywhere else, emit links using paths --}}
+{{#each @root.docs.features}}
+[{{name}}]: {{makeRelative outFile @root.outFile}}
+{{#each aliases}}
+[{{.}}]: {{makeRelative ../outFile @root.outFile}}
+{{/each}}
+{{/each}}
+{{/if}}
+
+{{!-- Emit link references from article --}}
+{{#each links}}
+[{{name}}]: {{href}}
+{{/each}}
+
+{{!-- Emit links to each feature article --}}
+{{#each @root.docs.features}}
+[article:{{name}}]: {{makeRelative outFile @root.outFile}}
+{{/each}}
+
+{{!-- Emit link to article reference --}}
+{{#if reference}}
+[Reference]: {{reference}}
+{{else}}
+[Reference]: #
+{{/if}}
+
+{{!-- In an Engine, emit links to feature references --}}
+{{#if (eq @root.type "Engine")}}
+{{#each features}}
+{{#if reference}}
+[reference:{{name}}]: {{reference}}
+{{else}}
+[reference:{{name}}]: #not-supported-features
+{{/if}}
+{{/each}}
+{{/if}}
+
+{{!-- Emit links to languages --}}
+{{#each @root.docs.languages}}
+[{{name}}]: {{makeRelative outFile @root.outFile}}
+{{/each}}

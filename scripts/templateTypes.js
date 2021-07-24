@@ -25,6 +25,7 @@ export {};
 /**
  * @typedef LanguageTemplateData
  * @property {DocumentationTemplateData} docs
+ * @property {"Language"} type
  * @property {string} id
  * @property {string} language
  * @property {string} name
@@ -47,6 +48,7 @@ export {};
 /**
  * @typedef FeatureTemplateData
  * @property {DocumentationTemplateData} docs
+ * @property {"Feature"} type
  * @property {string} id
  * @property {string} feature
  * @property {string} name
@@ -75,6 +77,7 @@ export {};
 /**
  * @typedef EngineTemplateData
  * @property {DocumentationTemplateData} docs
+ * @property {"Engine"} type
  * @property {string} id
  * @property {string} engine
  * @property {string} name
@@ -103,6 +106,7 @@ export {};
 /**
  * @typedef EngineFeatureTemplateData
  * @property {DocumentationTemplateData} docs
+ * @property {"EngineFeature"} type
  * @property {EngineTemplateData} engine
  * @property {FeatureTemplateData} feature
  * @property {string} name

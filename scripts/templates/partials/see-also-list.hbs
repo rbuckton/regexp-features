@@ -1,0 +1,7 @@
+{{#if (isArray see_also)~}}
+{{#each see_also}}
+- [{{name}}]
+{{/each}}
+{{~else~}}
+{{{see_also}}}
+{{~/if}}

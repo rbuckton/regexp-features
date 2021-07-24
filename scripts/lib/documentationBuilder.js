@@ -48,7 +48,13 @@ export class DocumentationBuilder {
     getOrAddLanguage(id) {
         let language = this.#languagesMap.get(id);
         if (!language) {
-            this.#languagesMap.set(id, language = { docs: this.#data, id, language: id, name: id });
+            this.#languagesMap.set(id, language = {
+                docs: this.#data,
+                type: "Language",
+                id,
+                language: id,
+                name: id
+            });
             this.#languages.push(language);
         }
         return language;
@@ -60,7 +66,13 @@ export class DocumentationBuilder {
     getOrAddFeature(id) {
         let feature = this.#featuresMap.get(id);
         if (!feature) {
-            this.#featuresMap.set(id, feature = { docs: this.#data, id, feature: id, name: id });
+            this.#featuresMap.set(id, feature = {
+                docs: this.#data,
+                type: "Feature",
+                id,
+                feature: id,
+                name: id
+            });
             this.#features.push(feature);
         }
         return feature;
@@ -72,7 +84,13 @@ export class DocumentationBuilder {
     getOrAddEngine(id) {
         let engine = this.#enginesMap.get(id);
         if (!engine) {
-            this.#enginesMap.set(id, engine = { docs: this.#data, id, engine: id, name: id });
+            this.#enginesMap.set(id, engine = {
+                docs: this.#data,
+                type: "Engine",
+                id,
+                engine: id,
+                name: id
+            });
             this.#engines.push(engine);
         }
         return engine;
@@ -84,7 +102,14 @@ export class DocumentationBuilder {
      */
     getOrAddEngineFeature(engine, feature) {
         let engineFeature = this.#engineFeatureMap.get(`(engine:${engine.id})(feature:${feature.id})`);
-        if (!engineFeature) this.#engineFeatureMap.set(`(engine:${engine.id})(feature:${feature.id})`, engineFeature = { docs: this.#data, engine, feature, name: feature.id, supported: false });
+        if (!engineFeature) this.#engineFeatureMap.set(`(engine:${engine.id})(feature:${feature.id})`, engineFeature = {
+            docs: this.#data,
+            type: "EngineFeature",
+            engine,
+            feature,
+            name: feature.id,
+            supported: false
+        });
         return engineFeature;
     }
 

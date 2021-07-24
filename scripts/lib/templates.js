@@ -1,12 +1,18 @@
 import * as fs from "fs/promises";
 import handlebars from "handlebars";
 import * as path from "path";
-import { engineFeatureTemplateFileUrl, engineIndexTemplateFileUrl, engineTemplateFileUrl, featureIndexTemplateFileUrl, featureTemplateFileUrl, indexTemplateFileUrl, languageIndexTemplateFileUrl, languageTemplateFileUrl, sourcesPartialFileUrl } from "./paths.js";
+import { engineFeatureTemplateFileUrl, engineIndexTemplateFileUrl, engineTemplateFileUrl, featureIndexTemplateFileUrl, featureTemplateFileUrl, indexTemplateFileUrl, languageIndexTemplateFileUrl, languageTemplateFileUrl, partialsDirUrl, sourcesPartialFileUrl } from "./paths.js";
 import { trimLeadingLines, trimLines, trimTrailingLines } from "./utils.js";
 
 /** @type {import("handlebars").RuntimeOptions} */
 export const handlebarsOptions = {
     helpers: {
+        eq(a, b) {
+            return a === b;
+        },
+        neq(a, b) {
+            return a === b;
+        },
         hlink(value) {
             return `${String(value).toLowerCase().replace(/\W+/g, "-")}`;
         },
@@ -35,10 +41,11 @@ export const handlebarsOptions = {
             }
             return set.size ? [...set] : undefined
         },
-        makeRelative(source, outFile) {
-            const relative = path.relative(outFile, source);
+        makeRelative(to, from) {
+            if (!from.endsWith("/")) from = path.dirname(from);
+            const relative = path.relative(from, to);
             const result = path.isAbsolute(relative) ? relative : relative.replaceAll("\\", "/");
-            return result;
+            return result || ".";
         },
         trimLeadingLines,
         trimTrailingLines,
@@ -72,8 +79,13 @@ const templates = {
 };
 
 export async function reloadTemplates() {
-    handlebarsOptions.partials ??= {};
-    handlebarsOptions.partials.sources = handlebars.compile(await fs.readFile(sourcesPartialFileUrl, "utf8"));
+    handlebarsOptions.partials = {};
+    for (const entry of await fs.readdir(partialsDirUrl, { withFileTypes: true })) {
+        if (!entry.isFile()) continue;
+        const parts = path.parse(entry.name);
+        if (parts.ext !== ".hbs") continue;
+        handlebarsOptions.partials[parts.name] = handlebars.compile(await fs.readFile(new URL(entry.name, partialsDirUrl), "utf8"));
+    }
     templates.Language = handlebars.compile(await fs.readFile(languageTemplateFileUrl, "utf8"));
     templates.Feature = handlebars.compile(await fs.readFile(featureTemplateFileUrl, "utf8"));
     templates.Engine = handlebars.compile(await fs.readFile(engineTemplateFileUrl, "utf8"));

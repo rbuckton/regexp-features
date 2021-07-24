@@ -1,47 +1,14 @@
 ## Feature: {{name}}
-{{> sources sources=nameSources name='name' nolink=true ~}}
+<sup>[Main article][article:{{name}}]</sup>
+<sup> \| [Reference][reference:{{name}}]</sup>
+{{> edit-link sources=(union nameSources (union referenceSources (union supportedSources descriptionSources))) prefix=' \| ' }}
 
-<sup>[Main article][article:{{name}}] \| [Reference][reference:{{name}}] {{#if (union nameSources (union referenceSources (union supportedSources descriptionSources)))}}\| {{/if}}</sup>
-{{> sources sources=(union nameSources (union referenceSources (union supportedSources descriptionSources))) nocomment=true ~}}
-
-{{> sources sources=referenceSources name='name' nolink=true ~}}
-
-{{#unless supported~}}
-{{> sources sources=supportedSources name='supported' nolink=true }}
-> ❌ This feature is not supported.
-
-{{/unless}}
-{{#if description~}}
-{{> sources sources=descriptionSources name='description' nolink=true }}
-
-{{{description}}}
-
-{{/if}}
+{{> sources sources=nameSources name='name' ~}}
+{{> sources sources=referenceSources name='reference' ~}}
+{{> supported }}
+{{> description }}
 {{#if supported~}}
-{{#if syntax~}}
-### Syntax
-{{> sources sources=syntaxSources name='syntax' }}
-
-{{{syntax}}}
-
-{{/if}}
-{{#if example~}}
-### Example
-{{> sources sources=exampleSources name='example' }}
-
-{{{example}}}
-
-{{/if}}
+{{> syntax }}
+{{> example }}
 {{~/if}}
-{{#if see_also~}}
-### See Also
-{{> sources sources=see_alsoSources name='see_also' }}
-
-{{#if (isArray see_also)~}}
-{{#each see_also}}
-- [{{name}}]
-{{/each}}
-{{~else~}}
-{{{see_also}}}
-{{~/if}}
-{{~/if}}
+{{> see-also }}

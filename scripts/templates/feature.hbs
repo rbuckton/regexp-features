@@ -1,56 +1,13 @@
 # Feature: {{name}}
-<sup>[Home](../index.md) \| [Features](../features)
-{{> sources sources=(union nameSources descriptionSources) label='Improve this article' ~}}
-{{> sources sources=nameSources name='name' nolink=true ~}}
-{{> sources sources=descriptionSources name='description' nolink=true ~}}
+<sup>[Home](../index.md)</sup>
+<sup> \| [Features](../features)</sup>
+{{> edit-link sources=(union nameSources descriptionSources) prefix=' \| ' label='Improve this article' }}
 
-{{#if description~}}
-{{{description}}}
+{{> sources sources=nameSources name='name' ~}}
 
-{{/if}}
-{{#if syntax~}}
-### Syntax
-{{> sources sources=syntaxSources name='syntax' }}
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
-
-{{{syntax}}}
-
-{{/if}}
-{{#if example~}}
-### Example
-{{> sources sources=exampleSources name='example' }}
-
-> NOTE: The following example based on some of the supported engines. For specific engine support, see [Engines](#engines).
-
-{{{example}}}
-
-{{/if}}
-## Engines
-
-| Engine | Supported |
-|:-------|:---------:|
-{{#each engineFeatures}}
-| [{{engine.name}}](../engines/{{engine.id}}.md) | [{{#if supported}}✔{{else}}❌{{/if}}](engines/{{engine.id}}.md#feature-{{hlink feature.id}}) |
-{{/each}}
-
-{{#if see_also~}}
-### See Also
-
-{{> sources sources=see_alsoSources name='see_also' }}
-{{#if (isArray see_also)~}}
-{{#each see_also}}
-- [{{name}}]
-{{/each}}
-{{~else~}}
-{{{see_also}}}
-{{~/if}}
-{{~/if}}
-
-{{#each @root.docs.features}}
-[{{name}}]: ./{{feature}}.md
-{{/each}}
-
-{{#each @root.docs.features}}
-[article:{{name}}]: ./{{feature}}.md
-{{/each}}
+{{> description }}
+{{> syntax }}
+{{> example }}
+{{> feature-engine-support }}
+{{> see-also }}
+{{> link-references }}

@@ -1,0 +1,16 @@
+{{#if sources~}}
+<sup>
+{{~prefix~}}
+{{~#if (multiple sources)~}}
+{{~#each sources~}}
+{{~#if @first}}{{#if label}}{{label}}{{else}}Improve this section{{/if}}: {{else}}, {{/if~}}
+[{{add @index 1}}](https://github.com/rbuckton/regexp-features/edit/main/src/{{makeRelative . @root.docs.srcDir }})
+{{~/each~}}
+{{~else if sources ~}}
+[{{#if label}}{{label}}{{else}}Improve this section{{/if}}]
+{{~#each sources~}}
+(https://github.com/rbuckton/regexp-features/edit/main/src/{{makeRelative . @root.docs.srcDir }})
+{{~/each~}}
+{{~/if~}}
+</sup>
+{{~/if}}

@@ -1,15 +1,17 @@
 # Language: {{name}}
-<sup>[Home](../index.md) \| [Languages](./index.md){{#if (union nameSources descriptionSources)}} \| {{/if}}</sup>
-{{~> sources sources=(union nameSources descriptionSources) nocomment=true~}}
-{{~> sources sources=nameSources name='name' nolink=true ~}}
-{{~> sources sources=descriptionSources name='description' nolink=true ~}}
+<sup>[Home](../index.md)</sup>
+<sup> \| [Languages](./index.md)</sup>
+{{> edit-link sources=(union nameSources descriptionSources) prefix=' \| ' }}
 
-{{#if description~}}
-{{{description}}}
+{{> sources sources=nameSources name='name' ~}}
+{{> sources sources=descriptionSources name='description' ~}}
 
-{{/if}}
+{{> description }}
+
 ## Engines
 
 {{#each engines}}
 - [{{name}}](../engines/{{id}}.md)
 {{/each}}
+
+{{> link-references }}

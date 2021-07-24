@@ -1,16 +1,16 @@
 # Engine: {{name}}
-<sup>[Home](../index.md) \| [Engines](./index) \| [Reference]{{#if (union nameSources (union referenceSources descriptionSources))}} \| {{/if~}}</sup>
-{{> sources sources=(union nameSources (union referenceSources descriptionSources)) label='Improve this article' nocomment=true ~}}
+<sup>[Home](../index.md)</sup>
+<sup> \| [Engines](./index)</sup>
+<sup> \| [Reference]</sup>
+{{> edit-link sources=(union nameSources (union referenceSources descriptionSources)) prefix=' \| ' label='Improve this article' }}
 
-{{~> sources sources=nameSources name='name' nolink=true ~}}
-{{~> sources sources=referenceSources name='reference' nolink=true ~}}
-{{~> sources sources=descriptionSources name='description' nolink=true ~}}
+{{> sources sources=nameSources name='name' }}
+{{> sources sources=referenceSources name='reference' }}
 
-{{#if description~}}
-{{{description}}}
-
-{{/if}}
+{{> description }}
 ## Languages
+{{> edit-link sources=languagesSources }}
+
 {{> sources sources=languagesSources name='languages' ~}}
 
 {{#each languages}}
@@ -42,33 +42,4 @@
 
 {{/each}}
 
-{{#each features}}
-[{{name}}]: #feature-{{hlink name}}
-{{#each aliases}}
-[{{.}}]: #feature-{{hlink ../name}}
-{{/each}}
-{{#each links}}
-[{{name}}]: {{href}}
-{{/each}}
-
-{{/each}}
-{{#each features}}
-[article:{{name}}]: ../features/{{feature.id}}.md
-{{/each}}
-
-{{#if reference}}
-[Reference]: {{reference}}
-{{else}}
-[Reference]: #
-{{/if}}
-{{#each features}}
-{{#if reference}}
-[reference:{{name}}]: {{reference}}
-{{else}}
-[reference:{{name}}]: #not-supported-features
-{{/if}}
-{{/each}}
-
-{{#each languages}}
-[{{name}}]: ../languages/{{language}}.md
-{{/each}}
+{{> link-references }}
