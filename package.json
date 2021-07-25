@@ -17,6 +17,7 @@
         "chokidar": "^3.5.2",
         "gray-matter": "^4.0.3",
         "handlebars": "^4.7.7",
+        "hygen": "^6.1.0",
         "js-yaml": "^4.1.0",
         "mdast-util-from-markdown": "^1.0.0",
         "mdast-util-gfm": "^1.0.0",
