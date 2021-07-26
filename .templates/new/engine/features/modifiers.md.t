@@ -1,9 +1,20 @@
 ---
+to: src/engines/<%=engine.id%>/features/modifiers.md
+---
+---
 ### YamlMime:EngineFeature
-engine: '#todo'
-feature: modifiers
-supported: false
+<%
+    Feature = engine.features.get("modifiers")
+    if (!Feature) throw new Error("modifiers")
+-%>
+engine: <%=engine.id%>
+feature: <%=Feature.feature.id%>
+supported: <%=Feature.supported%>
+<% if (Feature.supported && Feature.reference) { -%>
+reference: <%=Feature.reference%>
+<% } else { -%>
 #reference: 
+<% } -%>
 #description: *content.description
 #syntax: *content.syntax
 #example: *content.example

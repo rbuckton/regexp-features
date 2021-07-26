@@ -1,9 +1,20 @@
 ---
+to: src/engines/<%=engine.id%>/features/word-boundaries.md
+---
+---
 ### YamlMime:EngineFeature
-engine: '#todo'
-feature: word-boundaries
-supported: false
+<%
+    Feature = engine.features.get("word-boundaries")
+    if (!Feature) throw new Error("word-boundaries")
+-%>
+engine: <%=engine.id%>
+feature: <%=Feature.feature.id%>
+supported: <%=Feature.supported%>
+<% if (Feature.supported && Feature.reference) { -%>
+reference: <%=Feature.reference%>
+<% } else { -%>
 #reference: 
+<% } -%>
 #description: *content.description
 #syntax: *content.syntax
 #example: *content.example
