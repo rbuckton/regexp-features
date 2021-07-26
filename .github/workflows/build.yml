@@ -18,6 +18,7 @@ jobs:
           branch: gh-pages
           folder: docs
           clean-exclude: |
+            pr
             _config.yml
             _layouts
             _includes
