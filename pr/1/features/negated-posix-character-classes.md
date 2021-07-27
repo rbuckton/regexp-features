@@ -1,25 +1,14 @@
 # Feature: Negated Posix Character Classes
 <sup>[Home](../index.md)</sup>
-<sup> \| [Features](../features)</sup>
-<sup> \| [Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/negated-posix-character-classes.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/character-classes/negated-posix-character-classes.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/character-classes/negated-posix-character-classes.md)
--->
+<sup> \| </sup>
+<sup>[Features](index.md)</sup>
+<sup> \| </sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/negated-posix-character-classes.md "source for: name, description")</sup>
 
 A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] set that specifies a named, pre-defined set of excluded characters.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/negated-posix-character-classes.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/character-classes/negated-posix-character-classes.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/negated-posix-character-classes.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -34,13 +23,9 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 | [Boost.Regex](../engines/boost.regex.md) | [❌](engines/boost.regex.md#feature-negated-posix-character-classes) |
 | [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-negated-posix-character-classes) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-negated-posix-character-classes) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-negated-posix-character-classes) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-negated-posix-character-classes) |
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/negated-posix-character-classes.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/character-classes/negated-posix-character-classes.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/negated-posix-character-classes.md "source for: see_also")</sup>
 
 
 - [Character Classes]
@@ -53,6 +38,9 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 - [Character Class Nested Set]
 - [Character Class Intersection]
 - [Character Class Subtraction]
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: anchors.md
 [Anchor]: anchors.md

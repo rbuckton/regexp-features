@@ -1,13 +1,17 @@
 # Engines
 <sup>[Home](../index.md)</sup>
-<sup>\| [Improve this list](https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines)</sup>
+<sup> \| </sup>
+<sup>[Improve this list][new engine]</sup>
 
-- [Boost.Regex](./boost.regex.md)
-- [.NET](./dotnet.md)
-- [Oniguruma](./oniguruma.md)
-- [Hyperscan](./hyperscan.md)
-- [PCRE](./pcre.md)
+- [Boost.Regex](boost.regex.md)
+- [.NET](dotnet.md)
+- [Oniguruma](oniguruma.md)
+- [Hyperscan](hyperscan.md)
+- [PCRE](pcre.md)
 
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: ../features/anchors.md
 [Anchor]: ../features/anchors.md

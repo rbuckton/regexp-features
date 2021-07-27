@@ -1,25 +1,14 @@
 # Feature: Buffer Boundaries
 <sup>[Home](../index.md)</sup>
-<sup> \| [Features](../features)</sup>
-<sup> \| [Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/buffer-boundaries.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/anchors-and-boundaries/buffer-boundaries.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/anchors-and-boundaries/buffer-boundaries.md)
--->
+<sup> \| </sup>
+<sup>[Features](index.md)</sup>
+<sup> \| </sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/buffer-boundaries.md "source for: name, description")</sup>
 
 A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of the input. This differs slightly from `^` and `$` which can be affected by [RegExp flags] like `m`.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/buffer-boundaries.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/anchors-and-boundaries/buffer-boundaries.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/buffer-boundaries.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -36,19 +25,18 @@ A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of t
 | [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-buffer-boundaries) |
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-buffer-boundaries) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-buffer-boundaries) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-buffer-boundaries) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-buffer-boundaries) |
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/buffer-boundaries.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/anchors-and-boundaries/buffer-boundaries.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/buffer-boundaries.md "source for: see_also")</sup>
 
 
 - [Anchors]
 - [Word Boundaries]
 - [Text Segment Boundaries]
 - [Continuation Escape]
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: anchors.md
 [Anchor]: anchors.md

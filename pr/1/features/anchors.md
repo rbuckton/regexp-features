@@ -1,25 +1,14 @@
 # Feature: Anchors
 <sup>[Home](../index.md)</sup>
-<sup> \| [Features](../features)</sup>
-<sup> \| [Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/anchors.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/anchors-and-boundaries/anchors.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/anchors-and-boundaries/anchors.md)
--->
+<sup> \| </sup>
+<sup>[Features](index.md)</sup>
+<sup> \| </sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/anchors.md "source for: name, description")</sup>
 
 <dfn>Anchors</dfn> match the start or end of a line.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/anchors.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/anchors-and-boundaries/anchors.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/anchors.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -35,19 +24,18 @@
 | [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-anchors) |
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-anchors) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-anchors) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-anchors) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-anchors) |
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/anchors.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/anchors-and-boundaries/anchors.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/anchors.md "source for: see_also")</sup>
 
 
 - [Buffer Boundaries]
 - [Word Boundaries]
 - [Text Segment Boundaries]
 - [Continuation Escape]
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: anchors.md
 [Anchor]: anchors.md

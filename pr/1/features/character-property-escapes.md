@@ -1,25 +1,14 @@
 # Feature: Character Property Escapes
 <sup>[Home](../index.md)</sup>
-<sup> \| [Features](../features)</sup>
-<sup> \| [Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-property-escapes.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/character-classes/character-property-escapes.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/character-classes/character-property-escapes.md)
--->
+<sup> \| </sup>
+<sup>[Features](index.md)</sup>
+<sup> \| </sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-property-escapes.md "source for: name, description")</sup>
 
 A <dfn>Character Property Escape</dfn> is an escape sequence used to match a character with a specific character property.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-property-escapes.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/character-classes/character-property-escapes.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-property-escapes.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -37,13 +26,9 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 | [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-character-property-escapes) |
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-character-property-escapes) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-character-property-escapes) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-character-property-escapes) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-character-property-escapes) |
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-property-escapes.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/character-classes/character-property-escapes.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-property-escapes.md "source for: see_also")</sup>
 
 
 - [Character Classes]
@@ -56,6 +41,9 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 - [Character Class Nested Set]
 - [Character Class Intersection]
 - [Character Class Subtraction]
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: anchors.md
 [Anchor]: anchors.md

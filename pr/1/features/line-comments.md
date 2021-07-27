@@ -1,25 +1,14 @@
 # Feature: Line Comments
 <sup>[Home](../index.md)</sup>
-<sup> \| [Features](../features)</sup>
-<sup> \| [Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/line-comments.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/comments/line-comments.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/comments/line-comments.md)
--->
+<sup> \| </sup>
+<sup>[Features](index.md)</sup>
+<sup> \| </sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/line-comments.md "source for: name, description")</sup>
 
 A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and ending with `\n` (or the end of the pattern) that is ignored by pattern matching and can be used to document a pattern.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/line-comments.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/comments/line-comments.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/line-comments.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -36,14 +25,13 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 | [Oniguruma](../engines/oniguruma.md) | [❌](engines/oniguruma.md#feature-line-comments) |
 | [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-line-comments) |
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/line-comments.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/comments/line-comments.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/line-comments.md "source for: see_also")</sup>
 
 
 - [Comments]
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: anchors.md
 [Anchor]: anchors.md

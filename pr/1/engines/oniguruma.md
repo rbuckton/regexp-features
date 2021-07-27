@@ -1,25 +1,28 @@
 # Engine: Oniguruma
 <sup>[Home](../index.md)</sup>
-<sup> \| [Engines](./index)</sup>
-<sup> \| [Reference]</sup>
-<sup> \| [Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/engine.md)</sup>
+<sup> \| </sup>
+<sup>[Engines](index.md)</sup>
+<sup> \| </sup>
+<sup>[Reference]</sup>
+<sup> \| </sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/engine.md "source for: name, reference")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/engines/oniguruma/engine.md)
+  - [](../../src/engines/oniguruma/engine.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/engine.md)
+  - [](../../src/engines/oniguruma/engine.md)
 -->
+
 
 
 ## Languages
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/engine.md)</sup>
-<!--
-'languages' sources:
-  - [](../src/engines/oniguruma/engine.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/engine.md "source for: languages")</sup>
 
 - [C]
 - [C++]
@@ -72,36 +75,27 @@
 
 ## Feature: Flags
 <sup>[Main article][article:Flags]</sup>
-<sup> \| [Reference][reference:Flags]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/flags.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/flags.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Flags]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/flags.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/flags.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/flags-and-modifiers/flags.md)
+  - [](../../src/features/flags-and-modifiers/flags.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/flags.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/flags.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/flags-and-modifiers/flags.md)
+  - [](../../src/engines/oniguruma/features/flags.md)
 -->
 
 <dfn>Flags</dfn> control certain aspects of the matching behavior of a pattern.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/flags.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/engines/oniguruma/features/flags.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/flags.md "source for: syntax")</sup>
 
 
 The following flags are supported:
@@ -123,58 +117,41 @@ Some flags depend on options provided to Oniguruma <sup>[reference](https://gith
   - `s` &mdash; Singleline. Causes the [wildcard] `.` to match newline characters.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/flags.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/flags-and-modifiers/flags.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/flags.md "source for: see_also")</sup>
 
 
 - [Modifiers]
 
 ## Feature: Anchors
 <sup>[Main article][article:Anchors]</sup>
-<sup> \| [Reference][reference:Anchors]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/anchors.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/anchors.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Anchors]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/anchors.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/anchors.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/anchors-and-boundaries/anchors.md)
+  - [](../../src/features/anchors-and-boundaries/anchors.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/anchors.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/anchors.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/anchors-and-boundaries/anchors.md)
+  - [](../../src/engines/oniguruma/features/anchors.md)
 -->
 
 <dfn>Anchors</dfn> match the start or end of a line.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/anchors.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/anchors-and-boundaries/anchors.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/anchors.md "source for: syntax")</sup>
 
 
 - `^` &mdash; Matches the start of a line when the `m` (multiline) [flag] is set. Otherwise, matches the start of the input.
 - `$` &mdash; Matches the end of a line when the `m` (multiline) [flag] is set. Otherwise, matches the end of the input.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/anchors.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/anchors-and-boundaries/anchors.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/anchors.md "source for: see_also")</sup>
 
 
 - [Buffer Boundaries]
@@ -184,36 +161,27 @@ Some flags depend on options provided to Oniguruma <sup>[reference](https://gith
 
 ## Feature: Buffer Boundaries
 <sup>[Main article][article:Buffer Boundaries]</sup>
-<sup> \| [Reference][reference:Buffer Boundaries]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/buffer-boundaries.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/buffer-boundaries.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Buffer Boundaries]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/buffer-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/buffer-boundaries.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/anchors-and-boundaries/buffer-boundaries.md)
+  - [](../../src/features/anchors-and-boundaries/buffer-boundaries.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/buffer-boundaries.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/buffer-boundaries.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/anchors-and-boundaries/buffer-boundaries.md)
+  - [](../../src/engines/oniguruma/features/buffer-boundaries.md)
 -->
 
 A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of the input. This differs slightly from `^` and `$` which can be affected by [RegExp flags] like `m`.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/buffer-boundaries.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/anchors-and-boundaries/buffer-boundaries.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/buffer-boundaries.md "source for: syntax")</sup>
 
 
 - `\A` &mdash; Matches the start of the input.
@@ -221,11 +189,7 @@ A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of t
 - `\Z` &mdash; A zero-width assertion consisting of an optional newline at the end of the buffer. Equivalent to `(?=\n?\z)`.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/buffer-boundaries.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/anchors-and-boundaries/buffer-boundaries.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/buffer-boundaries.md "source for: see_also")</sup>
 
 
 - [Anchors]
@@ -235,47 +199,34 @@ A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of t
 
 ## Feature: Word Boundaries
 <sup>[Main article][article:Word Boundaries]</sup>
-<sup> \| [Reference][reference:Word Boundaries]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/word-boundaries.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/word-boundaries.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Word Boundaries]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/word-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/word-boundaries.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/anchors-and-boundaries/word-boundaries.md)
+  - [](../../src/features/anchors-and-boundaries/word-boundaries.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/word-boundaries.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/word-boundaries.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/anchors-and-boundaries/word-boundaries.md)
+  - [](../../src/engines/oniguruma/features/word-boundaries.md)
 -->
 
 A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a word.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/word-boundaries.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/anchors-and-boundaries/word-boundaries.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/word-boundaries.md "source for: syntax")</sup>
 
 
 - `\b` &mdash; Matches the start or the end of a word.
 - `\B` &mdash; Matches when *not* at the start or the end of a word.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/word-boundaries.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/anchors-and-boundaries/word-boundaries.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/word-boundaries.md "source for: see_also")</sup>
 
 
 - [Anchors]
@@ -285,47 +236,34 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 
 ## Feature: Text Segment Boundaries
 <sup>[Main article][article:Text Segment Boundaries]</sup>
-<sup> \| [Reference][reference:Text Segment Boundaries]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/text-segment-boundaries.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/text-segment-boundaries.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Text Segment Boundaries]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/text-segment-boundaries.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/anchors-and-boundaries/text-segment-boundaries.md)
+  - [](../../src/features/anchors-and-boundaries/text-segment-boundaries.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/text-segment-boundaries.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/text-segment-boundaries.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/anchors-and-boundaries/text-segment-boundaries.md)
+  - [](../../src/engines/oniguruma/features/text-segment-boundaries.md)
 -->
 
 A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the end of a text segment.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/text-segment-boundaries.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/anchors-and-boundaries/text-segment-boundaries.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: syntax")</sup>
 
 
 - `\y` &mdash; Matches the start or the end of a text segment.
 - `\Y` &mdash; Matches when *not* at the start or the end of a text segment.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/text-segment-boundaries.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/anchors-and-boundaries/text-segment-boundaries.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: see_also")</sup>
 
 
 - [Anchors]
@@ -335,46 +273,33 @@ A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the en
 
 ## Feature: Continuation Escape
 <sup>[Main article][article:Continuation Escape]</sup>
-<sup> \| [Reference][reference:Continuation Escape]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/continuation-escape.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/continuation-escape.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Continuation Escape]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/continuation-escape.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/continuation-escape.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/anchors-and-boundaries/continuation-escape.md)
+  - [](../../src/features/anchors-and-boundaries/continuation-escape.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/continuation-escape.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/continuation-escape.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/anchors-and-boundaries/continuation-escape.md)
+  - [](../../src/engines/oniguruma/features/continuation-escape.md)
 -->
 
 A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either the start of the input or the start of the last match.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/continuation-escape.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/anchors-and-boundaries/continuation-escape.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/continuation-escape.md "source for: syntax")</sup>
 
 
 - `\G` &mdash; Matches either the start of the input or the start of the last match.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/continuation-escape.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/anchors-and-boundaries/continuation-escape.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/continuation-escape.md "source for: see_also")</sup>
 
 
 - [Anchors]
@@ -384,72 +309,54 @@ A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either t
 
 ## Feature: Alternatives
 <sup>[Main article][article:Alternatives]</sup>
-<sup> \| [Reference][reference:Alternatives]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/alternatives.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/alternatives.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Alternatives]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/alternatives.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/alternatives.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/alternatives/alternatives.md)
+  - [](../../src/features/alternatives/alternatives.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/alternatives.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/alternatives.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/alternatives/alternatives.md)
+  - [](../../src/engines/oniguruma/features/alternatives.md)
 -->
 
 An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first branch of a pattern fails to match, each alternative is attempted from left to right until a match is found.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/alternatives.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/alternatives/alternatives.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/alternatives.md "source for: syntax")</sup>
 
 
 - `…|…` &mdash; Matches the pattern to the left of the `|`. If that fails, matches the pattern to the right of `|`.
 
 ## Feature: Wildcard
 <sup>[Main article][article:Wildcard]</sup>
-<sup> \| [Reference][reference:Wildcard]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/wildcard.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/wildcard.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Wildcard]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/wildcard.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/wildcard.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/wildcard.md)
+  - [](../../src/features/wildcard.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/wildcard.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/wildcard.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/wildcard.md)
+  - [](../../src/engines/oniguruma/features/wildcard.md)
 -->
 
 A <dfn>Wildcard</dfn> matches a single, non-newline character.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/wildcard.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/engines/oniguruma/features/wildcard.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/wildcard.md "source for: syntax")</sup>
 
 
 - `.` &mdash; Matches any character except newline characters. If the `m` [flag] is set then this matches any character.
@@ -457,36 +364,27 @@ A <dfn>Wildcard</dfn> matches a single, non-newline character.
 
 ## Feature: Character Classes
 <sup>[Main article][article:Character Classes]</sup>
-<sup> \| [Reference][reference:Character Classes]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-classes.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/character-classes.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Character Classes]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/character-classes.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/character-classes/character-classes.md)
+  - [](../../src/features/character-classes/character-classes.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/character-classes.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/character-classes.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/character-classes/character-classes.md)
+  - [](../../src/engines/oniguruma/features/character-classes.md)
 -->
 
 A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to match a single character in the set.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-classes.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/character-classes/character-classes.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-classes.md "source for: syntax")</sup>
 
 
 - `[…]` &mdash; Where `…` is one or more single characters or character class escapes, excluding `^` at the start and `-` between two entries in the set. Matches a character in the set. Example: `[abc]` matches `a`, `b`, or `c`.
@@ -494,11 +392,7 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 - <a id="character-class-range"></a><code>[<em>a</em>-<em>z</em>]</code> &mdash; Where *a* and *z* are single characters or character escapes. Matches any character in the range between *a* and *z* (inclusive). Example: `[a-c]` matches `a`, `b`, or `c`, but not `d`.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-classes.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/character-classes/character-classes.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-classes.md "source for: see_also")</sup>
 
 
 - [Posix Character Classes]
@@ -514,46 +408,33 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 
 ## Feature: Posix Character Classes
 <sup>[Main article][article:Posix Character Classes]</sup>
-<sup> \| [Reference][reference:Posix Character Classes]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/posix-character-classes.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/posix-character-classes.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Posix Character Classes]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/posix-character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/posix-character-classes.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/character-classes/posix-character-classes.md)
+  - [](../../src/features/character-classes/posix-character-classes.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/posix-character-classes.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/posix-character-classes.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/character-classes/posix-character-classes.md)
+  - [](../../src/engines/oniguruma/features/posix-character-classes.md)
 -->
 
 A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that specifies a named, pre-defined set of characters.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/posix-character-classes.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/character-classes/posix-character-classes.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/posix-character-classes.md "source for: syntax")</sup>
 
 
 - <code>\[\[:<em>name</em>:\]\]</code> &mdash; Where *name* is in a set of predefined names. Matches any character in the set.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/posix-character-classes.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/character-classes/posix-character-classes.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/posix-character-classes.md "source for: see_also")</sup>
 
 
 - [Character Classes]
@@ -569,46 +450,33 @@ A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that s
 
 ## Feature: Negated Posix Character Classes
 <sup>[Main article][article:Negated Posix Character Classes]</sup>
-<sup> \| [Reference][reference:Negated Posix Character Classes]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/negated-posix-character-classes.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/negated-posix-character-classes.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Negated Posix Character Classes]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/negated-posix-character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/negated-posix-character-classes.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/character-classes/negated-posix-character-classes.md)
+  - [](../../src/features/character-classes/negated-posix-character-classes.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/negated-posix-character-classes.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/negated-posix-character-classes.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/character-classes/negated-posix-character-classes.md)
+  - [](../../src/engines/oniguruma/features/negated-posix-character-classes.md)
 -->
 
 A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] set that specifies a named, pre-defined set of excluded characters.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/negated-posix-character-classes.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/character-classes/negated-posix-character-classes.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/negated-posix-character-classes.md "source for: syntax")</sup>
 
 
 - <code>\[\[:^<em>name</em>:\]\]</code> &mdash; Where *name* is in a set of predefined names. Matches any character not in the set.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/negated-posix-character-classes.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/character-classes/negated-posix-character-classes.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/negated-posix-character-classes.md "source for: see_also")</sup>
 
 
 - [Character Classes]
@@ -624,33 +492,23 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 
 ## Feature: Collating Elements
 <sup>[Main article][article:Collating Elements]</sup>
-<sup> \| [Reference][reference:Collating Elements]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/collating-elements.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/collating-elements.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/character-classes/collating-elements.md)
--->
+<sup> \| </sup>
+<sup>[Reference][reference:Collating Elements]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/collating-elements.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/collating-elements.md "source for: supported")</sup>
+
 
 <!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/collating-elements.md)
+'name' sources:
+  - [](../../src/features/character-classes/collating-elements.md)
 -->
 
 > ❌ This feature is not supported.
 
-<!--
-'description' sources:
-  - [](../src/features/character-classes/collating-elements.md)
--->
-
 A <dfn>Collating Element</dfn> is one or more characters that collate as a single unit.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/collating-elements.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/character-classes/collating-elements.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/collating-elements.md "source for: see_also")</sup>
 
 
 - [Character Classes]
@@ -666,33 +524,23 @@ A <dfn>Collating Element</dfn> is one or more characters that collate as a singl
 
 ## Feature: Equivalence Classes
 <sup>[Main article][article:Equivalence Classes]</sup>
-<sup> \| [Reference][reference:Equivalence Classes]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/equivalence-classes.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/equivalence-classes.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/character-classes/equivalence-classes.md)
--->
+<sup> \| </sup>
+<sup>[Reference][reference:Equivalence Classes]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/equivalence-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/equivalence-classes.md "source for: supported")</sup>
+
 
 <!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/equivalence-classes.md)
+'name' sources:
+  - [](../../src/features/character-classes/equivalence-classes.md)
 -->
 
 > ❌ This feature is not supported.
 
-<!--
-'description' sources:
-  - [](../src/features/character-classes/equivalence-classes.md)
--->
-
 An <dfn>Equivalence Class</dfn> matches any character or collating element with the same primary sort key as the provided collating element.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/equivalence-classes.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/character-classes/equivalence-classes.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/equivalence-classes.md "source for: see_also")</sup>
 
 
 - [Character Classes]
@@ -708,36 +556,27 @@ An <dfn>Equivalence Class</dfn> matches any character or collating element with 
 
 ## Feature: Character Class Escapes
 <sup>[Main article][article:Character Class Escapes]</sup>
-<sup> \| [Reference][reference:Character Class Escapes]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-escapes.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/character-class-escapes.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Character Class Escapes]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-escapes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/character-class-escapes.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/character-classes/character-class-escapes.md)
+  - [](../../src/features/character-classes/character-class-escapes.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/character-class-escapes.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/character-class-escapes.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/character-classes/character-class-escapes.md)
+  - [](../../src/engines/oniguruma/features/character-class-escapes.md)
 -->
 
 A <dfn>Character Class Escape</dfn> is a single character escape that represents an entire character class. They can be used as an element of a [Character Class] or as an *Atom*. It is often the case that a lower-case escape character is the inclusive set, while an upper-case variant of the same character excludes that set.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/character-class-escapes.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/engines/oniguruma/features/character-class-escapes.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/character-class-escapes.md "source for: syntax")</sup>
 
 
 - `\d` &mdash; A decimal digit character in the range 0-9. Equivalent to `[0-9]`.
@@ -755,11 +594,7 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
 - `\X` &mdash; Text segment. Equivalent to `(?>\O(?:\Y\O)*)`.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-escapes.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/character-classes/character-class-escapes.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-escapes.md "source for: see_also")</sup>
 
 
 - [Character Classes]
@@ -775,46 +610,33 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
 
 ## Feature: Line Endings Escape
 <sup>[Main article][article:Line Endings Escape]</sup>
-<sup> \| [Reference][reference:Line Endings Escape]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/line-endings-escape.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/line-endings-escape.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Line Endings Escape]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/line-endings-escape.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/line-endings-escape.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/character-classes/line-endings-escape.md)
+  - [](../../src/features/character-classes/line-endings-escape.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/line-endings-escape.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/line-endings-escape.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/character-classes/line-endings-escape.md)
+  - [](../../src/engines/oniguruma/features/line-endings-escape.md)
 -->
 
 A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending character sequence.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/line-endings-escape.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/character-classes/line-endings-escape.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/line-endings-escape.md "source for: syntax")</sup>
 
 
 - `\R` &mdash; Equivalent to `(?>\r\n?|[\x0A-\x0C\x85\u{2028}\u{2029}])`
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/line-endings-escape.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/character-classes/line-endings-escape.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/line-endings-escape.md "source for: see_also")</sup>
 
 
 - [Character Classes]
@@ -830,36 +652,27 @@ A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending chara
 
 ## Feature: Character Property Escapes
 <sup>[Main article][article:Character Property Escapes]</sup>
-<sup> \| [Reference][reference:Character Property Escapes]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-property-escapes.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/character-property-escapes.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Character Property Escapes]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-property-escapes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/character-property-escapes.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/character-classes/character-property-escapes.md)
+  - [](../../src/features/character-classes/character-property-escapes.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/character-property-escapes.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/character-property-escapes.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/character-classes/character-property-escapes.md)
+  - [](../../src/engines/oniguruma/features/character-property-escapes.md)
 -->
 
 A <dfn>Character Property Escape</dfn> is an escape sequence used to match a character with a specific character property.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/character-property-escapes.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/engines/oniguruma/features/character-property-escapes.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/character-property-escapes.md "source for: syntax")</sup>
 
 
 - <code>\\p{<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that has the property *name*.
@@ -867,11 +680,7 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 - <code>\\P{<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that does not have the property *name*.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-property-escapes.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/character-classes/character-property-escapes.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-property-escapes.md "source for: see_also")</sup>
 
 
 - [Character Classes]
@@ -887,36 +696,27 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 ## Feature: Character Class Nested Set
 <sup>[Main article][article:Character Class Nested Set]</sup>
-<sup> \| [Reference][reference:Character Class Nested Set]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/character-class-nested-set.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Character Class Nested Set]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/character-class-nested-set.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/character-classes/character-class-nested-set.md)
+  - [](../../src/features/character-classes/character-class-nested-set.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/character-class-nested-set.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/character-class-nested-set.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/character-classes/character-class-nested-set.md)
+  - [](../../src/engines/oniguruma/features/character-class-nested-set.md)
 -->
 
 A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [character class] inside of a [character class].
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/character-classes/character-class-nested-set.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md "source for: syntax")</sup>
 
 
 - `[[…]]` &mdash; Matches any character in the set, just like a normal [character class].
@@ -924,11 +724,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 - <code>[[<em>a</em>-<em>z</em>]]</code> &mdash; Where *a* and *z* are single characters or character escapes. Matches any character in the range between *a* and *z* (inclusive), just like a normal [character class range].
 
 ### Example
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md)</sup>
-<!--
-'example' sources:
-  - [](../src/features/character-classes/character-class-nested-set.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md "source for: example")</sup>
 
 
 ```
@@ -942,11 +738,7 @@ Is equivalent to:
 ```
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/character-classes/character-class-nested-set.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md "source for: see_also")</sup>
 
 
 - [Character Classes]
@@ -962,46 +754,33 @@ Is equivalent to:
 
 ## Feature: Character Class Intersection
 <sup>[Main article][article:Character Class Intersection]</sup>
-<sup> \| [Reference][reference:Character Class Intersection]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/character-class-intersection.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Character Class Intersection]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/character-class-intersection.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/character-classes/character-class-intersection.md)
+  - [](../../src/features/character-classes/character-class-intersection.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/character-class-intersection.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/character-class-intersection.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/character-classes/character-class-intersection.md)
+  - [](../../src/engines/oniguruma/features/character-class-intersection.md)
 -->
 
 <dfn>Character Class Intersection</dfn> allows you to indicate that only characters that are in both [character classes] should match.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/character-classes/character-class-intersection.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md "source for: syntax")</sup>
 
 
 - `[…&&…]` &mdash; Matches any character that is in both the left- and right-hand sets of `&&`.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/character-classes/character-class-intersection.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md "source for: see_also")</sup>
 
 
 - [Character Classes]
@@ -1017,26 +796,21 @@ Is equivalent to:
 
 ## Feature: Character Class Subtraction
 <sup>[Main article][article:Character Class Subtraction]</sup>
-<sup> \| [Reference][reference:Character Class Subtraction]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-subtraction.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/character-class-subtraction.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Character Class Subtraction]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-subtraction.md "source for: name"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/character-class-subtraction.md "source for: reference, supported, description")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/character-classes/character-class-subtraction.md)
+  - [](../../src/features/character-classes/character-class-subtraction.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/character-class-subtraction.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/character-class-subtraction.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/engines/oniguruma/features/character-class-subtraction.md)
+  - [](../../src/engines/oniguruma/features/character-class-subtraction.md)
 -->
 
 <dfn>Character Class Subtraction</dfn> allows you to exclude a class of characters from another class of characters in a [character class].
@@ -1044,11 +818,7 @@ Is equivalent to:
 > NOTE: Oniguruma does not support character class subtraction directly, instead you must use a combination of [character class intersections] and [character class nested sets]
 
 ### Example
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/character-class-subtraction.md)</sup>
-<!--
-'example' sources:
-  - [](../src/engines/oniguruma/features/character-class-subtraction.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/character-class-subtraction.md "source for: example")</sup>
 
 
 ```
@@ -1070,11 +840,7 @@ Which reduces to:
 Source for this example comes from Oniguruma: [source](https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L212)
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-subtraction.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/character-classes/character-class-subtraction.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-subtraction.md "source for: see_also")</sup>
 
 
 - [Character Classes]
@@ -1090,59 +856,44 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 
 ## Feature: Quoted Characters
 <sup>[Main article][article:Quoted Characters]</sup>
-<sup> \| [Reference][reference:Quoted Characters]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quoted-characters.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/quoted-characters.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/quoted-characters.md)
--->
+<sup> \| </sup>
+<sup>[Reference][reference:Quoted Characters]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quoted-characters.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/quoted-characters.md "source for: supported")</sup>
+
 
 <!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/quoted-characters.md)
+'name' sources:
+  - [](../../src/features/quoted-characters.md)
 -->
 
 > ❌ This feature is not supported.
-
-<!--
-'description' sources:
-  - [](../src/features/quoted-characters.md)
--->
 
 <dfn>Quoted Characters</dfn> are a sequence of characters treated as literal characters rather than RegExp characters.
 
 ## Feature: Quantifiers
 <sup>[Main article][article:Quantifiers]</sup>
-<sup> \| [Reference][reference:Quantifiers]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/quantifiers.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/quantifiers.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Quantifiers]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/quantifiers.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/quantifiers/quantifiers.md)
+  - [](../../src/features/quantifiers/quantifiers.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/quantifiers.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/quantifiers.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/quantifiers/quantifiers.md)
+  - [](../../src/engines/oniguruma/features/quantifiers.md)
 -->
 
 <dfn>Quantifiers</dfn> specify repetition of an *Atom*. By default, quantifiers are "greedy" in that they attempt to match as many instances of the preceding *Atom* as possible to satisfy the pattern before backtracking.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/quantifiers.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/quantifiers/quantifiers.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/quantifiers.md "source for: syntax")</sup>
 
 
 - `*` &mdash; Matches the preceding *Atom* zero or more times. Example: `a*b` matches `b`, `ab`, `aab`, `aaab`, etc.
@@ -1153,11 +904,7 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 - <code>{<em>n</em>,<em>n</em>}</code> &mdash; Where *n* and *m* are integers, and *m* >= *n*. Matches the preceding *Atom* at-least *n* times and at-most *m* times. Example: `a{2,3}` matches `aa`, `aaa`, `aaaa`, etc., but not `a` or `aaaa`.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/quantifiers.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/quantifiers/quantifiers.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/quantifiers.md "source for: see_also")</sup>
 
 
 - [Lazy Quantifiers]
@@ -1165,36 +912,27 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 
 ## Feature: Lazy Quantifiers
 <sup>[Main article][article:Lazy Quantifiers]</sup>
-<sup> \| [Reference][reference:Lazy Quantifiers]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/lazy-quantifiers.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/lazy-quantifiers.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Lazy Quantifiers]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/lazy-quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/lazy-quantifiers.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/quantifiers/lazy-quantifiers.md)
+  - [](../../src/features/quantifiers/lazy-quantifiers.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/lazy-quantifiers.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/lazy-quantifiers.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/quantifiers/lazy-quantifiers.md)
+  - [](../../src/engines/oniguruma/features/lazy-quantifiers.md)
 -->
 
 <dfn>Lazy Quantifiers</dfn> specify repetition of an *Atom*, but attempt to match as few instances of the preceding *Atom* as possible to satisfy the pattern before advancing.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/lazy-quantifiers.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/quantifiers/lazy-quantifiers.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/lazy-quantifiers.md "source for: syntax")</sup>
 
 
 - `*?` &mdash; Matches the preceding *Atom* zero or more times.
@@ -1205,11 +943,7 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 - <code>{<em>n</em>,<em>n</em>}?</code> &mdash; Where *n* and *m* are integers, and *m* >= *n*. Matches the preceding *Atom* at-least *n* times and at-most *m* times.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/lazy-quantifiers.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/quantifiers/lazy-quantifiers.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/lazy-quantifiers.md "source for: see_also")</sup>
 
 
 - [Quantifiers]
@@ -1217,36 +951,27 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 
 ## Feature: Possessive Quantifiers
 <sup>[Main article][article:Possessive Quantifiers]</sup>
-<sup> \| [Reference][reference:Possessive Quantifiers]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/possessive-quantifiers.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/possessive-quantifiers.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Possessive Quantifiers]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/possessive-quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/possessive-quantifiers.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/quantifiers/possessive-quantifiers.md)
+  - [](../../src/features/quantifiers/possessive-quantifiers.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/possessive-quantifiers.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/possessive-quantifiers.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/quantifiers/possessive-quantifiers.md)
+  - [](../../src/engines/oniguruma/features/possessive-quantifiers.md)
 -->
 
 <dfn>Possessive Quantifiers</dfn> are like greedy (i.e., regular) [quantifiers], except that backtracking is not performed.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/possessive-quantifiers.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/quantifiers/possessive-quantifiers.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/possessive-quantifiers.md "source for: syntax")</sup>
 
 
 - `*+` &mdash; Match zero or more characters without backtracking.
@@ -1256,11 +981,7 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 - <code>{<em>n</em>,<em>m</em>}+</code> &mdash; Match between _n_ and _m_ characters without backtracking.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/possessive-quantifiers.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/quantifiers/possessive-quantifiers.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/possessive-quantifiers.md "source for: see_also")</sup>
 
 
 - [Quantifiers]
@@ -1268,46 +989,33 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 
 ## Feature: Capturing Groups
 <sup>[Main article][article:Capturing Groups]</sup>
-<sup> \| [Reference][reference:Capturing Groups]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/capturing-groups.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/capturing-groups.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Capturing Groups]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/capturing-groups.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/groups-and-backtracking/capturing-groups.md)
+  - [](../../src/features/groups-and-backtracking/capturing-groups.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/capturing-groups.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/capturing-groups.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/groups-and-backtracking/capturing-groups.md)
+  - [](../../src/engines/oniguruma/features/capturing-groups.md)
 -->
 
 A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by index. A Capturing Group can be captured and returned by the matching algorithm.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/capturing-groups.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/groups-and-backtracking/capturing-groups.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/capturing-groups.md "source for: syntax")</sup>
 
 
 - `(…)` &mdash; Groups the subexpression as a single *Atom*. The result is captured and returned by the matching algorithm.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/capturing-groups.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/groups-and-backtracking/capturing-groups.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/capturing-groups.md "source for: see_also")</sup>
 
 
 - [Named Capturing Groups]
@@ -1318,47 +1026,34 @@ A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom*
 
 ## Feature: Named Capturing Groups
 <sup>[Main article][article:Named Capturing Groups]</sup>
-<sup> \| [Reference][reference:Named Capturing Groups]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/named-capturing-groups.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/named-capturing-groups.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Named Capturing Groups]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/named-capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/named-capturing-groups.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/groups-and-backtracking/named-capturing-groups.md)
+  - [](../../src/features/groups-and-backtracking/named-capturing-groups.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/named-capturing-groups.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/named-capturing-groups.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/groups-and-backtracking/named-capturing-groups.md)
+  - [](../../src/engines/oniguruma/features/named-capturing-groups.md)
 -->
 
 A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and returned by the matching algorithm. A Named Capturing Group is also an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by name.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/named-capturing-groups.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/groups-and-backtracking/named-capturing-groups.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/named-capturing-groups.md "source for: syntax")</sup>
 
 
 - <code>(?\<<em>name</em>\>…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
 - <code>(?'<em>name</em>'…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/named-capturing-groups.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/groups-and-backtracking/named-capturing-groups.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/named-capturing-groups.md "source for: see_also")</sup>
 
 
 - [Capturing Groups]
@@ -1369,46 +1064,33 @@ A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and r
 
 ## Feature: Non-Capturing Groups
 <sup>[Main article][article:Non-Capturing Groups]</sup>
-<sup> \| [Reference][reference:Non-Capturing Groups]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/non-capturing-groups.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/non-capturing-groups.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Non-Capturing Groups]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/non-capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/non-capturing-groups.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/groups-and-backtracking/non-capturing-groups.md)
+  - [](../../src/features/groups-and-backtracking/non-capturing-groups.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/non-capturing-groups.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/non-capturing-groups.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/groups-and-backtracking/non-capturing-groups.md)
+  - [](../../src/engines/oniguruma/features/non-capturing-groups.md)
 -->
 
 A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] but cannot be referenced using [Backreferences]. A Non-capturing Group is not captured by the matching algorithm.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/non-capturing-groups.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/groups-and-backtracking/non-capturing-groups.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/non-capturing-groups.md "source for: syntax")</sup>
 
 
 - `(?:…)` &mdash; Groups the subexpression as a single *Atom*.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/non-capturing-groups.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/groups-and-backtracking/non-capturing-groups.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/non-capturing-groups.md "source for: see_also")</sup>
 
 
 - [Capturing Groups]
@@ -1416,36 +1098,27 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 
 ## Feature: Backreferences
 <sup>[Main article][article:Backreferences]</sup>
-<sup> \| [Reference][reference:Backreferences]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/backreferences.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/backreferences.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Backreferences]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/backreferences.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/backreferences.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/groups-and-backtracking/backreferences.md)
+  - [](../../src/features/groups-and-backtracking/backreferences.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/backreferences.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/backreferences.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/groups-and-backtracking/backreferences.md)
+  - [](../../src/engines/oniguruma/features/backreferences.md)
 -->
 
 <dfn>Backreferences</dfn> allow a pattern to re-match a previously matched capture group<sup>[1][Capturing Groups] [2][Named Capturing Groups]</sup> either by number (_n_) or by _name_.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/backreferences.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/engines/oniguruma/features/backreferences.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/backreferences.md "source for: syntax")</sup>
 
 
 - <code>\\<em>n</em></code> &mdash; Where *n* is a decimal digit in the range 1-9. Matches the same string as the [capture group] *n*.
@@ -1459,11 +1132,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 - <code>\\k'<em>name</em>'</code> &mdash; Matches the same string as the [named capture group] with the name *name*.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/backreferences.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/groups-and-backtracking/backreferences.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/backreferences.md "source for: see_also")</sup>
 
 
 - [Capturing Groups]
@@ -1471,115 +1140,83 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 
 ## Feature: Comments
 <sup>[Main article][article:Comments]</sup>
-<sup> \| [Reference][reference:Comments]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/comments.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/comments.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Comments]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/comments.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/comments.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/comments/comments.md)
+  - [](../../src/features/comments/comments.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/comments.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/comments.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/comments/comments.md)
+  - [](../../src/engines/oniguruma/features/comments.md)
 -->
 
 A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matching and can be used to document a pattern.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/comments.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/comments/comments.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/comments.md "source for: syntax")</sup>
 
 
 - `(?#…)` &mdash; The entire expression is removed from the pattern. A comment may not contain other `(` or `)` characters.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/comments.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/comments/comments.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/comments.md "source for: see_also")</sup>
 
 
 - [Line Comments]
 
 ## Feature: Line Comments
 <sup>[Main article][article:Line Comments]</sup>
-<sup> \| [Reference][reference:Line Comments]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/line-comments.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/line-comments.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/comments/line-comments.md)
--->
+<sup> \| </sup>
+<sup>[Reference][reference:Line Comments]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/line-comments.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/line-comments.md "source for: supported")</sup>
+
 
 <!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/line-comments.md)
+'name' sources:
+  - [](../../src/features/comments/line-comments.md)
 -->
 
 > ❌ This feature is not supported.
 
-<!--
-'description' sources:
-  - [](../src/features/comments/line-comments.md)
--->
-
 A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and ending with `\n` (or the end of the pattern) that is ignored by pattern matching and can be used to document a pattern.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/line-comments.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/comments/line-comments.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/line-comments.md "source for: see_also")</sup>
 
 
 - [Comments]
 
 ## Feature: Modifiers
 <sup>[Main article][article:Modifiers]</sup>
-<sup> \| [Reference][reference:Modifiers]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/modifiers.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/modifiers.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Modifiers]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/modifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/modifiers.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/flags-and-modifiers/modifiers.md)
+  - [](../../src/features/flags-and-modifiers/modifiers.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/modifiers.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/modifiers.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/flags-and-modifiers/modifiers.md)
+  - [](../../src/engines/oniguruma/features/modifiers.md)
 -->
 
 <dfn>Modifiers</dfn> allow you to change the currently active [RegExp flags] within a subexpression.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/modifiers.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/engines/oniguruma/features/modifiers.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/modifiers.md "source for: syntax")</sup>
 
 
 - `(?imxWDSPy-imxWDSPy)` - Sets or unsets (using `-`) the specified [RegExp flags] starting at the current position until the next closing `)` or the end of the pattern. Example: `(?-i)A(?i)B(?-i)C` matches `ABC`, `AbC`.
@@ -1590,200 +1227,146 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
   - NOTE: When option `ONIG_SYNTAX_PERL` or `ONIG_SYNTAX_JAVA` are specified, the `m` and `s` flags are equivalent to their Perl/Java counterparts. <sup>[reference](https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L512)</sup>
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/modifiers.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/flags-and-modifiers/modifiers.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/modifiers.md "source for: see_also")</sup>
 
 
 - [Flags]
 
 ## Feature: Branch Reset
 <sup>[Main article][article:Branch Reset]</sup>
-<sup> \| [Reference][reference:Branch Reset]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/branch-reset.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/branch-reset.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/alternatives/branch-reset.md)
--->
+<sup> \| </sup>
+<sup>[Reference][reference:Branch Reset]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/branch-reset.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/branch-reset.md "source for: supported")</sup>
+
 
 <!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/branch-reset.md)
+'name' sources:
+  - [](../../src/features/alternatives/branch-reset.md)
 -->
 
 > ❌ This feature is not supported.
-
-<!--
-'description' sources:
-  - [](../src/features/alternatives/branch-reset.md)
--->
 
 A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [Alternative] (`|`), which affects numbering for [Backreferences] and captured results returned from the matching algorithm.
 
 ## Feature: Lookahead
 <sup>[Main article][article:Lookahead]</sup>
-<sup> \| [Reference][reference:Lookahead]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookahead.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/lookahead.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Lookahead]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookahead.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/lookahead.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/lookaround/lookahead.md)
+  - [](../../src/features/lookaround/lookahead.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/lookahead.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/lookahead.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/lookaround/lookahead.md)
+  - [](../../src/engines/oniguruma/features/lookahead.md)
 -->
 
 A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pattern would match the characters to the right of the current position.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookahead.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/lookaround/lookahead.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookahead.md "source for: syntax")</sup>
 
 
 - <a id="positive-lookahead"></a>`(?=…)` &mdash; Matches if the provided pattern would match but does not advance the current position.
 - <a id="negative-lookahead"></a>`(?!…)` &mdash; Matches if the provided pattern would not match, but does not advance the current position.
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookahead.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/lookaround/lookahead.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookahead.md "source for: see_also")</sup>
 
 
 - [Lookbehind]
 
 ## Feature: Lookbehind
 <sup>[Main article][article:Lookbehind]</sup>
-<sup> \| [Reference][reference:Lookbehind]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookbehind.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/lookbehind.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Lookbehind]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookbehind.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/lookbehind.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/lookaround/lookbehind.md)
+  - [](../../src/features/lookaround/lookbehind.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/lookbehind.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/lookbehind.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/lookaround/lookbehind.md)
+  - [](../../src/engines/oniguruma/features/lookbehind.md)
 -->
 
 A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided pattern would match the characters to the left of the current position.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookbehind.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/lookaround/lookbehind.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookbehind.md "source for: syntax")</sup>
 
 
 - <a id="positive-lookbehind"></a>`(?<=…)` &mdash; Matches if the provided pattern would match the preceding characters, but does not advance the current position. The pattern must have a fixed length (unbounded [quantifiers] are not permitted).
 - <a id="negative-lookbehind"></a>`(?<!…)` &mdash; Matches if the provided pattern would not match the preceding characters, but does not advance the current position. The pattern must have a fixed length (unbounded [quantifiers] are not permitted).
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookbehind.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/lookaround/lookbehind.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookbehind.md "source for: see_also")</sup>
 
 
 - [Lookahead]
 
 ## Feature: Non-Backtracking Expressions
 <sup>[Main article][article:Non-Backtracking Expressions]</sup>
-<sup> \| [Reference][reference:Non-Backtracking Expressions]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/non-backtracking-expressions.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/non-backtracking-expression.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Non-Backtracking Expressions]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/non-backtracking-expressions.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/non-backtracking-expression.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/groups-and-backtracking/non-backtracking-expressions.md)
+  - [](../../src/features/groups-and-backtracking/non-backtracking-expressions.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/non-backtracking-expression.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/non-backtracking-expression.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/groups-and-backtracking/non-backtracking-expressions.md)
+  - [](../../src/engines/oniguruma/features/non-backtracking-expression.md)
 -->
 
 A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring patterns, and will not backtrack in the event of a failed match. This is often used to improve performance.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/non-backtracking-expressions.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/groups-and-backtracking/non-backtracking-expressions.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/non-backtracking-expressions.md "source for: syntax")</sup>
 
 
 - `(?>…)` &mdash; Matches the provided pattern, but no backtracking is performed if the match fails.
 
 ## Feature: Recursion
 <sup>[Main article][article:Recursion]</sup>
-<sup> \| [Reference][reference:Recursion]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/recursion.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/recursion.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Recursion]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/recursion.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/recursion.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/groups-and-backtracking/recursion.md)
+  - [](../../src/features/groups-and-backtracking/recursion.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/recursion.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/recursion.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/groups-and-backtracking/recursion.md)
+  - [](../../src/engines/oniguruma/features/recursion.md)
 -->
 
 A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capture group] inside of itself, to handle cases such as matching balanced parenthesis or brackets, etc.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/recursion.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/engines/oniguruma/features/recursion.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/recursion.md "source for: syntax")</sup>
 
 
 - <code>\\k\<<em>n</em>+<em>n</em>\></code> &mdash; Where *n* is an integer >= 1 and *level* is an integer >= 0. Matches the same string as the [capture group] *n* at the recursion level relative to the referenced [capture group].
@@ -1810,36 +1393,27 @@ A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capt
 
 ## Feature: Conditional Expressions
 <sup>[Main article][article:Conditional Expressions]</sup>
-<sup> \| [Reference][reference:Conditional Expressions]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/conditional-expressions.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/conditional-expressions.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Conditional Expressions]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/conditional-expressions.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/conditional-expressions.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/alternatives/conditional-expressions.md)
+  - [](../../src/features/alternatives/conditional-expressions.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/conditional-expressions.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/conditional-expressions.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/alternatives/conditional-expressions.md)
+  - [](../../src/engines/oniguruma/features/conditional-expressions.md)
 -->
 
 A <dfn>Conditional Expression</dfn> checks a condition and evaluates its first alternative if the condition is **true**; otherwise, it evaluates its second alternative.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/conditional-expressions.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/engines/oniguruma/features/conditional-expressions.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/conditional-expressions.md "source for: syntax")</sup>
 
 
 - <code>(?(<em>condition</em>)<em>condition</em>|<em>condition</em>)</code> &mdash; Matches *yes-pattern* if *condition* is **true**; otherwise, matches *no-pattern*.
@@ -1865,36 +1439,27 @@ The following conditions are supported:
 
 ## Feature: Subroutines
 <sup>[Main article][article:Subroutines]</sup>
-<sup> \| [Reference][reference:Subroutines]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/subroutines.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/subroutines.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Subroutines]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/subroutines.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/subroutines.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/groups-and-backtracking/subroutines.md)
+  - [](../../src/features/groups-and-backtracking/subroutines.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/subroutines.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/subroutines.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/groups-and-backtracking/subroutines.md)
+  - [](../../src/engines/oniguruma/features/subroutines.md)
 -->
 
 A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group] that can be reused in multiple places within the pattern to re-evaluate the subexpression from the group.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/subroutines.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/engines/oniguruma/features/subroutines.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/subroutines.md "source for: syntax")</sup>
 
 
 - <code>\\g\<<em>n</em>\></code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is *n*.
@@ -1909,11 +1474,7 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 - <code>\\g'<em>name</em>'</code> &mdash; Evaluates the [named capture group] with the provided *name*.
 
 ### Example
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/subroutines.md)</sup>
-<!--
-'example' sources:
-  - [](../src/features/groups-and-backtracking/subroutines.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/subroutines.md "source for: example")</sup>
 
 
 ```re
@@ -1927,36 +1488,27 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 
 ## Feature: Callouts
 <sup>[Main article][article:Callouts]</sup>
-<sup> \| [Reference][reference:Callouts]</sup>
-<sup> \| Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/callouts.md), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/callouts.md)</sup>
+<sup> \| </sup>
+<sup>[Reference][reference:Callouts]</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/callouts.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/callouts.md "source for: reference, supported")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/features/callouts.md)
+  - [](../../src/features/callouts.md)
 -->
+
 
 <!--
 'reference' sources:
-  - [](../src/engines/oniguruma/features/callouts.md)
--->
-
-<!--
-'supported' sources:
-  - [](../src/engines/oniguruma/features/callouts.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/callouts.md)
+  - [](../../src/engines/oniguruma/features/callouts.md)
 -->
 
 A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matching.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/callouts.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/engines/oniguruma/features/callouts.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/callouts.md "source for: syntax")</sup>
 
 
 - Callouts of contents:
@@ -1977,6 +1529,9 @@ A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matc
  - <code>(\*<em>name</em>[<em>tag</em>]{<em>args</em>…})</code> &mdash; Invokes the callout with the provided *name*, *tag*, and *args*.
 
 
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Flags]: #feature-flags
 [Flag]: #feature-flags

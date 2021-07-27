@@ -1,16 +1,9 @@
 # Feature: Character Class Subtraction
 <sup>[Home](../index.md)</sup>
-<sup> \| [Features](../features)</sup>
-<sup> \| [Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-subtraction.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/character-classes/character-class-subtraction.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/character-classes/character-class-subtraction.md)
--->
+<sup> \| </sup>
+<sup>[Features](index.md)</sup>
+<sup> \| </sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-subtraction.md "source for: name, description")</sup>
 
 <dfn>Character Class Subtraction</dfn> allows you to exclude a class of characters from another class of characters in a [character class].
 
@@ -24,11 +17,7 @@
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-character-class-subtraction) |
 | [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-character-class-subtraction) |
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-subtraction.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/character-classes/character-class-subtraction.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-subtraction.md "source for: see_also")</sup>
 
 
 - [Character Classes]
@@ -41,6 +30,9 @@
 - [Character Property Escapes]
 - [Character Class Nested Set]
 - [Character Class Intersection]
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: anchors.md
 [Anchor]: anchors.md

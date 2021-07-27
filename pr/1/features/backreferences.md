@@ -1,25 +1,14 @@
 # Feature: Backreferences
 <sup>[Home](../index.md)</sup>
-<sup> \| [Features](../features)</sup>
-<sup> \| [Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/backreferences.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/groups-and-backtracking/backreferences.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/groups-and-backtracking/backreferences.md)
--->
+<sup> \| </sup>
+<sup>[Features](index.md)</sup>
+<sup> \| </sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/backreferences.md "source for: name, description")</sup>
 
 <dfn>Backreferences</dfn> allow a pattern to re-match a previously matched capture group<sup>[1][Capturing Groups] [2][Named Capturing Groups]</sup> either by number (_n_) or by _name_.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/backreferences.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/groups-and-backtracking/backreferences.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/backreferences.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -37,15 +26,14 @@
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-backreferences) |
 | [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-backreferences) |
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/backreferences.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/groups-and-backtracking/backreferences.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/backreferences.md "source for: see_also")</sup>
 
 
 - [Capturing Groups]
 - [Named Capturing Groups]
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: anchors.md
 [Anchor]: anchors.md

@@ -1,25 +1,14 @@
 # Feature: Character Class Nested Set
 <sup>[Home](../index.md)</sup>
-<sup> \| [Features](../features)</sup>
-<sup> \| [Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/character-classes/character-class-nested-set.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/character-classes/character-class-nested-set.md)
--->
+<sup> \| </sup>
+<sup>[Features](index.md)</sup>
+<sup> \| </sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md "source for: name, description")</sup>
 
 A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [character class] inside of a [character class].
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/character-classes/character-class-nested-set.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -29,11 +18,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 - <code>[[<em>a</em>-<em>z</em>]]</code> &mdash; Where *a* and *z* are single characters or character escapes. Matches any character in the range between *a* and *z* (inclusive), just like a normal [character class range].
 
 ### Example
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md)</sup>
-<!--
-'example' sources:
-  - [](../src/features/character-classes/character-class-nested-set.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md "source for: example")</sup>
 
 
 ```
@@ -56,11 +41,7 @@ Is equivalent to:
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-character-class-nested-set) |
 | [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-character-class-nested-set) |
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/character-classes/character-class-nested-set.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md "source for: see_also")</sup>
 
 
 - [Character Classes]
@@ -73,6 +54,9 @@ Is equivalent to:
 - [Character Property Escapes]
 - [Character Class Intersection]
 - [Character Class Subtraction]
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: anchors.md
 [Anchor]: anchors.md

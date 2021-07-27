@@ -1,25 +1,14 @@
 # Feature: Named Capturing Groups
 <sup>[Home](../index.md)</sup>
-<sup> \| [Features](../features)</sup>
-<sup> \| [Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/named-capturing-groups.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/groups-and-backtracking/named-capturing-groups.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/groups-and-backtracking/named-capturing-groups.md)
--->
+<sup> \| </sup>
+<sup>[Features](index.md)</sup>
+<sup> \| </sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/named-capturing-groups.md "source for: name, description")</sup>
 
 A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and returned by the matching algorithm. A Named Capturing Group is also an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by name.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/named-capturing-groups.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/groups-and-backtracking/named-capturing-groups.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/named-capturing-groups.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -35,13 +24,9 @@ A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and r
 | [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-named-capturing-groups) |
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-named-capturing-groups) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-named-capturing-groups) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-named-capturing-groups) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-named-capturing-groups) |
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/named-capturing-groups.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/groups-and-backtracking/named-capturing-groups.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/named-capturing-groups.md "source for: see_also")</sup>
 
 
 - [Capturing Groups]
@@ -49,6 +34,9 @@ A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and r
 - [Backreferences]
 - [Recursion]
 - [Subroutines]
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: anchors.md
 [Anchor]: anchors.md

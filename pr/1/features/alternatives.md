@@ -1,25 +1,14 @@
 # Feature: Alternatives
 <sup>[Home](../index.md)</sup>
-<sup> \| [Features](../features)</sup>
-<sup> \| [Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/alternatives.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/alternatives/alternatives.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/alternatives/alternatives.md)
--->
+<sup> \| </sup>
+<sup>[Features](index.md)</sup>
+<sup> \| </sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/alternatives.md "source for: name, description")</sup>
 
 An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first branch of a pattern fails to match, each alternative is attempted from left to right until a match is found.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/alternatives.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/alternatives/alternatives.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/alternatives.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -34,7 +23,10 @@ An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first
 | [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-alternatives) |
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-alternatives) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-alternatives) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-alternatives) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-alternatives) |
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: anchors.md
 [Anchor]: anchors.md

@@ -1,25 +1,14 @@
 # Feature: Conditional Expressions
 <sup>[Home](../index.md)</sup>
-<sup> \| [Features](../features)</sup>
-<sup> \| [Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/conditional-expressions.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/alternatives/conditional-expressions.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/alternatives/conditional-expressions.md)
--->
+<sup> \| </sup>
+<sup>[Features](index.md)</sup>
+<sup> \| </sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/conditional-expressions.md "source for: name, description")</sup>
 
 A <dfn>Conditional Expression</dfn> checks a condition and evaluates its first alternative if the condition is **true**; otherwise, it evaluates its second alternative.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/conditional-expressions.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/alternatives/conditional-expressions.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/conditional-expressions.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -50,6 +39,9 @@ The following conditions are supported:
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-conditional-expressions) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-conditional-expressions) |
 | [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-conditional-expressions) |
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: anchors.md
 [Anchor]: anchors.md

@@ -1,25 +1,14 @@
 # Feature: Character Class Intersection
 <sup>[Home](../index.md)</sup>
-<sup> \| [Features](../features)</sup>
-<sup> \| [Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/character-classes/character-class-intersection.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/character-classes/character-class-intersection.md)
--->
+<sup> \| </sup>
+<sup>[Features](index.md)</sup>
+<sup> \| </sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md "source for: name, description")</sup>
 
 <dfn>Character Class Intersection</dfn> allows you to indicate that only characters that are in both [character classes] should match.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/character-classes/character-class-intersection.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -36,11 +25,7 @@
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-character-class-intersection) |
 | [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-character-class-intersection) |
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/character-classes/character-class-intersection.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md "source for: see_also")</sup>
 
 
 - [Character Classes]
@@ -53,6 +38,9 @@
 - [Character Property Escapes]
 - [Character Class Nested Set]
 - [Character Class Subtraction]
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: anchors.md
 [Anchor]: anchors.md
