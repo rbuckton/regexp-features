@@ -1,17 +1,19 @@
 # Engine: {{name}}
-<sup>[Home](../index.md)</sup>
-<sup> \| [Engines](./index)</sup>
-<sup> \| [Reference]</sup>
-{{> edit-link sources=(union nameSources (union referenceSources descriptionSources)) prefix=' \| ' label='Improve this article' }}
+{{> nav-link label='Home' href=(relative outFile 'index.md') }}
+{{> nav-sep }}
+{{> nav-link label='Engines' href='index.md' }}
+{{> nav-sep }}
+{{> nav-link label='Reference' }}
+{{> edit-link names=(ar 'name' 'reference' 'description') prefix=true label='Improve this article' }}
 
-{{> sources sources=nameSources name='name' }}
-{{> sources sources=referenceSources name='reference' }}
+{{> sources names=(ar 'name' 'reference' 'description') }}
 
 {{> description }}
-## Languages
-{{> edit-link sources=languagesSources }}
 
-{{> sources sources=languagesSources name='languages' ~}}
+## Languages
+{{> edit-link names='languages' }}
+
+{{> sources names='languages' ~}}
 
 {{#each languages}}
 - [{{name}}]

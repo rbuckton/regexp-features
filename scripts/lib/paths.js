@@ -13,7 +13,6 @@ export const indexTemplateFileUrl = new URL("./index.hbs", templatesDirUrl);
 
 // partials
 export const partialsDirUrl = new URL("./partials/", templatesDirUrl);
-export const sourcesPartialFileUrl = new URL("./sources.hbs", partialsDirUrl);
 
 // schemas
 export const schemasDirUrl = new URL("../schemas/", import.meta.url);

@@ -2,7 +2,7 @@
  * @param {string} a
  * @param {string} b
  */
-export function compareStrings(a, b) {
+ export function compareStrings(a, b) {
     return a < b ? -1 : a > b ? +1 : 0;
 }
 
@@ -68,13 +68,8 @@ export function trimLines(text) {
  * @returns {import("../types.js").YamlEntry<T>}
  */
 export function makeYamlEntry(value, source) {
-    if (/** @type {(ar: any) => ar is readonly any[]} */(Array.isArray)(source)) {
-        if (!source.length) source = undefined;
-    }
-    else if (source !== undefined){
-        source = [source];
-    }
-    return source ? [value, source] : [value];
+    source = /** @type {readonly (string | undefined)[]} */(/** @type {(ar: any) => ar is readonly any[]} */(Array.isArray)(source) ? source : [source]).filter(isDefined);
+    return source.length ? [value, source] : [value];
 }
 
 /** @type {import("../types.js").YamlEntry<undefined> } */

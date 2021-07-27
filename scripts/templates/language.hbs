@@ -1,17 +1,17 @@
 # Language: {{name}}
-<sup>[Home](../index.md)</sup>
-<sup> \| [Languages](./index.md)</sup>
-{{> edit-link sources=(union nameSources descriptionSources) prefix=' \| ' }}
+{{> nav-link label='Home' href=(relative outFile 'index.md') }}
+{{> nav-sep }}
+{{> nav-link label='Languages' href='index.md' }}
+{{> edit-link names=(ar 'name' 'description') prefix=true }}
 
-{{> sources sources=nameSources name='name' ~}}
-{{> sources sources=descriptionSources name='description' ~}}
+{{> sources names=(ar 'name' 'description') ~}}
 
 {{> description }}
 
 ## Engines
 
 {{#each engines}}
-- [{{name}}](../engines/{{id}}.md)
+{{> list-link }}
 {{/each}}
 
 {{> link-references }}

@@ -75,6 +75,7 @@ module.exports = {
                     message: "reference url",
                     required: true
                 });
+                engineFeature.mergeFrom({ engine: id, feature: feature.id, supported: true, reference }, "");
             }
         }
 

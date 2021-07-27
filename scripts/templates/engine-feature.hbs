@@ -1,10 +1,10 @@
 ## Feature: {{name}}
-<sup>[Main article][article:{{name}}]</sup>
-<sup> \| [Reference][reference:{{name}}]</sup>
-{{> edit-link sources=(union nameSources (union referenceSources (union supportedSources descriptionSources))) prefix=' \| ' }}
+{{> nav-link label='Main article' xref=(concat 'article:' name) }}
+{{> nav-sep }}
+{{> nav-link label='Reference' xref=(concat 'reference:' name) }}
+{{> edit-link names=(ar 'name' 'reference' 'supported' 'description') prefix=true }}
 
-{{> sources sources=nameSources name='name' ~}}
-{{> sources sources=referenceSources name='reference' ~}}
+{{> sources names=(ar 'name' 'reference') ~}}
 {{> supported }}
 {{> description }}
 {{#if supported~}}

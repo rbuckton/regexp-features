@@ -1,58 +1,288 @@
 import * as fs from "fs/promises";
 import handlebars from "handlebars";
 import * as path from "path";
-import { engineFeatureTemplateFileUrl, engineIndexTemplateFileUrl, engineTemplateFileUrl, featureIndexTemplateFileUrl, featureTemplateFileUrl, indexTemplateFileUrl, languageIndexTemplateFileUrl, languageTemplateFileUrl, partialsDirUrl, sourcesPartialFileUrl } from "./paths.js";
+import * as util from "util";
+import { engineFeatureTemplateFileUrl, engineIndexTemplateFileUrl, engineTemplateFileUrl, featureIndexTemplateFileUrl, featureTemplateFileUrl, indexTemplateFileUrl, languageIndexTemplateFileUrl, languageTemplateFileUrl, partialsDirUrl } from "./paths.js";
 import { trimLeadingLines, trimLines, trimTrailingLines } from "./utils.js";
 
 /** @type {import("handlebars").RuntimeOptions} */
 export const handlebarsOptions = {
     helpers: {
-        eq(a, b) {
+        // comparisons
+        /**
+         * @param {any} a
+         * @param {any} b
+         */
+        eq(a, b /*, options*/) {
+            if (arguments.length !== 3) throw new TypeError(`Expected 2 arguments, got ${arguments.length} instead.`);
             return a === b;
         },
-        neq(a, b) {
+        /**
+         * @param {any} a
+         * @param {any} b
+         */
+        ne(a, b /*, options*/) {
+            if (arguments.length !== 3) throw new TypeError(`Expected 2 arguments, got ${arguments.length} instead.`);
             return a === b;
         },
-        hlink(value) {
-            return `${String(value).toLowerCase().replace(/\W+/g, "-")}`;
+        /**
+         * @param {any} a
+         * @param {any} b
+         */
+        ieq(a, b /*, options*/) {
+            if (arguments.length !== 3) throw new TypeError(`Expected 2 arguments, got ${arguments.length} instead.`);
+            if (typeof a === "string") a = a.toLowerCase().toUpperCase();
+            if (typeof b === "string") b = b.toLowerCase().toUpperCase();
+            return a === b;
         },
-        single(value) {
-            return Array.isArray(value) ? value.length === 1 : !!value
+        /**
+         * @param {any} a
+         * @param {any} b
+         */
+        ine(a, b /*, options*/) {
+            if (arguments.length !== 3) throw new TypeError(`Expected 2 arguments, got ${arguments.length} instead.`);
+            if (typeof a === "string") a = a.toLowerCase().toUpperCase();
+            if (typeof b === "string") b = b.toLowerCase().toUpperCase();
+            return a === b;
         },
-        multiple(value) {
-            return Array.isArray(value) && value.length > 1;
+        /**
+         * @param {any} a
+         * @param {any} b
+         */
+        lt(a, b /*, options*/) {
+            if (arguments.length !== 3) throw new TypeError(`Expected 2 arguments, got ${arguments.length} instead.`);
+            return a < b;
         },
-        add(a, b) {
+        /**
+         * @param {any} a
+         * @param {any} b
+         */
+        le(a, b /*, options*/) {
+            if (arguments.length !== 3) throw new TypeError(`Expected 2 arguments, got ${arguments.length} instead.`);
+            return a <= b;
+        },
+        /**
+         * @param {any} a
+         * @param {any} b
+         */
+        gt(a, b /*, options*/) {
+            if (arguments.length !== 3) throw new TypeError(`Expected 2 arguments, got ${arguments.length} instead.`);
+            return a < b;
+        },
+        /**
+         * @param {any} a
+         * @param {any} b
+         */
+        ge(a, b /*, options*/) {
+            if (arguments.length !== 3) throw new TypeError(`Expected 2 arguments, got ${arguments.length} instead.`);
+            return a >= b;
+        },
+
+        // operations
+        /**
+         * @param {any} a
+         * @param {any} b
+         */
+        add(a, b /*, options*/) {
+            if (arguments.length !== 3) throw new TypeError(`Expected 2 arguments, got ${arguments.length} instead.`);
             return a + b;
         },
-        union(a, b) {
+
+        // set/array operations
+        /**
+         * @param {any[]} args
+         */
+        distinct(...args /*, options*/) {
+            args.pop(); // drop options
+
+            /** @type {Set} */
             const set = new Set();
-            if (Array.isArray(a)) {
-                for (const _ of a) set.add(_);
-            }
-            else if (a) {
-                set.add(a);
-            }
-            if (Array.isArray(b)) {
-                for (const _ of b) set.add(_);
-            }
-            else if (b) {
-                set.add(b);
+            for (const arg of args) {
+                if (arg) set.add(arg);
             }
             return set.size ? [...set] : undefined
         },
-        makeRelative(to, from) {
-            if (!from.endsWith("/")) from = path.dirname(from);
-            const relative = path.relative(from, to);
-            const result = path.isAbsolute(relative) ? relative : relative.replaceAll("\\", "/");
-            return result || ".";
+        flat(...args /*, options*/) {
+            args.pop(); // drop options
+            return args.flat();
         },
+        /**
+         * @param {any[]} args
+         */
+        union(...args /*, options*/) {
+            if (args.length < 3) throw new TypeError("Expected at least 2 arguments");
+            args.pop(); // drop options
+
+            /** @type {Set} */
+            const union = new Set();
+            for (const arg of args) {
+                if (arg) {
+                    for (const element of Array.isArray(arg) ? arg : [arg]) {
+                        union.add(element);
+                    }
+                }
+            }
+            return union.size ? [...union] : undefined
+        },
+        /**
+         * @param {any[]} args
+         */
+        intersection(...args /*, options*/) {
+            if (args.length < 3) throw new TypeError("Expected at least 2 arguments");
+            args.pop(); // drop options
+
+            /** @type {Set | undefined} */
+            let intersection;
+            /** @type {Set | undefined} */
+            let workArea;
+            for (const arg of args) {
+                if (arg) {
+                    intersection = new Set();
+                    for (const element of Array.isArray(arg) ? arg : [arg]) {
+                        if (!workArea || workArea.delete(element)) {
+                            intersection.add(element);
+                        }
+                    }
+                    workArea = intersection;
+                }
+            }
+            return intersection?.size ? [...intersection] : undefined
+        },
+        /**
+         * @param {any} value
+         */
+        isArray(value /*, options*/) {
+            return Array.isArray(value);
+        },
+        /**
+         * @param {any} value
+         */
+        single(value /*, options*/) {
+            if (arguments.length !== 2) throw new TypeError(`Expected 2 arguments, got ${arguments.length} instead.`);
+            return Array.isArray(value) ? value.length === 1 : !!value
+        },
+        /**
+         * @param {any} value
+         */
+        multiple(value /*, options*/) {
+            if (arguments.length !== 2) throw new TypeError(`Expected 2 arguments, got ${arguments.length} instead.`);
+            return Array.isArray(value) && value.length > 1;
+        },
+        ar(...args /*, options*/) {
+            args.pop();
+            return args;
+        },
+
+        // markdown helpers
+        /**
+         * @param {any} value
+         */
+        hlink(value /*, options*/) {
+            if (arguments.length !== 2) throw new TypeError(`Expected 2 arguments, got ${arguments.length} instead.`);
+            return `${String(value).toLowerCase().replace(/\W+/g, "-")}`;
+        },
+
+        // path helpers
+        resolve(...args /*, options*/) {
+            if (args.length < 2) throw new TypeError("Expected at least one arguments");
+            const options = args.pop();
+            const outDir = options?.data?.root?.docs?.outDir;
+            if (outDir) args.unshift(outDir);
+            return resolve(...args);
+        },
+
+        /**
+         * @param {string} from
+         * @param {string} to
+         */
+        relative(from, to, /** @type {import("handlebars").HelperOptions} */ options) {
+            if (arguments.length !== 3) throw new TypeError(`Expected 2 arguments, got ${arguments.length} instead.`);
+            const outDir = options.data?.root?.docs?.outDir;
+            return outDir ? relative(resolve(outDir, from), resolve(outDir, to)) : relative(from, to);
+        },
+
+        // string helpers
         trimLeadingLines,
         trimTrailingLines,
         trimLines,
-        isArray: Array.isArray
+        concat(...args /*, options*/) {
+            args.pop();
+            return "".concat(...args);
+        },
+
+
+        /**
+         *
+         * @param {string} s
+         * @param {string} [ch]
+         */
+        split(s, ch /*, options*/) {
+            if (arguments.length !== 2 && arguments.length !== 3) throw new TypeError(`Expected 2-3 arguments, got ${arguments.length} instead.`);
+            if (typeof ch !== "string") ch = ",";
+            return s.split(ch).map(s => s.trim());
+        },
+
+        // other
+        isObject(value /*, options*/) {
+            if (arguments.length !== 2) throw new TypeError(`Expected 2 arguments, got ${arguments.length} instead.`);
+            return typeof value === "object" && value !== null;
+        },
+        inspect(value /*, options*/) {
+            if (arguments.length !== 2) throw new TypeError(`Expected 2 arguments, got ${arguments.length} instead.`);
+            return `<!--\n${util.inspect(value)}\n-->`;
+        },
+        lookupSources(...names /*, options*/) {
+            const options = names.pop();
+            names = names.flat();
+            const sources = new Map();
+            for (const arg of names) {
+                const dataSources = options.data.root?.[arg + "Sources"];
+                if (Array.isArray(dataSources)) {
+                    for (const source of dataSources) {
+                        let origins = sources.get(source);
+                        if (!origins) sources.set(source, origins = new Set());
+                        origins.add(arg);
+                    }
+                }
+            }
+            return [...sources.entries()].map(([href, origins]) => ({ href, names: [...origins] }));
+        }
     }
 };
+
+/**
+ * @param {string} file
+ */
+function normalizePathSeparators(file) {
+    return file.replace(/\\/g, "/");
+}
+
+/**
+ * @param {string[]} args
+ */
+function resolve(...args) {
+    args = args.map(normalizePathSeparators);
+    const isDir = args[args.length - 1].endsWith("/");
+    const resolved = normalizePathSeparators(path.resolve(...args));
+    return isDir && !resolved.endsWith("/") ? resolved + "/" : resolved;
+}
+
+/**
+ * @param {string} from
+ * @param {string} to
+ */
+function relative(from, to) {
+    from = normalizePathSeparators(from);
+    to = normalizePathSeparators(to);
+    if (!path.isAbsolute(from)) throw new TypeError("Argument must be absolute: from");
+    if (!path.isAbsolute(to)) throw new TypeError("Argument must be absolute: to");
+    if (!from.endsWith("/")) {
+        from = normalizePathSeparators(path.dirname(from));
+        if (!from.endsWith("/")) from += "/";
+    }
+    const result = normalizePathSeparators(path.relative(from, to)) || ".";
+    return to.endsWith("/") && !result.endsWith("/") ? result + "/" : result;
+}
 
 /**
  * @typedef TemplateMap
@@ -109,8 +339,8 @@ export function applyTemplate(templateName, data) {
 
 /**
  * @template {HandlebarsTemplateDelegate} T
- * @param {T} template 
- * @param {Parameters<T>[0]} data 
+ * @param {T} template
+ * @param {Parameters<T>[0]} data
  */
 function invokeTemplate(template, data) {
     return template(data, handlebarsOptions);
