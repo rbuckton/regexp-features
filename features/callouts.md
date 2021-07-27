@@ -1,16 +1,9 @@
 # Feature: Callouts
 <sup>[Home](../index.md)</sup>
-<sup> \| [Features](../features)</sup>
-<sup> \| [Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/callouts.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/callouts.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/callouts.md)
--->
+<sup> \| </sup>
+<sup>[Features](index.md)</sup>
+<sup> \| </sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/callouts.md "source for: name, description")</sup>
 
 A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matching.
 
@@ -22,6 +15,10 @@ A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matc
 | [Boost.Regex](../engines/boost.regex.md) | [❌](engines/boost.regex.md#feature-callouts) |
 | [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-callouts) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-callouts) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-callouts) |
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: anchors.md
 [Anchor]: anchors.md

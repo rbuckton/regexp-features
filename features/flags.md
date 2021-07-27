@@ -1,25 +1,14 @@
 # Feature: Flags
 <sup>[Home](../index.md)</sup>
-<sup> \| [Features](../features)</sup>
-<sup> \| [Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/flags.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/flags-and-modifiers/flags.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/flags-and-modifiers/flags.md)
--->
+<sup> \| </sup>
+<sup>[Features](index.md)</sup>
+<sup> \| </sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/flags.md "source for: name, description")</sup>
 
 <dfn>Flags</dfn> control certain aspects of the matching behavior of a pattern.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/flags.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/flags-and-modifiers/flags.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/flags.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -38,15 +27,15 @@ The following flags are supported:
 | [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-flags) |
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-flags) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-flags) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-flags) |
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/flags.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/flags-and-modifiers/flags.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/flags.md "source for: see_also")</sup>
 
 
 - [Modifiers]
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: anchors.md
 [Anchor]: anchors.md

@@ -1,13 +1,17 @@
 # Languages
 <sup>[Home](../index.md)</sup>
-<sup>\| [Improve this list](https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages)</sup>
+<sup> \| </sup>
+<sup>[Improve this list][new language]</sup>
 
-- [C++](./cpp.md)
-- [C#](./csharp.md)
-- [F#](./fsharp.md)
-- [VB.net](./vbnet.md)
-- [C](./c.md)
+- [C++](cpp.md)
+- [C#](csharp.md)
+- [F#](fsharp.md)
+- [VB.net](vbnet.md)
+- [C](c.md)
 
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: ../features/anchors.md
 [Anchor]: ../features/anchors.md

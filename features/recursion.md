@@ -1,25 +1,14 @@
 # Feature: Recursion
 <sup>[Home](../index.md)</sup>
-<sup> \| [Features](../features)</sup>
-<sup> \| [Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/recursion.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/groups-and-backtracking/recursion.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/groups-and-backtracking/recursion.md)
--->
+<sup> \| </sup>
+<sup>[Features](index.md)</sup>
+<sup> \| </sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/recursion.md "source for: name, description")</sup>
 
 A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capture group] inside of itself, to handle cases such as matching balanced parenthesis or brackets, etc.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/recursion.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/groups-and-backtracking/recursion.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/recursion.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -35,6 +24,10 @@ A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capt
 | [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-recursion) |
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-recursion) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-recursion) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-recursion) |
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: anchors.md
 [Anchor]: anchors.md

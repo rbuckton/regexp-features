@@ -1,25 +1,14 @@
 # Feature: Text Segment Boundaries
 <sup>[Home](../index.md)</sup>
-<sup> \| [Features](../features)</sup>
-<sup> \| [Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/text-segment-boundaries.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/anchors-and-boundaries/text-segment-boundaries.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/anchors-and-boundaries/text-segment-boundaries.md)
--->
+<sup> \| </sup>
+<sup>[Features](index.md)</sup>
+<sup> \| </sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: name, description")</sup>
 
 A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the end of a text segment.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/text-segment-boundaries.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/anchors-and-boundaries/text-segment-boundaries.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -35,18 +24,18 @@ A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the en
 | [Boost.Regex](../engines/boost.regex.md) | [❌](engines/boost.regex.md#feature-text-segment-boundaries) |
 | [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-text-segment-boundaries) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-text-segment-boundaries) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-text-segment-boundaries) |
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/text-segment-boundaries.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/anchors-and-boundaries/text-segment-boundaries.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: see_also")</sup>
 
 
 - [Anchors]
 - [Buffer Boundaries]
 - [Word Boundaries]
 - [Continuation Escape]
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: anchors.md
 [Anchor]: anchors.md

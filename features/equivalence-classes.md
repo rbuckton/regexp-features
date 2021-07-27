@@ -1,25 +1,14 @@
 # Feature: Equivalence Classes
 <sup>[Home](../index.md)</sup>
-<sup> \| [Features](../features)</sup>
-<sup> \| [Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/equivalence-classes.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/character-classes/equivalence-classes.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/character-classes/equivalence-classes.md)
--->
+<sup> \| </sup>
+<sup>[Features](index.md)</sup>
+<sup> \| </sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/equivalence-classes.md "source for: name, description")</sup>
 
 An <dfn>Equivalence Class</dfn> matches any character or collating element with the same primary sort key as the provided collating element.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/equivalence-classes.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/character-classes/equivalence-classes.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/equivalence-classes.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -34,12 +23,9 @@ An <dfn>Equivalence Class</dfn> matches any character or collating element with 
 | [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-equivalence-classes) |
 | [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-equivalence-classes) |
 | [Oniguruma](../engines/oniguruma.md) | [❌](engines/oniguruma.md#feature-equivalence-classes) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-equivalence-classes) |
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/equivalence-classes.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/character-classes/equivalence-classes.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/equivalence-classes.md "source for: see_also")</sup>
 
 
 - [Character Classes]
@@ -52,6 +38,9 @@ An <dfn>Equivalence Class</dfn> matches any character or collating element with 
 - [Character Class Nested Set]
 - [Character Class Intersection]
 - [Character Class Subtraction]
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: anchors.md
 [Anchor]: anchors.md

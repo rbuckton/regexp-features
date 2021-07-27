@@ -1,25 +1,14 @@
 # Feature: Possessive Quantifiers
 <sup>[Home](../index.md)</sup>
-<sup> \| [Features](../features)</sup>
-<sup> \| [Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/possessive-quantifiers.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/quantifiers/possessive-quantifiers.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/quantifiers/possessive-quantifiers.md)
--->
+<sup> \| </sup>
+<sup>[Features](index.md)</sup>
+<sup> \| </sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/possessive-quantifiers.md "source for: name, description")</sup>
 
 <dfn>Possessive Quantifiers</dfn> are like greedy (i.e., regular) [quantifiers], except that backtracking is not performed.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/possessive-quantifiers.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/quantifiers/possessive-quantifiers.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/possessive-quantifiers.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -38,16 +27,16 @@
 | [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-possessive-quantifiers) |
 | [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-possessive-quantifiers) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-possessive-quantifiers) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-possessive-quantifiers) |
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/possessive-quantifiers.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/quantifiers/possessive-quantifiers.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/possessive-quantifiers.md "source for: see_also")</sup>
 
 
 - [Quantifiers]
 - [Lazy Quantifiers]
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: anchors.md
 [Anchor]: anchors.md

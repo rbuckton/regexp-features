@@ -1,25 +1,14 @@
 # Feature: Wildcard
 <sup>[Home](../index.md)</sup>
-<sup> \| [Features](../features)</sup>
-<sup> \| [Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/wildcard.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/wildcard.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/wildcard.md)
--->
+<sup> \| </sup>
+<sup>[Features](index.md)</sup>
+<sup> \| </sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/wildcard.md "source for: name, description")</sup>
 
 A <dfn>Wildcard</dfn> matches a single, non-newline character.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/wildcard.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/wildcard.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/wildcard.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -34,6 +23,10 @@ A <dfn>Wildcard</dfn> matches a single, non-newline character.
 | [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-wildcard) |
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-wildcard) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-wildcard) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-wildcard) |
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: anchors.md
 [Anchor]: anchors.md

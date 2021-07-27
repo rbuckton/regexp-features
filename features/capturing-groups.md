@@ -1,25 +1,14 @@
 # Feature: Capturing Groups
 <sup>[Home](../index.md)</sup>
-<sup> \| [Features](../features)</sup>
-<sup> \| [Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/capturing-groups.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/groups-and-backtracking/capturing-groups.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/groups-and-backtracking/capturing-groups.md)
--->
+<sup> \| </sup>
+<sup>[Features](index.md)</sup>
+<sup> \| </sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/capturing-groups.md "source for: name, description")</sup>
 
 A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by index. A Capturing Group can be captured and returned by the matching algorithm.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/capturing-groups.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/groups-and-backtracking/capturing-groups.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/capturing-groups.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -34,12 +23,9 @@ A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom*
 | [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-capturing-groups) |
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-capturing-groups) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-capturing-groups) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-capturing-groups) |
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/capturing-groups.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/groups-and-backtracking/capturing-groups.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/capturing-groups.md "source for: see_also")</sup>
 
 
 - [Named Capturing Groups]
@@ -47,6 +33,9 @@ A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom*
 - [Backreferences]
 - [Recursion]
 - [Subroutines]
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: anchors.md
 [Anchor]: anchors.md

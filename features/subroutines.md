@@ -1,25 +1,14 @@
 # Feature: Subroutines
 <sup>[Home](../index.md)</sup>
-<sup> \| [Features](../features)</sup>
-<sup> \| [Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/subroutines.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/groups-and-backtracking/subroutines.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/groups-and-backtracking/subroutines.md)
--->
+<sup> \| </sup>
+<sup>[Features](index.md)</sup>
+<sup> \| </sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/subroutines.md "source for: name, description")</sup>
 
 A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group] that can be reused in multiple places within the pattern to re-evaluate the subexpression from the group.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/subroutines.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/groups-and-backtracking/subroutines.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/subroutines.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -31,11 +20,7 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 - <code>(?&<em>name</em>)</code> &mdash; Evaluates the [named capture group] with the provided *name*.
 
 ### Example
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/subroutines.md)</sup>
-<!--
-'example' sources:
-  - [](../src/features/groups-and-backtracking/subroutines.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/subroutines.md "source for: example")</sup>
 
 
 ```re
@@ -55,6 +40,10 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 | [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-subroutines) |
 | [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-subroutines) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-subroutines) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-subroutines) |
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: anchors.md
 [Anchor]: anchors.md

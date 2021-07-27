@@ -1,25 +1,14 @@
 # Feature: Character Classes
 <sup>[Home](../index.md)</sup>
-<sup> \| [Features](../features)</sup>
-<sup> \| [Improve this article](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-classes.md)</sup>
-<!--
-'name' sources:
-  - [](../src/features/character-classes/character-classes.md)
--->
-
-<!--
-'description' sources:
-  - [](../src/features/character-classes/character-classes.md)
--->
+<sup> \| </sup>
+<sup>[Features](index.md)</sup>
+<sup> \| </sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-classes.md "source for: name, description")</sup>
 
 A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to match a single character in the set.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-classes.md)</sup>
-<!--
-'syntax' sources:
-  - [](../src/features/character-classes/character-classes.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-classes.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -36,12 +25,9 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 | [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-character-classes) |
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-character-classes) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-character-classes) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-character-classes) |
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-classes.md)</sup>
-<!--
-'see_also' sources:
-  - [](../src/features/character-classes/character-classes.md)
--->
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-classes.md "source for: see_also")</sup>
 
 
 - [Posix Character Classes]
@@ -54,6 +40,9 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 - [Character Class Nested Set]
 - [Character Class Intersection]
 - [Character Class Subtraction]
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: anchors.md
 [Anchor]: anchors.md

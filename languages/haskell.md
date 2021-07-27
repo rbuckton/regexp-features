@@ -1,16 +1,23 @@
 # Language: Haskell
 <sup>[Home](../index.md)</sup>
-<sup> \| [Languages](./index.md)</sup>
-<sup> \| [Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/languages/haskell.md)</sup>
+<sup> \| </sup>
+<sup>[Languages](index.md)</sup>
+<sup> \| </sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/languages/haskell.md "source for: name")</sup>
+
+
 <!--
 'name' sources:
-  - [](../src/languages/haskell.md)
+  - [](../../src/languages/haskell.md)
 -->
 
 
 ## Engines
 
 
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 [Anchors]: ../features/anchors.md
 [Anchor]: ../features/anchors.md
