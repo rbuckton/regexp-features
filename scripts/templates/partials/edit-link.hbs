@@ -1,16 +1,55 @@
-{{#if sources~}}
+{{~#*inline 'link-label'~}}
+{{#if .~}}{{.}}{{else}}Improve this section{{/if}}
+{{~/inline~}}
+
+{{~#*inline 'link-href'~}}
+https://github.com/rbuckton/regexp-features/edit/main/src/{{relative @root.docs.srcDir . }}
+{{~/inline~}}
+
+{{~#*inline 'link-title'~}}
+ "{{.}}"
+{{~/inline~}}
+
+{{~#*inline 'link-names'}} "source for:
+    {{~#each .~}}
+        {{~#if @first}} {{else}}, {{/if~}}
+        {{~.~}}
+    {{~/each~}}
+"{{/inline~}}
+
+{{~#*inline 'link'~}}
+    [{{> link-label label }}](
+        {{~#if (isObject source)~}}
+            {{~> link-href source.href ~}}
+            {{~#if source.title~}}
+                {{~> link-title source.title ~}}
+            {{~else if source.names~}}
+                {{~> link-names source.names ~}}
+            {{~/if~}}
+        {{~else~}}
+            {{~> link-href source ~}}
+        {{~/if~}}
+    )
+{{~/inline~}}
+
+{{~#if names~}}
+    {{~> edit-link sources=(lookupSources names) names='' label=label prefix=prefix ~}}
+{{~else if sources~}}
+{{~#if (eq prefix true)~}}
+    {{~> nav-sep ~}}
+{{~else if prefix~}}
+    <sup>{{prefix}}</sup>
+{{/if~}}
 <sup>
-{{~prefix~}}
 {{~#if (multiple sources)~}}
-{{~#each sources~}}
-{{~#if @first}}{{#if label}}{{label}}{{else}}Improve this section{{/if}}: {{else}}, {{/if~}}
-[{{add @index 1}}](https://github.com/rbuckton/regexp-features/edit/main/src/{{makeRelative . @root.docs.srcDir }})
-{{~/each~}}
-{{~else if sources ~}}
-[{{#if label}}{{label}}{{else}}Improve this section{{/if}}]
-{{~#each sources~}}
-(https://github.com/rbuckton/regexp-features/edit/main/src/{{makeRelative . @root.docs.srcDir }})
-{{~/each~}}
+    {{~#each sources as |source| ~}}
+        {{~#if @first}}{{> link-label label}}: {{else}}, {{/if~}}
+        {{~> link label=(add @index 1) source=source ~}}
+    {{~/each~}}
+{{~else if (single sources) ~}}
+    {{~#each sources as |source| ~}}
+        {{~> link label=label source=source ~}}
+    {{~/each~}}
 {{~/if~}}
 </sup>
-{{~/if}}
+{{/if~}}

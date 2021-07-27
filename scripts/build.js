@@ -95,6 +95,11 @@ async function doBuild(srcDir, outDir) {
             }
         }
     }
+    catch (e) {
+        console.error(e);
+        process.stdout.write(chalk`{gray build} {red error} Build failed.\n`);
+        if (!argv.watch) process.exit(1);
+    }
     finally {
         building = false;
         if (buildRequested) {

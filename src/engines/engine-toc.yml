@@ -3,3 +3,4 @@
 - boost.regex
 - dotnet
 - oniguruma
+- hyperscan

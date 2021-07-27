@@ -1,3 +1,6 @@
+[new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
+[new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
+[new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
 {{#if (eq @root.type "Engine")}}
 {{!-- In an Engine, emit links using anchors --}}
@@ -10,9 +13,9 @@
 {{else}}
 {{!-- Anywhere else, emit links using paths --}}
 {{#each @root.docs.features}}
-[{{name}}]: {{makeRelative outFile @root.outFile}}
+[{{name}}]: {{relative @root.outFile outFile}}
 {{#each aliases}}
-[{{.}}]: {{makeRelative ../outFile @root.outFile}}
+[{{.}}]: {{relative @root.outFile ../outFile}}
 {{/each}}
 {{/each}}
 {{/if}}
@@ -24,7 +27,7 @@
 
 {{!-- Emit links to each feature article --}}
 {{#each @root.docs.features}}
-[article:{{name}}]: {{makeRelative outFile @root.outFile}}
+[article:{{name}}]: {{relative @root.outFile outFile}}
 {{/each}}
 
 {{!-- Emit link to article reference --}}
@@ -47,5 +50,5 @@
 
 {{!-- Emit links to languages --}}
 {{#each @root.docs.languages}}
-[{{name}}]: {{makeRelative outFile @root.outFile}}
+[{{name}}]: {{relative @root.outFile outFile}}
 {{/each}}

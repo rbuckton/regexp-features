@@ -1,3 +1,4 @@
+.archive
 docs
 node_modules
 *.log

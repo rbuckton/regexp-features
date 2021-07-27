@@ -1,9 +1,12 @@
-{{#if sources}}
+{{#each names as |name| }}
+{{> sources sources=(lookup .. (concat name 'Sources')) name=name }}
+{{else if sources}}
+
 <!--
 {{#if name}}'{{name}}' {{/if}}sources:
 {{#each sources}}
-  - []({{ makeRelative . @root.outFile }})
+  - []({{ relative @root.outFile . }})
 {{/each}}
 -->
 
-{{/if}}
+{{/each}}

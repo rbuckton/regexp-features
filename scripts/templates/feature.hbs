@@ -1,9 +1,10 @@
 # Feature: {{name}}
-<sup>[Home](../index.md)</sup>
-<sup> \| [Features](../features)</sup>
-{{> edit-link sources=(union nameSources descriptionSources) prefix=' \| ' label='Improve this article' }}
+{{> nav-link label='Home' href=(relative outFile 'index.md') }}
+{{> nav-sep }}
+{{> nav-link label='Features' href='index.md' }}
+{{> edit-link names=(ar 'name' 'description') prefix=true label='Improve this article' }}
 
-{{> sources sources=nameSources name='name' ~}}
+{{> sources names='name' ~}}
 
 {{> description }}
 {{> syntax }}

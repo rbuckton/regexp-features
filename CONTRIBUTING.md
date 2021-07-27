@@ -19,6 +19,13 @@ Issues can be filed via the [GitHub Issues](https://github.com/rbuckton/regexp-f
 
 # Adding New Languages
 
+## Using `hygen`
+
+1. Run `npm run g:language` and follow the prompts.
+1. Make any changes necessary to `src/languages/<language-id>.md`, where *language-id* is unique [*language identifier*](#language-identifier).
+
+## Adding an language manually
+
 To add a new language:
 
 1. Copy `src/languages/.template.md` to a new file named `src/languages/<language-id>.md`, where *language-id* is a unique [*language identifier*](#language-identifier).
@@ -54,6 +61,13 @@ To add a new language:
 1. Edit `src/languages/language-toc.yml` and add an entry for the new [*language identifier*](#language-identifier) to the list.
 
 # Adding New Features
+
+## Using `hygen`
+
+1. Run `npm run g:feature` and follow the prompts.
+1. Make any changes necessary to `src/features/<feature-id>.md`, where *feature-id* is unique [*feature identifier*](#feature-identifier).
+
+## Adding an feature manually
 
 To add a new feature:
 
@@ -113,6 +127,13 @@ To add a new feature:
 # Adding New Engines
 
 To add a new engine:
+
+## Using `hygen`
+
+1. Run `npm run g:engine` and follow the prompts.
+1. Make any changes necessary to `src/engines/<engine-id>/engine.md` and `src/engines/<engine-id>/features/*.md`, where *engine-id* is unique [*engine identifier*](#engine-identifier).
+
+## Adding an engine manually
 
 1. Copy the `src/engines/.template` directory to a folder named `src/engines/<engine-id>`, where *engine-id* is unique [*engine identifier*](#engine-identifier).
 1. In the new engine folder:

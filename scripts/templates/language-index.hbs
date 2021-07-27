@@ -1,10 +1,11 @@
 # Languages
-<sup>[Home](../index.md)</sup>
-<sup>\| [Improve this list](https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages)</sup>
+{{> nav-link label='Home' href='../index.md'}}
+{{> nav-sep }}
+{{> nav-link label='Improve this list' xref='new language' }}
 
 {{#each docs.languages}}
 {{#if engines}}
-- [{{name}}](./{{id}}.md)
+{{> list-link }}
 {{/if}}
 {{/each}}
 
