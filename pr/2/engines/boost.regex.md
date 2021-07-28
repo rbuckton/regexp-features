@@ -1065,7 +1065,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/boost.regex/features/backreferences.md "source for: syntax")</sup>
 
 
-- <code>&lt;em>n</em></code> &mdash; Where *n* is in the range 1-9. Matches the same string as the [capture group] *n*.
+- <code>\\<em>n</em></code> &mdash; Where *n* is in the range 1-9. Matches the same string as the [capture group] *n*.
 - <code>\g<em>n</em></code> &mdash; Where *n* is in the range 1-9. Matches the same string as the [capture group] *n*.
 - <code>\g-<em>n</em></code> &mdash; Where *n* is in the range 1-9. Matches the *n*th previous [capture group].
 - <code>\g{<em>n</em>}</code> &mdash; Where *n* is an integer >= 0. Matches the same string as the [capture group] *n*.
