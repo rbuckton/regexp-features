@@ -1524,10 +1524,10 @@ A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matc
     - `<` &mdash; Invoked while retracting.
     - `>` &mdash; Invoked while progressing.
 - Callouts of *name*:
- - <code>(\*<em>name</em>)</code> &mdash; Invokes the callout with the provided *name*.
- - <code>(\*<em>name</em>{<em>args</em>…})</code> &mdash; Invokes the callout with the provided *name* and *args*.
- - <code>(\*<em>name</em>[<em>tag</em>])</code> &mdash; Invokes the callout with the provided *name* and *tag*.
- - <code>(\*<em>name</em>[<em>tag</em>]{<em>args</em>…})</code> &mdash; Invokes the callout with the provided *name*, *tag*, and *args*.
+ - <code>(*<em>name</em>)</code> &mdash; Invokes the callout with the provided *name*.
+ - <code>(*<em>name</em>{<em>args</em>…})</code> &mdash; Invokes the callout with the provided *name* and *args*.
+ - <code>(*<em>name</em>[<em>tag</em>])</code> &mdash; Invokes the callout with the provided *name* and *tag*.
+ - <code>(*<em>name</em>[<em>tag</em>]{<em>args</em>…})</code> &mdash; Invokes the callout with the provided *name*, *tag*, and *args*.
 
 
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
