@@ -1389,6 +1389,7 @@ A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capt
 > NOTE: Left-most recursive calls are forbidden:
 > - `(?<name>a|\g<name>b)` - error
 > - `(?<name>a|b\g<name>c)` - ok
+>
 > Source for this example comes from Oniguruma: [source](https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L464-L467)
 
 ## Feature: Conditional Expressions
