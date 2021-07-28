@@ -9,4 +9,4 @@ syntax: *content.syntax
 #example: *content.example
 ---
 # syntax
-- <code># … <strong>\\n</strong></code> &mdash; The rest of the line is removed from the pattern. Only supported when either the `x` (extended mode) or `xx` (extended more mode) [RegExp flags] are set.
+- <code>#…<strong>\n</strong></code> &mdash; The rest of the line is removed from the pattern. Only supported when either the `x` (extended mode) or `xx` (extended more mode) [RegExp flags] are set.

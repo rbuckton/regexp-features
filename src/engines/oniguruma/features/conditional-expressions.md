@@ -16,16 +16,16 @@ syntax: *content.syntax
 
 The following conditions are supported:
 
-- <code>(?(?=<em>test-pattern</em>) … )</code> &mdash; Evaluates to **true** if a [lookahead] for *test-pattern* matches; otherwise, evaluates to **false**.
-- <code>(?(?!<em>test-pattern</em>) … )</code> &mdash; Evaluates to **true** if a negative [lookahead] for *test-pattern* matches; otherwise, evaluates to **false**.
-- <code>(?(<em>n</em>) … )</code> &mdash; Evaluates to **true** if the [capture group] at offset *n* was successfully matched; otherwise, evaluates to **false**.
-- <code>(?(-<em>n</em>) … )</code> &mdash; Evaluates to **true** if the *n*th [capture group] declared to the left of the current *Atom* was successfully matched; otherwise, evaluates to **false**.
-- <code>(?(+<em>n</em>) … )</code> &mdash; Evaluates to **true** if the *n*th [capture group] declared to the right of the current *Atom* was successfully matched; otherwise, evaluates to **false**.
-- <code>(?(<em>n</em>-<em>n</em>) … )</code> &mdash; Evaluates to **true** if the [capture group] at offset *n* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
-- <code>(?(<em>n</em>+<em>n</em>) … )</code> &mdash; Evaluates to **true** if the [capture group] at offset *n* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
-- <code>(?(\<<em>name</em>\>) … )</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched; otherwise, evaluates to **false**.
-- <code>(?('<em>name</em>') … )</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched; otherwise, evaluates to **false**.
-- <code>(?(\<<em>name</em>-<em>name</em>\>) … )</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
-- <code>(?('<em>name</em>-<em>name</em>') … )</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
-- <code>(?(\<<em>name</em>+<em>name</em>\>) … )</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
-- <code>(?('<em>name</em>+<em>name</em>') … )</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
+- <code>(?(?=<em>test-pattern</em>)…)</code> &mdash; Evaluates to **true** if a [lookahead] for *test-pattern* matches; otherwise, evaluates to **false**.
+- <code>(?(?!<em>test-pattern</em>)…)</code> &mdash; Evaluates to **true** if a negative [lookahead] for *test-pattern* matches; otherwise, evaluates to **false**.
+- <code>(?(<em>n</em>)…)</code> &mdash; Evaluates to **true** if the [capture group] at offset *n* was successfully matched; otherwise, evaluates to **false**.
+- <code>(?(-<em>n</em>)…)</code> &mdash; Evaluates to **true** if the *n*th [capture group] declared to the left of the current *Atom* was successfully matched; otherwise, evaluates to **false**.
+- <code>(?(+<em>n</em>)…)</code> &mdash; Evaluates to **true** if the *n*th [capture group] declared to the right of the current *Atom* was successfully matched; otherwise, evaluates to **false**.
+- <code>(?(<em>n</em>-<em>n</em>)…)</code> &mdash; Evaluates to **true** if the [capture group] at offset *n* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
+- <code>(?(<em>n</em>+<em>n</em>)…)</code> &mdash; Evaluates to **true** if the [capture group] at offset *n* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
+- <code>(?(&lt;<em>name</em>&gt;)…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched; otherwise, evaluates to **false**.
+- <code>(?('<em>name</em>')…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched; otherwise, evaluates to **false**.
+- <code>(?(&lt;<em>name</em>-<em>name</em>&gt;)…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
+- <code>(?('<em>name</em>-<em>name</em>')…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
+- <code>(?(&lt;<em>name</em>+<em>name</em>&gt;)…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
+- <code>(?('<em>name</em>+<em>name</em>')…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.

@@ -22,4 +22,4 @@ syntax: *content.syntax
 A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that specifies a named, pre-defined set of characters.
 
 # syntax
-- <code>\[\[:<em>name</em>:\]\]</code> &mdash; Where *name* is in a set of predefined names. Matches any character in the set.
+- <code>[[:<em>name</em>:]]</code> &mdash; Where *name* is in a set of predefined names. Matches any character in the set.

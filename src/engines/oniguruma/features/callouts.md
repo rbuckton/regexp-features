@@ -28,7 +28,7 @@ For more information on callouts, see the [Oniguruma Callouts API](https://githu
     - `<` &mdash; Invoked while retracting.
     - `>` &mdash; Invoked while progressing.
 - Callouts of *name*:
- - <code>(\*<em>name</em>)</code> &mdash; Invokes the callout with the provided *name*.
- - <code>(\*<em>name</em>{<em>args</em>…})</code> &mdash; Invokes the callout with the provided *name* and *args*.
- - <code>(\*<em>name</em>[<em>tag</em>])</code> &mdash; Invokes the callout with the provided *name* and *tag*.
- - <code>(\*<em>name</em>[<em>tag</em>]{<em>args</em>…})</code> &mdash; Invokes the callout with the provided *name*, *tag*, and *args*.
+ - <code>(*<em>name</em>)</code> &mdash; Invokes the callout with the provided *name*.
+ - <code>(*<em>name</em>{<em>args</em>…})</code> &mdash; Invokes the callout with the provided *name* and *args*.
+ - <code>(*<em>name</em>[<em>tag</em>])</code> &mdash; Invokes the callout with the provided *name* and *tag*.
+ - <code>(*<em>name</em>[<em>tag</em>]{<em>args</em>…})</code> &mdash; Invokes the callout with the provided *name*, *tag*, and *args*.
