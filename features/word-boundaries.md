@@ -20,12 +20,13 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-word-boundaries) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-word-boundaries) |
-| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-word-boundaries) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-word-boundaries) |
-| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-word-boundaries) |
-| [ECMAScript](../engines/ecmascript.md) | [✔](engines/ecmascript.md#feature-word-boundaries) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-word-boundaries) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-word-boundaries) |
+| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-word-boundaries) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-word-boundaries) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](../engines/hyperscan.md#feature-word-boundaries) |
+| [ECMAScript](../engines/ecmascript.md) | [✔](../engines/ecmascript.md#feature-word-boundaries) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-word-boundaries) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/word-boundaries.md "source for: see_also")</sup>

@@ -1175,7 +1175,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/backreferences.md "source for: syntax")</sup>
 
 
-- <code>\\<em>n</em></code> &mdash; Where *n* is a decimal digit in the range 1-9. Matches the same string as the [capture group] *n*.
+- <code>&#x5c;<em>n</em></code> &mdash; Where *n* is a decimal digit in the range 1-9. Matches the same string as the [capture group] *n*.
 - <code>\k&lt;<em>n</em>&gt;</code> &mdash; Where *n* is an integer > 0. Matches the same string as the [capture group] *n*.
 - <code>\k'<em>n</em>'</code> &mdash; Where *n* is an integer > 0. Matches the same string as the [capture group] *n*.
 - <code>\k&lt;-<em>n</em>&gt;</code> &mdash; Where *n* is an integer > 0. Matches the *n*th previous [capture group].

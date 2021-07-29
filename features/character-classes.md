@@ -21,12 +21,13 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-character-classes) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-character-classes) |
-| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-character-classes) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-character-classes) |
-| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-character-classes) |
-| [ECMAScript](../engines/ecmascript.md) | [✔](engines/ecmascript.md#feature-character-classes) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-character-classes) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-character-classes) |
+| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-character-classes) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-character-classes) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](../engines/hyperscan.md#feature-character-classes) |
+| [ECMAScript](../engines/ecmascript.md) | [✔](../engines/ecmascript.md#feature-character-classes) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-character-classes) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-classes.md "source for: see_also")</sup>

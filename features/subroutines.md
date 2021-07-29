@@ -36,12 +36,13 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-subroutines) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-subroutines) |
-| [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-subroutines) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-subroutines) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-subroutines) |
-| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-subroutines) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-subroutines) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-subroutines) |
+| [.NET](../engines/dotnet.md) | [❌](../engines/dotnet.md#feature-subroutines) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-subroutines) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-subroutines) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-subroutines) |
+| [ICU](../engines/icu.md) | [❌](../engines/icu.md#feature-subroutines) |
 
 
 

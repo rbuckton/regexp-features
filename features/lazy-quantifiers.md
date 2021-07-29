@@ -24,12 +24,13 @@
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-lazy-quantifiers) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-lazy-quantifiers) |
-| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-lazy-quantifiers) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-lazy-quantifiers) |
-| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-lazy-quantifiers) |
-| [ECMAScript](../engines/ecmascript.md) | [✔](engines/ecmascript.md#feature-lazy-quantifiers) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-lazy-quantifiers) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-lazy-quantifiers) |
+| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-lazy-quantifiers) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-lazy-quantifiers) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](../engines/hyperscan.md#feature-lazy-quantifiers) |
+| [ECMAScript](../engines/ecmascript.md) | [✔](../engines/ecmascript.md#feature-lazy-quantifiers) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-lazy-quantifiers) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/lazy-quantifiers.md "source for: see_also")</sup>

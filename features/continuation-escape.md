@@ -19,12 +19,13 @@ A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either t
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-continuation-escape) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-continuation-escape) |
-| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-continuation-escape) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-continuation-escape) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-continuation-escape) |
-| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-continuation-escape) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-continuation-escape) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-continuation-escape) |
+| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-continuation-escape) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-continuation-escape) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-continuation-escape) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-continuation-escape) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-continuation-escape) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/continuation-escape.md "source for: see_also")</sup>

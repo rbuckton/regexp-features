@@ -19,12 +19,13 @@ An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-alternatives) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-alternatives) |
-| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-alternatives) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-alternatives) |
-| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-alternatives) |
-| [ECMAScript](../engines/ecmascript.md) | [✔](engines/ecmascript.md#feature-alternatives) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-alternatives) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-alternatives) |
+| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-alternatives) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-alternatives) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](../engines/hyperscan.md#feature-alternatives) |
+| [ECMAScript](../engines/ecmascript.md) | [✔](../engines/ecmascript.md#feature-alternatives) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-alternatives) |
 
 
 

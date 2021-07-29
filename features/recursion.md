@@ -20,12 +20,13 @@ A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capt
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-recursion) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-recursion) |
-| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-recursion) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-recursion) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-recursion) |
-| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-recursion) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-recursion) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-recursion) |
+| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-recursion) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-recursion) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-recursion) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-recursion) |
+| [ICU](../engines/icu.md) | [❌](../engines/icu.md#feature-recursion) |
 
 
 

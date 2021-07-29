@@ -19,12 +19,13 @@ An <dfn>Equivalence Class</dfn> matches any character or collating element with 
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [❌](engines/pcre.md#feature-equivalence-classes) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-equivalence-classes) |
-| [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-equivalence-classes) |
-| [Oniguruma](../engines/oniguruma.md) | [❌](engines/oniguruma.md#feature-equivalence-classes) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-equivalence-classes) |
-| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-equivalence-classes) |
+| [PCRE](../engines/pcre.md) | [❌](../engines/pcre.md#feature-equivalence-classes) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-equivalence-classes) |
+| [.NET](../engines/dotnet.md) | [❌](../engines/dotnet.md#feature-equivalence-classes) |
+| [Oniguruma](../engines/oniguruma.md) | [❌](../engines/oniguruma.md#feature-equivalence-classes) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-equivalence-classes) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-equivalence-classes) |
+| [ICU](../engines/icu.md) | [❌](../engines/icu.md#feature-equivalence-classes) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/equivalence-classes.md "source for: see_also")</sup>

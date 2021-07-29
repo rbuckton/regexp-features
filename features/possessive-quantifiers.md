@@ -23,12 +23,13 @@
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-possessive-quantifiers) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-possessive-quantifiers) |
-| [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-possessive-quantifiers) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-possessive-quantifiers) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-possessive-quantifiers) |
-| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-possessive-quantifiers) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-possessive-quantifiers) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-possessive-quantifiers) |
+| [.NET](../engines/dotnet.md) | [❌](../engines/dotnet.md#feature-possessive-quantifiers) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-possessive-quantifiers) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-possessive-quantifiers) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-possessive-quantifiers) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-possessive-quantifiers) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/possessive-quantifiers.md "source for: see_also")</sup>

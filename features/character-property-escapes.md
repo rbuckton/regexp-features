@@ -22,12 +22,13 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-character-property-escapes) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-character-property-escapes) |
-| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-character-property-escapes) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-character-property-escapes) |
-| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-character-property-escapes) |
-| [ECMAScript](../engines/ecmascript.md) | [✔](engines/ecmascript.md#feature-character-property-escapes) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-character-property-escapes) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-character-property-escapes) |
+| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-character-property-escapes) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-character-property-escapes) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](../engines/hyperscan.md#feature-character-property-escapes) |
+| [ECMAScript](../engines/ecmascript.md) | [✔](../engines/ecmascript.md#feature-character-property-escapes) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-character-property-escapes) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-property-escapes.md "source for: see_also")</sup>

@@ -20,12 +20,13 @@ A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and r
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-named-capturing-groups) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-named-capturing-groups) |
-| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-named-capturing-groups) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-named-capturing-groups) |
-| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-named-capturing-groups) |
-| [ECMAScript](../engines/ecmascript.md) | [✔](engines/ecmascript.md#feature-named-capturing-groups) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-named-capturing-groups) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-named-capturing-groups) |
+| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-named-capturing-groups) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-named-capturing-groups) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](../engines/hyperscan.md#feature-named-capturing-groups) |
+| [ECMAScript](../engines/ecmascript.md) | [✔](../engines/ecmascript.md#feature-named-capturing-groups) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-named-capturing-groups) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/named-capturing-groups.md "source for: see_also")</sup>

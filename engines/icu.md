@@ -1,32 +1,31 @@
-# Engine: .NET <a id="top"></a>
+# Engine: ICU <a id="top"></a>
 <sup>[Home](../index.md)</sup>
 <sup> \| </sup>
 <sup>[Engines](index.md)</sup>
 <sup> \| </sup>
 <sup>[Reference]</sup>
 <sup> \| </sup>
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/engine.md "source for: name, reference")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/engine.md "source for: name, reference")</sup>
 
 
 <!--
 'name' sources:
-  - [](../../src/engines/dotnet/engine.md)
+  - [](../../src/engines/icu/engine.md)
 -->
 
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/engine.md)
+  - [](../../src/engines/icu/engine.md)
 -->
 
 
 
 ## Languages
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/engine.md "source for: languages")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/engine.md "source for: languages")</sup>
 
-- [C#]
-- [F#]
-- [VB.net]
+- [C]
+- [C++]
 
 ## Features
 
@@ -40,11 +39,17 @@
 - ✔ [Alternatives]
 - ✔ [Wildcard]
 - ✔ [Character Classes]
+- ✔ [Posix Character Classes]
 - ✔ [Character Class Escapes]
+- ✔ [Line Endings Escape]
 - ✔ [Character Property Escapes]
+- ✔ [Character Class Nested Set]
+- ✔ [Character Class Intersection]
 - ✔ [Character Class Subtraction]
+- ✔ [Quoted Characters]
 - ✔ [Quantifiers]
 - ✔ [Lazy Quantifiers]
+- ✔ [Possessive Quantifiers]
 - ✔ [Capturing Groups]
 - ✔ [Named Capturing Groups]
 - ✔ [Non-Capturing Groups]
@@ -55,22 +60,16 @@
 - ✔ [Lookahead]
 - ✔ [Lookbehind]
 - ✔ [Non-Backtracking Expressions]
-- ✔ [Recursion]
-- ✔ [Conditional Expressions]
 
 <a id="not-supported-features"></a>The following features are *not* supported:
 
 - ❌ [Text Segment Boundaries]
-- ❌ [Posix Character Classes]
 - ❌ [Negated Posix Character Classes]
 - ❌ [Collating Elements]
 - ❌ [Equivalence Classes]
-- ❌ [Line Endings Escape]
-- ❌ [Character Class Nested Set]
-- ❌ [Character Class Intersection]
-- ❌ [Quoted Characters]
-- ❌ [Possessive Quantifiers]
 - ❌ [Branch Reset]
+- ❌ [Recursion]
+- ❌ [Conditional Expressions]
 - ❌ [Subroutines]
 - ❌ [Callouts]
 
@@ -81,7 +80,7 @@
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/flags.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/flags.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/flags.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/flags.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -92,22 +91,21 @@
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/flags.md)
+  - [](../../src/engines/icu/features/flags.md)
 -->
 
 <dfn>Flags</dfn> control certain aspects of the matching behavior of a pattern.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/flags.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/flags.md "source for: syntax")</sup>
 
 
 The following flags are supported:
-
 - `i` &mdash; Ignore Case. Matches [character classes] using a case-insensitive comparison.
 - `m` &mdash; Multiline. Causes the [anchors] `^` and `$` to match the start and end of each line (respectively), rather than the start and end of the input.
-- `n` &mdash; Explicit captures. Regular [Capturing Groups] are not captured, only [Named Capturing Groups] are captured.
 - `s` &mdash; Singleline. Causes the [wildcard] `.` to match newline characters.
-- `x` &mdash; Extended Mode. Ignores whitespace in a pattern. Spaces must instead be represented by `\s` or `\ ` (an escaped space). Allows `x`-mode [comments].
+- `w` &mdash; Unicode Word. Changes the behavior of `\b` in a pattern.
+- `x` &mdash; Extended Mode. Ignores whitespace in a pattern. Spaces must instead be represented by `\s` or `\ ` (an escaped space).
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/flags.md "source for: see_also")</sup>
@@ -122,7 +120,7 @@ The following flags are supported:
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/anchors.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/anchors.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/anchors.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/anchors.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -133,7 +131,7 @@ The following flags are supported:
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/anchors.md)
+  - [](../../src/engines/icu/features/anchors.md)
 -->
 
 <dfn>Anchors</dfn> match the start or end of a line.
@@ -161,7 +159,7 @@ The following flags are supported:
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/buffer-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/buffer-boundaries.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/buffer-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/buffer-boundaries.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -172,7 +170,7 @@ The following flags are supported:
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/buffer-boundaries.md)
+  - [](../../src/engines/icu/features/buffer-boundaries.md)
 -->
 
 A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of the input. This differs slightly from `^` and `$` which can be affected by [RegExp flags] like `m`.
@@ -201,7 +199,7 @@ A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of t
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/word-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/word-boundaries.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/word-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/word-boundaries.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -212,7 +210,7 @@ A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of t
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/word-boundaries.md)
+  - [](../../src/engines/icu/features/word-boundaries.md)
 -->
 
 A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a word.
@@ -240,7 +238,7 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/text-segment-boundaries.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/text-segment-boundaries.md "source for: supported")</sup>
 
 
 <!--
@@ -268,7 +266,7 @@ A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the en
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/continuation-escape.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/continuation-escape.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/continuation-escape.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/continuation-escape.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -279,7 +277,7 @@ A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the en
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/continuation-escape.md)
+  - [](../../src/engines/icu/features/continuation-escape.md)
 -->
 
 A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either the start of the input or the start of the last match.
@@ -306,7 +304,7 @@ A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either t
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/alternatives.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/alternatives.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/alternatives.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/alternatives.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -317,7 +315,7 @@ A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either t
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/alternatives.md)
+  - [](../../src/engines/icu/features/alternatives.md)
 -->
 
 An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first branch of a pattern fails to match, each alternative is attempted from left to right until a match is found.
@@ -335,7 +333,7 @@ An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/wildcard.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/wildcard.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/wildcard.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/wildcard.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -346,7 +344,7 @@ An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/wildcard.md)
+  - [](../../src/engines/icu/features/wildcard.md)
 -->
 
 A <dfn>Wildcard</dfn> matches a single, non-newline character.
@@ -364,7 +362,7 @@ A <dfn>Wildcard</dfn> matches a single, non-newline character.
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/character-classes.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/character-classes.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -375,7 +373,7 @@ A <dfn>Wildcard</dfn> matches a single, non-newline character.
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/character-classes.md)
+  - [](../../src/engines/icu/features/character-classes.md)
 -->
 
 A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to match a single character in the set.
@@ -410,7 +408,7 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/posix-character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/posix-character-classes.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/posix-character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/posix-character-classes.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -418,9 +416,19 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
   - [](../../src/features/character-classes/posix-character-classes.md)
 -->
 
-> ❌ This feature is not supported.
+
+<!--
+'reference' sources:
+  - [](../../src/engines/icu/features/posix-character-classes.md)
+-->
 
 A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that specifies a named, pre-defined set of characters.
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/posix-character-classes.md "source for: syntax")</sup>
+
+
+- <code>[[:<em>name</em>:]]</code> &mdash; Where *name* is in a set of predefined names. Matches any character in the set.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/posix-character-classes.md "source for: see_also")</sup>
@@ -444,7 +452,7 @@ A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that s
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/negated-posix-character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/negated-posix-character-classes.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/negated-posix-character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/negated-posix-character-classes.md "source for: supported")</sup>
 
 
 <!--
@@ -478,7 +486,7 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/collating-elements.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/collating-elements.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/collating-elements.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/collating-elements.md "source for: supported")</sup>
 
 
 <!--
@@ -512,7 +520,7 @@ A <dfn>Collating Element</dfn> is one or more characters that collate as a singl
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/equivalence-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/equivalence-classes.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/equivalence-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/equivalence-classes.md "source for: supported")</sup>
 
 
 <!--
@@ -546,7 +554,7 @@ An <dfn>Equivalence Class</dfn> matches any character or collating element with 
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-escapes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/character-class-escapes.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-escapes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/character-class-escapes.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -557,7 +565,7 @@ An <dfn>Equivalence Class</dfn> matches any character or collating element with 
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/character-class-escapes.md)
+  - [](../../src/engines/icu/features/character-class-escapes.md)
 -->
 
 A <dfn>Character Class Escape</dfn> is a single character escape that represents an entire character class. They can be used as an element of a [Character Class] or as an *Atom*. It is often the case that a lower-case escape character is the inclusive set, while an upper-case variant of the same character excludes that set.
@@ -595,7 +603,7 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/line-endings-escape.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/line-endings-escape.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/line-endings-escape.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/line-endings-escape.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -603,9 +611,19 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
   - [](../../src/features/character-classes/line-endings-escape.md)
 -->
 
-> ❌ This feature is not supported.
+
+<!--
+'reference' sources:
+  - [](../../src/engines/icu/features/line-endings-escape.md)
+-->
 
 A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending character sequence.
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/line-endings-escape.md "source for: syntax")</sup>
+
+
+- `\R` &mdash; Equivalent to `(?>\r\n?|[\x0A-\x0C\x85\u{2028}\u{2029}])`
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/line-endings-escape.md "source for: see_also")</sup>
@@ -629,7 +647,7 @@ A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending chara
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-property-escapes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/character-property-escapes.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-property-escapes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/character-property-escapes.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -640,17 +658,18 @@ A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending chara
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/character-property-escapes.md)
+  - [](../../src/engines/icu/features/character-property-escapes.md)
 -->
 
 A <dfn>Character Property Escape</dfn> is an escape sequence used to match a character with a specific character property.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/character-property-escapes.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/character-property-escapes.md "source for: syntax")</sup>
 
 
-- <code>\p{<em>name</em>}</code> &mdash; Where *name* is a predefined unicode property name. Matches a character that has the unicode property *name*.
-- <code>\P{<em>name</em>}</code> &mdash; Where *name* is a predefined unicode property name. Matches a character that does not have the unicode property *name*.
+- <code>\N{<em>name</em>}</code> &mdash; Where *name* is a predefined unicode character name. Matches the named unicode character.
+- <code>\p{<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that has the property *name*.
+- <code>\P{<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that does not have the property *name*.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-property-escapes.md "source for: see_also")</sup>
@@ -674,7 +693,7 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/character-class-nested-set.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/character-class-nested-set.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -682,9 +701,35 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
   - [](../../src/features/character-classes/character-class-nested-set.md)
 -->
 
-> ❌ This feature is not supported.
+
+<!--
+'reference' sources:
+  - [](../../src/engines/icu/features/character-class-nested-set.md)
+-->
 
 A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [character class] inside of a [character class].
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md "source for: syntax")</sup>
+
+
+- `[[…]]` &mdash; Matches any character in the set, just like a normal [character class].
+- `[[^…]]` &mdash; Where `…` is one or more single characters or character class escapes, excluding `-` between two entries in the set. Matches any character not in the set, just like a normal [negated character class].
+- <code>[[<em>a</em>-<em>z</em>]]</code> &mdash; Where *a* and *z* are single characters or character escapes. Matches any character in the range between *a* and *z* (inclusive), just like a normal [character class range].
+
+### Example
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md "source for: example")</sup>
+
+
+```
+[a-z&&[^d-q]]
+```
+
+Is equivalent to:
+
+```re
+[a-cr-z]
+```
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md "source for: see_also")</sup>
@@ -708,7 +753,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/character-class-intersection.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/character-class-intersection.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -716,9 +761,19 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
   - [](../../src/features/character-classes/character-class-intersection.md)
 -->
 
-> ❌ This feature is not supported.
+
+<!--
+'reference' sources:
+  - [](../../src/engines/icu/features/character-class-intersection.md)
+-->
 
 <dfn>Character Class Intersection</dfn> allows you to indicate that only characters that are in both [character classes] should match.
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md "source for: syntax")</sup>
+
+
+- `[…&&…]` &mdash; Matches any character that is in both the left- and right-hand sets of `&&`.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md "source for: see_also")</sup>
@@ -742,7 +797,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-subtraction.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/character-class-subtraction.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-subtraction.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/character-class-subtraction.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -753,10 +808,16 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/character-class-subtraction.md)
+  - [](../../src/engines/icu/features/character-class-subtraction.md)
 -->
 
 <dfn>Character Class Subtraction</dfn> allows you to exclude a class of characters from another class of characters in a [character class].
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/character-class-subtraction.md "source for: syntax")</sup>
+
+
+- `[…--…]` &mdash; Matches any character that is in the left-hand set of `--` but not in the right-hand set.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-subtraction.md "source for: see_also")</sup>
@@ -780,7 +841,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quoted-characters.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/quoted-characters.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quoted-characters.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/quoted-characters.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -788,9 +849,20 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
   - [](../../src/features/quoted-characters.md)
 -->
 
-> ❌ This feature is not supported.
+
+<!--
+'reference' sources:
+  - [](../../src/engines/icu/features/quoted-characters.md)
+-->
 
 <dfn>Quoted Characters</dfn> are a sequence of characters treated as literal characters rather than RegExp characters.
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quoted-characters.md "source for: syntax")</sup>
+
+
+- `\Q…\E` &mdash; All characters following `\Q` and preceding the next `\E` are treated as literal characters. Example: `\Q.+\E` matches `.+` but not `aa`.
+- `\Q…` &mdash; If there is no trailing `\E`, all characters until the end of the pattern are treated as literal characters.
 
 ## Feature: Quantifiers
 <sup>[Main article][article:Quantifiers]</sup>
@@ -799,7 +871,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/quantifiers.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/quantifiers.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -810,7 +882,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/quantifiers.md)
+  - [](../../src/engines/icu/features/quantifiers.md)
 -->
 
 <dfn>Quantifiers</dfn> specify repetition of an *Atom*. By default, quantifiers are "greedy" in that they attempt to match as many instances of the preceding *Atom* as possible to satisfy the pattern before backtracking.
@@ -840,7 +912,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/lazy-quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/lazy-quantifiers.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/lazy-quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/lazy-quantifiers.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -851,7 +923,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/lazy-quantifiers.md)
+  - [](../../src/engines/icu/features/lazy-quantifiers.md)
 -->
 
 <dfn>Lazy Quantifiers</dfn> specify repetition of an *Atom*, but attempt to match as few instances of the preceding *Atom* as possible to satisfy the pattern before advancing.
@@ -881,7 +953,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/possessive-quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/possessive-quantifiers.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/possessive-quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/possessive-quantifiers.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -889,9 +961,23 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
   - [](../../src/features/quantifiers/possessive-quantifiers.md)
 -->
 
-> ❌ This feature is not supported.
+
+<!--
+'reference' sources:
+  - [](../../src/engines/icu/features/possessive-quantifiers.md)
+-->
 
 <dfn>Possessive Quantifiers</dfn> are like greedy (i.e., regular) [quantifiers], except that backtracking is not performed.
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/possessive-quantifiers.md "source for: syntax")</sup>
+
+
+- `*+` &mdash; Match zero or more characters without backtracking.
+- `++` &mdash; Match one or more characters without backtracking.
+- `?+` &mdash; Match zero or one characters without backtracking.
+- <code>{<em>n</em>,}+</code> &mdash; Match _n_ or more characters without backtracking.
+- <code>{<em>n</em>,<em>m</em>}+</code> &mdash; Match between _n_ and _m_ characters without backtracking.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/possessive-quantifiers.md "source for: see_also")</sup>
@@ -907,7 +993,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/capturing-groups.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/capturing-groups.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -918,16 +1004,25 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/capturing-groups.md)
+  - [](../../src/engines/icu/features/capturing-groups.md)
 -->
 
 A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by index. A Capturing Group can be captured and returned by the matching algorithm.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/capturing-groups.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/capturing-groups.md "source for: syntax")</sup>
 
 
-- `(…)` &mdash; Groups the subexpression as a single *Atom*. The result is captured and returned by the matching algorithm.
+- `\d` &mdash; A decimal digit character in the range 0-9. Equivalent to `[0-9]`.
+- `\D` &mdash; Any character not in the range 0-9. Equivalent to `[^0-9]`.
+- `\w` &mdash; Any "word" character. Equivalent to `[a-zA-Z0-9_]`.
+- `\W` &mdash; Any non-"word" character. Equivalent to `[^a-zA-Z0-9_]`.
+- `\s` &mdash; Any whitespace character.
+- `\S` &mdash; Any non-whitespace character.
+- `\h` &mdash; Any horizontal whitespace character.
+- `\H` &mdash; Any non-horizontal whitespace character.
+- `\v` &mdash; Any vertical whitespace character.
+- `\V` &mdash; Any non-vertical whitespace character.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/capturing-groups.md "source for: see_also")</sup>
@@ -946,7 +1041,7 @@ A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom*
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/named-capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/named-capturing-groups.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/named-capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/named-capturing-groups.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -957,7 +1052,7 @@ A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom*
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/named-capturing-groups.md)
+  - [](../../src/engines/icu/features/named-capturing-groups.md)
 -->
 
 A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and returned by the matching algorithm. A Named Capturing Group is also an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by name.
@@ -986,7 +1081,7 @@ A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and r
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/non-capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/non-capturing-groups.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/non-capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/non-capturing-groups.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -997,7 +1092,7 @@ A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and r
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/non-capturing-groups.md)
+  - [](../../src/engines/icu/features/non-capturing-groups.md)
 -->
 
 A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] but cannot be referenced using [Backreferences]. A Non-capturing Group is not captured by the matching algorithm.
@@ -1022,7 +1117,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/backreferences.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/backreferences.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/backreferences.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/backreferences.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1033,7 +1128,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/backreferences.md)
+  - [](../../src/engines/icu/features/backreferences.md)
 -->
 
 <dfn>Backreferences</dfn> allow a pattern to re-match a previously matched capture group<sup>[1][Capturing Groups] [2][Named Capturing Groups]</sup> either by number (_n_) or by _name_.
@@ -1059,7 +1154,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/comments.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/comments.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/comments.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/comments.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1070,7 +1165,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/comments.md)
+  - [](../../src/engines/icu/features/comments.md)
 -->
 
 A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matching and can be used to document a pattern.
@@ -1094,7 +1189,7 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/line-comments.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/line-comments.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/line-comments.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/line-comments.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1105,7 +1200,7 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/line-comments.md)
+  - [](../../src/engines/icu/features/line-comments.md)
 -->
 
 A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and ending with `\n` (or the end of the pattern) that is ignored by pattern matching and can be used to document a pattern.
@@ -1129,7 +1224,7 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/modifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/modifiers.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/modifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/modifiers.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1140,17 +1235,17 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/modifiers.md)
+  - [](../../src/engines/icu/features/modifiers.md)
 -->
 
 <dfn>Modifiers</dfn> allow you to change the currently active [RegExp flags] within a subexpression.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/modifiers.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/modifiers.md "source for: syntax")</sup>
 
 
-- `(?imnsx-imnsx)` - Sets or unsets (using `-`) the specified [RegExp flags] starting at the current position until the next closing `)` or the end of the pattern. Example: `(?-i)A(?i)B(?-i)C` matches `ABC`, `AbC`.
-- `(?imnsx-imnsx:…)` - Sets or unsets (using `-`) the specified [RegExp flags] for the subexpression. Example: `(?-i:A(?i:B)C)` matches `ABC`, `AbC`.
+- `(?imswx-imswx)` - Sets or unsets (using `-`) the specified [RegExp flags] starting at the current position until the next closing `)` or the end of the pattern. Example: `(?-i)A(?i)B(?-i)C` matches `ABC`, `AbC`.
+- `(?imswx-imswx:…)` - Sets or unsets (using `-`) the specified [RegExp flags] for the subexpression. Example: `(?-i:A(?i:B)C)` matches `ABC`, `AbC`.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/modifiers.md "source for: see_also")</sup>
@@ -1165,7 +1260,7 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/branch-reset.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/branch-reset.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/branch-reset.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/branch-reset.md "source for: supported")</sup>
 
 
 <!--
@@ -1184,7 +1279,7 @@ A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [A
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookahead.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/lookahead.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookahead.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/lookahead.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1195,7 +1290,7 @@ A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [A
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/lookahead.md)
+  - [](../../src/engines/icu/features/lookahead.md)
 -->
 
 A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pattern would match the characters to the right of the current position.
@@ -1220,7 +1315,7 @@ A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pa
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookbehind.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/lookbehind.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookbehind.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/lookbehind.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1231,7 +1326,7 @@ A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pa
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/lookbehind.md)
+  - [](../../src/engines/icu/features/lookbehind.md)
 -->
 
 A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided pattern would match the characters to the left of the current position.
@@ -1256,7 +1351,7 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/non-backtracking-expressions.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/non-backtracking-expression.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/non-backtracking-expressions.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/non-backtracking-expressions.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1267,7 +1362,7 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/non-backtracking-expression.md)
+  - [](../../src/engines/icu/features/non-backtracking-expressions.md)
 -->
 
 A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring patterns, and will not backtrack in the event of a failed match. This is often used to improve performance.
@@ -1285,7 +1380,7 @@ A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring p
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/recursion.md "source for: name"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/recursion.md "source for: reference, supported, description")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/recursion.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/recursion.md "source for: supported")</sup>
 
 
 <!--
@@ -1293,57 +1388,9 @@ A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring p
   - [](../../src/features/groups-and-backtracking/recursion.md)
 -->
 
+> ❌ This feature is not supported.
 
-<!--
-'reference' sources:
-  - [](../../src/engines/dotnet/features/recursion.md)
--->
-
-.NET's `Regex` class supports limited recursion through balancing groups. A <dfn>Balancing Group</dfn> uses the name of a previously defined [named capture group] as a stack, storing the interval between the current position and the last instance of the [named capture group] in the current name. You can then use a [conditional expression] to fail the matching algorithm if the previously defined [named capture group]'s stack is not empty when the match completes.
-
-### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/recursion.md "source for: syntax")</sup>
-
-
-- <code>(?&lt;<em>name1</em>-<em>name1</em>&gt;…)</code> &mdash; Where *name1* as the current group name and *name2* is a previously defined group. Stores
-  the interval between *name2* and the current position in *name1* and deletes *name2*. Deleting *name2* reveals the previous definition of 
-  *name2* allowing it to be used as a stack for captures.
-- <code>(?&lt;-<em>name2</em>&gt;…)</code> &mdash; Where *name2* is a previously defined group. Stores the interval between *name2* and the 
-  current position as the current capture and deletes *name2*. Deleting *name2* reveals the previous definition of  *name2* allowing 
-  it to be used as a stack for captures.
-- <code>(?'<em>name1</em>-<em>name1</em>'…)</code> &mdash; Where *name1* as the current group name and *name2* is a previously defined group. Stores
-  the interval between *name2* and the current position in *name1* and deletes *name2*. Deleting *name2* reveals the previous definition of 
-  *name2* allowing it to be used as a stack for captures.
-- <code>(?'-<em>name2</em>'…)</code> &mdash; Where *name2* is a previously defined group. Stores the interval between *name2* and the 
-  current position as the current capture and deletes *name2*. Deleting *name2* reveals the previous definition of  *name2* allowing 
-  it to be used as a stack for captures.
-
-### Example
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/recursion.md "source for: example")</sup>
-
-
-The following shows an example of matching balanced `<` and `>` brackets (assuming `x` mode for a multiline regular expression):
-```re
-^                               # matches the beginning of the input
-
-[^<>]*                          # matches any number of non <> characters
-(
-    ((?'Open'<)[^<>]*)+         # matches an opening < followed by any number of non <> characters
-
-    ((?'Close-Open'>)[^<>]*)+   # matches a closing > followed by any number of non <> characters,
-                                # deleting the last match for 'Open'
-
-)*                              # matches the preceding expression zero or more times.
-
-(?(Open)(?!))                   # condition that fails the match if there are any remaining 'Open' matches
-
-$                               # matches the end of the input
-```
-
-On a single line, the expression looks like this:
-```re
-^[^<>]*(((?'Open'<)[^<>]*)+((?'Close-Open'>)[^<>]*)+)*(?(Open)(?!))$
-```
+A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capture group] inside of itself, to handle cases such as matching balanced parenthesis or brackets, etc.
 
 ## Feature: Conditional Expressions
 <sup>[Main article][article:Conditional Expressions]</sup>
@@ -1352,7 +1399,7 @@ On a single line, the expression looks like this:
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/conditional-expressions.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/conditional-expressions.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/conditional-expressions.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/conditional-expressions.md "source for: supported")</sup>
 
 
 <!--
@@ -1360,32 +1407,9 @@ On a single line, the expression looks like this:
   - [](../../src/features/alternatives/conditional-expressions.md)
 -->
 
-
-<!--
-'reference' sources:
-  - [](../../src/engines/dotnet/features/conditional-expressions.md)
--->
+> ❌ This feature is not supported.
 
 A <dfn>Conditional Expression</dfn> checks a condition and evaluates its first alternative if the condition is **true**; otherwise, it evaluates its second alternative.
-
-### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/conditional-expressions.md "source for: syntax")</sup>
-
-
-- <code>(?(<em>condition</em>)<em>condition</em>|<em>condition</em>)</code> &mdash; Matches *yes-pattern* if *condition* is **true**; otherwise, matches *no-pattern*.
-- <code>(?(<em>condition</em>)<em>condition</em>)</code> &mdash; Matches *yes-pattern* if *condition* is **true**; otherwise, matches the empty string.
-
-#### Conditions
-
-The following conditions are supported:
-
-- <code>(?(<em>n</em>)…)</code> &mdash; Evaluates to **true** if the [capture group] at offset *n* was successfully matched; Otherwise, evaluates to **false**. If *n* does not correspond to a [capture group], an error is thrown.
-- <code>(?(<em>name</em>)…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched; Otherwise, evaluates to **false**. If *name* does not correspond to a [named capture group], *name* is interpeted as a [lookahead] pattern.
-- <code>(?(<em>test-pattern</em>)…)</code> &mdash; Evaluates to <em>test-pattern</em>true<em>test-pattern</em> if a [lookahead] for <em>test-pattern</em> matches; Otherwise, evaluates to <em>test-pattern</em>false<em>test-pattern</em>. Equivalent to: <code>(?(?=<em>test-pattern</em>)…)</code>.
-- <code>(?(?=<em>test-pattern</em>)…)</code> &mdash; Evaluates to **true** if a [lookahead] for *test-pattern* matches; Otherwise, evaluates to **false**.
-- <code>(?(?!<em>test-pattern</em>)…)</code> &mdash; Evaluates to **true** if a negative [lookahead] for *test-pattern* matches; Otherwise, evaluates to **false**.
-- <code>(?(?<=<em>test-pattern</em>)…)</code> &mdash; Evaluates to **true** if a [lookbehind] for *test-pattern* matches; Otherwise, evaluates to **false**.
-- <code>(?(?<!<em>test-pattern</em>)…)</code> &mdash; Evaluates to **true** if a negative [lookbehind] for *test-pattern* matches; Otherwise, evaluates to **false**.
 
 ## Feature: Subroutines
 <sup>[Main article][article:Subroutines]</sup>
@@ -1394,7 +1418,7 @@ The following conditions are supported:
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/subroutines.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/subroutines.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/subroutines.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/subroutines.md "source for: supported")</sup>
 
 
 <!--
@@ -1413,7 +1437,7 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/callouts.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/callouts.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/callouts.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/callouts.md "source for: supported")</sup>
 
 
 <!--
@@ -1550,44 +1574,44 @@ A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matc
 [article:Callouts]: ../features/callouts.md
 [article:Flags]: ../features/flags.md
 
-[Reference]: http://msdn2.microsoft.com/en-us/library/system.text.regularexpressions.aspx
+[Reference]: https://unicode-org.github.io/icu/userguide/strings/regexp.html
 
-[reference:Flags]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-options
-[reference:Anchors]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/anchors-in-regular-expressions
-[reference:Buffer Boundaries]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/anchors-in-regular-expressions
-[reference:Word Boundaries]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/anchors-in-regular-expressions
+[reference:Flags]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#flag-options
+[reference:Anchors]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#regular-expression-metacharacters
+[reference:Buffer Boundaries]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#regular-expression-metacharacters
+[reference:Word Boundaries]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#regular-expression-metacharacters
 [reference:Text Segment Boundaries]: #not-supported-features
-[reference:Continuation Escape]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/anchors-in-regular-expressions
-[reference:Alternatives]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/alternation-constructs-in-regular-expressions#Either_Or
-[reference:Wildcard]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-
-[reference:Character Classes]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions
-[reference:Posix Character Classes]: #not-supported-features
+[reference:Continuation Escape]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#regular-expression-metacharacters
+[reference:Alternatives]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#regular-expression-operators
+[reference:Wildcard]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#regular-expression-metacharacters
+[reference:Character Classes]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#regular-expression-metacharacters
+[reference:Posix Character Classes]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#set-expressions-character-classes
 [reference:Negated Posix Character Classes]: #not-supported-features
 [reference:Collating Elements]: #not-supported-features
 [reference:Equivalence Classes]: #not-supported-features
-[reference:Character Class Escapes]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#word-character-w
-[reference:Line Endings Escape]: #not-supported-features
-[reference:Character Property Escapes]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p
-[reference:Character Class Nested Set]: #not-supported-features
-[reference:Character Class Intersection]: #not-supported-features
-[reference:Character Class Subtraction]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#character-class-subtraction-base_group---excluded_group
-[reference:Quoted Characters]: #not-supported-features
-[reference:Quantifiers]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/quantifiers-in-regular-expressions
-[reference:Lazy Quantifiers]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/quantifiers-in-regular-expressions#greedy-and-lazy-quantifiers
-[reference:Possessive Quantifiers]: #not-supported-features
-[reference:Capturing Groups]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/grouping-constructs-in-regular-expressions#matched_subexpression
-[reference:Named Capturing Groups]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/grouping-constructs-in-regular-expressions#named-matched-subexpressions
-[reference:Non-Capturing Groups]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/grouping-constructs-in-regular-expressions#noncapturing-groups
-[reference:Backreferences]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/backreference-constructs-in-regular-expressions
-[reference:Comments]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/miscellaneous-constructs-in-regular-expressions#inline-comment
-[reference:Line Comments]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/miscellaneous-constructs-in-regular-expressions#end-of-line-comment
-[reference:Modifiers]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/miscellaneous-constructs-in-regular-expressions#inline-options
+[reference:Character Class Escapes]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#regular-expression-metacharacters
+[reference:Line Endings Escape]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#regular-expression-metacharacters
+[reference:Character Property Escapes]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#regular-expression-metacharacters
+[reference:Character Class Nested Set]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#set-expressions-character-classes
+[reference:Character Class Intersection]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#set-expressions-character-classes
+[reference:Character Class Subtraction]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#set-expressions-character-classes
+[reference:Quoted Characters]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#regular-expression-metacharacters
+[reference:Quantifiers]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#regular-expression-operators
+[reference:Lazy Quantifiers]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#regular-expression-operators
+[reference:Possessive Quantifiers]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#regular-expression-operators
+[reference:Capturing Groups]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#regular-expression-operators
+[reference:Named Capturing Groups]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#regular-expression-operators
+[reference:Non-Capturing Groups]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#regular-expression-operators
+[reference:Backreferences]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#regular-expression-metacharacters
+[reference:Comments]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#regular-expression-operators
+[reference:Line Comments]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#flag-options
+[reference:Modifiers]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#regular-expression-operators
 [reference:Branch Reset]: #not-supported-features
-[reference:Lookahead]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/grouping-constructs-in-regular-expressions#zero-width-positive-lookahead-assertions
-[reference:Lookbehind]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/grouping-constructs-in-regular-expressions#zero-width-positive-lookbehind-assertions
-[reference:Non-Backtracking Expressions]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/grouping-constructs-in-regular-expressions#atomic-groups
-[reference:Recursion]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/grouping-constructs-in-regular-expressions#balancing-group-definitions
-[reference:Conditional Expressions]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/alternation-constructs-in-regular-expressions#Conditional_Expr
+[reference:Lookahead]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#regular-expression-operators
+[reference:Lookbehind]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#regular-expression-operators
+[reference:Non-Backtracking Expressions]: https://unicode-org.github.io/icu/userguide/strings/regexp.html#regular-expression-operators
+[reference:Recursion]: #not-supported-features
+[reference:Conditional Expressions]: #not-supported-features
 [reference:Subroutines]: #not-supported-features
 [reference:Callouts]: #not-supported-features
 

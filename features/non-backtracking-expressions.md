@@ -19,12 +19,13 @@ A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring p
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-non-backtracking-expressions) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-non-backtracking-expressions) |
-| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-non-backtracking-expressions) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-non-backtracking-expressions) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-non-backtracking-expressions) |
-| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-non-backtracking-expressions) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-non-backtracking-expressions) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-non-backtracking-expressions) |
+| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-non-backtracking-expressions) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-non-backtracking-expressions) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-non-backtracking-expressions) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-non-backtracking-expressions) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-non-backtracking-expressions) |
 
 
 

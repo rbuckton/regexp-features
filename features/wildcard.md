@@ -19,12 +19,13 @@ A <dfn>Wildcard</dfn> matches a single, non-newline character.
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-wildcard) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-wildcard) |
-| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-wildcard) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-wildcard) |
-| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-wildcard) |
-| [ECMAScript](../engines/ecmascript.md) | [✔](engines/ecmascript.md#feature-wildcard) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-wildcard) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-wildcard) |
+| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-wildcard) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-wildcard) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](../engines/hyperscan.md#feature-wildcard) |
+| [ECMAScript](../engines/ecmascript.md) | [✔](../engines/ecmascript.md#feature-wildcard) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-wildcard) |
 
 
 

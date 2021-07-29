@@ -34,12 +34,13 @@ The following conditions are supported:
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-conditional-expressions) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-conditional-expressions) |
-| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-conditional-expressions) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-conditional-expressions) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-conditional-expressions) |
-| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-conditional-expressions) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-conditional-expressions) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-conditional-expressions) |
+| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-conditional-expressions) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-conditional-expressions) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-conditional-expressions) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-conditional-expressions) |
+| [ICU](../engines/icu.md) | [❌](../engines/icu.md#feature-conditional-expressions) |
 
 
 

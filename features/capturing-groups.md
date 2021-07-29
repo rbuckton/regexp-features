@@ -19,12 +19,13 @@ A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom*
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-capturing-groups) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-capturing-groups) |
-| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-capturing-groups) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-capturing-groups) |
-| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-capturing-groups) |
-| [ECMAScript](../engines/ecmascript.md) | [✔](engines/ecmascript.md#feature-capturing-groups) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-capturing-groups) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-capturing-groups) |
+| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-capturing-groups) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-capturing-groups) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](../engines/hyperscan.md#feature-capturing-groups) |
+| [ECMAScript](../engines/ecmascript.md) | [✔](../engines/ecmascript.md#feature-capturing-groups) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-capturing-groups) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/capturing-groups.md "source for: see_also")</sup>

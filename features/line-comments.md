@@ -19,12 +19,13 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-line-comments) |
-| [Boost.Regex](../engines/boost.regex.md) | [❌](engines/boost.regex.md#feature-line-comments) |
-| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-line-comments) |
-| [Oniguruma](../engines/oniguruma.md) | [❌](engines/oniguruma.md#feature-line-comments) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-line-comments) |
-| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-line-comments) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-line-comments) |
+| [Boost.Regex](../engines/boost.regex.md) | [❌](../engines/boost.regex.md#feature-line-comments) |
+| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-line-comments) |
+| [Oniguruma](../engines/oniguruma.md) | [❌](../engines/oniguruma.md#feature-line-comments) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-line-comments) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-line-comments) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-line-comments) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/line-comments.md "source for: see_also")</sup>

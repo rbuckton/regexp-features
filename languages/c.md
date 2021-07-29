@@ -16,6 +16,7 @@
 
 - [PCRE](../engines/pcre.md)
 - [Oniguruma](../engines/oniguruma.md)
+- [ICU](../engines/icu.md)
 
 
 

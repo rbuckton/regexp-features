@@ -19,12 +19,13 @@ A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [A
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-branch-reset) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-branch-reset) |
-| [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-branch-reset) |
-| [Oniguruma](../engines/oniguruma.md) | [❌](engines/oniguruma.md#feature-branch-reset) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-branch-reset) |
-| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-branch-reset) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-branch-reset) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-branch-reset) |
+| [.NET](../engines/dotnet.md) | [❌](../engines/dotnet.md#feature-branch-reset) |
+| [Oniguruma](../engines/oniguruma.md) | [❌](../engines/oniguruma.md#feature-branch-reset) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-branch-reset) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-branch-reset) |
+| [ICU](../engines/icu.md) | [❌](../engines/icu.md#feature-branch-reset) |
 
 
 

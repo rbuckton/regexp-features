@@ -13,19 +13,20 @@
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-- <code>\\<em>n</em></code> &mdash; Where *n* is a decimal digit in the range 1-9. Matches the same string as the [capture group] *n*.
+- <code>&#x5c;<em>n</em></code> &mdash; Where *n* is a decimal digit in the range 1-9. Matches the same string as the [capture group] *n*.
 - <code>\k&lt;<em>name</em>&gt;</code> &mdash; Matches the same string as the [named capture group] with the name *name*.
 
 ## Engines
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-backreferences) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-backreferences) |
-| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-backreferences) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-backreferences) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-backreferences) |
-| [ECMAScript](../engines/ecmascript.md) | [✔](engines/ecmascript.md#feature-backreferences) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-backreferences) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-backreferences) |
+| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-backreferences) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-backreferences) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-backreferences) |
+| [ECMAScript](../engines/ecmascript.md) | [✔](../engines/ecmascript.md#feature-backreferences) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-backreferences) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/backreferences.md "source for: see_also")</sup>

@@ -20,12 +20,13 @@
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-anchors) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-anchors) |
-| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-anchors) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-anchors) |
-| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-anchors) |
-| [ECMAScript](../engines/ecmascript.md) | [✔](engines/ecmascript.md#feature-anchors) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-anchors) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-anchors) |
+| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-anchors) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-anchors) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](../engines/hyperscan.md#feature-anchors) |
+| [ECMAScript](../engines/ecmascript.md) | [✔](../engines/ecmascript.md#feature-anchors) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-anchors) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/anchors.md "source for: see_also")</sup>

@@ -8,6 +8,7 @@
 - [Oniguruma](oniguruma.md)
 - [Hyperscan](hyperscan.md)
 - [ECMAScript](ecmascript.md)
+- [ICU](icu.md)
 - [PCRE](pcre.md)
 
 

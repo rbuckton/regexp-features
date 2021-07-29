@@ -23,12 +23,13 @@ The following flags are supported:
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-flags) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-flags) |
-| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-flags) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-flags) |
-| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-flags) |
-| [ECMAScript](../engines/ecmascript.md) | [✔](engines/ecmascript.md#feature-flags) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-flags) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-flags) |
+| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-flags) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-flags) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](../engines/hyperscan.md#feature-flags) |
+| [ECMAScript](../engines/ecmascript.md) | [✔](../engines/ecmascript.md#feature-flags) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-flags) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/flags.md "source for: see_also")</sup>

@@ -19,12 +19,13 @@ A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that s
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-posix-character-classes) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-posix-character-classes) |
-| [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-posix-character-classes) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-posix-character-classes) |
-| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-posix-character-classes) |
-| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-posix-character-classes) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-posix-character-classes) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-posix-character-classes) |
+| [.NET](../engines/dotnet.md) | [❌](../engines/dotnet.md#feature-posix-character-classes) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-posix-character-classes) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](../engines/hyperscan.md#feature-posix-character-classes) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-posix-character-classes) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-posix-character-classes) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/posix-character-classes.md "source for: see_also")</sup>

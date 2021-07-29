@@ -18,6 +18,7 @@
 - [Boost.Regex](../engines/boost.regex.md)
 - [Oniguruma](../engines/oniguruma.md)
 - [Hyperscan](../engines/hyperscan.md)
+- [ICU](../engines/icu.md)
 
 
 

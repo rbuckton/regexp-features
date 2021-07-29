@@ -11,12 +11,13 @@ A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matc
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-callouts) |
-| [Boost.Regex](../engines/boost.regex.md) | [❌](engines/boost.regex.md#feature-callouts) |
-| [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-callouts) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-callouts) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-callouts) |
-| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-callouts) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-callouts) |
+| [Boost.Regex](../engines/boost.regex.md) | [❌](../engines/boost.regex.md#feature-callouts) |
+| [.NET](../engines/dotnet.md) | [❌](../engines/dotnet.md#feature-callouts) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-callouts) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-callouts) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-callouts) |
+| [ICU](../engines/icu.md) | [❌](../engines/icu.md#feature-callouts) |
 
 
 

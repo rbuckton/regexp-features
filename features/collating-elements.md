@@ -19,12 +19,13 @@ A <dfn>Collating Element</dfn> is one or more characters that collate as a singl
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [❌](engines/pcre.md#feature-collating-elements) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-collating-elements) |
-| [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-collating-elements) |
-| [Oniguruma](../engines/oniguruma.md) | [❌](engines/oniguruma.md#feature-collating-elements) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-collating-elements) |
-| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-collating-elements) |
+| [PCRE](../engines/pcre.md) | [❌](../engines/pcre.md#feature-collating-elements) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-collating-elements) |
+| [.NET](../engines/dotnet.md) | [❌](../engines/dotnet.md#feature-collating-elements) |
+| [Oniguruma](../engines/oniguruma.md) | [❌](../engines/oniguruma.md#feature-collating-elements) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-collating-elements) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-collating-elements) |
+| [ICU](../engines/icu.md) | [❌](../engines/icu.md#feature-collating-elements) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/collating-elements.md "source for: see_also")</sup>

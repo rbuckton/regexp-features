@@ -20,12 +20,13 @@
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-modifiers) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-modifiers) |
-| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-modifiers) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-modifiers) |
-| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-modifiers) |
-| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-modifiers) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-modifiers) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-modifiers) |
+| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-modifiers) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-modifiers) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](../engines/hyperscan.md#feature-modifiers) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-modifiers) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-modifiers) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/modifiers.md "source for: see_also")</sup>

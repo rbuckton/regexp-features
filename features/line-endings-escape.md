@@ -19,12 +19,13 @@ A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending chara
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-line-endings-escape) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-line-endings-escape) |
-| [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-line-endings-escape) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-line-endings-escape) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-line-endings-escape) |
-| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-line-endings-escape) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-line-endings-escape) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-line-endings-escape) |
+| [.NET](../engines/dotnet.md) | [❌](../engines/dotnet.md#feature-line-endings-escape) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-line-endings-escape) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-line-endings-escape) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-line-endings-escape) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-line-endings-escape) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/line-endings-escape.md "source for: see_also")</sup>

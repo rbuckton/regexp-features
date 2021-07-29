@@ -20,12 +20,13 @@ A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pa
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-lookahead) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-lookahead) |
-| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-lookahead) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-lookahead) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-lookahead) |
-| [ECMAScript](../engines/ecmascript.md) | [✔](engines/ecmascript.md#feature-lookahead) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-lookahead) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-lookahead) |
+| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-lookahead) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-lookahead) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-lookahead) |
+| [ECMAScript](../engines/ecmascript.md) | [✔](../engines/ecmascript.md#feature-lookahead) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-lookahead) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookahead.md "source for: see_also")</sup>

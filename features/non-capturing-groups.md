@@ -19,12 +19,13 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-non-capturing-groups) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-non-capturing-groups) |
-| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-non-capturing-groups) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-non-capturing-groups) |
-| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-non-capturing-groups) |
-| [ECMAScript](../engines/ecmascript.md) | [✔](engines/ecmascript.md#feature-non-capturing-groups) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-non-capturing-groups) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-non-capturing-groups) |
+| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-non-capturing-groups) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-non-capturing-groups) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](../engines/hyperscan.md#feature-non-capturing-groups) |
+| [ECMAScript](../engines/ecmascript.md) | [✔](../engines/ecmascript.md#feature-non-capturing-groups) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-non-capturing-groups) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/non-capturing-groups.md "source for: see_also")</sup>

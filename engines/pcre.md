@@ -1102,7 +1102,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/pcre/features/backreferences.md "source for: syntax")</sup>
 
 
-- <code>\\<em>n</em></code> &mdash; Where *n* is an integer >= 1. Matches the same string as the [capture group] *n*.
+- <code>&#x5c;<em>n</em></code> &mdash; Where *n* is an integer >= 1. Matches the same string as the [capture group] *n*.
   - NOTE: If the *n* is > 8 it will instead be interpreted as an octal literal.
 - <code>\g<em>n</em></code> &mdash; Where *n* is an integer >= 1. Matches the same string as the [capture group] *n*.
 - <code>\g-<em>n</em></code> &mdash; Where *n* is an integer >= 1. Matches the *n*th previous [capture group].

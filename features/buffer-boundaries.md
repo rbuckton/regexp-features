@@ -21,12 +21,13 @@ A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of t
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-buffer-boundaries) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-buffer-boundaries) |
-| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-buffer-boundaries) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-buffer-boundaries) |
-| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-buffer-boundaries) |
-| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-buffer-boundaries) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-buffer-boundaries) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-buffer-boundaries) |
+| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-buffer-boundaries) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-buffer-boundaries) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](../engines/hyperscan.md#feature-buffer-boundaries) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-buffer-boundaries) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-buffer-boundaries) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/buffer-boundaries.md "source for: see_also")</sup>

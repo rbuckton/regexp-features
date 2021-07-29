@@ -35,12 +35,13 @@ Is equivalent to:
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [❌](engines/pcre.md#feature-character-class-nested-set) |
-| [Boost.Regex](../engines/boost.regex.md) | [❌](engines/boost.regex.md#feature-character-class-nested-set) |
-| [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-character-class-nested-set) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-character-class-nested-set) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-character-class-nested-set) |
-| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-character-class-nested-set) |
+| [PCRE](../engines/pcre.md) | [❌](../engines/pcre.md#feature-character-class-nested-set) |
+| [Boost.Regex](../engines/boost.regex.md) | [❌](../engines/boost.regex.md#feature-character-class-nested-set) |
+| [.NET](../engines/dotnet.md) | [❌](../engines/dotnet.md#feature-character-class-nested-set) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-character-class-nested-set) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-character-class-nested-set) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-character-class-nested-set) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-character-class-nested-set) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md "source for: see_also")</sup>

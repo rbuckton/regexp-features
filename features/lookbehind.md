@@ -20,12 +20,13 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-lookbehind) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-lookbehind) |
-| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-lookbehind) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-lookbehind) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-lookbehind) |
-| [ECMAScript](../engines/ecmascript.md) | [✔](engines/ecmascript.md#feature-lookbehind) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-lookbehind) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-lookbehind) |
+| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-lookbehind) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-lookbehind) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-lookbehind) |
+| [ECMAScript](../engines/ecmascript.md) | [✔](../engines/ecmascript.md#feature-lookbehind) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-lookbehind) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookbehind.md "source for: see_also")</sup>

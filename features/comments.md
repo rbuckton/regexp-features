@@ -19,12 +19,13 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](engines/pcre.md#feature-comments) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](engines/boost.regex.md#feature-comments) |
-| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-comments) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-comments) |
-| [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-comments) |
-| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-comments) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-comments) |
+| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-comments) |
+| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-comments) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-comments) |
+| [Hyperscan](../engines/hyperscan.md) | [✔](../engines/hyperscan.md#feature-comments) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-comments) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-comments) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/comments.md "source for: see_also")</sup>

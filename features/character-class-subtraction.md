@@ -11,12 +11,13 @@
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [❌](engines/pcre.md#feature-character-class-subtraction) |
-| [Boost.Regex](../engines/boost.regex.md) | [❌](engines/boost.regex.md#feature-character-class-subtraction) |
-| [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-character-class-subtraction) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-character-class-subtraction) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-character-class-subtraction) |
-| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-character-class-subtraction) |
+| [PCRE](../engines/pcre.md) | [❌](../engines/pcre.md#feature-character-class-subtraction) |
+| [Boost.Regex](../engines/boost.regex.md) | [❌](../engines/boost.regex.md#feature-character-class-subtraction) |
+| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-character-class-subtraction) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-character-class-subtraction) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-character-class-subtraction) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-character-class-subtraction) |
+| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-character-class-subtraction) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-subtraction.md "source for: see_also")</sup>

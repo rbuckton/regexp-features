@@ -20,12 +20,13 @@ A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the en
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [❌](engines/pcre.md#feature-text-segment-boundaries) |
-| [Boost.Regex](../engines/boost.regex.md) | [❌](engines/boost.regex.md#feature-text-segment-boundaries) |
-| [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-text-segment-boundaries) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-text-segment-boundaries) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-text-segment-boundaries) |
-| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-text-segment-boundaries) |
+| [PCRE](../engines/pcre.md) | [❌](../engines/pcre.md#feature-text-segment-boundaries) |
+| [Boost.Regex](../engines/boost.regex.md) | [❌](../engines/boost.regex.md#feature-text-segment-boundaries) |
+| [.NET](../engines/dotnet.md) | [❌](../engines/dotnet.md#feature-text-segment-boundaries) |
+| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-text-segment-boundaries) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-text-segment-boundaries) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-text-segment-boundaries) |
+| [ICU](../engines/icu.md) | [❌](../engines/icu.md#feature-text-segment-boundaries) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: see_also")</sup>
