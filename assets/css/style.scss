@@ -1,0 +1,13 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+body.wide {
+    display: flex;
+    flex-direction: column;
+}
+
+body.wide .main-content {
+    max-width: none;
+}
