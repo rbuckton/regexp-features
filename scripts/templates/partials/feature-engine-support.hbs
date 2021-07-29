@@ -3,6 +3,6 @@
 | Engine | Supported |
 |:-------|:---------:|
 {{#each engineFeatures}}
-| [{{engine.name}}](../engines/{{engine.id}}.md) | [{{#if supported}}✔{{else}}❌{{/if}}](engines/{{engine.id}}.md#feature-{{hlink feature.id}}) |
+| [{{engine.name}}]({{relative @root.outFile outFile}}) | [{{#if supported}}✔{{else}}❌{{/if}}]({{relative @root.outFile outFile}}#feature-{{hlink feature.id}}) |
 {{/each}}
 
