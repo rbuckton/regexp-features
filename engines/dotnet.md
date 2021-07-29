@@ -617,8 +617,8 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/character-property-escapes.md "source for: syntax")</sup>
 
 
-- <code>\\p{<em>name</em>}</code> &mdash; Where *name* is a predefined unicode property name. Matches a character that has the unicode property *name*.
-- <code>\\P{<em>name</em>}</code> &mdash; Where *name* is a predefined unicode property name. Matches a character that does not have the unicode property *name*.
+- <code>\p{<em>name</em>}</code> &mdash; Where *name* is a predefined unicode property name. Matches a character that has the unicode property *name*.
+- <code>\P{<em>name</em>}</code> &mdash; Where *name* is a predefined unicode property name. Matches a character that does not have the unicode property *name*.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-property-escapes.md "source for: see_also")</sup>
@@ -916,7 +916,7 @@ A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and r
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/named-capturing-groups.md "source for: syntax")</sup>
 
 
-- <code>(?\<<em>name</em>\>…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
+- <code>(?&lt;<em>name</em>&gt;…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
 - <code>(?'<em>name</em>'…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
 
 ### See Also
@@ -988,8 +988,8 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/backreferences.md "source for: syntax")</sup>
 
 
-- <code>\\<em>n</em></code> &mdash; Where *n* is a decimal digit in the range 1-9. Matches the same string as the [capture group] *n*.
-- <code>\\k\<<em>name</em>\></code> &mdash; Matches the same string as the [named capture group] with the name *name*.
+- <code>\<em>n</em></code> &mdash; Where *n* is a decimal digit in the range 1-9. Matches the same string as the [capture group] *n*.
+- <code>\k&lt;<em>name</em>&gt;</code> &mdash; Matches the same string as the [named capture group] with the name *name*.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/backreferences.md "source for: see_also")</sup>
@@ -1056,7 +1056,7 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/line-comments.md "source for: syntax")</sup>
 
 
-- <code>#…<strong>\\n</strong></code> &mdash; The rest of the line starting from `#` is removed from the pattern. Only supported when the `x` (extended mode) [RegExp flag] is set.
+- <code>#…<strong>\n</strong></code> &mdash; The rest of the line starting from `#` is removed from the pattern. Only supported when the `x` (extended mode) [RegExp flag] is set.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/line-comments.md "source for: see_also")</sup>
@@ -1090,7 +1090,7 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 
 
 - `(?imnsx-imnsx)` - Sets or unsets (using `-`) the specified [RegExp flags] starting at the current position until the next closing `)` or the end of the pattern. Example: `(?-i)A(?i)B(?-i)C` matches `ABC`, `AbC`.
-- `(?imnsx-imnsx: … )` - Sets or unsets (using `-`) the specified [RegExp flags] for the subexpression. Example: `(?-i:A(?i:B)C)` matches `ABC`, `AbC`.
+- `(?imnsx-imnsx:…)` - Sets or unsets (using `-`) the specified [RegExp flags] for the subexpression. Example: `(?-i:A(?i:B)C)` matches `ABC`, `AbC`.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/modifiers.md "source for: see_also")</sup>
@@ -1235,16 +1235,16 @@ A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring p
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/recursion.md "source for: syntax")</sup>
 
 
-- <code>(?\<<em>name1</em>-<em>name1</em>\> … )</code> &mdash; Where *name1* as the current group name and *name2* is a previously defined group. Stores
+- <code>(?&lt;<em>name1</em>-<em>name1</em>&gt;…)</code> &mdash; Where *name1* as the current group name and *name2* is a previously defined group. Stores
   the interval between *name2* and the current position in *name1* and deletes *name2*. Deleting *name2* reveals the previous definition of 
   *name2* allowing it to be used as a stack for captures.
-- <code>(?\<-<em>name2</em>\> … )</code> &mdash; Where *name2* is a previously defined group. Stores the interval between *name2* and the 
+- <code>(?&lt;-<em>name2</em>&gt;…)</code> &mdash; Where *name2* is a previously defined group. Stores the interval between *name2* and the 
   current position as the current capture and deletes *name2*. Deleting *name2* reveals the previous definition of  *name2* allowing 
   it to be used as a stack for captures.
-- <code>(?'<em>name1</em>-<em>name1</em>' … )</code> &mdash; Where *name1* as the current group name and *name2* is a previously defined group. Stores
+- <code>(?'<em>name1</em>-<em>name1</em>'…)</code> &mdash; Where *name1* as the current group name and *name2* is a previously defined group. Stores
   the interval between *name2* and the current position in *name1* and deletes *name2*. Deleting *name2* reveals the previous definition of 
   *name2* allowing it to be used as a stack for captures.
-- <code>(?'-<em>name2</em>' … )</code> &mdash; Where *name2* is a previously defined group. Stores the interval between *name2* and the 
+- <code>(?'-<em>name2</em>'…)</code> &mdash; Where *name2* is a previously defined group. Stores the interval between *name2* and the 
   current position as the current capture and deletes *name2*. Deleting *name2* reveals the previous definition of  *name2* allowing 
   it to be used as a stack for captures.
 
@@ -1307,13 +1307,13 @@ A <dfn>Conditional Expression</dfn> checks a condition and evaluates its first a
 
 The following conditions are supported:
 
-- <code>(?(<em>n</em>) … )</code> &mdash; Evaluates to **true** if the [capture group] at offset *n* was successfully matched; Otherwise, evaluates to **false**. If *n* does not correspond to a [capture group], an error is thrown.
-- <code>(?(<em>name</em>) … )</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched; Otherwise, evaluates to **false**. If *name* does not correspond to a [named capture group], *name* is interpeted as a [lookahead] pattern.
-- <code>(?(<em>test-pattern</em>) … )</code> &mdash; Evaluates to <em>test-pattern</em>true<em>test-pattern</em> if a [lookahead] for <em>test-pattern</em> matches; Otherwise, evaluates to <em>test-pattern</em>false<em>test-pattern</em>. Equivalent to: <code>(?(?=<em>test-pattern</em>) … )</code>.
-- <code>(?(?=<em>test-pattern</em>) … )</code> &mdash; Evaluates to **true** if a [lookahead] for *test-pattern* matches; Otherwise, evaluates to **false**.
-- <code>(?(?!<em>test-pattern</em>) … )</code> &mdash; Evaluates to **true** if a negative [lookahead] for *test-pattern* matches; Otherwise, evaluates to **false**.
-- <code>(?(?<=<em>test-pattern</em>) … )</code> &mdash; Evaluates to **true** if a [lookbehind] for *test-pattern* matches; Otherwise, evaluates to **false**.
-- <code>(?(?<!<em>test-pattern</em>) … )</code> &mdash; Evaluates to **true** if a negative [lookbehind] for *test-pattern* matches; Otherwise, evaluates to **false**.
+- <code>(?(<em>n</em>)…)</code> &mdash; Evaluates to **true** if the [capture group] at offset *n* was successfully matched; Otherwise, evaluates to **false**. If *n* does not correspond to a [capture group], an error is thrown.
+- <code>(?(<em>name</em>)…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched; Otherwise, evaluates to **false**. If *name* does not correspond to a [named capture group], *name* is interpeted as a [lookahead] pattern.
+- <code>(?(<em>test-pattern</em>)…)</code> &mdash; Evaluates to <em>test-pattern</em>true<em>test-pattern</em> if a [lookahead] for <em>test-pattern</em> matches; Otherwise, evaluates to <em>test-pattern</em>false<em>test-pattern</em>. Equivalent to: <code>(?(?=<em>test-pattern</em>)…)</code>.
+- <code>(?(?=<em>test-pattern</em>)…)</code> &mdash; Evaluates to **true** if a [lookahead] for *test-pattern* matches; Otherwise, evaluates to **false**.
+- <code>(?(?!<em>test-pattern</em>)…)</code> &mdash; Evaluates to **true** if a negative [lookahead] for *test-pattern* matches; Otherwise, evaluates to **false**.
+- <code>(?(?<=<em>test-pattern</em>)…)</code> &mdash; Evaluates to **true** if a [lookbehind] for *test-pattern* matches; Otherwise, evaluates to **false**.
+- <code>(?(?<!<em>test-pattern</em>)…)</code> &mdash; Evaluates to **true** if a negative [lookbehind] for *test-pattern* matches; Otherwise, evaluates to **false**.
 
 ## Feature: Subroutines
 <sup>[Main article][article:Subroutines]</sup>

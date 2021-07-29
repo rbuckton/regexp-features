@@ -13,7 +13,7 @@ An <dfn>Equivalence Class</dfn> matches any character or collating element with 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-- <code>\[\[=<em>col</em>=\]\]</code> &mdash; Matches any character with the same primary sort key as *col*. Example: `[[=a=]]` matches `a`, `À`, `Á`, `Â`, `Ã`, `Ä`, `Å`, `A`, `à`, `á`, `â`, etc.
+- <code>[[=<em>col</em>=]]</code> &mdash; Matches any character with the same primary sort key as *col*. Example: `[[=a=]]` matches `a`, `À`, `Á`, `Â`, `Ã`, `Ä`, `Å`, `A`, `à`, `á`, `â`, etc.
 
 ## Engines
 

@@ -13,10 +13,10 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-- <code>\\p<em>X</em></code> &mdash; Where *X* is a single character. Matches a character that has the property *X*.
-- <code>\\p{<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that has the property *name*.
-- <code>\\P<em>X</em></code> &mdash; Where *X* is a single character. Matches a character that does not have the property *X*.
-- <code>\\P{<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that does not have the property *name*.
+- <code>\p<em>X</em></code> &mdash; Where *X* is a single character. Matches a character that has the property *X*.
+- <code>\p{<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that has the property *name*.
+- <code>\P<em>X</em></code> &mdash; Where *X* is a single character. Matches a character that does not have the property *X*.
+- <code>\P{<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that does not have the property *name*.
 
 ## Engines
 
