@@ -14,16 +14,16 @@ example: *content.example
 
 # syntax
 
-- <code>(?\<<em>name1</em>-<em>name1</em>\> … )</code> &mdash; Where *name1* as the current group name and *name2* is a previously defined group. Stores
+- <code>(?&lt;<em>name1</em>-<em>name1</em>&gt;…)</code> &mdash; Where *name1* as the current group name and *name2* is a previously defined group. Stores
   the interval between *name2* and the current position in *name1* and deletes *name2*. Deleting *name2* reveals the previous definition of 
   *name2* allowing it to be used as a stack for captures.
-- <code>(?\<-<em>name2</em>\> … )</code> &mdash; Where *name2* is a previously defined group. Stores the interval between *name2* and the 
+- <code>(?&lt;-<em>name2</em>&gt;…)</code> &mdash; Where *name2* is a previously defined group. Stores the interval between *name2* and the 
   current position as the current capture and deletes *name2*. Deleting *name2* reveals the previous definition of  *name2* allowing 
   it to be used as a stack for captures.
-- <code>(?'<em>name1</em>-<em>name1</em>' … )</code> &mdash; Where *name1* as the current group name and *name2* is a previously defined group. Stores
+- <code>(?'<em>name1</em>-<em>name1</em>'…)</code> &mdash; Where *name1* as the current group name and *name2* is a previously defined group. Stores
   the interval between *name2* and the current position in *name1* and deletes *name2*. Deleting *name2* reveals the previous definition of 
   *name2* allowing it to be used as a stack for captures.
-- <code>(?'-<em>name2</em>' … )</code> &mdash; Where *name2* is a previously defined group. Stores the interval between *name2* and the 
+- <code>(?'-<em>name2</em>'…)</code> &mdash; Where *name2* is a previously defined group. Stores the interval between *name2* and the 
   current position as the current capture and deletes *name2*. Deleting *name2* reveals the previous definition of  *name2* allowing 
   it to be used as a stack for captures.
 
