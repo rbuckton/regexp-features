@@ -1,3 +1,6 @@
+---
+layout: wide
+---
 # Regular Expression Feature Comparisons
 
 This provides a comparison of features between various regular expression engines.
