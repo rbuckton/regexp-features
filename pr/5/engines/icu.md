@@ -664,12 +664,11 @@ A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending chara
 A <dfn>Character Property Escape</dfn> is an escape sequence used to match a character with a specific character property.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-property-escapes.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/character-property-escapes.md "source for: syntax")</sup>
 
 
-- <code>\p<em>X</em></code> &mdash; Where *X* is a single character. Matches a character that has the property *X*.
+- <code>\N{<em>name</em>}</code> &mdash; Where *name* is a predefined unicode character name. Matches the named unicode character.
 - <code>\p{<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that has the property *name*.
-- <code>\P<em>X</em></code> &mdash; Where *X* is a single character. Matches a character that does not have the property *X*.
 - <code>\P{<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that does not have the property *name*.
 
 ### See Also
@@ -813,6 +812,12 @@ Is equivalent to:
 -->
 
 <dfn>Character Class Subtraction</dfn> allows you to exclude a class of characters from another class of characters in a [character class].
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/character-class-subtraction.md "source for: syntax")</sup>
+
+
+- `[…--…]` &mdash; Matches any character that is in the left-hand set of `--` but not in the right-hand set.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-subtraction.md "source for: see_also")</sup>
@@ -1005,10 +1010,19 @@ Is equivalent to:
 A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by index. A Capturing Group can be captured and returned by the matching algorithm.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/capturing-groups.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/icu/features/capturing-groups.md "source for: syntax")</sup>
 
 
-- `(…)` &mdash; Groups the subexpression as a single *Atom*. The result is captured and returned by the matching algorithm.
+- `\d` &mdash; A decimal digit character in the range 0-9. Equivalent to `[0-9]`.
+- `\D` &mdash; Any character not in the range 0-9. Equivalent to `[^0-9]`.
+- `\w` &mdash; Any "word" character. Equivalent to `[a-zA-Z0-9_]`.
+- `\W` &mdash; Any non-"word" character. Equivalent to `[^a-zA-Z0-9_]`.
+- `\s` &mdash; Any whitespace character.
+- `\S` &mdash; Any non-whitespace character.
+- `\h` &mdash; Any horizontal whitespace character.
+- `\H` &mdash; Any non-horizontal whitespace character.
+- `\v` &mdash; Any vertical whitespace character.
+- `\V` &mdash; Any non-vertical whitespace character.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/capturing-groups.md "source for: see_also")</sup>
@@ -1123,7 +1137,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/backreferences.md "source for: syntax")</sup>
 
 
-- <code>\\<em>n</em></code> &mdash; Where *n* is a decimal digit in the range 1-9. Matches the same string as the [capture group] *n*.
+- <code>&#x5c;<em>n</em></code> &mdash; Where *n* is a decimal digit in the range 1-9. Matches the same string as the [capture group] *n*.
 - <code>\k&lt;<em>name</em>&gt;</code> &mdash; Matches the same string as the [named capture group] with the name *name*.
 
 ### See Also
