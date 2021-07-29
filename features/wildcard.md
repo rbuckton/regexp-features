@@ -24,6 +24,10 @@ A <dfn>Wildcard</dfn> matches a single, non-newline character.
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-wildcard) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-wildcard) |
 | [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-wildcard) |
+| [ECMAScript](../engines/ecmascript.md) | [✔](engines/ecmascript.md#feature-wildcard) |
+
+
+
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages

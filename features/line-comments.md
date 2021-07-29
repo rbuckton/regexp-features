@@ -24,11 +24,15 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-line-comments) |
 | [Oniguruma](../engines/oniguruma.md) | [❌](engines/oniguruma.md#feature-line-comments) |
 | [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-line-comments) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-line-comments) |
+
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/line-comments.md "source for: see_also")</sup>
 
 
 - [Comments]
+
+
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages

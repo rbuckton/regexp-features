@@ -29,6 +29,8 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-character-class-escapes) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-character-class-escapes) |
 | [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-character-class-escapes) |
+| [ECMAScript](../engines/ecmascript.md) | [✔](engines/ecmascript.md#feature-character-class-escapes) |
+
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-escapes.md "source for: see_also")</sup>
 
@@ -43,6 +45,8 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
 - [Character Class Nested Set]
 - [Character Class Intersection]
 - [Character Class Subtraction]
+
+
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages

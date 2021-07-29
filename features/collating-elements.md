@@ -24,6 +24,8 @@ A <dfn>Collating Element</dfn> is one or more characters that collate as a singl
 | [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-collating-elements) |
 | [Oniguruma](../engines/oniguruma.md) | [❌](engines/oniguruma.md#feature-collating-elements) |
 | [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-collating-elements) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-collating-elements) |
+
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/collating-elements.md "source for: see_also")</sup>
 
@@ -38,6 +40,8 @@ A <dfn>Collating Element</dfn> is one or more characters that collate as a singl
 - [Character Class Nested Set]
 - [Character Class Intersection]
 - [Character Class Subtraction]
+
+
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages

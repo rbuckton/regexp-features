@@ -28,12 +28,16 @@
 | [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-possessive-quantifiers) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-possessive-quantifiers) |
 | [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-possessive-quantifiers) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-possessive-quantifiers) |
+
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/possessive-quantifiers.md "source for: see_also")</sup>
 
 
 - [Quantifiers]
 - [Lazy Quantifiers]
+
+
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages

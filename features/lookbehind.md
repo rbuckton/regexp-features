@@ -25,11 +25,15 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-lookbehind) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-lookbehind) |
 | [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-lookbehind) |
+| [ECMAScript](../engines/ecmascript.md) | [✔](engines/ecmascript.md#feature-lookbehind) |
+
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookbehind.md "source for: see_also")</sup>
 
 
 - [Lookahead]
+
+
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages

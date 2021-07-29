@@ -16,6 +16,10 @@ A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matc
 | [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-callouts) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-callouts) |
 | [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-callouts) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-callouts) |
+
+
+
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages

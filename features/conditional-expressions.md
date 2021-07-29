@@ -39,6 +39,10 @@ The following conditions are supported:
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-conditional-expressions) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-conditional-expressions) |
 | [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-conditional-expressions) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-conditional-expressions) |
+
+
+
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages

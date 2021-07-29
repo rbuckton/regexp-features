@@ -24,6 +24,10 @@ A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring p
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-non-backtracking-expressions) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-non-backtracking-expressions) |
 | [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-non-backtracking-expressions) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-non-backtracking-expressions) |
+
+
+
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages

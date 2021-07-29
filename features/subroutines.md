@@ -41,6 +41,10 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 | [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-subroutines) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-subroutines) |
 | [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-subroutines) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-subroutines) |
+
+
+
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages

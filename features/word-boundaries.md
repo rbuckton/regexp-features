@@ -25,6 +25,8 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-word-boundaries) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-word-boundaries) |
 | [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-word-boundaries) |
+| [ECMAScript](../engines/ecmascript.md) | [✔](engines/ecmascript.md#feature-word-boundaries) |
+
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/word-boundaries.md "source for: see_also")</sup>
 
@@ -33,6 +35,8 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 - [Buffer Boundaries]
 - [Text Segment Boundaries]
 - [Continuation Escape]
+
+
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages

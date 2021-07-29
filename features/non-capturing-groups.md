@@ -24,12 +24,16 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-non-capturing-groups) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-non-capturing-groups) |
 | [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-non-capturing-groups) |
+| [ECMAScript](../engines/ecmascript.md) | [✔](engines/ecmascript.md#feature-non-capturing-groups) |
+
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/non-capturing-groups.md "source for: see_also")</sup>
 
 
 - [Capturing Groups]
 - [Named Capturing Groups]
+
+
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages

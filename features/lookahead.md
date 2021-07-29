@@ -25,11 +25,15 @@ A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pa
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-lookahead) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-lookahead) |
 | [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-lookahead) |
+| [ECMAScript](../engines/ecmascript.md) | [✔](engines/ecmascript.md#feature-lookahead) |
+
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookahead.md "source for: see_also")</sup>
 
 
 - [Lookbehind]
+
+
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages

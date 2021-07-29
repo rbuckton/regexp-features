@@ -28,11 +28,15 @@ The following flags are supported:
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-flags) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-flags) |
 | [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-flags) |
+| [ECMAScript](../engines/ecmascript.md) | [✔](engines/ecmascript.md#feature-flags) |
+
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/flags.md "source for: see_also")</sup>
 
 
 - [Modifiers]
+
+
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages

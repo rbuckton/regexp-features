@@ -25,6 +25,8 @@ A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the en
 | [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-text-segment-boundaries) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-text-segment-boundaries) |
 | [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-text-segment-boundaries) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-text-segment-boundaries) |
+
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: see_also")</sup>
 
@@ -33,6 +35,8 @@ A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the en
 - [Buffer Boundaries]
 - [Word Boundaries]
 - [Continuation Escape]
+
+
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages

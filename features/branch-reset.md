@@ -24,6 +24,10 @@ A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [A
 | [.NET](../engines/dotnet.md) | [❌](engines/dotnet.md#feature-branch-reset) |
 | [Oniguruma](../engines/oniguruma.md) | [❌](engines/oniguruma.md#feature-branch-reset) |
 | [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-branch-reset) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-branch-reset) |
+
+
+
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages

@@ -24,6 +24,10 @@ An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-alternatives) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-alternatives) |
 | [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-alternatives) |
+| [ECMAScript](../engines/ecmascript.md) | [✔](engines/ecmascript.md#feature-alternatives) |
+
+
+
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages

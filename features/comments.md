@@ -24,11 +24,15 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-comments) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-comments) |
 | [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-comments) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-comments) |
+
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/comments.md "source for: see_also")</sup>
 
 
 - [Line Comments]
+
+
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages

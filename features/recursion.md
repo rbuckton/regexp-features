@@ -25,6 +25,10 @@ A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capt
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-recursion) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-recursion) |
 | [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-recursion) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-recursion) |
+
+
+
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages

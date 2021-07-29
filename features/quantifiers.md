@@ -29,12 +29,16 @@
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-quantifiers) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-quantifiers) |
 | [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-quantifiers) |
+| [ECMAScript](../engines/ecmascript.md) | [✔](engines/ecmascript.md#feature-quantifiers) |
+
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/quantifiers.md "source for: see_also")</sup>
 
 
 - [Lazy Quantifiers]
 - [Possessive Quantifiers]
+
+
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages

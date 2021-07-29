@@ -16,6 +16,8 @@
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-character-class-subtraction) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-character-class-subtraction) |
 | [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-character-class-subtraction) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-character-class-subtraction) |
+
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-subtraction.md "source for: see_also")</sup>
 
@@ -30,6 +32,8 @@
 - [Character Property Escapes]
 - [Character Class Nested Set]
 - [Character Class Intersection]
+
+
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages

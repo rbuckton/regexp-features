@@ -24,6 +24,8 @@ A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either t
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-continuation-escape) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-continuation-escape) |
 | [Hyperscan](../engines/hyperscan.md) | [❌](engines/hyperscan.md#feature-continuation-escape) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](engines/ecmascript.md#feature-continuation-escape) |
+
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/continuation-escape.md "source for: see_also")</sup>
 
@@ -32,6 +34,8 @@ A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either t
 - [Buffer Boundaries]
 - [Word Boundaries]
 - [Text Segment Boundaries]
+
+
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages

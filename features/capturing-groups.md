@@ -24,6 +24,8 @@ A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom*
 | [.NET](../engines/dotnet.md) | [✔](engines/dotnet.md#feature-capturing-groups) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](engines/oniguruma.md#feature-capturing-groups) |
 | [Hyperscan](../engines/hyperscan.md) | [✔](engines/hyperscan.md#feature-capturing-groups) |
+| [ECMAScript](../engines/ecmascript.md) | [✔](engines/ecmascript.md#feature-capturing-groups) |
+
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/capturing-groups.md "source for: see_also")</sup>
 
@@ -33,6 +35,8 @@ A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom*
 - [Backreferences]
 - [Recursion]
 - [Subroutines]
+
+
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages

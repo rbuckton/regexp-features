@@ -1,32 +1,30 @@
-# Engine: .NET
+# Engine: ECMAScript
 <sup>[Home](../index.md)</sup>
 <sup> \| </sup>
 <sup>[Engines](index.md)</sup>
 <sup> \| </sup>
 <sup>[Reference]</sup>
 <sup> \| </sup>
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/engine.md "source for: name, reference")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/engine.md "source for: name, reference")</sup>
 
 
 <!--
 'name' sources:
-  - [](../../src/engines/dotnet/engine.md)
+  - [](../../src/engines/ecmascript/engine.md)
 -->
 
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/engine.md)
+  - [](../../src/engines/ecmascript/engine.md)
 -->
 
 
 
 ## Languages
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/engine.md "source for: languages")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/engine.md "source for: languages")</sup>
 
-- [C#]
-- [F#]
-- [VB.net]
+- [ECMAScript]
 
 ## Features
 
@@ -34,33 +32,26 @@
 
 - ✔ [Flags]
 - ✔ [Anchors]
-- ✔ [Buffer Boundaries]
 - ✔ [Word Boundaries]
-- ✔ [Continuation Escape]
 - ✔ [Alternatives]
 - ✔ [Wildcard]
 - ✔ [Character Classes]
 - ✔ [Character Class Escapes]
 - ✔ [Character Property Escapes]
-- ✔ [Character Class Subtraction]
 - ✔ [Quantifiers]
 - ✔ [Lazy Quantifiers]
 - ✔ [Capturing Groups]
 - ✔ [Named Capturing Groups]
 - ✔ [Non-Capturing Groups]
 - ✔ [Backreferences]
-- ✔ [Comments]
-- ✔ [Line Comments]
-- ✔ [Modifiers]
 - ✔ [Lookahead]
 - ✔ [Lookbehind]
-- ✔ [Non-Backtracking Expressions]
-- ✔ [Recursion]
-- ✔ [Conditional Expressions]
 
 <a id="not-supported-features"></a>The following features are *not* supported:
 
+- ❌ [Buffer Boundaries]
 - ❌ [Text Segment Boundaries]
+- ❌ [Continuation Escape]
 - ❌ [Posix Character Classes]
 - ❌ [Negated Posix Character Classes]
 - ❌ [Collating Elements]
@@ -68,9 +59,16 @@
 - ❌ [Line Endings Escape]
 - ❌ [Character Class Nested Set]
 - ❌ [Character Class Intersection]
+- ❌ [Character Class Subtraction]
 - ❌ [Quoted Characters]
 - ❌ [Possessive Quantifiers]
+- ❌ [Comments]
+- ❌ [Line Comments]
+- ❌ [Modifiers]
 - ❌ [Branch Reset]
+- ❌ [Non-Backtracking Expressions]
+- ❌ [Recursion]
+- ❌ [Conditional Expressions]
 - ❌ [Subroutines]
 - ❌ [Callouts]
 
@@ -79,7 +77,7 @@
 <sup> \| </sup>
 <sup>[Reference][reference:Flags]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/flags.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/flags.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/flags.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/flags.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -90,22 +88,24 @@
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/flags.md)
+  - [](../../src/engines/ecmascript/features/flags.md)
 -->
 
 <dfn>Flags</dfn> control certain aspects of the matching behavior of a pattern.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/flags.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/flags.md "source for: syntax")</sup>
 
 
 The following flags are supported:
-
 - `i` &mdash; Ignore Case. Matches [character classes] using a case-insensitive comparison.
 - `m` &mdash; Multiline. Causes the [anchors] `^` and `$` to match the start and end of each line (respectively), rather than the start and end of the input.
-- `n` &mdash; Explicit captures. Regular [Capturing Groups] are not captured, only [Named Capturing Groups] are captured.
 - `s` &mdash; Singleline. Causes the [wildcard] `.` to match newline characters.
-- `x` &mdash; Extended Mode. Ignores whitespace in a pattern. Spaces must instead be represented by `\s` or `\ ` (an escaped space). Allows `x`-mode [comments].
+- `u` &mdash; Unicode. Enforces stricter parsing of `RegExp` patterns, improved handling of escaped Unicode surrogate pairs, and allows the use of <code>\u{<em>CodePoint</em>}</code>.
+- `g` &mdash; Global. Indicates the match must start at or after the index specified by the `lastIndex` property of the `RegExp`. When matching completes successfully, `lastIndex` will be updated with the ending index of the last match.
+- `y` &mdash; Sticky. Indicates the match must start at the index specified by the `lastIndex` property of the `RegExp`. When matching completes successfully, `lastIndex` will be updated with the ending index of the last match.
+- `d` &mdash; Indices. Indicates the match result object will include an `indices` property with the start and end indices of each captured subexpression.
+  > NOTE: This feature is at Stage 4 of the ECMA-262 specification process. See the [RegExp Match Indices proposal](https://github.com/tc39/proposal-regexp-match-indices) for more information.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/flags.md "source for: see_also")</sup>
@@ -118,7 +118,7 @@ The following flags are supported:
 <sup> \| </sup>
 <sup>[Reference][reference:Anchors]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/anchors.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/anchors.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/anchors.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/anchors.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -129,7 +129,7 @@ The following flags are supported:
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/anchors.md)
+  - [](../../src/engines/ecmascript/features/anchors.md)
 -->
 
 <dfn>Anchors</dfn> match the start or end of a line.
@@ -155,7 +155,7 @@ The following flags are supported:
 <sup> \| </sup>
 <sup>[Reference][reference:Buffer Boundaries]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/buffer-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/buffer-boundaries.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/buffer-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/buffer-boundaries.md "source for: supported")</sup>
 
 
 <!--
@@ -163,21 +163,9 @@ The following flags are supported:
   - [](../../src/features/anchors-and-boundaries/buffer-boundaries.md)
 -->
 
-
-<!--
-'reference' sources:
-  - [](../../src/engines/dotnet/features/buffer-boundaries.md)
--->
+> ❌ This feature is not supported.
 
 A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of the input. This differs slightly from `^` and `$` which can be affected by [RegExp flags] like `m`.
-
-### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/buffer-boundaries.md "source for: syntax")</sup>
-
-
-- `\A` &mdash; Matches the start of the input.
-- `\z` &mdash; Matches the end of the input.
-- `\Z` &mdash; A zero-width assertion consisting of an optional newline at the end of the buffer. Equivalent to `(?=\n?\z)`.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/buffer-boundaries.md "source for: see_also")</sup>
@@ -193,7 +181,7 @@ A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of t
 <sup> \| </sup>
 <sup>[Reference][reference:Word Boundaries]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/word-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/word-boundaries.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/word-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/word-boundaries.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -204,7 +192,7 @@ A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of t
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/word-boundaries.md)
+  - [](../../src/engines/ecmascript/features/word-boundaries.md)
 -->
 
 A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a word.
@@ -230,7 +218,7 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 <sup> \| </sup>
 <sup>[Reference][reference:Text Segment Boundaries]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/text-segment-boundaries.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/text-segment-boundaries.md "source for: supported")</sup>
 
 
 <!--
@@ -256,7 +244,7 @@ A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the en
 <sup> \| </sup>
 <sup>[Reference][reference:Continuation Escape]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/continuation-escape.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/continuation-escape.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/continuation-escape.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/continuation-escape.md "source for: supported")</sup>
 
 
 <!--
@@ -264,19 +252,9 @@ A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the en
   - [](../../src/features/anchors-and-boundaries/continuation-escape.md)
 -->
 
-
-<!--
-'reference' sources:
-  - [](../../src/engines/dotnet/features/continuation-escape.md)
--->
+> ❌ This feature is not supported.
 
 A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either the start of the input or the start of the last match.
-
-### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/continuation-escape.md "source for: syntax")</sup>
-
-
-- `\G` &mdash; Matches either the start of the input or the start of the last match.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/continuation-escape.md "source for: see_also")</sup>
@@ -292,7 +270,7 @@ A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either t
 <sup> \| </sup>
 <sup>[Reference][reference:Alternatives]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/alternatives.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/alternatives.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/alternatives.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/alternatives.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -303,7 +281,7 @@ A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either t
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/alternatives.md)
+  - [](../../src/engines/ecmascript/features/alternatives.md)
 -->
 
 An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first branch of a pattern fails to match, each alternative is attempted from left to right until a match is found.
@@ -319,7 +297,7 @@ An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first
 <sup> \| </sup>
 <sup>[Reference][reference:Wildcard]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/wildcard.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/wildcard.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/wildcard.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/wildcard.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -330,7 +308,7 @@ An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/wildcard.md)
+  - [](../../src/engines/ecmascript/features/wildcard.md)
 -->
 
 A <dfn>Wildcard</dfn> matches a single, non-newline character.
@@ -346,7 +324,7 @@ A <dfn>Wildcard</dfn> matches a single, non-newline character.
 <sup> \| </sup>
 <sup>[Reference][reference:Character Classes]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/character-classes.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/character-classes.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -357,7 +335,7 @@ A <dfn>Wildcard</dfn> matches a single, non-newline character.
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/character-classes.md)
+  - [](../../src/engines/ecmascript/features/character-classes.md)
 -->
 
 A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to match a single character in the set.
@@ -390,7 +368,7 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 <sup> \| </sup>
 <sup>[Reference][reference:Posix Character Classes]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/posix-character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/posix-character-classes.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/posix-character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/posix-character-classes.md "source for: supported")</sup>
 
 
 <!--
@@ -422,7 +400,7 @@ A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that s
 <sup> \| </sup>
 <sup>[Reference][reference:Negated Posix Character Classes]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/negated-posix-character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/negated-posix-character-classes.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/negated-posix-character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/negated-posix-character-classes.md "source for: supported")</sup>
 
 
 <!--
@@ -454,7 +432,7 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 <sup> \| </sup>
 <sup>[Reference][reference:Collating Elements]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/collating-elements.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/collating-elements.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/collating-elements.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/collating-elements.md "source for: supported")</sup>
 
 
 <!--
@@ -486,7 +464,7 @@ A <dfn>Collating Element</dfn> is one or more characters that collate as a singl
 <sup> \| </sup>
 <sup>[Reference][reference:Equivalence Classes]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/equivalence-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/equivalence-classes.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/equivalence-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/equivalence-classes.md "source for: supported")</sup>
 
 
 <!--
@@ -518,7 +496,7 @@ An <dfn>Equivalence Class</dfn> matches any character or collating element with 
 <sup> \| </sup>
 <sup>[Reference][reference:Character Class Escapes]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-escapes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/character-class-escapes.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-escapes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/character-class-escapes.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -529,7 +507,7 @@ An <dfn>Equivalence Class</dfn> matches any character or collating element with 
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/character-class-escapes.md)
+  - [](../../src/engines/ecmascript/features/character-class-escapes.md)
 -->
 
 A <dfn>Character Class Escape</dfn> is a single character escape that represents an entire character class. They can be used as an element of a [Character Class] or as an *Atom*. It is often the case that a lower-case escape character is the inclusive set, while an upper-case variant of the same character excludes that set.
@@ -565,7 +543,7 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
 <sup> \| </sup>
 <sup>[Reference][reference:Line Endings Escape]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/line-endings-escape.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/line-endings-escape.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/line-endings-escape.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/line-endings-escape.md "source for: supported")</sup>
 
 
 <!--
@@ -597,7 +575,7 @@ A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending chara
 <sup> \| </sup>
 <sup>[Reference][reference:Character Property Escapes]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-property-escapes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/character-property-escapes.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-property-escapes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/character-property-escapes.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -608,17 +586,19 @@ A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending chara
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/character-property-escapes.md)
+  - [](../../src/engines/ecmascript/features/character-property-escapes.md)
 -->
 
 A <dfn>Character Property Escape</dfn> is an escape sequence used to match a character with a specific character property.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/character-property-escapes.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-property-escapes.md "source for: syntax")</sup>
 
 
-- <code>\p{<em>name</em>}</code> &mdash; Where *name* is a predefined unicode property name. Matches a character that has the unicode property *name*.
-- <code>\P{<em>name</em>}</code> &mdash; Where *name* is a predefined unicode property name. Matches a character that does not have the unicode property *name*.
+- <code>\p<em>X</em></code> &mdash; Where *X* is a single character. Matches a character that has the property *X*.
+- <code>\p{<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that has the property *name*.
+- <code>\P<em>X</em></code> &mdash; Where *X* is a single character. Matches a character that does not have the property *X*.
+- <code>\P{<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that does not have the property *name*.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-property-escapes.md "source for: see_also")</sup>
@@ -640,7 +620,7 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 <sup> \| </sup>
 <sup>[Reference][reference:Character Class Nested Set]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/character-class-nested-set.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md "source for: name"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/character-class-nested-set.md "source for: reference, supported, description")</sup>
 
 
 <!--
@@ -648,9 +628,17 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
   - [](../../src/features/character-classes/character-class-nested-set.md)
 -->
 
+
+<!--
+'reference' sources:
+  - [](../../src/engines/ecmascript/features/character-class-nested-set.md)
+-->
+
 > ❌ This feature is not supported.
 
 A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [character class] inside of a [character class].
+
+> NOTE: This feature is currently a [proposal](https://github.com/tc39/proposal-regexp-set-notation) at Stage 2 of the ECMA-262 specification process.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md "source for: see_also")</sup>
@@ -672,7 +660,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 <sup> \| </sup>
 <sup>[Reference][reference:Character Class Intersection]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/character-class-intersection.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md "source for: name"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/character-class-intersection.md "source for: reference, supported, description")</sup>
 
 
 <!--
@@ -680,9 +668,17 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
   - [](../../src/features/character-classes/character-class-intersection.md)
 -->
 
+
+<!--
+'reference' sources:
+  - [](../../src/engines/ecmascript/features/character-class-intersection.md)
+-->
+
 > ❌ This feature is not supported.
 
 <dfn>Character Class Intersection</dfn> allows you to indicate that only characters that are in both [character classes] should match.
+
+> NOTE: This feature is currently a [proposal](https://github.com/tc39/proposal-regexp-set-notation) at Stage 2 of the ECMA-262 specification process.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md "source for: see_also")</sup>
@@ -704,7 +700,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 <sup> \| </sup>
 <sup>[Reference][reference:Character Class Subtraction]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-subtraction.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/character-class-subtraction.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-subtraction.md "source for: name"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/character-class-subtraction.md "source for: reference, supported, description")</sup>
 
 
 <!--
@@ -715,10 +711,14 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/character-class-subtraction.md)
+  - [](../../src/engines/ecmascript/features/character-class-subtraction.md)
 -->
 
+> ❌ This feature is not supported.
+
 <dfn>Character Class Subtraction</dfn> allows you to exclude a class of characters from another class of characters in a [character class].
+
+> NOTE: This feature is currently a [proposal](https://github.com/tc39/proposal-regexp-set-notation) at Stage 2 of the ECMA-262 specification process.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-subtraction.md "source for: see_also")</sup>
@@ -740,7 +740,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 <sup> \| </sup>
 <sup>[Reference][reference:Quoted Characters]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quoted-characters.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/quoted-characters.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quoted-characters.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/quoted-characters.md "source for: supported")</sup>
 
 
 <!--
@@ -757,7 +757,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 <sup> \| </sup>
 <sup>[Reference][reference:Quantifiers]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/quantifiers.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/quantifiers.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -768,7 +768,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/quantifiers.md)
+  - [](../../src/engines/ecmascript/features/quantifiers.md)
 -->
 
 <dfn>Quantifiers</dfn> specify repetition of an *Atom*. By default, quantifiers are "greedy" in that they attempt to match as many instances of the preceding *Atom* as possible to satisfy the pattern before backtracking.
@@ -796,7 +796,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 <sup> \| </sup>
 <sup>[Reference][reference:Lazy Quantifiers]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/lazy-quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/lazy-quantifiers.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/lazy-quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/lazy-quantifiers.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -807,7 +807,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/lazy-quantifiers.md)
+  - [](../../src/engines/ecmascript/features/lazy-quantifiers.md)
 -->
 
 <dfn>Lazy Quantifiers</dfn> specify repetition of an *Atom*, but attempt to match as few instances of the preceding *Atom* as possible to satisfy the pattern before advancing.
@@ -835,7 +835,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 <sup> \| </sup>
 <sup>[Reference][reference:Possessive Quantifiers]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/possessive-quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/possessive-quantifiers.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/possessive-quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/possessive-quantifiers.md "source for: supported")</sup>
 
 
 <!--
@@ -859,7 +859,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 <sup> \| </sup>
 <sup>[Reference][reference:Capturing Groups]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/capturing-groups.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/capturing-groups.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -870,7 +870,7 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/capturing-groups.md)
+  - [](../../src/engines/ecmascript/features/capturing-groups.md)
 -->
 
 A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by index. A Capturing Group can be captured and returned by the matching algorithm.
@@ -896,7 +896,7 @@ A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom*
 <sup> \| </sup>
 <sup>[Reference][reference:Named Capturing Groups]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/named-capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/named-capturing-groups.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/named-capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/named-capturing-groups.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -907,17 +907,16 @@ A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom*
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/named-capturing-groups.md)
+  - [](../../src/engines/ecmascript/features/named-capturing-groups.md)
 -->
 
 A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and returned by the matching algorithm. A Named Capturing Group is also an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by name.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/named-capturing-groups.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/named-capturing-groups.md "source for: syntax")</sup>
 
 
 - <code>(?&lt;<em>name</em>&gt;…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
-- <code>(?'<em>name</em>'…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/named-capturing-groups.md "source for: see_also")</sup>
@@ -934,7 +933,7 @@ A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and r
 <sup> \| </sup>
 <sup>[Reference][reference:Non-Capturing Groups]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/non-capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/non-capturing-groups.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/non-capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/non-capturing-groups.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -945,7 +944,7 @@ A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and r
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/non-capturing-groups.md)
+  - [](../../src/engines/ecmascript/features/non-capturing-groups.md)
 -->
 
 A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] but cannot be referenced using [Backreferences]. A Non-capturing Group is not captured by the matching algorithm.
@@ -968,7 +967,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 <sup> \| </sup>
 <sup>[Reference][reference:Backreferences]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/backreferences.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/backreferences.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/backreferences.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/backreferences.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -979,7 +978,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/backreferences.md)
+  - [](../../src/engines/ecmascript/features/backreferences.md)
 -->
 
 <dfn>Backreferences</dfn> allow a pattern to re-match a previously matched capture group<sup>[1][Capturing Groups] [2][Named Capturing Groups]</sup> either by number (_n_) or by _name_.
@@ -1003,7 +1002,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 <sup> \| </sup>
 <sup>[Reference][reference:Comments]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/comments.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/comments.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/comments.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/comments.md "source for: supported")</sup>
 
 
 <!--
@@ -1011,19 +1010,9 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
   - [](../../src/features/comments/comments.md)
 -->
 
-
-<!--
-'reference' sources:
-  - [](../../src/engines/dotnet/features/comments.md)
--->
+> ❌ This feature is not supported.
 
 A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matching and can be used to document a pattern.
-
-### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/comments.md "source for: syntax")</sup>
-
-
-- `(?#…)` &mdash; The entire expression is removed from the pattern. A comment may not contain other `(` or `)` characters.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/comments.md "source for: see_also")</sup>
@@ -1036,7 +1025,7 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 <sup> \| </sup>
 <sup>[Reference][reference:Line Comments]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/line-comments.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/line-comments.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/line-comments.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/line-comments.md "source for: supported")</sup>
 
 
 <!--
@@ -1044,19 +1033,9 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
   - [](../../src/features/comments/line-comments.md)
 -->
 
-
-<!--
-'reference' sources:
-  - [](../../src/engines/dotnet/features/line-comments.md)
--->
+> ❌ This feature is not supported.
 
 A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and ending with `\n` (or the end of the pattern) that is ignored by pattern matching and can be used to document a pattern.
-
-### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/line-comments.md "source for: syntax")</sup>
-
-
-- <code>#…<strong>\n</strong></code> &mdash; The rest of the line starting from `#` is removed from the pattern. Only supported when the `x` (extended mode) [RegExp flag] is set.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/line-comments.md "source for: see_also")</sup>
@@ -1069,7 +1048,7 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 <sup> \| </sup>
 <sup>[Reference][reference:Modifiers]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/modifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/modifiers.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/modifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/modifiers.md "source for: supported")</sup>
 
 
 <!--
@@ -1077,20 +1056,9 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
   - [](../../src/features/flags-and-modifiers/modifiers.md)
 -->
 
-
-<!--
-'reference' sources:
-  - [](../../src/engines/dotnet/features/modifiers.md)
--->
+> ❌ This feature is not supported.
 
 <dfn>Modifiers</dfn> allow you to change the currently active [RegExp flags] within a subexpression.
-
-### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/modifiers.md "source for: syntax")</sup>
-
-
-- `(?imnsx-imnsx)` - Sets or unsets (using `-`) the specified [RegExp flags] starting at the current position until the next closing `)` or the end of the pattern. Example: `(?-i)A(?i)B(?-i)C` matches `ABC`, `AbC`.
-- `(?imnsx-imnsx:…)` - Sets or unsets (using `-`) the specified [RegExp flags] for the subexpression. Example: `(?-i:A(?i:B)C)` matches `ABC`, `AbC`.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/flags-and-modifiers/modifiers.md "source for: see_also")</sup>
@@ -1103,7 +1071,7 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 <sup> \| </sup>
 <sup>[Reference][reference:Branch Reset]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/branch-reset.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/branch-reset.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/branch-reset.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/branch-reset.md "source for: supported")</sup>
 
 
 <!--
@@ -1120,7 +1088,7 @@ A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [A
 <sup> \| </sup>
 <sup>[Reference][reference:Lookahead]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookahead.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/lookahead.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookahead.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/lookahead.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1131,7 +1099,7 @@ A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [A
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/lookahead.md)
+  - [](../../src/engines/ecmascript/features/lookahead.md)
 -->
 
 A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pattern would match the characters to the right of the current position.
@@ -1154,7 +1122,7 @@ A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pa
 <sup> \| </sup>
 <sup>[Reference][reference:Lookbehind]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookbehind.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/lookbehind.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookbehind.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/lookbehind.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1165,7 +1133,7 @@ A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pa
 
 <!--
 'reference' sources:
-  - [](../../src/engines/dotnet/features/lookbehind.md)
+  - [](../../src/engines/ecmascript/features/lookbehind.md)
 -->
 
 A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided pattern would match the characters to the left of the current position.
@@ -1188,7 +1156,7 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
 <sup> \| </sup>
 <sup>[Reference][reference:Non-Backtracking Expressions]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/non-backtracking-expressions.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/non-backtracking-expression.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/non-backtracking-expressions.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/non-backtracking-expressions.md "source for: supported")</sup>
 
 
 <!--
@@ -1196,26 +1164,16 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
   - [](../../src/features/groups-and-backtracking/non-backtracking-expressions.md)
 -->
 
-
-<!--
-'reference' sources:
-  - [](../../src/engines/dotnet/features/non-backtracking-expression.md)
--->
+> ❌ This feature is not supported.
 
 A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring patterns, and will not backtrack in the event of a failed match. This is often used to improve performance.
-
-### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/non-backtracking-expressions.md "source for: syntax")</sup>
-
-
-- `(?>…)` &mdash; Matches the provided pattern, but no backtracking is performed if the match fails.
 
 ## Feature: Recursion
 <sup>[Main article][article:Recursion]</sup>
 <sup> \| </sup>
 <sup>[Reference][reference:Recursion]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/recursion.md "source for: name"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/recursion.md "source for: reference, supported, description")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/recursion.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/recursion.md "source for: supported")</sup>
 
 
 <!--
@@ -1223,64 +1181,16 @@ A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring p
   - [](../../src/features/groups-and-backtracking/recursion.md)
 -->
 
+> ❌ This feature is not supported.
 
-<!--
-'reference' sources:
-  - [](../../src/engines/dotnet/features/recursion.md)
--->
-
-.NET's `Regex` class supports limited recursion through balancing groups. A <dfn>Balancing Group</dfn> uses the name of a previously defined [named capture group] as a stack, storing the interval between the current position and the last instance of the [named capture group] in the current name. You can then use a [conditional expression] to fail the matching algorithm if the previously defined [named capture group]'s stack is not empty when the match completes.
-
-### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/recursion.md "source for: syntax")</sup>
-
-
-- <code>(?&lt;<em>name1</em>-<em>name1</em>&gt;…)</code> &mdash; Where *name1* as the current group name and *name2* is a previously defined group. Stores
-  the interval between *name2* and the current position in *name1* and deletes *name2*. Deleting *name2* reveals the previous definition of 
-  *name2* allowing it to be used as a stack for captures.
-- <code>(?&lt;-<em>name2</em>&gt;…)</code> &mdash; Where *name2* is a previously defined group. Stores the interval between *name2* and the 
-  current position as the current capture and deletes *name2*. Deleting *name2* reveals the previous definition of  *name2* allowing 
-  it to be used as a stack for captures.
-- <code>(?'<em>name1</em>-<em>name1</em>'…)</code> &mdash; Where *name1* as the current group name and *name2* is a previously defined group. Stores
-  the interval between *name2* and the current position in *name1* and deletes *name2*. Deleting *name2* reveals the previous definition of 
-  *name2* allowing it to be used as a stack for captures.
-- <code>(?'-<em>name2</em>'…)</code> &mdash; Where *name2* is a previously defined group. Stores the interval between *name2* and the 
-  current position as the current capture and deletes *name2*. Deleting *name2* reveals the previous definition of  *name2* allowing 
-  it to be used as a stack for captures.
-
-### Example
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/recursion.md "source for: example")</sup>
-
-
-The following shows an example of matching balanced `<` and `>` brackets (assuming `x` mode for a multiline regular expression):
-```re
-^                               # matches the beginning of the input
-
-[^<>]*                          # matches any number of non <> characters
-(
-    ((?'Open'<)[^<>]*)+         # matches an opening < followed by any number of non <> characters
-
-    ((?'Close-Open'>)[^<>]*)+   # matches a closing > followed by any number of non <> characters,
-                                # deleting the last match for 'Open'
-
-)*                              # matches the preceding expression zero or more times.
-
-(?(Open)(?!))                   # condition that fails the match if there are any remaining 'Open' matches
-
-$                               # matches the end of the input
-```
-
-On a single line, the expression looks like this:
-```re
-^[^<>]*(((?'Open'<)[^<>]*)+((?'Close-Open'>)[^<>]*)+)*(?(Open)(?!))$
-```
+A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capture group] inside of itself, to handle cases such as matching balanced parenthesis or brackets, etc.
 
 ## Feature: Conditional Expressions
 <sup>[Main article][article:Conditional Expressions]</sup>
 <sup> \| </sup>
 <sup>[Reference][reference:Conditional Expressions]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/conditional-expressions.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/conditional-expressions.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/conditional-expressions.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/conditional-expressions.md "source for: supported")</sup>
 
 
 <!--
@@ -1288,39 +1198,16 @@ On a single line, the expression looks like this:
   - [](../../src/features/alternatives/conditional-expressions.md)
 -->
 
-
-<!--
-'reference' sources:
-  - [](../../src/engines/dotnet/features/conditional-expressions.md)
--->
+> ❌ This feature is not supported.
 
 A <dfn>Conditional Expression</dfn> checks a condition and evaluates its first alternative if the condition is **true**; otherwise, it evaluates its second alternative.
-
-### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/conditional-expressions.md "source for: syntax")</sup>
-
-
-- <code>(?(<em>condition</em>)<em>condition</em>|<em>condition</em>)</code> &mdash; Matches *yes-pattern* if *condition* is **true**; otherwise, matches *no-pattern*.
-- <code>(?(<em>condition</em>)<em>condition</em>)</code> &mdash; Matches *yes-pattern* if *condition* is **true**; otherwise, matches the empty string.
-
-#### Conditions
-
-The following conditions are supported:
-
-- <code>(?(<em>n</em>)…)</code> &mdash; Evaluates to **true** if the [capture group] at offset *n* was successfully matched; Otherwise, evaluates to **false**. If *n* does not correspond to a [capture group], an error is thrown.
-- <code>(?(<em>name</em>)…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched; Otherwise, evaluates to **false**. If *name* does not correspond to a [named capture group], *name* is interpeted as a [lookahead] pattern.
-- <code>(?(<em>test-pattern</em>)…)</code> &mdash; Evaluates to <em>test-pattern</em>true<em>test-pattern</em> if a [lookahead] for <em>test-pattern</em> matches; Otherwise, evaluates to <em>test-pattern</em>false<em>test-pattern</em>. Equivalent to: <code>(?(?=<em>test-pattern</em>)…)</code>.
-- <code>(?(?=<em>test-pattern</em>)…)</code> &mdash; Evaluates to **true** if a [lookahead] for *test-pattern* matches; Otherwise, evaluates to **false**.
-- <code>(?(?!<em>test-pattern</em>)…)</code> &mdash; Evaluates to **true** if a negative [lookahead] for *test-pattern* matches; Otherwise, evaluates to **false**.
-- <code>(?(?<=<em>test-pattern</em>)…)</code> &mdash; Evaluates to **true** if a [lookbehind] for *test-pattern* matches; Otherwise, evaluates to **false**.
-- <code>(?(?<!<em>test-pattern</em>)…)</code> &mdash; Evaluates to **true** if a negative [lookbehind] for *test-pattern* matches; Otherwise, evaluates to **false**.
 
 ## Feature: Subroutines
 <sup>[Main article][article:Subroutines]</sup>
 <sup> \| </sup>
 <sup>[Reference][reference:Subroutines]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/subroutines.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/subroutines.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/subroutines.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/subroutines.md "source for: supported")</sup>
 
 
 <!--
@@ -1337,7 +1224,7 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 <sup> \| </sup>
 <sup>[Reference][reference:Callouts]</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/callouts.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/dotnet/features/callouts.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/callouts.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/ecmascript/features/callouts.md "source for: supported")</sup>
 
 
 <!--
@@ -1474,44 +1361,44 @@ A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matc
 [article:Callouts]: ../features/callouts.md
 [article:Flags]: ../features/flags.md
 
-[Reference]: http://msdn2.microsoft.com/en-us/library/system.text.regularexpressions.aspx
+[Reference]: https://tc39.es/ecma262/#sec-regexp-regular-expression-objects
 
-[reference:Flags]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-options
-[reference:Anchors]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/anchors-in-regular-expressions
-[reference:Buffer Boundaries]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/anchors-in-regular-expressions
-[reference:Word Boundaries]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/anchors-in-regular-expressions
+[reference:Flags]: https://tc39.es/ecma262/#sec-regexpinitialize
+[reference:Anchors]: https://tc39.es/ecma262/#sec-assertion
+[reference:Buffer Boundaries]: #not-supported-features
+[reference:Word Boundaries]: https://tc39.es/ecma262/#sec-assertion
 [reference:Text Segment Boundaries]: #not-supported-features
-[reference:Continuation Escape]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/anchors-in-regular-expressions
-[reference:Alternatives]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/alternation-constructs-in-regular-expressions#Either_Or
-[reference:Wildcard]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-
-[reference:Character Classes]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions
+[reference:Continuation Escape]: #not-supported-features
+[reference:Alternatives]: https://tc39.es/ecma262/#sec-alternative
+[reference:Wildcard]: https://tc39.es/ecma262/#sec-atom
+[reference:Character Classes]: https://tc39.es/ecma262/#sec-characterclass
 [reference:Posix Character Classes]: #not-supported-features
 [reference:Negated Posix Character Classes]: #not-supported-features
 [reference:Collating Elements]: #not-supported-features
 [reference:Equivalence Classes]: #not-supported-features
-[reference:Character Class Escapes]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#word-character-w
+[reference:Character Class Escapes]: https://tc39.es/ecma262/#sec-characterclassescape
 [reference:Line Endings Escape]: #not-supported-features
-[reference:Character Property Escapes]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p
-[reference:Character Class Nested Set]: #not-supported-features
-[reference:Character Class Intersection]: #not-supported-features
-[reference:Character Class Subtraction]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#character-class-subtraction-base_group---excluded_group
+[reference:Character Property Escapes]: https://tc39.es/ecma262/#sec-characterclassescape
+[reference:Character Class Nested Set]: https://github.com/tc39/proposal-regexp-set-notation
+[reference:Character Class Intersection]: https://github.com/tc39/proposal-regexp-set-notation
+[reference:Character Class Subtraction]: https://github.com/tc39/proposal-regexp-set-notation
 [reference:Quoted Characters]: #not-supported-features
-[reference:Quantifiers]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/quantifiers-in-regular-expressions
-[reference:Lazy Quantifiers]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/quantifiers-in-regular-expressions#greedy-and-lazy-quantifiers
+[reference:Quantifiers]: https://tc39.es/ecma262/#sec-quantifier
+[reference:Lazy Quantifiers]: https://tc39.es/ecma262/#sec-quantifier
 [reference:Possessive Quantifiers]: #not-supported-features
-[reference:Capturing Groups]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/grouping-constructs-in-regular-expressions#matched_subexpression
-[reference:Named Capturing Groups]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/grouping-constructs-in-regular-expressions#named-matched-subexpressions
-[reference:Non-Capturing Groups]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/grouping-constructs-in-regular-expressions#noncapturing-groups
-[reference:Backreferences]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/backreference-constructs-in-regular-expressions
-[reference:Comments]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/miscellaneous-constructs-in-regular-expressions#inline-comment
-[reference:Line Comments]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/miscellaneous-constructs-in-regular-expressions#end-of-line-comment
-[reference:Modifiers]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/miscellaneous-constructs-in-regular-expressions#inline-options
+[reference:Capturing Groups]: https://tc39.es/ecma262/#sec-atom
+[reference:Named Capturing Groups]: https://tc39.es/ecma262/#sec-atom
+[reference:Non-Capturing Groups]: https://tc39.es/ecma262/#sec-atom
+[reference:Backreferences]: https://tc39.es/ecma262/#sec-atomescape
+[reference:Comments]: #not-supported-features
+[reference:Line Comments]: #not-supported-features
+[reference:Modifiers]: #not-supported-features
 [reference:Branch Reset]: #not-supported-features
-[reference:Lookahead]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/grouping-constructs-in-regular-expressions#zero-width-positive-lookahead-assertions
-[reference:Lookbehind]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/grouping-constructs-in-regular-expressions#zero-width-positive-lookbehind-assertions
-[reference:Non-Backtracking Expressions]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/grouping-constructs-in-regular-expressions#atomic-groups
-[reference:Recursion]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/grouping-constructs-in-regular-expressions#balancing-group-definitions
-[reference:Conditional Expressions]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/alternation-constructs-in-regular-expressions#Conditional_Expr
+[reference:Lookahead]: https://tc39.es/ecma262/#sec-assertion
+[reference:Lookbehind]: https://tc39.es/ecma262/#sec-assertion
+[reference:Non-Backtracking Expressions]: #not-supported-features
+[reference:Recursion]: #not-supported-features
+[reference:Conditional Expressions]: #not-supported-features
 [reference:Subroutines]: #not-supported-features
 [reference:Callouts]: #not-supported-features
 
