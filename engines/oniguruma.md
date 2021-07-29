@@ -431,7 +431,7 @@ A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that s
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/posix-character-classes.md "source for: syntax")</sup>
 
 
-- <code>\[\[:<em>name</em>:\]\]</code> &mdash; Where *name* is in a set of predefined names. Matches any character in the set.
+- <code>[[:<em>name</em>:]]</code> &mdash; Where *name* is in a set of predefined names. Matches any character in the set.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/posix-character-classes.md "source for: see_also")</sup>
@@ -473,7 +473,7 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/negated-posix-character-classes.md "source for: syntax")</sup>
 
 
-- <code>\[\[:^<em>name</em>:\]\]</code> &mdash; Where *name* is in a set of predefined names. Matches any character not in the set.
+- <code>[[:^<em>name</em>:]]</code> &mdash; Where *name* is in a set of predefined names. Matches any character not in the set.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/negated-posix-character-classes.md "source for: see_also")</sup>
@@ -675,9 +675,9 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/character-property-escapes.md "source for: syntax")</sup>
 
 
-- <code>\\p{<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that has the property *name*.
-- <code>\\p{^<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that does not have the property *name*.
-- <code>\\P{<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that does not have the property *name*.
+- <code>\p{<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that has the property *name*.
+- <code>\p{^<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that does not have the property *name*.
+- <code>\P{<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that does not have the property *name*.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-property-escapes.md "source for: see_also")</sup>
@@ -1049,7 +1049,7 @@ A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and r
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/named-capturing-groups.md "source for: syntax")</sup>
 
 
-- <code>(?\<<em>name</em>\>…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
+- <code>(?&lt;<em>name</em>&gt;…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
 - <code>(?'<em>name</em>'…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
 
 ### See Also
@@ -1122,14 +1122,14 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 
 
 - <code>\\<em>n</em></code> &mdash; Where *n* is a decimal digit in the range 1-9. Matches the same string as the [capture group] *n*.
-- <code>\\k\<<em>n</em>\></code> &mdash; Where *n* is an integer > 0. Matches the same string as the [capture group] *n*.
-- <code>\\k'<em>n</em>'</code> &mdash; Where *n* is an integer > 0. Matches the same string as the [capture group] *n*.
-- <code>\\k\<<em>-n</em>\></code> &mdash; Where *n* is an integer > 0. Matches the *n*th previous [capture group].
-- <code>\\k'<em>-n</em>'</code> &mdash; Where *n* is an integer > 0. Matches the *n*th previous [capture group].
-- <code>\\k\<<em>+n</em>\></code> &mdash; Where *n* is an integer > 0. Matches the *n*th next [capture group].
-- <code>\\k'<em>+n</em>'</code> &mdash; Where *n* is an integer > 0. Matches the *n*th next [capture group].
-- <code>\\k\<<em>name</em>\></code> &mdash; Matches the same string as the [named capture group] with the name *name*.
-- <code>\\k'<em>name</em>'</code> &mdash; Matches the same string as the [named capture group] with the name *name*.
+- <code>\k&lt;<em>n</em>&gt;</code> &mdash; Where *n* is an integer > 0. Matches the same string as the [capture group] *n*.
+- <code>\k'<em>n</em>'</code> &mdash; Where *n* is an integer > 0. Matches the same string as the [capture group] *n*.
+- <code>\k&lt;-<em>n</em>&gt;</code> &mdash; Where *n* is an integer > 0. Matches the *n*th previous [capture group].
+- <code>\k'-<em>n</em>'</code> &mdash; Where *n* is an integer > 0. Matches the *n*th previous [capture group].
+- <code>\k&lt;+<em>n</em>&gt;</code> &mdash; Where *n* is an integer > 0. Matches the *n*th next [capture group].
+- <code>\k'+<em>n</em>'</code> &mdash; Where *n* is an integer > 0. Matches the *n*th next [capture group].
+- <code>\k&lt;<em>name</em>&gt;</code> &mdash; Matches the same string as the [named capture group] with the name *name*.
+- <code>\k'<em>name</em>'</code> &mdash; Matches the same string as the [named capture group] with the name *name*.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/backreferences.md "source for: see_also")</sup>
@@ -1369,26 +1369,27 @@ A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capt
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/recursion.md "source for: syntax")</sup>
 
 
-- <code>\\k\<<em>n</em>+<em>n</em>\></code> &mdash; Where *n* is an integer >= 1 and *level* is an integer >= 0. Matches the same string as the [capture group] *n* at the recursion level relative to the referenced [capture group].
-- <code>\\k'<em>n</em>+<em>n</em>'</code> &mdash; Where *n* is an integer >= 1 and *level* is an integer >= 0. Matches the same string as the [capture group] *n* at the recursion level relative to the referenced [capture group].
-- <code>\\k\<<em>n</em>-<em>n</em>\></code> &mdash; Where *n* is an integer >= 1 and *level* is an integer >= 0. Matches the same string as the [capture group] *n* at the recursion level relative to the referenced [capture group].
-- <code>\\k'<em>n</em>-<em>n</em>'</code> &mdash; Where *n* is an integer >= 1 and *level* is an integer >= 0. Matches the same string as the [capture group] *n* at the recursion level relative to the referenced [capture group].
-- <code>\\k\<<em>name</em>\></code> &mdash; Where *level* is an integer >= 0. Matches the same string as the [named capture group] with the name *name* at the recursion level relative to the referenced [named capture group].
-- <code>\\k'<em>name</em>'</code> &mdash; Where *level* is an integer >= 0. Matches the same string as the [named capture group] with the name *name* at the recursion level relative to the referenced [named capture group].
-- <code>\\g\<<em>n</em>\></code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is *n*.
-- <code>\\g'<em>n</em>'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is *n*.
+- <code>\k&lt;<em>n</em>+<em>n</em>&gt;</code> &mdash; Where *n* is an integer >= 1 and *level* is an integer >= 0. Matches the same string as the [capture group] *n* at the recursion level relative to the referenced [capture group].
+- <code>\k'<em>n</em>+<em>n</em>'</code> &mdash; Where *n* is an integer >= 1 and *level* is an integer >= 0. Matches the same string as the [capture group] *n* at the recursion level relative to the referenced [capture group].
+- <code>\k&lt;<em>n</em>-<em>n</em>&gt;</code> &mdash; Where *n* is an integer >= 1 and *level* is an integer >= 0. Matches the same string as the [capture group] *n* at the recursion level relative to the referenced [capture group].
+- <code>\k'<em>n</em>-<em>n</em>'</code> &mdash; Where *n* is an integer >= 1 and *level* is an integer >= 0. Matches the same string as the [capture group] *n* at the recursion level relative to the referenced [capture group].
+- <code>\k&lt;<em>name</em>&gt;</code> &mdash; Where *level* is an integer >= 0. Matches the same string as the [named capture group] with the name *name* at the recursion level relative to the referenced [named capture group].
+- <code>\k'<em>name</em>'</code> &mdash; Where *level* is an integer >= 0. Matches the same string as the [named capture group] with the name *name* at the recursion level relative to the referenced [named capture group].
+- <code>\g&lt;<em>n</em>&gt;</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is *n*.
+- <code>\g'<em>n</em>'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is *n*.
 - `\g<0>` &mdash; Evaluates the entire pattern at the current position.
 - `\g'0'` &mdash; Evaluates the entire pattern at the current position.
-- <code>\\g\<<em>-n</em>\></code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the left of the current *Atom*.
-- <code>\\g'<em>-n</em>'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the left of the current *Atom*.
-- <code>\\g\<<em>+n</em>\></code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*.
-- <code>\\g'<em>+n</em>'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*.
-- <code>\\g\<<em>name</em>\></code> &mdash; Evaluates the [named capture group] with the provided *name*.
-- <code>\\g'<em>name</em>'</code> &mdash; Evaluates the [named capture group] with the provided *name*.
+- <code>\g&lt;<em>-n</em>&gt;</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the left of the current *Atom*.
+- <code>\g'<em>-n</em>'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the left of the current *Atom*.
+- <code>\g&lt;<em>+n</em>&gt;</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*.
+- <code>\g'<em>+n</em>'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*.
+- <code>\g&lt;<em>name</em>&gt;</code> &mdash; Evaluates the [named capture group] with the provided *name*.
+- <code>\g'<em>name</em>'</code> &mdash; Evaluates the [named capture group] with the provided *name*.
 
 > NOTE: Left-most recursive calls are forbidden:
 > - `(?<name>a|\g<name>b)` - error
 > - `(?<name>a|b\g<name>c)` - ok
+>
 > Source for this example comes from Oniguruma: [source](https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L464-L467)
 
 ## Feature: Conditional Expressions
@@ -1423,19 +1424,19 @@ A <dfn>Conditional Expression</dfn> checks a condition and evaluates its first a
 
 The following conditions are supported:
 
-- <code>(?(?=<em>test-pattern</em>) … )</code> &mdash; Evaluates to **true** if a [lookahead] for *test-pattern* matches; otherwise, evaluates to **false**.
-- <code>(?(?!<em>test-pattern</em>) … )</code> &mdash; Evaluates to **true** if a negative [lookahead] for *test-pattern* matches; otherwise, evaluates to **false**.
-- <code>(?(<em>n</em>) … )</code> &mdash; Evaluates to **true** if the [capture group] at offset *n* was successfully matched; otherwise, evaluates to **false**.
-- <code>(?(-<em>n</em>) … )</code> &mdash; Evaluates to **true** if the *n*th [capture group] declared to the left of the current *Atom* was successfully matched; otherwise, evaluates to **false**.
-- <code>(?(+<em>n</em>) … )</code> &mdash; Evaluates to **true** if the *n*th [capture group] declared to the right of the current *Atom* was successfully matched; otherwise, evaluates to **false**.
-- <code>(?(<em>n</em>-<em>n</em>) … )</code> &mdash; Evaluates to **true** if the [capture group] at offset *n* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
-- <code>(?(<em>n</em>+<em>n</em>) … )</code> &mdash; Evaluates to **true** if the [capture group] at offset *n* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
-- <code>(?(\<<em>name</em>\>) … )</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched; otherwise, evaluates to **false**.
-- <code>(?('<em>name</em>') … )</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched; otherwise, evaluates to **false**.
-- <code>(?(\<<em>name</em>-<em>name</em>\>) … )</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
-- <code>(?('<em>name</em>-<em>name</em>') … )</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
-- <code>(?(\<<em>name</em>+<em>name</em>\>) … )</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
-- <code>(?('<em>name</em>+<em>name</em>') … )</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
+- <code>(?(?=<em>test-pattern</em>)…)</code> &mdash; Evaluates to **true** if a [lookahead] for *test-pattern* matches; otherwise, evaluates to **false**.
+- <code>(?(?!<em>test-pattern</em>)…)</code> &mdash; Evaluates to **true** if a negative [lookahead] for *test-pattern* matches; otherwise, evaluates to **false**.
+- <code>(?(<em>n</em>)…)</code> &mdash; Evaluates to **true** if the [capture group] at offset *n* was successfully matched; otherwise, evaluates to **false**.
+- <code>(?(-<em>n</em>)…)</code> &mdash; Evaluates to **true** if the *n*th [capture group] declared to the left of the current *Atom* was successfully matched; otherwise, evaluates to **false**.
+- <code>(?(+<em>n</em>)…)</code> &mdash; Evaluates to **true** if the *n*th [capture group] declared to the right of the current *Atom* was successfully matched; otherwise, evaluates to **false**.
+- <code>(?(<em>n</em>-<em>n</em>)…)</code> &mdash; Evaluates to **true** if the [capture group] at offset *n* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
+- <code>(?(<em>n</em>+<em>n</em>)…)</code> &mdash; Evaluates to **true** if the [capture group] at offset *n* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
+- <code>(?(&lt;<em>name</em>&gt;)…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched; otherwise, evaluates to **false**.
+- <code>(?('<em>name</em>')…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched; otherwise, evaluates to **false**.
+- <code>(?(&lt;<em>name</em>-<em>name</em>&gt;)…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
+- <code>(?('<em>name</em>-<em>name</em>')…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
+- <code>(?(&lt;<em>name</em>+<em>name</em>&gt;)…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
+- <code>(?('<em>name</em>+<em>name</em>')…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
 
 ## Feature: Subroutines
 <sup>[Main article][article:Subroutines]</sup>
@@ -1462,16 +1463,16 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/oniguruma/features/subroutines.md "source for: syntax")</sup>
 
 
-- <code>\\g\<<em>n</em>\></code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is *n*.
-- <code>\\g'<em>n</em>'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is *n*.
+- <code>\g&lt;<em>n</em>&gt;</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is *n*.
+- <code>\g'<em>n</em>'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is *n*.
 - `\g<0>` &mdash; Evaluates the entire pattern at the current position.
 - `\g'0'` &mdash; Evaluates the entire pattern at the current position.
-- <code>\\g\<<em>-n</em>\></code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the left of the current *Atom*.
-- <code>\\g'<em>-n</em>'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the left of the current *Atom*.
-- <code>\\g\<<em>+n</em>\></code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*.
-- <code>\\g'<em>+n</em>'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*.
-- <code>\\g\<<em>name</em>\></code> &mdash; Evaluates the [named capture group] with the provided *name*.
-- <code>\\g'<em>name</em>'</code> &mdash; Evaluates the [named capture group] with the provided *name*.
+- <code>\g&lt;<em>-n</em>&gt;</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the left of the current *Atom*.
+- <code>\g'<em>-n</em>'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the left of the current *Atom*.
+- <code>\g&lt;<em>+n</em>&gt;</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*.
+- <code>\g'<em>+n</em>'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*.
+- <code>\g&lt;<em>name</em>&gt;</code> &mdash; Evaluates the [named capture group] with the provided *name*.
+- <code>\g'<em>name</em>'</code> &mdash; Evaluates the [named capture group] with the provided *name*.
 
 ### Example
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/subroutines.md "source for: example")</sup>
@@ -1523,10 +1524,10 @@ A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matc
     - `<` &mdash; Invoked while retracting.
     - `>` &mdash; Invoked while progressing.
 - Callouts of *name*:
- - <code>(\*<em>name</em>)</code> &mdash; Invokes the callout with the provided *name*.
- - <code>(\*<em>name</em>{<em>args</em>…})</code> &mdash; Invokes the callout with the provided *name* and *args*.
- - <code>(\*<em>name</em>[<em>tag</em>])</code> &mdash; Invokes the callout with the provided *name* and *tag*.
- - <code>(\*<em>name</em>[<em>tag</em>]{<em>args</em>…})</code> &mdash; Invokes the callout with the provided *name*, *tag*, and *args*.
+ - <code>(*<em>name</em>)</code> &mdash; Invokes the callout with the provided *name*.
+ - <code>(*<em>name</em>{<em>args</em>…})</code> &mdash; Invokes the callout with the provided *name* and *args*.
+ - <code>(*<em>name</em>[<em>tag</em>])</code> &mdash; Invokes the callout with the provided *name* and *tag*.
+ - <code>(*<em>name</em>[<em>tag</em>]{<em>args</em>…})</code> &mdash; Invokes the callout with the provided *name*, *tag*, and *args*.
 
 
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines
