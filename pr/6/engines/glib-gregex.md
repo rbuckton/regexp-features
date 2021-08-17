@@ -246,8 +246,6 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 
 > ❌ This feature is not supported.
 
-A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the end of a text segment.
-
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: see_also")</sup>
 
@@ -504,8 +502,6 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 
 > ❌ This feature is not supported.
 
-A <dfn>Collating Element</dfn> is one or more characters that collate as a single unit.
-
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/collating-elements.md "source for: see_also")</sup>
 
@@ -537,8 +533,6 @@ A <dfn>Collating Element</dfn> is one or more characters that collate as a singl
 -->
 
 > ❌ This feature is not supported.
-
-An <dfn>Equivalence Class</dfn> matches any character or collating element with the same primary sort key as the provided collating element.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/equivalence-classes.md "source for: see_also")</sup>
@@ -712,8 +706,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 > ❌ This feature is not supported.
 
-A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [character class] inside of a [character class].
-
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md "source for: see_also")</sup>
 
@@ -746,8 +738,6 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 
 > ❌ This feature is not supported.
 
-<dfn>Character Class Intersection</dfn> allows you to indicate that only characters that are in both [character classes] should match.
-
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md "source for: see_also")</sup>
 
@@ -779,8 +769,6 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 -->
 
 > ❌ This feature is not supported.
-
-<dfn>Character Class Subtraction</dfn> allows you to exclude a class of characters from another class of characters in a [character class].
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-subtraction.md "source for: see_also")</sup>
@@ -1012,11 +1000,12 @@ A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom*
 A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and returned by the matching algorithm. A Named Capturing Group is also an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by name.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/named-capturing-groups.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/glib-gregex/features/named-capturing-groups.md "source for: syntax")</sup>
 
 
 - <code>(?&lt;<em>name</em>&gt;…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
 - <code>(?'<em>name</em>'…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
+- <code>(?P&lt;<em>name</em>&gt;…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/named-capturing-groups.md "source for: see_also")</sup>
@@ -1088,11 +1077,21 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 <dfn>Backreferences</dfn> allow a pattern to re-match a previously matched capture group<sup>[1][Capturing Groups] [2][Named Capturing Groups]</sup> either by number (_n_) or by _name_.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/backreferences.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/glib-gregex/features/backreferences.md "source for: syntax")</sup>
 
 
-- <code>&#x5c;<em>n</em></code> &mdash; Where *n* is a decimal digit in the range 1-9. Matches the same string as the [capture group] *n*.
-- <code>\k&lt;<em>name</em>&gt;</code> &mdash; Matches the same string as the [named capture group] with the name *name*.
+- <code>&#x5c;<em>n</em></code> &mdash; Where *n* is an integer >= 1. Matches the same string as the [capture group] *n*.
+  - NOTE: If the *n* is > 9 it may be interpreted as an octal literal if there are less than *n* [capture groups] in the pattern.
+- <code>\g<em>n</em></code> &mdash; Where *n* is an integer >= 1. Matches the same string as the [capture group] *n*.
+- <code>\g-<em>n</em></code> &mdash; Where *n* is an integer >= 1. Matches the *n*th previous [capture group].
+- <code>\g+<em>n</em></code> &mdash; Where *n* is an integer >= 1. Matches the *n*th next [capture group].
+- <code>\g{<em>n</em>}</code> &mdash; Where *n* is an integer >= 1. Matches the same string as the [capture group] *n*.
+- <code>\g{-<em>n</em>}</code> &mdash; Where *n* is an integer >= 1. Matches the *n*th previous [capture group].
+- <code>\g{+<em>n</em>}</code> &mdash; Where *n* is an integer >= 1. Matches the *n*th next [capture group].
+- <code>\g{<em>name</em>}</code> &mdash; Matches the [named capture group] with the name *name*.
+- <code>\k&lt;<em>name</em>&gt;</code> &mdash; Matches the [named capture group] with the name *name*.
+- <code>\k'<em>name</em>'</code> &mdash; Matches the [named capture group] with the name *name*.
+- <code>(?P=<em>name</em>)</code> &mdash; Matches the [named capture group] with the name *name*.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/backreferences.md "source for: see_also")</sup>
@@ -1223,8 +1222,6 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 -->
 
 > ❌ This feature is not supported.
-
-A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [Alternative] (`|`), which affects numbering for [Backreferences] and captured results returned from the matching algorithm.
 
 ## Feature: Lookahead
 <sup>[Main article][article:Lookahead]</sup>
@@ -1425,7 +1422,7 @@ The following conditions are supported:
 A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group] that can be reused in multiple places within the pattern to re-evaluate the subexpression from the group.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/subroutines.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/engines/glib-gregex/features/subroutines.md "source for: syntax")</sup>
 
 
 - `(?(DEFINE)…)` &mdash; Defines a set of reusable [capture groups] that can be referenced elsewhere in the pattern.
@@ -1433,6 +1430,7 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 - <code>(?-<em>n</em>)</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the left of the current *Atom*. Example: `(?-1)` would revaluate the last declared [capture group].
 - <code>(?+<em>n</em>)</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*. Example: `(?+1)` would evaluate the next declared [capture group].
 - <code>(?&<em>name</em>)</code> &mdash; Evaluates the [named capture group] with the provided *name*.
+- <code>(?P&gt;<em>name</em>)</code> &mdash; Evaluates the [named capture group] with the provided *name*.
 
 ### Example
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/groups-and-backtracking/subroutines.md "source for: example")</sup>
@@ -1463,8 +1461,6 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 -->
 
 > ❌ This feature is not supported.
-
-A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matching.
 
 
 

@@ -252,8 +252,6 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 
 > ❌ This feature is not supported.
 
-A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the end of a text segment.
-
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: see_also")</sup>
 
@@ -467,10 +465,6 @@ A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that s
 -->
 
 > ❌ This feature is not supported.
-
-A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] set that specifies a named, pre-defined set of excluded characters.
-
-> NOTE: Some engines support negated posix character classes using <code>\[\[:^<em>name</em>:\]\]</code>, however this does not seem to be supported per the documentation. Instead, you must use a [Negated Character Class] with a [Posix Character Class]: <code>\[^\[:<em>name</em>:\]\]</code>.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/negated-posix-character-classes.md "source for: see_also")</sup>
@@ -740,8 +734,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 > ❌ This feature is not supported.
 
-A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [character class] inside of a [character class].
-
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md "source for: see_also")</sup>
 
@@ -774,8 +766,6 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 
 > ❌ This feature is not supported.
 
-<dfn>Character Class Intersection</dfn> allows you to indicate that only characters that are in both [character classes] should match.
-
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md "source for: see_also")</sup>
 
@@ -807,8 +797,6 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 -->
 
 > ❌ This feature is not supported.
-
-<dfn>Character Class Subtraction</dfn> allows you to exclude a class of characters from another class of characters in a [character class].
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-subtraction.md "source for: see_also")</sup>
@@ -1186,8 +1174,6 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 
 > ❌ This feature is not supported.
 
-A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and ending with `\n` (or the end of the pattern) that is ignored by pattern matching and can be used to document a pattern.
-
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/line-comments.md "source for: see_also")</sup>
 
@@ -1500,8 +1486,6 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 -->
 
 > ❌ This feature is not supported.
-
-A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matching.
 
 
 

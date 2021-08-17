@@ -529,8 +529,6 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 
 > ❌ This feature is not supported.
 
-A <dfn>Collating Element</dfn> is one or more characters that collate as a single unit.
-
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/collating-elements.md "source for: see_also")</sup>
 
@@ -562,8 +560,6 @@ A <dfn>Collating Element</dfn> is one or more characters that collate as a singl
 -->
 
 > ❌ This feature is not supported.
-
-An <dfn>Equivalence Class</dfn> matches any character or collating element with the same primary sort key as the provided collating element.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/equivalence-classes.md "source for: see_also")</sup>
@@ -909,8 +905,6 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 
 > ❌ This feature is not supported.
 
-<dfn>Quoted Characters</dfn> are a sequence of characters treated as literal characters rather than RegExp characters.
-
 ## Feature: Quantifiers
 <sup>[Main article][article:Quantifiers]</sup>
 <sup> \| </sup>
@@ -1244,8 +1238,6 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 
 > ❌ This feature is not supported.
 
-A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and ending with `\n` (or the end of the pattern) that is ignored by pattern matching and can be used to document a pattern.
-
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/comments/line-comments.md "source for: see_also")</sup>
 
@@ -1308,8 +1300,6 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 -->
 
 > ❌ This feature is not supported.
-
-A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [Alternative] (`|`), which affects numbering for [Backreferences] and captured results returned from the matching algorithm.
 
 ## Feature: Lookahead
 <sup>[Main article][article:Lookahead]</sup>

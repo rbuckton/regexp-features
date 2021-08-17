@@ -248,8 +248,6 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 
 > ❌ This feature is not supported.
 
-A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the end of a text segment.
-
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: see_also")</sup>
 
@@ -462,8 +460,6 @@ A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that s
 
 > ❌ This feature is not supported.
 
-A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] set that specifies a named, pre-defined set of excluded characters.
-
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/negated-posix-character-classes.md "source for: see_also")</sup>
 
@@ -496,8 +492,6 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 
 > ❌ This feature is not supported.
 
-A <dfn>Collating Element</dfn> is one or more characters that collate as a single unit.
-
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/collating-elements.md "source for: see_also")</sup>
 
@@ -529,8 +523,6 @@ A <dfn>Collating Element</dfn> is one or more characters that collate as a singl
 -->
 
 > ❌ This feature is not supported.
-
-An <dfn>Equivalence Class</dfn> matches any character or collating element with the same primary sort key as the provided collating element.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/equivalence-classes.md "source for: see_also")</sup>
@@ -1270,8 +1262,6 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 
 > ❌ This feature is not supported.
 
-A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [Alternative] (`|`), which affects numbering for [Backreferences] and captured results returned from the matching algorithm.
-
 ## Feature: Lookahead
 <sup>[Main article][article:Lookahead]</sup>
 <sup> \| </sup>
@@ -1390,8 +1380,6 @@ A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring p
 
 > ❌ This feature is not supported.
 
-A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capture group] inside of itself, to handle cases such as matching balanced parenthesis or brackets, etc.
-
 ## Feature: Conditional Expressions
 <sup>[Main article][article:Conditional Expressions]</sup>
 <sup> \| </sup>
@@ -1408,8 +1396,6 @@ A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capt
 -->
 
 > ❌ This feature is not supported.
-
-A <dfn>Conditional Expression</dfn> checks a condition and evaluates its first alternative if the condition is **true**; otherwise, it evaluates its second alternative.
 
 ## Feature: Subroutines
 <sup>[Main article][article:Subroutines]</sup>
@@ -1428,8 +1414,6 @@ A <dfn>Conditional Expression</dfn> checks a condition and evaluates its first a
 
 > ❌ This feature is not supported.
 
-A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group] that can be reused in multiple places within the pattern to re-evaluate the subexpression from the group.
-
 ## Feature: Callouts
 <sup>[Main article][article:Callouts]</sup>
 <sup> \| </sup>
@@ -1446,8 +1430,6 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 -->
 
 > ❌ This feature is not supported.
-
-A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matching.
 
 
 

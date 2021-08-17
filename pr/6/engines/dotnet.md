@@ -250,8 +250,6 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 
 > ❌ This feature is not supported.
 
-A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the end of a text segment.
-
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: see_also")</sup>
 
@@ -420,8 +418,6 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 
 > ❌ This feature is not supported.
 
-A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that specifies a named, pre-defined set of characters.
-
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/posix-character-classes.md "source for: see_also")</sup>
 
@@ -453,8 +449,6 @@ A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that s
 -->
 
 > ❌ This feature is not supported.
-
-A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] set that specifies a named, pre-defined set of excluded characters.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/negated-posix-character-classes.md "source for: see_also")</sup>
@@ -488,8 +482,6 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 
 > ❌ This feature is not supported.
 
-A <dfn>Collating Element</dfn> is one or more characters that collate as a single unit.
-
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/collating-elements.md "source for: see_also")</sup>
 
@@ -521,8 +513,6 @@ A <dfn>Collating Element</dfn> is one or more characters that collate as a singl
 -->
 
 > ❌ This feature is not supported.
-
-An <dfn>Equivalence Class</dfn> matches any character or collating element with the same primary sort key as the provided collating element.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/equivalence-classes.md "source for: see_also")</sup>
@@ -605,8 +595,6 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
 
 > ❌ This feature is not supported.
 
-A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending character sequence.
-
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/line-endings-escape.md "source for: see_also")</sup>
 
@@ -684,8 +672,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 > ❌ This feature is not supported.
 
-A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [character class] inside of a [character class].
-
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md "source for: see_also")</sup>
 
@@ -717,8 +703,6 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 -->
 
 > ❌ This feature is not supported.
-
-<dfn>Character Class Intersection</dfn> allows you to indicate that only characters that are in both [character classes] should match.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md "source for: see_also")</sup>
@@ -789,8 +773,6 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 -->
 
 > ❌ This feature is not supported.
-
-<dfn>Quoted Characters</dfn> are a sequence of characters treated as literal characters rather than RegExp characters.
 
 ## Feature: Quantifiers
 <sup>[Main article][article:Quantifiers]</sup>
@@ -890,8 +872,6 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 -->
 
 > ❌ This feature is not supported.
-
-<dfn>Possessive Quantifiers</dfn> are like greedy (i.e., regular) [quantifiers], except that backtracking is not performed.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quantifiers/possessive-quantifiers.md "source for: see_also")</sup>
@@ -1175,8 +1155,6 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 
 > ❌ This feature is not supported.
 
-A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [Alternative] (`|`), which affects numbering for [Backreferences] and captured results returned from the matching algorithm.
-
 ## Feature: Lookahead
 <sup>[Main article][article:Lookahead]</sup>
 <sup> \| </sup>
@@ -1404,8 +1382,6 @@ The following conditions are supported:
 
 > ❌ This feature is not supported.
 
-A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group] that can be reused in multiple places within the pattern to re-evaluate the subexpression from the group.
-
 ## Feature: Callouts
 <sup>[Main article][article:Callouts]</sup>
 <sup> \| </sup>
@@ -1422,8 +1398,6 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 -->
 
 > ❌ This feature is not supported.
-
-A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matching.
 
 
 

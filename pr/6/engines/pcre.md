@@ -251,8 +251,6 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 
 > ❌ This feature is not supported.
 
-A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the end of a text segment.
-
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: see_also")</sup>
 
@@ -509,8 +507,6 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 
 > ❌ This feature is not supported.
 
-A <dfn>Collating Element</dfn> is one or more characters that collate as a single unit.
-
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/collating-elements.md "source for: see_also")</sup>
 
@@ -542,8 +538,6 @@ A <dfn>Collating Element</dfn> is one or more characters that collate as a singl
 -->
 
 > ❌ This feature is not supported.
-
-An <dfn>Equivalence Class</dfn> matches any character or collating element with the same primary sort key as the provided collating element.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/equivalence-classes.md "source for: see_also")</sup>
@@ -722,8 +716,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 > ❌ This feature is not supported.
 
-A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [character class] inside of a [character class].
-
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-nested-set.md "source for: see_also")</sup>
 
@@ -756,8 +748,6 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 
 > ❌ This feature is not supported.
 
-<dfn>Character Class Intersection</dfn> allows you to indicate that only characters that are in both [character classes] should match.
-
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md "source for: see_also")</sup>
 
@@ -789,8 +779,6 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 -->
 
 > ❌ This feature is not supported.
-
-<dfn>Character Class Subtraction</dfn> allows you to exclude a class of characters from another class of characters in a [character class].
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-subtraction.md "source for: see_also")</sup>
