@@ -3,7 +3,7 @@ import handlebars from "handlebars";
 import * as path from "path";
 import * as util from "util";
 import { engineFeatureTemplateFileUrl, engineIndexTemplateFileUrl, engineTemplateFileUrl, featureIndexTemplateFileUrl, featureTemplateFileUrl, indexTemplateFileUrl, languageIndexTemplateFileUrl, languageTemplateFileUrl, partialsDirUrl } from "./paths.js";
-import { trimLeadingLines, trimLines, trimTrailingLines } from "./utils.js";
+import { ensureTrailingSlash, normalizePathSeparators, trimLeadingLines, trimLines, trimTrailingLines } from "./utils.js";
 
 /** @type {import("handlebars").RuntimeOptions} */
 export const handlebarsOptions = {
@@ -251,20 +251,13 @@ export const handlebarsOptions = {
 };
 
 /**
- * @param {string} file
- */
-function normalizePathSeparators(file) {
-    return file.replace(/\\/g, "/");
-}
-
-/**
  * @param {string[]} args
  */
 function resolve(...args) {
     args = args.map(normalizePathSeparators);
     const isDir = args[args.length - 1].endsWith("/");
     const resolved = normalizePathSeparators(path.resolve(...args));
-    return isDir && !resolved.endsWith("/") ? resolved + "/" : resolved;
+    return isDir ? ensureTrailingSlash(resolved) : resolved;
 }
 
 /**
@@ -277,11 +270,10 @@ function relative(from, to) {
     if (!path.isAbsolute(from)) throw new TypeError("Argument must be absolute: from");
     if (!path.isAbsolute(to)) throw new TypeError("Argument must be absolute: to");
     if (!from.endsWith("/")) {
-        from = normalizePathSeparators(path.dirname(from));
-        if (!from.endsWith("/")) from += "/";
+        from = ensureTrailingSlash(path.dirname(from));
     }
     const result = normalizePathSeparators(path.relative(from, to)) || ".";
-    return to.endsWith("/") && !result.endsWith("/") ? result + "/" : result;
+    return to.endsWith("/") ? ensureTrailingSlash(result) : result;
 }
 
 /**

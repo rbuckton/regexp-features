@@ -1,4 +1,5 @@
 import chalk from "chalk";
+import { execSync } from "child_process";
 import { watch } from "chokidar";
 import * as path from "path";
 import { clearScreenDown, cursorTo } from "readline";
@@ -78,8 +79,9 @@ async function doBuild(srcDir, outDir) {
         }
 
         if (errorCount === 0) {
-            docs.build(srcDir, outDir);
-            await docs.emit(srcDir, outDir);
+            const branch = getBranch(srcDir);
+            docs.build(srcDir, outDir, branch);
+            await docs.emit(srcDir, outDir, branch);
         }
 
         if (errorCount !== 0) {
@@ -112,6 +114,7 @@ async function doBuild(srcDir, outDir) {
 /**
  * @param {string} srcDir
  * @param {string} outDir
+ * @param {string} outDir
  */
 async function watchModeBuilder(srcDir, outDir) {
     process.stdout.write(chalk`{gray build} {magenta watch} Performing initial build...\n`);
@@ -132,6 +135,20 @@ async function watchModeBuilder(srcDir, outDir) {
  */
 async function normalBuilder(srcDir, outDir) {
     await doBuild(srcDir, outDir);
+}
+
+/**
+ * @param {string} srcDir
+ */
+function getBranch(srcDir) {
+    if (argv.branch) return argv.branch;
+    try {
+        const branch = execSync("git rev-parse --abbrev-ref HEAD", { cwd: srcDir }).toString().trim() || "main";
+        return branch === "HEAD" ? "main" : branch;
+    }
+    catch {
+        return "main";
+    }
 }
 
 async function main() {
