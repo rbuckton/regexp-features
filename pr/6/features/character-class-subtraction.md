@@ -3,7 +3,7 @@
 <sup> \| </sup>
 <sup>[Features](index.md)</sup>
 <sup> \| </sup>
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-subtraction.md "source for: name, description")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/HEAD/src/features/character-classes/character-class-subtraction.md "source for: name, description")</sup>
 
 <dfn>Character Class Subtraction</dfn> allows you to exclude a class of characters from another class of characters in a [character class].
 
@@ -21,7 +21,7 @@
 | [Glib/GRegex](../engines/glib-gregex.md) | [❌](../engines/glib-gregex.md#feature-character-class-subtraction) |
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-subtraction.md "source for: see_also")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/HEAD/src/features/character-classes/character-class-subtraction.md "source for: see_also")</sup>
 
 
 - [Character Classes]
