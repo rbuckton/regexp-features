@@ -1,3 +1,5 @@
+import { ensureTrailingSlash } from "./utils.js";
+
 const MATRIX_COLUMN_COUNT = 7;
 
 export class DocumentationBuilder {
@@ -25,6 +27,7 @@ export class DocumentationBuilder {
     #data = {
         srcDir: "",
         outDir: "",
+        branch: "",
         languages: this.#languages,
         features: this.#features,
         engines: this.#engines,
@@ -34,12 +37,14 @@ export class DocumentationBuilder {
     /**
      * @param {string} srcDir
      * @param {string} outDir
+     * @param {string} branch
      */
-    constructor(srcDir, outDir) {
-        this.srcDir = outDir;
-        this.outDir = outDir;
-        this.#data.srcDir = srcDir;
-        this.#data.outDir = outDir;
+    constructor(srcDir, outDir, branch) {
+        this.srcDir = ensureTrailingSlash(srcDir);
+        this.outDir = ensureTrailingSlash(outDir);
+        this.#data.srcDir = this.srcDir;
+        this.#data.outDir = this.outDir;
+        this.#data.branch = branch;
     }
 
     /**

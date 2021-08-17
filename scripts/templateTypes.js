@@ -4,6 +4,7 @@ export {};
  * @typedef DocumentationTemplateData
  * @property {string} srcDir
  * @property {string} outDir
+ * @property {string} branch
  * @property {readonly LanguageTemplateData[]} languages
  * @property {readonly FeatureTemplateData[]} features
  * @property {readonly EngineTemplateData[]} engines

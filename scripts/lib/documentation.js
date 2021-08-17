@@ -420,10 +420,11 @@ export class Documentation {
     /**
      * @param {string} srcDir
      * @param {string} outDir
+     * @param {string} branch
      */
-    build(srcDir, outDir) {
+    build(srcDir, outDir, branch) {
         this.#outputs.clear();
-        const builder = new DocumentationBuilder(srcDir, outDir);
+        const builder = new DocumentationBuilder(srcDir, outDir, branch);
         const docs = this.buildGraph(builder);
         for (const language of this.languages.values()) {
             language.build(this.#outputs, builder.getOrAddLanguage(language.id));
@@ -444,10 +445,11 @@ export class Documentation {
     /**
      * @param {string} srcDir
      * @param {string} outDir
+     * @param {string} branch
      */
-    async emit(srcDir, outDir) {
+    async emit(srcDir, outDir, branch) {
         if (this.#outputs.size === 0) {
-            this.build(srcDir, outDir);
+            this.build(srcDir, outDir, branch);
         }
 
         try {

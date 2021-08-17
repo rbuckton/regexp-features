@@ -62,6 +62,25 @@ export function trimLines(text) {
 }
 
 /**
+ * @param {string} file
+ */
+export function normalizePathSeparators(file) {
+    return file.replace(/\\/g, "/");
+}
+
+/**
+ * @param {string} file
+ */
+export function ensureTrailingSlash(file) {
+    file = normalizePathSeparators(file);
+    if (!file.endsWith("/")) {
+        return file + "/";
+    }
+    return file;
+}
+
+
+/**
  * @template T
  * @param {T} value
  * @param {string | readonly string[] | undefined} [source]
