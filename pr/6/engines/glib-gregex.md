@@ -1591,45 +1591,45 @@ A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matc
 [article:Callouts]: ../features/callouts.md
 [article:Flags]: ../features/flags.md
 
-[Reference]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html
+[Reference]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html
 
-[reference:Flags]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.11
-[reference:Anchors]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.5
-[reference:Buffer Boundaries]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.4.12
-[reference:Word Boundaries]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.4.12
+[reference:Flags]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.11
+[reference:Anchors]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.5
+[reference:Buffer Boundaries]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.4.12
+[reference:Word Boundaries]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.4.12
 [reference:Text Segment Boundaries]: #not-supported-features
-[reference:Continuation Escape]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.4.12
-[reference:Alternatives]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.10
-[reference:Wildcard]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.6
-[reference:Character Classes]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.8
-[reference:Posix Character Classes]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.9
-[reference:Negated Posix Character Classes]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.9
+[reference:Continuation Escape]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.4.12
+[reference:Alternatives]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.10
+[reference:Wildcard]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.6
+[reference:Character Classes]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.8
+[reference:Posix Character Classes]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.9
+[reference:Negated Posix Character Classes]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.9
 [reference:Collating Elements]: #not-supported-features
 [reference:Equivalence Classes]: #not-supported-features
-[reference:Character Class Escapes]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.4.9
-[reference:Line Endings Escape]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.4.10
-[reference:Character Property Escapes]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.4.11
+[reference:Character Class Escapes]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.4.9
+[reference:Line Endings Escape]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.4.10
+[reference:Character Property Escapes]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.4.11
 [reference:Character Class Nested Set]: #not-supported-features
 [reference:Character Class Intersection]: #not-supported-features
 [reference:Character Class Subtraction]: #not-supported-features
-[reference:Quoted Characters]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.4
-[reference:Quantifiers]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.14
-[reference:Lazy Quantifiers]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.14
-[reference:Possessive Quantifiers]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.15
-[reference:Capturing Groups]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.12
-[reference:Named Capturing Groups]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.13
-[reference:Non-Capturing Groups]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.12
-[reference:Backreferences]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.16
-[reference:Comments]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.19
-[reference:Line Comments]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.19
-[reference:Modifiers]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.11
+[reference:Quoted Characters]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.4
+[reference:Quantifiers]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.14
+[reference:Lazy Quantifiers]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.14
+[reference:Possessive Quantifiers]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.15
+[reference:Capturing Groups]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.12
+[reference:Named Capturing Groups]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.13
+[reference:Non-Capturing Groups]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.12
+[reference:Backreferences]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.16
+[reference:Comments]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.19
+[reference:Line Comments]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.19
+[reference:Modifiers]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.11
 [reference:Branch Reset]: #not-supported-features
-[reference:Lookahead]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.17.5
-[reference:Lookbehind]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.17.6
-[reference:Non-Backtracking Expressions]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.15
-[reference:Recursion]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.20
-[reference:Conditional Expressions]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.18
-[reference:Subroutines]: https://developer.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.18.9
+[reference:Lookahead]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.17.5
+[reference:Lookbehind]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.17.6
+[reference:Non-Backtracking Expressions]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.15
+[reference:Recursion]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.20
+[reference:Conditional Expressions]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.18
+[reference:Subroutines]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.18.9
 [reference:Callouts]: #not-supported-features
 
 [C++]: ../languages/cpp.md
