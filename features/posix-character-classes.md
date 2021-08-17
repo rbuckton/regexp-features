@@ -3,12 +3,12 @@
 <sup> \| </sup>
 <sup>[Features](index.md)</sup>
 <sup> \| </sup>
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/posix-character-classes.md "source for: name, description")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/posix-character-classes.md "source for: name, description")</sup>
 
 A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that specifies a named, pre-defined set of characters.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/posix-character-classes.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/posix-character-classes.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -26,9 +26,10 @@ A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that s
 | [Hyperscan](../engines/hyperscan.md) | [✔](../engines/hyperscan.md#feature-posix-character-classes) |
 | [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-posix-character-classes) |
 | [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-posix-character-classes) |
+| [Glib/GRegex](../engines/glib-gregex.md) | [✔](../engines/glib-gregex.md#feature-posix-character-classes) |
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/posix-character-classes.md "source for: see_also")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/posix-character-classes.md "source for: see_also")</sup>
 
 
 - [Character Classes]

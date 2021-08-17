@@ -3,12 +3,12 @@
 <sup> \| </sup>
 <sup>[Features](index.md)</sup>
 <sup> \| </sup>
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/branch-reset.md "source for: name, description")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/branch-reset.md "source for: name, description")</sup>
 
 A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [Alternative] (`|`), which affects numbering for [Backreferences] and captured results returned from the matching algorithm.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/branch-reset.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/branch-reset.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -26,6 +26,7 @@ A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [A
 | [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-branch-reset) |
 | [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-branch-reset) |
 | [ICU](../engines/icu.md) | [❌](../engines/icu.md#feature-branch-reset) |
+| [Glib/GRegex](../engines/glib-gregex.md) | [❌](../engines/glib-gregex.md#feature-branch-reset) |
 
 
 

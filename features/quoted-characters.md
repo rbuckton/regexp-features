@@ -3,12 +3,12 @@
 <sup> \| </sup>
 <sup>[Features](index.md)</sup>
 <sup> \| </sup>
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quoted-characters.md "source for: name, description")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quoted-characters.md "source for: name, description")</sup>
 
 <dfn>Quoted Characters</dfn> are a sequence of characters treated as literal characters rather than RegExp characters.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/quoted-characters.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quoted-characters.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -27,6 +27,7 @@
 | [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-quoted-characters) |
 | [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-quoted-characters) |
 | [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-quoted-characters) |
+| [Glib/GRegex](../engines/glib-gregex.md) | [✔](../engines/glib-gregex.md#feature-quoted-characters) |
 
 
 

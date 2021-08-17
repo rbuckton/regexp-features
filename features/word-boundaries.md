@@ -3,12 +3,12 @@
 <sup> \| </sup>
 <sup>[Features](index.md)</sup>
 <sup> \| </sup>
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/word-boundaries.md "source for: name, description")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.md "source for: name, description")</sup>
 
 A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a word.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/word-boundaries.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -27,9 +27,10 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 | [Hyperscan](../engines/hyperscan.md) | [✔](../engines/hyperscan.md#feature-word-boundaries) |
 | [ECMAScript](../engines/ecmascript.md) | [✔](../engines/ecmascript.md#feature-word-boundaries) |
 | [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-word-boundaries) |
+| [Glib/GRegex](../engines/glib-gregex.md) | [✔](../engines/glib-gregex.md#feature-word-boundaries) |
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/word-boundaries.md "source for: see_also")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.md "source for: see_also")</sup>
 
 
 - [Anchors]

@@ -3,12 +3,12 @@
 <sup> \| </sup>
 <sup>[Features](index.md)</sup>
 <sup> \| </sup>
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/anchors.md "source for: name, description")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/anchors.md "source for: name, description")</sup>
 
 <dfn>Anchors</dfn> match the start or end of a line.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/anchors.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/anchors.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -27,9 +27,10 @@
 | [Hyperscan](../engines/hyperscan.md) | [✔](../engines/hyperscan.md#feature-anchors) |
 | [ECMAScript](../engines/ecmascript.md) | [✔](../engines/ecmascript.md#feature-anchors) |
 | [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-anchors) |
+| [Glib/GRegex](../engines/glib-gregex.md) | [✔](../engines/glib-gregex.md#feature-anchors) |
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/anchors-and-boundaries/anchors.md "source for: see_also")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/anchors.md "source for: see_also")</sup>
 
 
 - [Buffer Boundaries]

@@ -9,6 +9,7 @@
 - [Hyperscan](hyperscan.md)
 - [ECMAScript](ecmascript.md)
 - [ICU](icu.md)
+- [Glib/GRegex](glib-gregex.md)
 - [PCRE](pcre.md)
 
 

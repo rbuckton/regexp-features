@@ -3,12 +3,12 @@
 <sup> \| </sup>
 <sup>[Features](index.md)</sup>
 <sup> \| </sup>
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/alternatives.md "source for: name, description")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/alternatives.md "source for: name, description")</sup>
 
 An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first branch of a pattern fails to match, each alternative is attempted from left to right until a match is found.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/alternatives.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/alternatives.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -26,6 +26,7 @@ An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first
 | [Hyperscan](../engines/hyperscan.md) | [✔](../engines/hyperscan.md#feature-alternatives) |
 | [ECMAScript](../engines/ecmascript.md) | [✔](../engines/ecmascript.md#feature-alternatives) |
 | [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-alternatives) |
+| [Glib/GRegex](../engines/glib-gregex.md) | [✔](../engines/glib-gregex.md#feature-alternatives) |
 
 
 

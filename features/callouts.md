@@ -3,7 +3,7 @@
 <sup> \| </sup>
 <sup>[Features](index.md)</sup>
 <sup> \| </sup>
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/callouts.md "source for: name, description")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/callouts.md "source for: name, description")</sup>
 
 A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matching.
 
@@ -18,6 +18,7 @@ A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matc
 | [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-callouts) |
 | [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-callouts) |
 | [ICU](../engines/icu.md) | [❌](../engines/icu.md#feature-callouts) |
+| [Glib/GRegex](../engines/glib-gregex.md) | [❌](../engines/glib-gregex.md#feature-callouts) |
 
 
 

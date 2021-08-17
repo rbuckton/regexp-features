@@ -3,12 +3,12 @@
 <sup> \| </sup>
 <sup>[Features](index.md)</sup>
 <sup> \| </sup>
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/conditional-expressions.md "source for: name, description")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/conditional-expressions.md "source for: name, description")</sup>
 
 A <dfn>Conditional Expression</dfn> checks a condition and evaluates its first alternative if the condition is **true**; otherwise, it evaluates its second alternative.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/alternatives/conditional-expressions.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/conditional-expressions.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -41,6 +41,7 @@ The following conditions are supported:
 | [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-conditional-expressions) |
 | [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-conditional-expressions) |
 | [ICU](../engines/icu.md) | [❌](../engines/icu.md#feature-conditional-expressions) |
+| [Glib/GRegex](../engines/glib-gregex.md) | [✔](../engines/glib-gregex.md#feature-conditional-expressions) |
 
 
 

@@ -3,12 +3,12 @@
 <sup> \| </sup>
 <sup>[Features](index.md)</sup>
 <sup> \| </sup>
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md "source for: name, description")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-intersection.md "source for: name, description")</sup>
 
 <dfn>Character Class Intersection</dfn> allows you to indicate that only characters that are in both [character classes] should match.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-intersection.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -26,9 +26,10 @@
 | [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-character-class-intersection) |
 | [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-character-class-intersection) |
 | [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-character-class-intersection) |
+| [Glib/GRegex](../engines/glib-gregex.md) | [❌](../engines/glib-gregex.md#feature-character-class-intersection) |
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/character-class-intersection.md "source for: see_also")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-intersection.md "source for: see_also")</sup>
 
 
 - [Character Classes]

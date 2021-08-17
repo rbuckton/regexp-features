@@ -3,7 +3,7 @@
 <sup> \| </sup>
 <sup>[Languages](index.md)</sup>
 <sup> \| </sup>
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/languages/d.md "source for: name")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/languages/d.md "source for: name")</sup>
 
 
 <!--

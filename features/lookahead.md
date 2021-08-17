@@ -3,12 +3,12 @@
 <sup> \| </sup>
 <sup>[Features](index.md)</sup>
 <sup> \| </sup>
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookahead.md "source for: name, description")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.md "source for: name, description")</sup>
 
 A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pattern would match the characters to the right of the current position.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookahead.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -27,9 +27,10 @@ A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pa
 | [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-lookahead) |
 | [ECMAScript](../engines/ecmascript.md) | [✔](../engines/ecmascript.md#feature-lookahead) |
 | [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-lookahead) |
+| [Glib/GRegex](../engines/glib-gregex.md) | [✔](../engines/glib-gregex.md#feature-lookahead) |
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/lookaround/lookahead.md "source for: see_also")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.md "source for: see_also")</sup>
 
 
 - [Lookbehind]

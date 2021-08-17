@@ -3,7 +3,7 @@
 <sup> \| </sup>
 <sup>[Languages](index.md)</sup>
 <sup> \| </sup>
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/languages/cpp.md "source for: name")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/languages/cpp.md "source for: name")</sup>
 
 
 <!--
@@ -19,6 +19,7 @@
 - [Oniguruma](../engines/oniguruma.md)
 - [Hyperscan](../engines/hyperscan.md)
 - [ICU](../engines/icu.md)
+- [Glib/GRegex](../engines/glib-gregex.md)
 
 
 

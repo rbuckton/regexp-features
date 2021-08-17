@@ -1,30 +1,30 @@
-# Engine: ECMAScript <a id="top"></a>
+# Engine: Glib/GRegex <a id="top"></a>
 <sup>[Home](../index.md)</sup>
 <sup> \| </sup>
 <sup>[Engines](index.md)</sup>
 <sup> \| </sup>
 <sup>[Reference]</sup>
 <sup> \| </sup>
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/engine.md "source for: name, reference")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/engine.md "source for: name, reference")</sup>
 
 
 <!--
 'name' sources:
-  - [](../../src/engines/ecmascript/engine.md)
+  - [](../../src/engines/glib-gregex/engine.md)
 -->
 
 
 <!--
 'reference' sources:
-  - [](../../src/engines/ecmascript/engine.md)
+  - [](../../src/engines/glib-gregex/engine.md)
 -->
 
 
 
 ## Languages
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/engine.md "source for: languages")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/engine.md "source for: languages")</sup>
 
-- [ECMAScript]
+- [C++]
 
 ## Features
 
@@ -32,44 +32,44 @@
 
 - ✔ [Flags]
 - ✔ [Anchors]
+- ✔ [Buffer Boundaries]
 - ✔ [Word Boundaries]
+- ✔ [Continuation Escape]
 - ✔ [Alternatives]
 - ✔ [Wildcard]
 - ✔ [Character Classes]
+- ✔ [Posix Character Classes]
+- ✔ [Negated Posix Character Classes]
 - ✔ [Character Class Escapes]
+- ✔ [Line Endings Escape]
 - ✔ [Character Property Escapes]
+- ✔ [Quoted Characters]
 - ✔ [Quantifiers]
 - ✔ [Lazy Quantifiers]
+- ✔ [Possessive Quantifiers]
 - ✔ [Capturing Groups]
 - ✔ [Named Capturing Groups]
 - ✔ [Non-Capturing Groups]
 - ✔ [Backreferences]
+- ✔ [Comments]
+- ✔ [Line Comments]
+- ✔ [Modifiers]
 - ✔ [Lookahead]
 - ✔ [Lookbehind]
+- ✔ [Non-Backtracking Expressions]
+- ✔ [Recursion]
+- ✔ [Conditional Expressions]
+- ✔ [Subroutines]
 
 <a id="not-supported-features"></a>The following features are *not* supported:
 
-- ❌ [Buffer Boundaries]
 - ❌ [Text Segment Boundaries]
-- ❌ [Continuation Escape]
-- ❌ [Posix Character Classes]
-- ❌ [Negated Posix Character Classes]
 - ❌ [Collating Elements]
 - ❌ [Equivalence Classes]
-- ❌ [Line Endings Escape]
 - ❌ [Character Class Nested Set]
 - ❌ [Character Class Intersection]
 - ❌ [Character Class Subtraction]
-- ❌ [Quoted Characters]
-- ❌ [Possessive Quantifiers]
-- ❌ [Comments]
-- ❌ [Line Comments]
-- ❌ [Modifiers]
 - ❌ [Branch Reset]
-- ❌ [Non-Backtracking Expressions]
-- ❌ [Recursion]
-- ❌ [Conditional Expressions]
-- ❌ [Subroutines]
 - ❌ [Callouts]
 
 ## Feature: Flags
@@ -79,7 +79,7 @@
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/flags.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/flags.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/flags.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/flags.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -90,24 +90,20 @@
 
 <!--
 'reference' sources:
-  - [](../../src/engines/ecmascript/features/flags.md)
+  - [](../../src/engines/glib-gregex/features/flags.md)
 -->
 
 <dfn>Flags</dfn> control certain aspects of the matching behavior of a pattern.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/flags.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/flags.md "source for: syntax")</sup>
 
 
 The following flags are supported:
 - `i` &mdash; Ignore Case. Matches [character classes] using a case-insensitive comparison.
 - `m` &mdash; Multiline. Causes the [anchors] `^` and `$` to match the start and end of each line (respectively), rather than the start and end of the input.
 - `s` &mdash; Singleline. Causes the [wildcard] `.` to match newline characters.
-- `u` &mdash; Unicode. Enforces stricter parsing of `RegExp` patterns, improved handling of escaped Unicode surrogate pairs, and allows the use of <code>\u{<em>CodePoint</em>}</code>.
-- `g` &mdash; Global. Indicates the match must start at or after the index specified by the `lastIndex` property of the `RegExp`. When matching completes successfully, `lastIndex` will be updated with the ending index of the last match.
-- `y` &mdash; Sticky. Indicates the match must start at the index specified by the `lastIndex` property of the `RegExp`. When matching completes successfully, `lastIndex` will be updated with the ending index of the last match.
-- `d` &mdash; Indices. Indicates the match result object will include an `indices` property with the start and end indices of each captured subexpression.
-  > NOTE: This feature is at Stage 4 of the ECMA-262 specification process. See the [RegExp Match Indices proposal](https://github.com/tc39/proposal-regexp-match-indices) for more information.
+- `x` &mdash; Extended Mode. Ignores whitespace in a pattern. Spaces must instead be represented by `\s` or `\ ` (an escaped space).
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/flags.md "source for: see_also")</sup>
@@ -122,7 +118,7 @@ The following flags are supported:
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/anchors.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/anchors.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/anchors.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/anchors.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -133,7 +129,7 @@ The following flags are supported:
 
 <!--
 'reference' sources:
-  - [](../../src/engines/ecmascript/features/anchors.md)
+  - [](../../src/engines/glib-gregex/features/anchors.md)
 -->
 
 <dfn>Anchors</dfn> match the start or end of a line.
@@ -161,7 +157,7 @@ The following flags are supported:
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/buffer-boundaries.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/buffer-boundaries.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -169,7 +165,21 @@ The following flags are supported:
   - [](../../src/features/anchors-and-boundaries/buffer-boundaries.md)
 -->
 
-> ❌ This feature is not supported.
+
+<!--
+'reference' sources:
+  - [](../../src/engines/glib-gregex/features/buffer-boundaries.md)
+-->
+
+A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of the input. This differs slightly from `^` and `$` which can be affected by [RegExp flags] like `m`.
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.md "source for: syntax")</sup>
+
+
+- `\A` &mdash; Matches the start of the input.
+- `\z` &mdash; Matches the end of the input.
+- `\Z` &mdash; A zero-width assertion consisting of an optional newline at the end of the buffer. Equivalent to `(?=\n?\z)`.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.md "source for: see_also")</sup>
@@ -187,7 +197,7 @@ The following flags are supported:
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/word-boundaries.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/word-boundaries.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -198,7 +208,7 @@ The following flags are supported:
 
 <!--
 'reference' sources:
-  - [](../../src/engines/ecmascript/features/word-boundaries.md)
+  - [](../../src/engines/glib-gregex/features/word-boundaries.md)
 -->
 
 A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a word.
@@ -226,7 +236,7 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/text-segment-boundaries.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/text-segment-boundaries.md "source for: supported")</sup>
 
 
 <!--
@@ -252,7 +262,7 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/continuation-escape.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/continuation-escape.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -260,7 +270,19 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
   - [](../../src/features/anchors-and-boundaries/continuation-escape.md)
 -->
 
-> ❌ This feature is not supported.
+
+<!--
+'reference' sources:
+  - [](../../src/engines/glib-gregex/features/continuation-escape.md)
+-->
+
+A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either the start of the input or the start of the last match.
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.md "source for: syntax")</sup>
+
+
+- `\G` &mdash; Matches either the start of the input or the start of the last match.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.md "source for: see_also")</sup>
@@ -278,7 +300,7 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/alternatives.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/alternatives.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/alternatives.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/alternatives.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -289,7 +311,7 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 
 <!--
 'reference' sources:
-  - [](../../src/engines/ecmascript/features/alternatives.md)
+  - [](../../src/engines/glib-gregex/features/alternatives.md)
 -->
 
 An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first branch of a pattern fails to match, each alternative is attempted from left to right until a match is found.
@@ -307,7 +329,7 @@ An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/wildcard.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/wildcard.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/wildcard.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/wildcard.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -318,7 +340,7 @@ An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first
 
 <!--
 'reference' sources:
-  - [](../../src/engines/ecmascript/features/wildcard.md)
+  - [](../../src/engines/glib-gregex/features/wildcard.md)
 -->
 
 A <dfn>Wildcard</dfn> matches a single, non-newline character.
@@ -336,7 +358,7 @@ A <dfn>Wildcard</dfn> matches a single, non-newline character.
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/character-classes.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/character-classes.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -347,7 +369,7 @@ A <dfn>Wildcard</dfn> matches a single, non-newline character.
 
 <!--
 'reference' sources:
-  - [](../../src/engines/ecmascript/features/character-classes.md)
+  - [](../../src/engines/glib-gregex/features/character-classes.md)
 -->
 
 A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to match a single character in the set.
@@ -382,7 +404,7 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/posix-character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/posix-character-classes.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/posix-character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/posix-character-classes.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -390,7 +412,19 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
   - [](../../src/features/character-classes/posix-character-classes.md)
 -->
 
-> ❌ This feature is not supported.
+
+<!--
+'reference' sources:
+  - [](../../src/engines/glib-gregex/features/posix-character-classes.md)
+-->
+
+A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that specifies a named, pre-defined set of characters.
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/posix-character-classes.md "source for: syntax")</sup>
+
+
+- <code>[[:<em>name</em>:]]</code> &mdash; Where *name* is in a set of predefined names. Matches any character in the set.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/posix-character-classes.md "source for: see_also")</sup>
@@ -414,7 +448,7 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/negated-posix-character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/negated-posix-character-classes.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/negated-posix-character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/negated-posix-character-classes.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -422,7 +456,19 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
   - [](../../src/features/character-classes/negated-posix-character-classes.md)
 -->
 
-> ❌ This feature is not supported.
+
+<!--
+'reference' sources:
+  - [](../../src/engines/glib-gregex/features/negated-posix-character-classes.md)
+-->
+
+A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] set that specifies a named, pre-defined set of excluded characters.
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/negated-posix-character-classes.md "source for: syntax")</sup>
+
+
+- <code>[[:^<em>name</em>:]]</code> &mdash; Where *name* is in a set of predefined names. Matches any character not in the set.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/negated-posix-character-classes.md "source for: see_also")</sup>
@@ -446,7 +492,7 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/collating-elements.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/collating-elements.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/collating-elements.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/collating-elements.md "source for: supported")</sup>
 
 
 <!--
@@ -478,7 +524,7 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/equivalence-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/equivalence-classes.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/equivalence-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/equivalence-classes.md "source for: supported")</sup>
 
 
 <!--
@@ -510,7 +556,7 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-escapes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/character-class-escapes.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-escapes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/character-class-escapes.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -521,7 +567,7 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 
 <!--
 'reference' sources:
-  - [](../../src/engines/ecmascript/features/character-class-escapes.md)
+  - [](../../src/engines/glib-gregex/features/character-class-escapes.md)
 -->
 
 A <dfn>Character Class Escape</dfn> is a single character escape that represents an entire character class. They can be used as an element of a [Character Class] or as an *Atom*. It is often the case that a lower-case escape character is the inclusive set, while an upper-case variant of the same character excludes that set.
@@ -559,7 +605,7 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/line-endings-escape.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/line-endings-escape.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/line-endings-escape.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/line-endings-escape.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -567,7 +613,19 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
   - [](../../src/features/character-classes/line-endings-escape.md)
 -->
 
-> ❌ This feature is not supported.
+
+<!--
+'reference' sources:
+  - [](../../src/engines/glib-gregex/features/line-endings-escape.md)
+-->
+
+A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending character sequence.
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/line-endings-escape.md "source for: syntax")</sup>
+
+
+- `\R` &mdash; Equivalent to `(?>\r\n?|[\x0A-\x0C\x85\u{2028}\u{2029}])`
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/line-endings-escape.md "source for: see_also")</sup>
@@ -591,7 +649,7 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-property-escapes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/character-property-escapes.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-property-escapes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/character-property-escapes.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -602,7 +660,7 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
 
 <!--
 'reference' sources:
-  - [](../../src/engines/ecmascript/features/character-property-escapes.md)
+  - [](../../src/engines/glib-gregex/features/character-property-escapes.md)
 -->
 
 A <dfn>Character Property Escape</dfn> is an escape sequence used to match a character with a specific character property.
@@ -638,18 +696,12 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-nested-set.md "source for: name"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/character-class-nested-set.md "source for: reference, supported, description")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-nested-set.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/character-class-nested-set.md "source for: supported")</sup>
 
 
 <!--
 'name' sources:
   - [](../../src/features/character-classes/character-class-nested-set.md)
--->
-
-
-<!--
-'reference' sources:
-  - [](../../src/engines/ecmascript/features/character-class-nested-set.md)
 -->
 
 > ❌ This feature is not supported.
@@ -676,18 +728,12 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-intersection.md "source for: name"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/character-class-intersection.md "source for: reference, supported, description")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-intersection.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/character-class-intersection.md "source for: supported")</sup>
 
 
 <!--
 'name' sources:
   - [](../../src/features/character-classes/character-class-intersection.md)
--->
-
-
-<!--
-'reference' sources:
-  - [](../../src/engines/ecmascript/features/character-class-intersection.md)
 -->
 
 > ❌ This feature is not supported.
@@ -714,18 +760,12 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-subtraction.md "source for: name"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/character-class-subtraction.md "source for: reference, supported, description")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-subtraction.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/character-class-subtraction.md "source for: supported")</sup>
 
 
 <!--
 'name' sources:
   - [](../../src/features/character-classes/character-class-subtraction.md)
--->
-
-
-<!--
-'reference' sources:
-  - [](../../src/engines/ecmascript/features/character-class-subtraction.md)
 -->
 
 > ❌ This feature is not supported.
@@ -752,7 +792,7 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quoted-characters.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/quoted-characters.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quoted-characters.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/quoted-characters.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -760,7 +800,20 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
   - [](../../src/features/quoted-characters.md)
 -->
 
-> ❌ This feature is not supported.
+
+<!--
+'reference' sources:
+  - [](../../src/engines/glib-gregex/features/quoted-characters.md)
+-->
+
+<dfn>Quoted Characters</dfn> are a sequence of characters treated as literal characters rather than RegExp characters.
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quoted-characters.md "source for: syntax")</sup>
+
+
+- `\Q…\E` &mdash; All characters following `\Q` and preceding the next `\E` are treated as literal characters. Example: `\Q.+\E` matches `.+` but not `aa`.
+- `\Q…` &mdash; If there is no trailing `\E`, all characters until the end of the pattern are treated as literal characters.
 
 ## Feature: Quantifiers
 <sup>[Main article][article:Quantifiers]</sup>
@@ -769,7 +822,7 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/quantifiers.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/quantifiers.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -780,7 +833,7 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 <!--
 'reference' sources:
-  - [](../../src/engines/ecmascript/features/quantifiers.md)
+  - [](../../src/engines/glib-gregex/features/quantifiers.md)
 -->
 
 <dfn>Quantifiers</dfn> specify repetition of an *Atom*. By default, quantifiers are "greedy" in that they attempt to match as many instances of the preceding *Atom* as possible to satisfy the pattern before backtracking.
@@ -810,7 +863,7 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/lazy-quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/lazy-quantifiers.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/lazy-quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/lazy-quantifiers.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -821,7 +874,7 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 <!--
 'reference' sources:
-  - [](../../src/engines/ecmascript/features/lazy-quantifiers.md)
+  - [](../../src/engines/glib-gregex/features/lazy-quantifiers.md)
 -->
 
 <dfn>Lazy Quantifiers</dfn> specify repetition of an *Atom*, but attempt to match as few instances of the preceding *Atom* as possible to satisfy the pattern before advancing.
@@ -851,7 +904,7 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/possessive-quantifiers.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/possessive-quantifiers.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -859,7 +912,23 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
   - [](../../src/features/quantifiers/possessive-quantifiers.md)
 -->
 
-> ❌ This feature is not supported.
+
+<!--
+'reference' sources:
+  - [](../../src/engines/glib-gregex/features/possessive-quantifiers.md)
+-->
+
+<dfn>Possessive Quantifiers</dfn> are like greedy (i.e., regular) [quantifiers], except that backtracking is not performed.
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.md "source for: syntax")</sup>
+
+
+- `*+` &mdash; Match zero or more characters without backtracking.
+- `++` &mdash; Match one or more characters without backtracking.
+- `?+` &mdash; Match zero or one characters without backtracking.
+- <code>{<em>n</em>,}+</code> &mdash; Match _n_ or more characters without backtracking.
+- <code>{<em>n</em>,<em>m</em>}+</code> &mdash; Match between _n_ and _m_ characters without backtracking.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.md "source for: see_also")</sup>
@@ -875,7 +944,7 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/capturing-groups.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/capturing-groups.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -886,7 +955,7 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 <!--
 'reference' sources:
-  - [](../../src/engines/ecmascript/features/capturing-groups.md)
+  - [](../../src/engines/glib-gregex/features/capturing-groups.md)
 -->
 
 A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by index. A Capturing Group can be captured and returned by the matching algorithm.
@@ -914,7 +983,7 @@ A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom*
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/named-capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/named-capturing-groups.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/named-capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/named-capturing-groups.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -925,16 +994,18 @@ A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom*
 
 <!--
 'reference' sources:
-  - [](../../src/engines/ecmascript/features/named-capturing-groups.md)
+  - [](../../src/engines/glib-gregex/features/named-capturing-groups.md)
 -->
 
 A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and returned by the matching algorithm. A Named Capturing Group is also an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by name.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/named-capturing-groups.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/named-capturing-groups.md "source for: syntax")</sup>
 
 
 - <code>(?&lt;<em>name</em>&gt;…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
+- <code>(?'<em>name</em>'…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
+- <code>(?P&lt;<em>name</em>&gt;…)</code> &mdash; Groups the subexpression as a single *Atom* associated with the provided *name*. The result is captured and returned by the matching algorithm.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/named-capturing-groups.md "source for: see_also")</sup>
@@ -953,7 +1024,7 @@ A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and r
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/non-capturing-groups.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/non-capturing-groups.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -964,7 +1035,7 @@ A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and r
 
 <!--
 'reference' sources:
-  - [](../../src/engines/ecmascript/features/non-capturing-groups.md)
+  - [](../../src/engines/glib-gregex/features/non-capturing-groups.md)
 -->
 
 A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] but cannot be referenced using [Backreferences]. A Non-capturing Group is not captured by the matching algorithm.
@@ -989,7 +1060,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/backreferences.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/backreferences.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1000,17 +1071,27 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 
 <!--
 'reference' sources:
-  - [](../../src/engines/ecmascript/features/backreferences.md)
+  - [](../../src/engines/glib-gregex/features/backreferences.md)
 -->
 
 <dfn>Backreferences</dfn> allow a pattern to re-match a previously matched capture group<sup>[1][Capturing Groups] [2][Named Capturing Groups]</sup> either by number (_n_) or by _name_.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/backreferences.md "source for: syntax")</sup>
 
 
-- <code>&#x5c;<em>n</em></code> &mdash; Where *n* is a decimal digit in the range 1-9. Matches the same string as the [capture group] *n*.
-- <code>\k&lt;<em>name</em>&gt;</code> &mdash; Matches the same string as the [named capture group] with the name *name*.
+- <code>&#x5c;<em>n</em></code> &mdash; Where *n* is an integer >= 1. Matches the same string as the [capture group] *n*.
+  - NOTE: If the *n* is > 9 it may be interpreted as an octal literal if there are less than *n* [capture groups] in the pattern.
+- <code>\g<em>n</em></code> &mdash; Where *n* is an integer >= 1. Matches the same string as the [capture group] *n*.
+- <code>\g-<em>n</em></code> &mdash; Where *n* is an integer >= 1. Matches the *n*th previous [capture group].
+- <code>\g+<em>n</em></code> &mdash; Where *n* is an integer >= 1. Matches the *n*th next [capture group].
+- <code>\g{<em>n</em>}</code> &mdash; Where *n* is an integer >= 1. Matches the same string as the [capture group] *n*.
+- <code>\g{-<em>n</em>}</code> &mdash; Where *n* is an integer >= 1. Matches the *n*th previous [capture group].
+- <code>\g{+<em>n</em>}</code> &mdash; Where *n* is an integer >= 1. Matches the *n*th next [capture group].
+- <code>\g{<em>name</em>}</code> &mdash; Matches the [named capture group] with the name *name*.
+- <code>\k&lt;<em>name</em>&gt;</code> &mdash; Matches the [named capture group] with the name *name*.
+- <code>\k'<em>name</em>'</code> &mdash; Matches the [named capture group] with the name *name*.
+- <code>(?P=<em>name</em>)</code> &mdash; Matches the [named capture group] with the name *name*.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.md "source for: see_also")</sup>
@@ -1026,7 +1107,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/comments.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/comments.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/comments.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/comments.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1034,7 +1115,19 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
   - [](../../src/features/comments/comments.md)
 -->
 
-> ❌ This feature is not supported.
+
+<!--
+'reference' sources:
+  - [](../../src/engines/glib-gregex/features/comments.md)
+-->
+
+A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matching and can be used to document a pattern.
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/comments.md "source for: syntax")</sup>
+
+
+- `(?#…)` &mdash; The entire expression is removed from the pattern. A comment may not contain other `(` or `)` characters.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/comments.md "source for: see_also")</sup>
@@ -1049,7 +1142,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/line-comments.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/line-comments.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/line-comments.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/line-comments.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1057,7 +1150,19 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
   - [](../../src/features/comments/line-comments.md)
 -->
 
-> ❌ This feature is not supported.
+
+<!--
+'reference' sources:
+  - [](../../src/engines/glib-gregex/features/line-comments.md)
+-->
+
+A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and ending with `\n` (or the end of the pattern) that is ignored by pattern matching and can be used to document a pattern.
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/line-comments.md "source for: syntax")</sup>
+
+
+- <code>#…<strong>\n</strong></code> &mdash; The rest of the line starting from `#` is removed from the pattern. Only supported when the `x` (extended mode) [RegExp flag] is set.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/line-comments.md "source for: see_also")</sup>
@@ -1072,7 +1177,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/modifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/modifiers.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/modifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/modifiers.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1080,7 +1185,20 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
   - [](../../src/features/flags-and-modifiers/modifiers.md)
 -->
 
-> ❌ This feature is not supported.
+
+<!--
+'reference' sources:
+  - [](../../src/engines/glib-gregex/features/modifiers.md)
+-->
+
+<dfn>Modifiers</dfn> allow you to change the currently active [RegExp flags] within a subexpression.
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/modifiers.md "source for: syntax")</sup>
+
+
+- `(?imsx-imsx)` - Sets or unsets (using `-`) the specified [RegExp flags] starting at the current position until the next closing `)` or the end of the pattern. Example: `(?-i)A(?i)B(?-i)C` matches `ABC`, `AbC`.
+- `(?imsx-imsx:…)` - Sets or unsets (using `-`) the specified [RegExp flags] for the subexpression. Example: `(?-i:A(?i:B)C)` matches `ABC`, `AbC`.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/modifiers.md "source for: see_also")</sup>
@@ -1095,7 +1213,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/branch-reset.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/branch-reset.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/branch-reset.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/branch-reset.md "source for: supported")</sup>
 
 
 <!--
@@ -1112,7 +1230,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/lookahead.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/lookahead.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1123,7 +1241,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 
 <!--
 'reference' sources:
-  - [](../../src/engines/ecmascript/features/lookahead.md)
+  - [](../../src/engines/glib-gregex/features/lookahead.md)
 -->
 
 A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pattern would match the characters to the right of the current position.
@@ -1148,7 +1266,7 @@ A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pa
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookbehind.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/lookbehind.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookbehind.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/lookbehind.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1159,7 +1277,7 @@ A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pa
 
 <!--
 'reference' sources:
-  - [](../../src/engines/ecmascript/features/lookbehind.md)
+  - [](../../src/engines/glib-gregex/features/lookbehind.md)
 -->
 
 A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided pattern would match the characters to the left of the current position.
@@ -1184,7 +1302,7 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-backtracking-expressions.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/non-backtracking-expressions.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-backtracking-expressions.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/non-backtracking-expressions.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1192,7 +1310,19 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
   - [](../../src/features/groups-and-backtracking/non-backtracking-expressions.md)
 -->
 
-> ❌ This feature is not supported.
+
+<!--
+'reference' sources:
+  - [](../../src/engines/glib-gregex/features/non-backtracking-expressions.md)
+-->
+
+A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring patterns, and will not backtrack in the event of a failed match. This is often used to improve performance.
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-backtracking-expressions.md "source for: syntax")</sup>
+
+
+- `(?>…)` &mdash; Matches the provided pattern, but no backtracking is performed if the match fails.
 
 ## Feature: Recursion
 <sup>[Main article][article:Recursion]</sup>
@@ -1201,7 +1331,7 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/recursion.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/recursion.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/recursion.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/recursion.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1209,7 +1339,20 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
   - [](../../src/features/groups-and-backtracking/recursion.md)
 -->
 
-> ❌ This feature is not supported.
+
+<!--
+'reference' sources:
+  - [](../../src/engines/glib-gregex/features/recursion.md)
+-->
+
+A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capture group] inside of itself, to handle cases such as matching balanced parenthesis or brackets, etc.
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/recursion.md "source for: syntax")</sup>
+
+
+- <code>(?R)</code> &mdash; Reevaluates the entire pattern starting at the current position.
+- <code>(?0)</code> &mdash; Reevaluates the entire pattern starting at the current position.
 
 ## Feature: Conditional Expressions
 <sup>[Main article][article:Conditional Expressions]</sup>
@@ -1218,7 +1361,7 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/conditional-expressions.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/conditional-expressions.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/conditional-expressions.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/conditional-expressions.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1226,7 +1369,34 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
   - [](../../src/features/alternatives/conditional-expressions.md)
 -->
 
-> ❌ This feature is not supported.
+
+<!--
+'reference' sources:
+  - [](../../src/engines/glib-gregex/features/conditional-expressions.md)
+-->
+
+A <dfn>Conditional Expression</dfn> checks a condition and evaluates its first alternative if the condition is **true**; otherwise, it evaluates its second alternative.
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/conditional-expressions.md "source for: syntax")</sup>
+
+
+- <code>(?(<em>condition</em>)<em>yes-pattern</em>|<em>no-pattern</em>)</code> &mdash; Matches *yes-pattern* if *condition* is **true**; otherwise, matches *no-pattern*.
+- <code>(?(<em>condition</em>)<em>yes-pattern</em>)</code> &mdash; Matches *yes-pattern* if *condition* is **true**; otherwise, matches the empty string.
+
+#### Conditions
+
+The following conditions are supported:
+
+- <code>(?(?=<em>test-pattern</em>)…)</code> &mdash; Evaluates to **true** if a [lookahead] for *test-pattern* matches; Otherwise, evaluates to **false**.
+- <code>(?(?!<em>test-pattern</em>)…)</code> &mdash; Evaluates to **true** if a negative [lookahead] for *test-pattern* matches; Otherwise, evaluates to **false**.
+- <code>(?(<em>n</em>)…)</code> &mdash; Evaluates to **true** if the [capture group] at offset *n* was successfully matched; Otherwise, evaluates to **false**.
+- <code>(?(&lt;<em>name</em>&gt;)…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched; Otherwise, evaluates to **false**.
+- <code>(?('<em>name</em>')…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched; Otherwise, evaluates to **false**.
+- <code>(?(R)…)</code> &mdash; Evaluates to **true** if inside a [recursive expression]; Otherwise, evaluates to **false**.
+- <code>(?(R<em>n</em>)…)</code> &mdash; Evaluates to **true** if inside a [recursive expression] for the [capture group] at offset *n*; Otherwise, evaluates to **false**.
+- <code>(?(R&<em>name</em>)…)</code> &mdash; Evaluates to **true** if inside a [recursive expression] for the [named capture group] with the name *name*; Otherwise, evaluates to **false**.
+- <a name="define-condition"></a><code>(?(DEFINE)…)</code> &mdash; Always evaluates to **false**. This allows you to define [Subroutines].
 
 ## Feature: Subroutines
 <sup>[Main article][article:Subroutines]</sup>
@@ -1235,7 +1405,7 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/subroutines.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/subroutines.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/subroutines.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/subroutines.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1243,7 +1413,37 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
   - [](../../src/features/groups-and-backtracking/subroutines.md)
 -->
 
-> ❌ This feature is not supported.
+
+<!--
+'reference' sources:
+  - [](../../src/engines/glib-gregex/features/subroutines.md)
+-->
+
+A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group] that can be reused in multiple places within the pattern to re-evaluate the subexpression from the group.
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/subroutines.md "source for: syntax")</sup>
+
+
+- `(?(DEFINE)…)` &mdash; Defines a set of reusable [capture groups] that can be referenced elsewhere in the pattern.
+- <code>(?<em>n</em>)</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is *n*.
+- <code>(?-<em>n</em>)</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the left of the current *Atom*. Example: `(?-1)` would revaluate the last declared [capture group].
+- <code>(?+<em>n</em>)</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*. Example: `(?+1)` would evaluate the next declared [capture group].
+- <code>(?&<em>name</em>)</code> &mdash; Evaluates the [named capture group] with the provided *name*.
+- <code>(?P&gt;<em>name</em>)</code> &mdash; Evaluates the [named capture group] with the provided *name*.
+
+### Example
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/subroutines.md "source for: example")</sup>
+
+
+```re
+(?(DEFINE)
+  (?<Year>\d{4}|[+-]\d{5,})
+  (?<Month>0[1-9]|1[0-2])
+  (?<Day>0[1-9]|2[0-9]|3[01])
+)
+(?<Date>(?&Year)-(?&Month)-(?&Day)|(?&Year)(?&Month)(?&Day))
+```
 
 ## Feature: Callouts
 <sup>[Main article][article:Callouts]</sup>
@@ -1252,7 +1452,7 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/callouts.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/ecmascript/features/callouts.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/callouts.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/glib-gregex/features/callouts.md "source for: supported")</sup>
 
 
 <!--
@@ -1387,45 +1587,45 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
 [article:Callouts]: ../features/callouts.md
 [article:Flags]: ../features/flags.md
 
-[Reference]: https://tc39.es/ecma262/#sec-regexp-regular-expression-objects
+[Reference]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html
 
-[reference:Flags]: https://tc39.es/ecma262/#sec-regexpinitialize
-[reference:Anchors]: https://tc39.es/ecma262/#sec-assertion
-[reference:Buffer Boundaries]: #not-supported-features
-[reference:Word Boundaries]: https://tc39.es/ecma262/#sec-assertion
+[reference:Flags]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.11
+[reference:Anchors]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.5
+[reference:Buffer Boundaries]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.4.12
+[reference:Word Boundaries]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.4.12
 [reference:Text Segment Boundaries]: #not-supported-features
-[reference:Continuation Escape]: #not-supported-features
-[reference:Alternatives]: https://tc39.es/ecma262/#sec-alternative
-[reference:Wildcard]: https://tc39.es/ecma262/#sec-atom
-[reference:Character Classes]: https://tc39.es/ecma262/#sec-characterclass
-[reference:Posix Character Classes]: #not-supported-features
-[reference:Negated Posix Character Classes]: #not-supported-features
+[reference:Continuation Escape]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.4.12
+[reference:Alternatives]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.10
+[reference:Wildcard]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.6
+[reference:Character Classes]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.8
+[reference:Posix Character Classes]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.9
+[reference:Negated Posix Character Classes]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.9
 [reference:Collating Elements]: #not-supported-features
 [reference:Equivalence Classes]: #not-supported-features
-[reference:Character Class Escapes]: https://tc39.es/ecma262/#sec-characterclassescape
-[reference:Line Endings Escape]: #not-supported-features
-[reference:Character Property Escapes]: https://tc39.es/ecma262/#sec-characterclassescape
-[reference:Character Class Nested Set]: https://github.com/tc39/proposal-regexp-set-notation
-[reference:Character Class Intersection]: https://github.com/tc39/proposal-regexp-set-notation
-[reference:Character Class Subtraction]: https://github.com/tc39/proposal-regexp-set-notation
-[reference:Quoted Characters]: #not-supported-features
-[reference:Quantifiers]: https://tc39.es/ecma262/#sec-quantifier
-[reference:Lazy Quantifiers]: https://tc39.es/ecma262/#sec-quantifier
-[reference:Possessive Quantifiers]: #not-supported-features
-[reference:Capturing Groups]: https://tc39.es/ecma262/#sec-atom
-[reference:Named Capturing Groups]: https://tc39.es/ecma262/#sec-atom
-[reference:Non-Capturing Groups]: https://tc39.es/ecma262/#sec-atom
-[reference:Backreferences]: https://tc39.es/ecma262/#sec-atomescape
-[reference:Comments]: #not-supported-features
-[reference:Line Comments]: #not-supported-features
-[reference:Modifiers]: #not-supported-features
+[reference:Character Class Escapes]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.4.9
+[reference:Line Endings Escape]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.4.10
+[reference:Character Property Escapes]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.4.11
+[reference:Character Class Nested Set]: #not-supported-features
+[reference:Character Class Intersection]: #not-supported-features
+[reference:Character Class Subtraction]: #not-supported-features
+[reference:Quoted Characters]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.4
+[reference:Quantifiers]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.14
+[reference:Lazy Quantifiers]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.14
+[reference:Possessive Quantifiers]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.15
+[reference:Capturing Groups]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.12
+[reference:Named Capturing Groups]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.13
+[reference:Non-Capturing Groups]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.12
+[reference:Backreferences]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.16
+[reference:Comments]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.19
+[reference:Line Comments]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.19
+[reference:Modifiers]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.11
 [reference:Branch Reset]: #not-supported-features
-[reference:Lookahead]: https://tc39.es/ecma262/#sec-assertion
-[reference:Lookbehind]: https://tc39.es/ecma262/#sec-assertion
-[reference:Non-Backtracking Expressions]: #not-supported-features
-[reference:Recursion]: #not-supported-features
-[reference:Conditional Expressions]: #not-supported-features
-[reference:Subroutines]: #not-supported-features
+[reference:Lookahead]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.17.5
+[reference:Lookbehind]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.17.6
+[reference:Non-Backtracking Expressions]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.15
+[reference:Recursion]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.20
+[reference:Conditional Expressions]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.18
+[reference:Subroutines]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html#id-1.5.25.18.9
 [reference:Callouts]: #not-supported-features
 
 [C++]: ../languages/cpp.md

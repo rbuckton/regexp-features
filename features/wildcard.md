@@ -3,12 +3,12 @@
 <sup> \| </sup>
 <sup>[Features](index.md)</sup>
 <sup> \| </sup>
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/wildcard.md "source for: name, description")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/wildcard.md "source for: name, description")</sup>
 
 A <dfn>Wildcard</dfn> matches a single, non-newline character.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/wildcard.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/wildcard.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -26,6 +26,7 @@ A <dfn>Wildcard</dfn> matches a single, non-newline character.
 | [Hyperscan](../engines/hyperscan.md) | [✔](../engines/hyperscan.md#feature-wildcard) |
 | [ECMAScript](../engines/ecmascript.md) | [✔](../engines/ecmascript.md#feature-wildcard) |
 | [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-wildcard) |
+| [Glib/GRegex](../engines/glib-gregex.md) | [✔](../engines/glib-gregex.md#feature-wildcard) |
 
 
 

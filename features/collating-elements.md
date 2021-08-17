@@ -3,12 +3,12 @@
 <sup> \| </sup>
 <sup>[Features](index.md)</sup>
 <sup> \| </sup>
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/collating-elements.md "source for: name, description")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/collating-elements.md "source for: name, description")</sup>
 
 A <dfn>Collating Element</dfn> is one or more characters that collate as a single unit.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/collating-elements.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/collating-elements.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
@@ -26,9 +26,10 @@ A <dfn>Collating Element</dfn> is one or more characters that collate as a singl
 | [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-collating-elements) |
 | [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-collating-elements) |
 | [ICU](../engines/icu.md) | [❌](../engines/icu.md#feature-collating-elements) |
+| [Glib/GRegex](../engines/glib-gregex.md) | [❌](../engines/glib-gregex.md#feature-collating-elements) |
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/src/features/character-classes/collating-elements.md "source for: see_also")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/collating-elements.md "source for: see_also")</sup>
 
 
 - [Character Classes]
