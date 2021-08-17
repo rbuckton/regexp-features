@@ -3,7 +3,7 @@
 <sup> \| </sup>
 <sup>[Features](index.md)</sup>
 <sup> \| </sup>
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/HEAD/src/features/callouts.md "source for: name, description")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/glib-gregex/src/features/callouts.md "source for: name, description")</sup>
 
 A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matching.
 
