@@ -15,6 +15,19 @@ This provides a comparison of features between various regular expression engine
 <sup>[Improve this table](https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md)</sup>
 
 {{#each docs.featureMatrixes}}
+{{#unless (and @first @last)}}
+## Table {{add @index 1}} of {{@root.docs.featureMatrixes.length}}
+{{#unless @first}}
+<sup>[prev](#table-{{@index}}-of-{{@root.docs.featureMatrixes.length}})</sup>
+{{/unless}}
+{{#unless (or @first @last)}}
+<sup> \| </sup>
+{{/unless}}
+{{#unless @last}}
+<sup>[next](#table-{{add @index 2}}-of-{{@root.docs.featureMatrixes.length}})</sup>
+{{/unless}}
+
+{{/unless}}
 |  |{{#each columns}} [{{name}}](engines/{{id}}.md) |{{/each}}
 |:-|{{#each columns}}:-:|{{/each}}
 {{#each rows}}
