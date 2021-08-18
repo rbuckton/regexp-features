@@ -762,11 +762,11 @@ A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [charac
 - `(?[ […] ])` &mdash; Where `…` includes any contents allowed in a normal [character class].
 
 ### Example
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/perl/src/features/character-classes/character-class-nested-set.md "source for: example")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/perl/features/character-class-nested-set.md "source for: example")</sup>
 
 
 ```
-[a-z&&[^d-q]]
+(?[[a-z]&[^d-q]])
 ```
 
 Is equivalent to:
