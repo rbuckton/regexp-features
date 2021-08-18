@@ -161,8 +161,6 @@ The following flags are supported:
 ## Feature: Buffer Boundaries
 <sup>[Main article][article:Buffer Boundaries]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Buffer Boundaries]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/anchors-and-boundaries/buffer-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/ecmascript/features/buffer-boundaries.md "source for: supported")</sup>
@@ -226,8 +224,6 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 ## Feature: Text Segment Boundaries
 <sup>[Main article][article:Text Segment Boundaries]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Text Segment Boundaries]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/ecmascript/features/text-segment-boundaries.md "source for: supported")</sup>
@@ -251,8 +247,6 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 
 ## Feature: Continuation Escape
 <sup>[Main article][article:Continuation Escape]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Continuation Escape]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -385,8 +379,6 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 ## Feature: Posix Character Classes
 <sup>[Main article][article:Posix Character Classes]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Posix Character Classes]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/character-classes/posix-character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/ecmascript/features/posix-character-classes.md "source for: supported")</sup>
@@ -419,8 +411,6 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 
 ## Feature: Negated Posix Character Classes
 <sup>[Main article][article:Negated Posix Character Classes]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Negated Posix Character Classes]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -455,8 +445,6 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 ## Feature: Collating Elements
 <sup>[Main article][article:Collating Elements]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Collating Elements]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/character-classes/collating-elements.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/ecmascript/features/collating-elements.md "source for: supported")</sup>
@@ -489,8 +477,6 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 
 ## Feature: Equivalence Classes
 <sup>[Main article][article:Equivalence Classes]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Equivalence Classes]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -577,8 +563,6 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
 ## Feature: Line Endings Escape
 <sup>[Main article][article:Line Endings Escape]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Line Endings Escape]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/character-classes/line-endings-escape.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/ecmascript/features/line-endings-escape.md "source for: supported")</sup>
@@ -662,8 +646,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 ## Feature: Character Class Nested Set
 <sup>[Main article][article:Character Class Nested Set]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Character Class Nested Set]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/character-classes/character-class-nested-set.md "source for: name"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/ecmascript/features/character-class-nested-set.md "source for: reference, supported, description")</sup>
@@ -702,8 +684,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 ## Feature: Character Class Intersection
 <sup>[Main article][article:Character Class Intersection]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Character Class Intersection]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -744,8 +724,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 ## Feature: Character Class Union
 <sup>[Main article][article:Character Class Union]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Character Class Union]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/character-classes/character-class-union.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/ecmascript/features/character-class-union.md "source for: reference, supported")</sup>
@@ -784,8 +762,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 ## Feature: Character Class Subtraction
 <sup>[Main article][article:Character Class Subtraction]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Character Class Subtraction]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -826,8 +802,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 ## Feature: Character Class Symmetric Difference
 <sup>[Main article][article:Character Class Symmetric Difference]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Character Class Symmetric Difference]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/character-classes/character-class-symmetric-difference.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/ecmascript/features/character-class-symmetric-difference.md "source for: reference, supported")</sup>
@@ -867,8 +841,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 ## Feature: Character Class Complement
 <sup>[Main article][article:Character Class Complement]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Character Class Complement]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/character-classes/character-class-complement.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/ecmascript/features/character-class-complement.md "source for: reference, supported")</sup>
@@ -907,8 +879,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 ## Feature: Quoted Characters
 <sup>[Main article][article:Quoted Characters]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Quoted Characters]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -1006,8 +976,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 ## Feature: Possessive Quantifiers
 <sup>[Main article][article:Possessive Quantifiers]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Possessive Quantifiers]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -1182,8 +1150,6 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 ## Feature: Comments
 <sup>[Main article][article:Comments]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Comments]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/comments/comments.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/ecmascript/features/comments.md "source for: supported")</sup>
@@ -1204,8 +1170,6 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 
 ## Feature: Line Comments
 <sup>[Main article][article:Line Comments]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Line Comments]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -1228,8 +1192,6 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 ## Feature: Modifiers
 <sup>[Main article][article:Modifiers]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Modifiers]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/flags-and-modifiers/modifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/ecmascript/features/modifiers.md "source for: supported")</sup>
@@ -1250,8 +1212,6 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 
 ## Feature: Branch Reset
 <sup>[Main article][article:Branch Reset]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Branch Reset]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -1340,8 +1300,6 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
 ## Feature: Non-Backtracking Expressions
 <sup>[Main article][article:Non-Backtracking Expressions]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Non-Backtracking Expressions]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/groups-and-backtracking/non-backtracking-expressions.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/ecmascript/features/non-backtracking-expressions.md "source for: supported")</sup>
@@ -1356,8 +1314,6 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
 
 ## Feature: Recursion
 <sup>[Main article][article:Recursion]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Recursion]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -1374,8 +1330,6 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
 ## Feature: Conditional Expressions
 <sup>[Main article][article:Conditional Expressions]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Conditional Expressions]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/alternatives/conditional-expressions.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/ecmascript/features/conditional-expressions.md "source for: supported")</sup>
@@ -1390,8 +1344,6 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
 
 ## Feature: Subroutines
 <sup>[Main article][article:Subroutines]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Subroutines]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -1408,8 +1360,6 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
 ## Feature: Callouts
 <sup>[Main article][article:Callouts]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Callouts]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/callouts.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/ecmascript/features/callouts.md "source for: supported")</sup>
@@ -1424,8 +1374,6 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
 
 ## Feature: Backtracking Control Verbs
 <sup>[Main article][article:Backtracking Control Verbs]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Backtracking Control Verbs]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>

@@ -528,8 +528,6 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 ## Feature: Collating Elements
 <sup>[Main article][article:Collating Elements]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Collating Elements]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/character-classes/collating-elements.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/oniguruma/features/collating-elements.md "source for: supported")</sup>
@@ -562,8 +560,6 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 
 ## Feature: Equivalence Classes
 <sup>[Main article][article:Equivalence Classes]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Equivalence Classes]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -863,8 +859,6 @@ Is equivalent to:
 ## Feature: Character Class Union
 <sup>[Main article][article:Character Class Union]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Character Class Union]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/character-classes/character-class-union.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/oniguruma/features/character-class-union.md "source for: reference, supported")</sup>
@@ -969,8 +963,6 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 ## Feature: Character Class Symmetric Difference
 <sup>[Main article][article:Character Class Symmetric Difference]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Character Class Symmetric Difference]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/character-classes/character-class-symmetric-difference.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/oniguruma/features/character-class-symmetric-difference.md "source for: reference, supported")</sup>
@@ -1010,8 +1002,6 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 ## Feature: Character Class Complement
 <sup>[Main article][article:Character Class Complement]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Character Class Complement]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/character-classes/character-class-complement.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/oniguruma/features/character-class-complement.md "source for: reference, supported")</sup>
@@ -1050,8 +1040,6 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 
 ## Feature: Quoted Characters
 <sup>[Main article][article:Quoted Characters]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Quoted Characters]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -1384,8 +1372,6 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 ## Feature: Line Comments
 <sup>[Main article][article:Line Comments]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Line Comments]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/comments/line-comments.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/oniguruma/features/line-comments.md "source for: supported")</sup>
@@ -1446,8 +1432,6 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 
 ## Feature: Branch Reset
 <sup>[Main article][article:Branch Reset]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Branch Reset]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -1757,8 +1741,6 @@ A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matc
 
 ## Feature: Backtracking Control Verbs
 <sup>[Main article][article:Backtracking Control Verbs]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Backtracking Control Verbs]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>

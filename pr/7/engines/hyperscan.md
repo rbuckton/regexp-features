@@ -236,8 +236,6 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 ## Feature: Text Segment Boundaries
 <sup>[Main article][article:Text Segment Boundaries]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Text Segment Boundaries]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/hyperscan/features/text-segment-boundaries.md "source for: supported")</sup>
@@ -261,8 +259,6 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 
 ## Feature: Continuation Escape
 <sup>[Main article][article:Continuation Escape]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Continuation Escape]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -489,8 +485,6 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 ## Feature: Collating Elements
 <sup>[Main article][article:Collating Elements]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Collating Elements]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/character-classes/collating-elements.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/hyperscan/features/collating-elements.md "source for: supported")</sup>
@@ -523,8 +517,6 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 
 ## Feature: Equivalence Classes
 <sup>[Main article][article:Equivalence Classes]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Equivalence Classes]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -611,8 +603,6 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
 ## Feature: Line Endings Escape
 <sup>[Main article][article:Line Endings Escape]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Line Endings Escape]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/character-classes/line-endings-escape.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/hyperscan/features/line-endings-escape.md "source for: supported")</sup>
@@ -696,8 +686,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 ## Feature: Character Class Nested Set
 <sup>[Main article][article:Character Class Nested Set]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Character Class Nested Set]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/character-classes/character-class-nested-set.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/hyperscan/features/character-class-nested-set.md "source for: supported")</sup>
@@ -731,8 +719,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 ## Feature: Character Class Intersection
 <sup>[Main article][article:Character Class Intersection]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Character Class Intersection]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/character-classes/character-class-intersection.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/hyperscan/features/character-class-intersection.md "source for: supported")</sup>
@@ -765,8 +751,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 ## Feature: Character Class Union
 <sup>[Main article][article:Character Class Union]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Character Class Union]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -807,8 +791,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 ## Feature: Character Class Subtraction
 <sup>[Main article][article:Character Class Subtraction]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Character Class Subtraction]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/character-classes/character-class-subtraction.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/hyperscan/features/character-class-subtraction.md "source for: supported")</sup>
@@ -841,8 +823,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 ## Feature: Character Class Symmetric Difference
 <sup>[Main article][article:Character Class Symmetric Difference]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Character Class Symmetric Difference]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -883,8 +863,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 ## Feature: Character Class Complement
 <sup>[Main article][article:Character Class Complement]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Character Class Complement]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/character-classes/character-class-complement.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/hyperscan/features/character-class-complement.md "source for: reference, supported")</sup>
@@ -923,8 +901,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 ## Feature: Quoted Characters
 <sup>[Main article][article:Quoted Characters]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Quoted Characters]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -1022,8 +998,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 ## Feature: Possessive Quantifiers
 <sup>[Main article][article:Possessive Quantifiers]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Possessive Quantifiers]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -1162,8 +1136,6 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 ## Feature: Backreferences
 <sup>[Main article][article:Backreferences]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Backreferences]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/groups-and-backtracking/backreferences.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/hyperscan/features/backreferences.md "source for: supported")</sup>
@@ -1220,8 +1192,6 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 
 ## Feature: Line Comments
 <sup>[Main article][article:Line Comments]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Line Comments]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -1280,8 +1250,6 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 ## Feature: Branch Reset
 <sup>[Main article][article:Branch Reset]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Branch Reset]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/alternatives/branch-reset.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/hyperscan/features/branch-reset.md "source for: supported")</sup>
@@ -1296,8 +1264,6 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 
 ## Feature: Lookahead
 <sup>[Main article][article:Lookahead]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Lookahead]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -1320,8 +1286,6 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 ## Feature: Lookbehind
 <sup>[Main article][article:Lookbehind]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Lookbehind]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/lookaround/lookbehind.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/hyperscan/features/lookbehind.md "source for: supported")</sup>
@@ -1343,8 +1307,6 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 ## Feature: Non-Backtracking Expressions
 <sup>[Main article][article:Non-Backtracking Expressions]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Non-Backtracking Expressions]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/groups-and-backtracking/non-backtracking-expressions.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/hyperscan/features/non-backtracking-expressions.md "source for: supported")</sup>
@@ -1359,8 +1321,6 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 
 ## Feature: Recursion
 <sup>[Main article][article:Recursion]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Recursion]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -1377,8 +1337,6 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 ## Feature: Conditional Expressions
 <sup>[Main article][article:Conditional Expressions]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Conditional Expressions]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/alternatives/conditional-expressions.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/hyperscan/features/conditional-expressions.md "source for: supported")</sup>
@@ -1393,8 +1351,6 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 
 ## Feature: Subroutines
 <sup>[Main article][article:Subroutines]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Subroutines]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -1411,8 +1367,6 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 ## Feature: Callouts
 <sup>[Main article][article:Callouts]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Callouts]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/callouts.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/hyperscan/features/callouts.md "source for: supported")</sup>
@@ -1427,8 +1381,6 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 
 ## Feature: Backtracking Control Verbs
 <sup>[Main article][article:Backtracking Control Verbs]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Backtracking Control Verbs]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>

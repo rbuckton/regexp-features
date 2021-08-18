@@ -242,8 +242,6 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 ## Feature: Text Segment Boundaries
 <sup>[Main article][article:Text Segment Boundaries]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Text Segment Boundaries]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/perl/features/text-segment-boundaries.md "source for: supported")</sup>
@@ -522,8 +520,6 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 ## Feature: Collating Elements
 <sup>[Main article][article:Collating Elements]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Collating Elements]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/character-classes/collating-elements.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/perl/features/collating-elements.md "source for: supported")</sup>
@@ -556,8 +552,6 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 
 ## Feature: Equivalence Classes
 <sup>[Main article][article:Equivalence Classes]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Equivalence Classes]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>

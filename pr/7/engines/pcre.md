@@ -241,8 +241,6 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 ## Feature: Text Segment Boundaries
 <sup>[Main article][article:Text Segment Boundaries]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Text Segment Boundaries]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/pcre/features/text-segment-boundaries.md "source for: supported")</sup>
@@ -506,8 +504,6 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 ## Feature: Collating Elements
 <sup>[Main article][article:Collating Elements]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Collating Elements]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/character-classes/collating-elements.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/pcre/features/collating-elements.md "source for: supported")</sup>
@@ -540,8 +536,6 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 
 ## Feature: Equivalence Classes
 <sup>[Main article][article:Equivalence Classes]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Equivalence Classes]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -730,8 +724,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 ## Feature: Character Class Nested Set
 <sup>[Main article][article:Character Class Nested Set]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Character Class Nested Set]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/character-classes/character-class-nested-set.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/pcre/features/character-class-nested-set.md "source for: supported")</sup>
@@ -765,8 +757,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 ## Feature: Character Class Intersection
 <sup>[Main article][article:Character Class Intersection]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Character Class Intersection]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/character-classes/character-class-intersection.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/pcre/features/character-class-intersection.md "source for: supported")</sup>
@@ -799,8 +789,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 ## Feature: Character Class Union
 <sup>[Main article][article:Character Class Union]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Character Class Union]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -841,8 +829,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 ## Feature: Character Class Subtraction
 <sup>[Main article][article:Character Class Subtraction]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Character Class Subtraction]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/perl/src/features/character-classes/character-class-subtraction.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/perl/src/engines/pcre/features/character-class-subtraction.md "source for: supported")</sup>
@@ -875,8 +861,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 ## Feature: Character Class Symmetric Difference
 <sup>[Main article][article:Character Class Symmetric Difference]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Character Class Symmetric Difference]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -916,8 +900,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 ## Feature: Character Class Complement
 <sup>[Main article][article:Character Class Complement]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Character Class Complement]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
