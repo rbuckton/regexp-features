@@ -1,7 +1,9 @@
 ## Feature: {{name}}
 {{> nav-link label='Main article' xref=(concat 'article:' name) }}
+{{#if supported~}}
 {{> nav-sep }}
 {{> nav-link label='Reference' xref=(concat 'reference:' name) }}
+{{~/if}}
 {{> nav-sep }}
 {{> nav-link label='Back to top' href='#top' }}
 {{> edit-link names=(ar 'name' 'reference' 'supported' 'description') prefix=true }}

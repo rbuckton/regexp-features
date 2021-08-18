@@ -13,6 +13,9 @@ see_also:
 - character-property-escapes
 - character-class-nested-set
 - character-class-intersection
+- character-class-union
+- character-class-symmetric-difference
+- character-class-complement
 description: *content.description
 ---
 # description

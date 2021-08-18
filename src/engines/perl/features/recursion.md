@@ -1,0 +1,19 @@
+---
+### YamlMime:EngineFeature
+engine: perl
+feature: recursion
+supported: true
+reference: https://perldoc.perl.org/perlre#(?PARNO)-(?-PARNO)-(?+PARNO)-(?R)-(?0)
+#description: *content.description
+syntax: *content.syntax
+#example: *content.example
+---
+# Syntax
+
+- <code>(?R)</code> &mdash; Reevaluates the entire pattern starting at the current position.
+- <code>(?0)</code> &mdash; Reevaluates the entire pattern starting at the current position.
+- <code>(?<em>n</em>)</code> &mdash; Where *n* is an integer >= 1. Re-evaluates the [capture group] whose offset is *n*.
+- <code>(?-<em>n</em>)</code> &mdash; Where *n* is an integer >= 1. Re-evaluates the [capture group] whose offset is the *n*th [capture group] declared to the left of the current *Atom*. Example: `(?-1)` would revaluate the last declared [capture group].
+- <code>(?+<em>n</em>)</code> &mdash; Where *n* is an integer >= 1. Re-evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*. Example: `(?+1)` would evaluate the next declared [capture group].
+- <code>(?&<em>name</em>)</code> &mdash; Re-evaluates the [named capture group] with the provided *name*.
+- <code>(?P><em>name</em>)</code> &mdash; Re-evaluates the [named capture group] with the provided *name*.

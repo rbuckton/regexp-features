@@ -67,7 +67,7 @@ export const handlebarsOptions = {
          */
         gt(a, b /*, options*/) {
             if (arguments.length !== 3) throw new TypeError(`Expected 2 arguments, got ${arguments.length} instead.`);
-            return a < b;
+            return a > b;
         },
         /**
          * @param {any} a
@@ -79,6 +79,32 @@ export const handlebarsOptions = {
         },
 
         // operations
+        /**
+         * @param {any} a
+         * @param {any} b
+         */
+        and(a, b /*, options*/) {
+            if (arguments.length !== 3) throw new TypeError(`Expected 2 arguments, got ${arguments.length} instead.`);
+            return a && b;
+        },
+
+        /**
+         * @param {any} a
+         * @param {any} b
+         */
+        or(a, b /*, options*/) {
+            if (arguments.length !== 3) throw new TypeError(`Expected 2 arguments, got ${arguments.length} instead.`);
+            return a || b;
+        },
+
+        /**
+         * @param {any} a
+         */
+        not(a /*, options*/) {
+            if (arguments.length !== 2) throw new TypeError(`Expected 1 argument, got ${arguments.length} instead.`);
+            return !a;
+        },
+
         /**
          * @param {any} a
          * @param {any} b

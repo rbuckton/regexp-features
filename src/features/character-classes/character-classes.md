@@ -14,7 +14,10 @@ see_also:
 - character-property-escapes
 - character-class-nested-set
 - character-class-intersection
+- character-class-union
 - character-class-subtraction
+- character-class-symmetric-difference
+- character-class-complement
 links:
 - name: Character Class Range
   href: '#character-class-range'
