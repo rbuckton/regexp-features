@@ -14,6 +14,9 @@ This provides a comparison of features between various regular expression engine
 # Support Table
 <sup>[Improve this table](https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md)</sup>
 
+## Table 1 of 2
+<sup>[next](#table-2-of-2)</sup>
+
 |  | [Boost.Regex](engines/boost.regex.md) | [.NET](engines/dotnet.md) | [Oniguruma](engines/oniguruma.md) | [Hyperscan](engines/hyperscan.md) | [ECMAScript](engines/ecmascript.md) | [ICU](engines/icu.md) | [Glib/GRegex](engines/glib-gregex.md) |
 |:-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | [Anchors](features/anchors.md) | [✔](engines/boost.regex.md#feature-anchors) | [✔](engines/dotnet.md#feature-anchors) | [✔](engines/oniguruma.md#feature-anchors) | [✔](engines/hyperscan.md#feature-anchors) | [✔](engines/ecmascript.md#feature-anchors) | [✔](engines/icu.md#feature-anchors) | [✔](engines/glib-gregex.md#feature-anchors) |
@@ -58,6 +61,9 @@ This provides a comparison of features between various regular expression engine
 | [Callouts](features/callouts.md) | [❌](engines/boost.regex.md#feature-callouts) | [❌](engines/dotnet.md#feature-callouts) | [✔](engines/oniguruma.md#feature-callouts) | [❌](engines/hyperscan.md#feature-callouts) | [❌](engines/ecmascript.md#feature-callouts) | [❌](engines/icu.md#feature-callouts) | [❌](engines/glib-gregex.md#feature-callouts) |
 | [Backtracking Control Verbs](features/backtracking-control-verbs.md) | [❌](engines/boost.regex.md#feature-backtracking-control-verbs) | [❌](engines/dotnet.md#feature-backtracking-control-verbs) | [❌](engines/oniguruma.md#feature-backtracking-control-verbs) | [❌](engines/hyperscan.md#feature-backtracking-control-verbs) | [❌](engines/ecmascript.md#feature-backtracking-control-verbs) | [❌](engines/icu.md#feature-backtracking-control-verbs) | [❌](engines/glib-gregex.md#feature-backtracking-control-verbs) |
 | [Flags](features/flags.md) | [✔](engines/boost.regex.md#feature-flags) | [✔](engines/dotnet.md#feature-flags) | [✔](engines/oniguruma.md#feature-flags) | [✔](engines/hyperscan.md#feature-flags) | [✔](engines/ecmascript.md#feature-flags) | [✔](engines/icu.md#feature-flags) | [✔](engines/glib-gregex.md#feature-flags) |
+
+## Table 2 of 2
+<sup>[prev](#table-1-of-2)</sup>
 
 |  | [Perl](engines/perl.md) | [PCRE](engines/pcre.md) |
 |:-|:-:|:-:|
