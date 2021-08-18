@@ -10,6 +10,7 @@
 - [ECMAScript](ecmascript.md)
 - [ICU](icu.md)
 - [Glib/GRegex](glib-gregex.md)
+- [Perl](perl.md)
 - [PCRE](pcre.md)
 
 
@@ -50,7 +51,13 @@
 [Character Class Nested Sets]: ../features/character-class-nested-set.md
 [Character Class Intersection]: ../features/character-class-intersection.md
 [Character Class Intersections]: ../features/character-class-intersection.md
+[Character Class Union]: ../features/character-class-union.md
+[Character Class Unions]: ../features/character-class-union.md
 [Character Class Subtraction]: ../features/character-class-subtraction.md
+[Character Class Symmetric Difference]: ../features/character-class-symmetric-difference.md
+[Character Class Symmetric Differences]: ../features/character-class-symmetric-difference.md
+[Character Class Complement]: ../features/character-class-complement.md
+[Character Class Complements]: ../features/character-class-complement.md
 [Quoted Characters]: ../features/quoted-characters.md
 [Quantifiers]: ../features/quantifiers.md
 [Quantifier]: ../features/quantifiers.md
@@ -91,6 +98,8 @@
 [Subroutine]: ../features/subroutines.md
 [Callouts]: ../features/callouts.md
 [Callout]: ../features/callouts.md
+[Backtracking Control Verbs]: ../features/backtracking-control-verbs.md
+[Backtracking Control Verb]: ../features/backtracking-control-verbs.md
 [Flags]: ../features/flags.md
 [Flag]: ../features/flags.md
 [RegExp Flags]: ../features/flags.md
@@ -114,7 +123,10 @@
 [article:Character Property Escapes]: ../features/character-property-escapes.md
 [article:Character Class Nested Set]: ../features/character-class-nested-set.md
 [article:Character Class Intersection]: ../features/character-class-intersection.md
+[article:Character Class Union]: ../features/character-class-union.md
 [article:Character Class Subtraction]: ../features/character-class-subtraction.md
+[article:Character Class Symmetric Difference]: ../features/character-class-symmetric-difference.md
+[article:Character Class Complement]: ../features/character-class-complement.md
 [article:Quoted Characters]: ../features/quoted-characters.md
 [article:Quantifiers]: ../features/quantifiers.md
 [article:Lazy Quantifiers]: ../features/lazy-quantifiers.md
@@ -134,6 +146,7 @@
 [article:Conditional Expressions]: ../features/conditional-expressions.md
 [article:Subroutines]: ../features/subroutines.md
 [article:Callouts]: ../features/callouts.md
+[article:Backtracking Control Verbs]: ../features/backtracking-control-verbs.md
 [article:Flags]: ../features/flags.md
 
 [Reference]: #

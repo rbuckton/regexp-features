@@ -14,6 +14,9 @@ This provides a comparison of features between various regular expression engine
 # Support Table
 <sup>[Improve this table](https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md)</sup>
 
+## Table 1 of 2
+<sup>[next](#table-2-of-2)</sup>
+
 |  | [Boost.Regex](engines/boost.regex.md) | [.NET](engines/dotnet.md) | [Oniguruma](engines/oniguruma.md) | [Hyperscan](engines/hyperscan.md) | [ECMAScript](engines/ecmascript.md) | [ICU](engines/icu.md) | [Glib/GRegex](engines/glib-gregex.md) |
 |:-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | [Anchors](features/anchors.md) | [✔](engines/boost.regex.md#feature-anchors) | [✔](engines/dotnet.md#feature-anchors) | [✔](engines/oniguruma.md#feature-anchors) | [✔](engines/hyperscan.md#feature-anchors) | [✔](engines/ecmascript.md#feature-anchors) | [✔](engines/icu.md#feature-anchors) | [✔](engines/glib-gregex.md#feature-anchors) |
@@ -33,7 +36,10 @@ This provides a comparison of features between various regular expression engine
 | [Character Property Escapes](features/character-property-escapes.md) | [✔](engines/boost.regex.md#feature-character-property-escapes) | [✔](engines/dotnet.md#feature-character-property-escapes) | [✔](engines/oniguruma.md#feature-character-property-escapes) | [✔](engines/hyperscan.md#feature-character-property-escapes) | [✔](engines/ecmascript.md#feature-character-property-escapes) | [✔](engines/icu.md#feature-character-property-escapes) | [✔](engines/glib-gregex.md#feature-character-property-escapes) |
 | [Character Class Nested Set](features/character-class-nested-set.md) | [❌](engines/boost.regex.md#feature-character-class-nested-set) | [❌](engines/dotnet.md#feature-character-class-nested-set) | [✔](engines/oniguruma.md#feature-character-class-nested-set) | [❌](engines/hyperscan.md#feature-character-class-nested-set) | [❌](engines/ecmascript.md#feature-character-class-nested-set) | [✔](engines/icu.md#feature-character-class-nested-set) | [❌](engines/glib-gregex.md#feature-character-class-nested-set) |
 | [Character Class Intersection](features/character-class-intersection.md) | [❌](engines/boost.regex.md#feature-character-class-intersection) | [❌](engines/dotnet.md#feature-character-class-intersection) | [✔](engines/oniguruma.md#feature-character-class-intersection) | [❌](engines/hyperscan.md#feature-character-class-intersection) | [❌](engines/ecmascript.md#feature-character-class-intersection) | [✔](engines/icu.md#feature-character-class-intersection) | [❌](engines/glib-gregex.md#feature-character-class-intersection) |
+| [Character Class Union](features/character-class-union.md) | [❌](engines/boost.regex.md#feature-character-class-union) | [❌](engines/dotnet.md#feature-character-class-union) | [❌](engines/oniguruma.md#feature-character-class-union) | [❌](engines/hyperscan.md#feature-character-class-union) | [❌](engines/ecmascript.md#feature-character-class-union) | [❌](engines/icu.md#feature-character-class-union) | [❌](engines/glib-gregex.md#feature-character-class-union) |
 | [Character Class Subtraction](features/character-class-subtraction.md) | [❌](engines/boost.regex.md#feature-character-class-subtraction) | [✔](engines/dotnet.md#feature-character-class-subtraction) | [✔](engines/oniguruma.md#feature-character-class-subtraction) | [❌](engines/hyperscan.md#feature-character-class-subtraction) | [❌](engines/ecmascript.md#feature-character-class-subtraction) | [✔](engines/icu.md#feature-character-class-subtraction) | [❌](engines/glib-gregex.md#feature-character-class-subtraction) |
+| [Character Class Symmetric Difference](features/character-class-symmetric-difference.md) | [❌](engines/boost.regex.md#feature-character-class-symmetric-difference) | [❌](engines/dotnet.md#feature-character-class-symmetric-difference) | [❌](engines/oniguruma.md#feature-character-class-symmetric-difference) | [❌](engines/hyperscan.md#feature-character-class-symmetric-difference) | [❌](engines/ecmascript.md#feature-character-class-symmetric-difference) | [❌](engines/icu.md#feature-character-class-symmetric-difference) | [❌](engines/glib-gregex.md#feature-character-class-symmetric-difference) |
+| [Character Class Complement](features/character-class-complement.md) | [❌](engines/boost.regex.md#feature-character-class-complement) | [❌](engines/dotnet.md#feature-character-class-complement) | [❌](engines/oniguruma.md#feature-character-class-complement) | [❌](engines/hyperscan.md#feature-character-class-complement) | [❌](engines/ecmascript.md#feature-character-class-complement) | [❌](engines/icu.md#feature-character-class-complement) | [❌](engines/glib-gregex.md#feature-character-class-complement) |
 | [Quoted Characters](features/quoted-characters.md) | [✔](engines/boost.regex.md#feature-quoted-characters) | [❌](engines/dotnet.md#feature-quoted-characters) | [❌](engines/oniguruma.md#feature-quoted-characters) | [❌](engines/hyperscan.md#feature-quoted-characters) | [❌](engines/ecmascript.md#feature-quoted-characters) | [✔](engines/icu.md#feature-quoted-characters) | [✔](engines/glib-gregex.md#feature-quoted-characters) |
 | [Quantifiers](features/quantifiers.md) | [✔](engines/boost.regex.md#feature-quantifiers) | [✔](engines/dotnet.md#feature-quantifiers) | [✔](engines/oniguruma.md#feature-quantifiers) | [✔](engines/hyperscan.md#feature-quantifiers) | [✔](engines/ecmascript.md#feature-quantifiers) | [✔](engines/icu.md#feature-quantifiers) | [✔](engines/glib-gregex.md#feature-quantifiers) |
 | [Lazy Quantifiers](features/lazy-quantifiers.md) | [✔](engines/boost.regex.md#feature-lazy-quantifiers) | [✔](engines/dotnet.md#feature-lazy-quantifiers) | [✔](engines/oniguruma.md#feature-lazy-quantifiers) | [✔](engines/hyperscan.md#feature-lazy-quantifiers) | [✔](engines/ecmascript.md#feature-lazy-quantifiers) | [✔](engines/icu.md#feature-lazy-quantifiers) | [✔](engines/glib-gregex.md#feature-lazy-quantifiers) |
@@ -53,48 +59,56 @@ This provides a comparison of features between various regular expression engine
 | [Conditional Expressions](features/conditional-expressions.md) | [✔](engines/boost.regex.md#feature-conditional-expressions) | [✔](engines/dotnet.md#feature-conditional-expressions) | [✔](engines/oniguruma.md#feature-conditional-expressions) | [❌](engines/hyperscan.md#feature-conditional-expressions) | [❌](engines/ecmascript.md#feature-conditional-expressions) | [❌](engines/icu.md#feature-conditional-expressions) | [✔](engines/glib-gregex.md#feature-conditional-expressions) |
 | [Subroutines](features/subroutines.md) | [✔](engines/boost.regex.md#feature-subroutines) | [❌](engines/dotnet.md#feature-subroutines) | [✔](engines/oniguruma.md#feature-subroutines) | [❌](engines/hyperscan.md#feature-subroutines) | [❌](engines/ecmascript.md#feature-subroutines) | [❌](engines/icu.md#feature-subroutines) | [✔](engines/glib-gregex.md#feature-subroutines) |
 | [Callouts](features/callouts.md) | [❌](engines/boost.regex.md#feature-callouts) | [❌](engines/dotnet.md#feature-callouts) | [✔](engines/oniguruma.md#feature-callouts) | [❌](engines/hyperscan.md#feature-callouts) | [❌](engines/ecmascript.md#feature-callouts) | [❌](engines/icu.md#feature-callouts) | [❌](engines/glib-gregex.md#feature-callouts) |
+| [Backtracking Control Verbs](features/backtracking-control-verbs.md) | [❌](engines/boost.regex.md#feature-backtracking-control-verbs) | [❌](engines/dotnet.md#feature-backtracking-control-verbs) | [❌](engines/oniguruma.md#feature-backtracking-control-verbs) | [❌](engines/hyperscan.md#feature-backtracking-control-verbs) | [❌](engines/ecmascript.md#feature-backtracking-control-verbs) | [❌](engines/icu.md#feature-backtracking-control-verbs) | [❌](engines/glib-gregex.md#feature-backtracking-control-verbs) |
 | [Flags](features/flags.md) | [✔](engines/boost.regex.md#feature-flags) | [✔](engines/dotnet.md#feature-flags) | [✔](engines/oniguruma.md#feature-flags) | [✔](engines/hyperscan.md#feature-flags) | [✔](engines/ecmascript.md#feature-flags) | [✔](engines/icu.md#feature-flags) | [✔](engines/glib-gregex.md#feature-flags) |
 
-|  | [PCRE](engines/pcre.md) |
-|:-|:-:|
-| [Anchors](features/anchors.md) | [✔](engines/pcre.md#feature-anchors) |
-| [Buffer Boundaries](features/buffer-boundaries.md) | [✔](engines/pcre.md#feature-buffer-boundaries) |
-| [Word Boundaries](features/word-boundaries.md) | [✔](engines/pcre.md#feature-word-boundaries) |
-| [Text Segment Boundaries](features/text-segment-boundaries.md) | [❌](engines/pcre.md#feature-text-segment-boundaries) |
-| [Continuation Escape](features/continuation-escape.md) | [✔](engines/pcre.md#feature-continuation-escape) |
-| [Alternatives](features/alternatives.md) | [✔](engines/pcre.md#feature-alternatives) |
-| [Wildcard](features/wildcard.md) | [✔](engines/pcre.md#feature-wildcard) |
-| [Character Classes](features/character-classes.md) | [✔](engines/pcre.md#feature-character-classes) |
-| [Posix Character Classes](features/posix-character-classes.md) | [✔](engines/pcre.md#feature-posix-character-classes) |
-| [Negated Posix Character Classes](features/negated-posix-character-classes.md) | [✔](engines/pcre.md#feature-negated-posix-character-classes) |
-| [Collating Elements](features/collating-elements.md) | [❌](engines/pcre.md#feature-collating-elements) |
-| [Equivalence Classes](features/equivalence-classes.md) | [❌](engines/pcre.md#feature-equivalence-classes) |
-| [Character Class Escapes](features/character-class-escapes.md) | [✔](engines/pcre.md#feature-character-class-escapes) |
-| [Line Endings Escape](features/line-endings-escape.md) | [✔](engines/pcre.md#feature-line-endings-escape) |
-| [Character Property Escapes](features/character-property-escapes.md) | [✔](engines/pcre.md#feature-character-property-escapes) |
-| [Character Class Nested Set](features/character-class-nested-set.md) | [❌](engines/pcre.md#feature-character-class-nested-set) |
-| [Character Class Intersection](features/character-class-intersection.md) | [❌](engines/pcre.md#feature-character-class-intersection) |
-| [Character Class Subtraction](features/character-class-subtraction.md) | [❌](engines/pcre.md#feature-character-class-subtraction) |
-| [Quoted Characters](features/quoted-characters.md) | [✔](engines/pcre.md#feature-quoted-characters) |
-| [Quantifiers](features/quantifiers.md) | [✔](engines/pcre.md#feature-quantifiers) |
-| [Lazy Quantifiers](features/lazy-quantifiers.md) | [✔](engines/pcre.md#feature-lazy-quantifiers) |
-| [Possessive Quantifiers](features/possessive-quantifiers.md) | [✔](engines/pcre.md#feature-possessive-quantifiers) |
-| [Capturing Groups](features/capturing-groups.md) | [✔](engines/pcre.md#feature-capturing-groups) |
-| [Named Capturing Groups](features/named-capturing-groups.md) | [✔](engines/pcre.md#feature-named-capturing-groups) |
-| [Non-Capturing Groups](features/non-capturing-groups.md) | [✔](engines/pcre.md#feature-non-capturing-groups) |
-| [Backreferences](features/backreferences.md) | [✔](engines/pcre.md#feature-backreferences) |
-| [Comments](features/comments.md) | [✔](engines/pcre.md#feature-comments) |
-| [Line Comments](features/line-comments.md) | [✔](engines/pcre.md#feature-line-comments) |
-| [Modifiers](features/modifiers.md) | [✔](engines/pcre.md#feature-modifiers) |
-| [Branch Reset](features/branch-reset.md) | [✔](engines/pcre.md#feature-branch-reset) |
-| [Lookahead](features/lookahead.md) | [✔](engines/pcre.md#feature-lookahead) |
-| [Lookbehind](features/lookbehind.md) | [✔](engines/pcre.md#feature-lookbehind) |
-| [Non-Backtracking Expressions](features/non-backtracking-expressions.md) | [✔](engines/pcre.md#feature-non-backtracking-expressions) |
-| [Recursion](features/recursion.md) | [✔](engines/pcre.md#feature-recursion) |
-| [Conditional Expressions](features/conditional-expressions.md) | [✔](engines/pcre.md#feature-conditional-expressions) |
-| [Subroutines](features/subroutines.md) | [✔](engines/pcre.md#feature-subroutines) |
-| [Callouts](features/callouts.md) | [✔](engines/pcre.md#feature-callouts) |
-| [Flags](features/flags.md) | [✔](engines/pcre.md#feature-flags) |
+## Table 2 of 2
+<sup>[prev](#table-1-of-2)</sup>
+
+|  | [Perl](engines/perl.md) | [PCRE](engines/pcre.md) |
+|:-|:-:|:-:|
+| [Anchors](features/anchors.md) | [✔](engines/perl.md#feature-anchors) | [✔](engines/pcre.md#feature-anchors) |
+| [Buffer Boundaries](features/buffer-boundaries.md) | [✔](engines/perl.md#feature-buffer-boundaries) | [✔](engines/pcre.md#feature-buffer-boundaries) |
+| [Word Boundaries](features/word-boundaries.md) | [✔](engines/perl.md#feature-word-boundaries) | [✔](engines/pcre.md#feature-word-boundaries) |
+| [Text Segment Boundaries](features/text-segment-boundaries.md) | [❌](engines/perl.md#feature-text-segment-boundaries) | [❌](engines/pcre.md#feature-text-segment-boundaries) |
+| [Continuation Escape](features/continuation-escape.md) | [✔](engines/perl.md#feature-continuation-escape) | [✔](engines/pcre.md#feature-continuation-escape) |
+| [Alternatives](features/alternatives.md) | [✔](engines/perl.md#feature-alternatives) | [✔](engines/pcre.md#feature-alternatives) |
+| [Wildcard](features/wildcard.md) | [✔](engines/perl.md#feature-wildcard) | [✔](engines/pcre.md#feature-wildcard) |
+| [Character Classes](features/character-classes.md) | [✔](engines/perl.md#feature-character-classes) | [✔](engines/pcre.md#feature-character-classes) |
+| [Posix Character Classes](features/posix-character-classes.md) | [✔](engines/perl.md#feature-posix-character-classes) | [✔](engines/pcre.md#feature-posix-character-classes) |
+| [Negated Posix Character Classes](features/negated-posix-character-classes.md) | [✔](engines/perl.md#feature-negated-posix-character-classes) | [✔](engines/pcre.md#feature-negated-posix-character-classes) |
+| [Collating Elements](features/collating-elements.md) | [❌](engines/perl.md#feature-collating-elements) | [❌](engines/pcre.md#feature-collating-elements) |
+| [Equivalence Classes](features/equivalence-classes.md) | [❌](engines/perl.md#feature-equivalence-classes) | [❌](engines/pcre.md#feature-equivalence-classes) |
+| [Character Class Escapes](features/character-class-escapes.md) | [✔](engines/perl.md#feature-character-class-escapes) | [✔](engines/pcre.md#feature-character-class-escapes) |
+| [Line Endings Escape](features/line-endings-escape.md) | [✔](engines/perl.md#feature-line-endings-escape) | [✔](engines/pcre.md#feature-line-endings-escape) |
+| [Character Property Escapes](features/character-property-escapes.md) | [✔](engines/perl.md#feature-character-property-escapes) | [✔](engines/pcre.md#feature-character-property-escapes) |
+| [Character Class Nested Set](features/character-class-nested-set.md) | [✔](engines/perl.md#feature-character-class-nested-set) | [❌](engines/pcre.md#feature-character-class-nested-set) |
+| [Character Class Intersection](features/character-class-intersection.md) | [✔](engines/perl.md#feature-character-class-intersection) | [❌](engines/pcre.md#feature-character-class-intersection) |
+| [Character Class Union](features/character-class-union.md) | [✔](engines/perl.md#feature-character-class-union) | [❌](engines/pcre.md#feature-character-class-union) |
+| [Character Class Subtraction](features/character-class-subtraction.md) | [✔](engines/perl.md#feature-character-class-subtraction) | [❌](engines/pcre.md#feature-character-class-subtraction) |
+| [Character Class Symmetric Difference](features/character-class-symmetric-difference.md) | [✔](engines/perl.md#feature-character-class-symmetric-difference) | [❌](engines/pcre.md#feature-character-class-symmetric-difference) |
+| [Character Class Complement](features/character-class-complement.md) | [✔](engines/perl.md#feature-character-class-complement) | [❌](engines/pcre.md#feature-character-class-complement) |
+| [Quoted Characters](features/quoted-characters.md) | [✔](engines/perl.md#feature-quoted-characters) | [✔](engines/pcre.md#feature-quoted-characters) |
+| [Quantifiers](features/quantifiers.md) | [✔](engines/perl.md#feature-quantifiers) | [✔](engines/pcre.md#feature-quantifiers) |
+| [Lazy Quantifiers](features/lazy-quantifiers.md) | [✔](engines/perl.md#feature-lazy-quantifiers) | [✔](engines/pcre.md#feature-lazy-quantifiers) |
+| [Possessive Quantifiers](features/possessive-quantifiers.md) | [✔](engines/perl.md#feature-possessive-quantifiers) | [✔](engines/pcre.md#feature-possessive-quantifiers) |
+| [Capturing Groups](features/capturing-groups.md) | [✔](engines/perl.md#feature-capturing-groups) | [✔](engines/pcre.md#feature-capturing-groups) |
+| [Named Capturing Groups](features/named-capturing-groups.md) | [✔](engines/perl.md#feature-named-capturing-groups) | [✔](engines/pcre.md#feature-named-capturing-groups) |
+| [Non-Capturing Groups](features/non-capturing-groups.md) | [✔](engines/perl.md#feature-non-capturing-groups) | [✔](engines/pcre.md#feature-non-capturing-groups) |
+| [Backreferences](features/backreferences.md) | [✔](engines/perl.md#feature-backreferences) | [✔](engines/pcre.md#feature-backreferences) |
+| [Comments](features/comments.md) | [✔](engines/perl.md#feature-comments) | [✔](engines/pcre.md#feature-comments) |
+| [Line Comments](features/line-comments.md) | [✔](engines/perl.md#feature-line-comments) | [✔](engines/pcre.md#feature-line-comments) |
+| [Modifiers](features/modifiers.md) | [✔](engines/perl.md#feature-modifiers) | [✔](engines/pcre.md#feature-modifiers) |
+| [Branch Reset](features/branch-reset.md) | [✔](engines/perl.md#feature-branch-reset) | [✔](engines/pcre.md#feature-branch-reset) |
+| [Lookahead](features/lookahead.md) | [✔](engines/perl.md#feature-lookahead) | [✔](engines/pcre.md#feature-lookahead) |
+| [Lookbehind](features/lookbehind.md) | [✔](engines/perl.md#feature-lookbehind) | [✔](engines/pcre.md#feature-lookbehind) |
+| [Non-Backtracking Expressions](features/non-backtracking-expressions.md) | [✔](engines/perl.md#feature-non-backtracking-expressions) | [✔](engines/pcre.md#feature-non-backtracking-expressions) |
+| [Recursion](features/recursion.md) | [✔](engines/perl.md#feature-recursion) | [✔](engines/pcre.md#feature-recursion) |
+| [Conditional Expressions](features/conditional-expressions.md) | [✔](engines/perl.md#feature-conditional-expressions) | [✔](engines/pcre.md#feature-conditional-expressions) |
+| [Subroutines](features/subroutines.md) | [✔](engines/perl.md#feature-subroutines) | [✔](engines/pcre.md#feature-subroutines) |
+| [Callouts](features/callouts.md) | [✔](engines/perl.md#feature-callouts) | [✔](engines/pcre.md#feature-callouts) |
+| [Backtracking Control Verbs](features/backtracking-control-verbs.md) | [✔](engines/perl.md#feature-backtracking-control-verbs) | [✔](engines/pcre.md#feature-backtracking-control-verbs) |
+| [Flags](features/flags.md) | [✔](engines/perl.md#feature-flags) | [✔](engines/pcre.md#feature-flags) |
 
 
 
@@ -135,7 +149,13 @@ This provides a comparison of features between various regular expression engine
 [Character Class Nested Sets]: features/character-class-nested-set.md
 [Character Class Intersection]: features/character-class-intersection.md
 [Character Class Intersections]: features/character-class-intersection.md
+[Character Class Union]: features/character-class-union.md
+[Character Class Unions]: features/character-class-union.md
 [Character Class Subtraction]: features/character-class-subtraction.md
+[Character Class Symmetric Difference]: features/character-class-symmetric-difference.md
+[Character Class Symmetric Differences]: features/character-class-symmetric-difference.md
+[Character Class Complement]: features/character-class-complement.md
+[Character Class Complements]: features/character-class-complement.md
 [Quoted Characters]: features/quoted-characters.md
 [Quantifiers]: features/quantifiers.md
 [Quantifier]: features/quantifiers.md
@@ -176,6 +196,8 @@ This provides a comparison of features between various regular expression engine
 [Subroutine]: features/subroutines.md
 [Callouts]: features/callouts.md
 [Callout]: features/callouts.md
+[Backtracking Control Verbs]: features/backtracking-control-verbs.md
+[Backtracking Control Verb]: features/backtracking-control-verbs.md
 [Flags]: features/flags.md
 [Flag]: features/flags.md
 [RegExp Flags]: features/flags.md
@@ -199,7 +221,10 @@ This provides a comparison of features between various regular expression engine
 [article:Character Property Escapes]: features/character-property-escapes.md
 [article:Character Class Nested Set]: features/character-class-nested-set.md
 [article:Character Class Intersection]: features/character-class-intersection.md
+[article:Character Class Union]: features/character-class-union.md
 [article:Character Class Subtraction]: features/character-class-subtraction.md
+[article:Character Class Symmetric Difference]: features/character-class-symmetric-difference.md
+[article:Character Class Complement]: features/character-class-complement.md
 [article:Quoted Characters]: features/quoted-characters.md
 [article:Quantifiers]: features/quantifiers.md
 [article:Lazy Quantifiers]: features/lazy-quantifiers.md
@@ -219,6 +244,7 @@ This provides a comparison of features between various regular expression engine
 [article:Conditional Expressions]: features/conditional-expressions.md
 [article:Subroutines]: features/subroutines.md
 [article:Callouts]: features/callouts.md
+[article:Backtracking Control Verbs]: features/backtracking-control-verbs.md
 [article:Flags]: features/flags.md
 
 [Reference]: #

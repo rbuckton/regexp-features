@@ -1,42 +1,40 @@
-# Feature: Continuation Escape
+# Feature: Backtracking Control Verbs
 <sup>[Home](../index.md)</sup>
 <sup> \| </sup>
 <sup>[Features](index.md)</sup>
 <sup> \| </sup>
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.md "source for: name, description")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backtracking-control-verbs.md "source for: name, description")</sup>
 
-A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either the start of the input or the start of the last match.
+A <dfn>Backtracking Control Verb</dfn> is a special pattern usually in the form of <code>(*<em>VERB</em>)</code> or <code>(*<em>VERB</em>:<em>arg</em>)</code> that performs some special behavior with respect to backtracking.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backtracking-control-verbs.md "source for: syntax")</sup>
 
 
 > NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
 
-- `\G` &mdash; Matches either the start of the input or the start of the last match.
+- `(*PRUNE)`, <code>(*PRUNE:<em>name</em>)</code> &mdash; Prunes the backtracking tree.
+- `(*SKIP)`, <code>(*SKIP:<em>name</em>)</code> &mdash; Prunes the backtracking tree and preceding text cannot be part of any match of the pattern.
+- <code>(*MARK:<em>name</em>)</code>, <code>(*:<em>name</em>)</code> &mdash; Marks a point in the string where a certain part of the pattern has been matched.
+- `(*THEN)`, <code>(*THEN:<em>name</em>)</code> &mdash; When backtracked into on failure causes the engine to attempt the next alternative in the innermost enclosing group with alternatives.
+- `(*COMMIT)`, <code>(*COMMIT:<em>arg</em>)</code> &mdash; When backtracked into on failure causes the match to fail outright.
+- `(*FAIL)`, `(*F)`, <code>(*FAIL:<em>arg</em>)</code> &mdash; Matches nothing and always fails. Equivalent to `(?!)`.
+- `(*ACCEPT)`, <code>(*ACCEPT:<em>arg</em>)</code> &mdash; Causes the end of successful matching at the point where the verb was encountered.
 
 ## Engines
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-continuation-escape) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-continuation-escape) |
-| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-continuation-escape) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-continuation-escape) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-continuation-escape) |
-| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-continuation-escape) |
-| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-continuation-escape) |
-| [Glib/GRegex](../engines/glib-gregex.md) | [✔](../engines/glib-gregex.md#feature-continuation-escape) |
-| [Perl](../engines/perl.md) | [✔](../engines/perl.md#feature-continuation-escape) |
+| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-backtracking-control-verbs) |
+| [Boost.Regex](../engines/boost.regex.md) | [❌](../engines/boost.regex.md#feature-backtracking-control-verbs) |
+| [.NET](../engines/dotnet.md) | [❌](../engines/dotnet.md#feature-backtracking-control-verbs) |
+| [Oniguruma](../engines/oniguruma.md) | [❌](../engines/oniguruma.md#feature-backtracking-control-verbs) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-backtracking-control-verbs) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-backtracking-control-verbs) |
+| [ICU](../engines/icu.md) | [❌](../engines/icu.md#feature-backtracking-control-verbs) |
+| [Glib/GRegex](../engines/glib-gregex.md) | [❌](../engines/glib-gregex.md#feature-backtracking-control-verbs) |
+| [Perl](../engines/perl.md) | [✔](../engines/perl.md#feature-backtracking-control-verbs) |
 
-### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.md "source for: see_also")</sup>
-
-
-- [Anchors]
-- [Buffer Boundaries]
-- [Word Boundaries]
-- [Text Segment Boundaries]
 
 
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines

@@ -29,6 +29,7 @@ A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of t
 | [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-buffer-boundaries) |
 | [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-buffer-boundaries) |
 | [Glib/GRegex](../engines/glib-gregex.md) | [✔](../engines/glib-gregex.md#feature-buffer-boundaries) |
+| [Perl](../engines/perl.md) | [✔](../engines/perl.md#feature-buffer-boundaries) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.md "source for: see_also")</sup>
@@ -76,7 +77,13 @@ A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of t
 [Character Class Nested Sets]: character-class-nested-set.md
 [Character Class Intersection]: character-class-intersection.md
 [Character Class Intersections]: character-class-intersection.md
+[Character Class Union]: character-class-union.md
+[Character Class Unions]: character-class-union.md
 [Character Class Subtraction]: character-class-subtraction.md
+[Character Class Symmetric Difference]: character-class-symmetric-difference.md
+[Character Class Symmetric Differences]: character-class-symmetric-difference.md
+[Character Class Complement]: character-class-complement.md
+[Character Class Complements]: character-class-complement.md
 [Quoted Characters]: quoted-characters.md
 [Quantifiers]: quantifiers.md
 [Quantifier]: quantifiers.md
@@ -117,6 +124,8 @@ A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of t
 [Subroutine]: subroutines.md
 [Callouts]: callouts.md
 [Callout]: callouts.md
+[Backtracking Control Verbs]: backtracking-control-verbs.md
+[Backtracking Control Verb]: backtracking-control-verbs.md
 [Flags]: flags.md
 [Flag]: flags.md
 [RegExp Flags]: flags.md
@@ -140,7 +149,10 @@ A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of t
 [article:Character Property Escapes]: character-property-escapes.md
 [article:Character Class Nested Set]: character-class-nested-set.md
 [article:Character Class Intersection]: character-class-intersection.md
+[article:Character Class Union]: character-class-union.md
 [article:Character Class Subtraction]: character-class-subtraction.md
+[article:Character Class Symmetric Difference]: character-class-symmetric-difference.md
+[article:Character Class Complement]: character-class-complement.md
 [article:Quoted Characters]: quoted-characters.md
 [article:Quantifiers]: quantifiers.md
 [article:Lazy Quantifiers]: lazy-quantifiers.md
@@ -160,6 +172,7 @@ A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of t
 [article:Conditional Expressions]: conditional-expressions.md
 [article:Subroutines]: subroutines.md
 [article:Callouts]: callouts.md
+[article:Backtracking Control Verbs]: backtracking-control-verbs.md
 [article:Flags]: flags.md
 
 [Reference]: #

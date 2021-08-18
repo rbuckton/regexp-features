@@ -1,31 +1,30 @@
-# Engine: Oniguruma <a id="top"></a>
+# Engine: Perl <a id="top"></a>
 <sup>[Home](../index.md)</sup>
 <sup> \| </sup>
 <sup>[Engines](index.md)</sup>
 <sup> \| </sup>
 <sup>[Reference]</sup>
 <sup> \| </sup>
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/engine.md "source for: name, reference")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/engine.md "source for: name, reference")</sup>
 
 
 <!--
 'name' sources:
-  - [](../../src/engines/oniguruma/engine.md)
+  - [](../../src/engines/perl/engine.md)
 -->
 
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/engine.md)
+  - [](../../src/engines/perl/engine.md)
 -->
 
 
 
 ## Languages
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/engine.md "source for: languages")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/engine.md "source for: languages")</sup>
 
-- [C]
-- [C++]
+- [Perl]
 
 ## Features
 
@@ -35,7 +34,6 @@
 - ✔ [Anchors]
 - ✔ [Buffer Boundaries]
 - ✔ [Word Boundaries]
-- ✔ [Text Segment Boundaries]
 - ✔ [Continuation Escape]
 - ✔ [Alternatives]
 - ✔ [Wildcard]
@@ -47,7 +45,11 @@
 - ✔ [Character Property Escapes]
 - ✔ [Character Class Nested Set]
 - ✔ [Character Class Intersection]
+- ✔ [Character Class Union]
 - ✔ [Character Class Subtraction]
+- ✔ [Character Class Symmetric Difference]
+- ✔ [Character Class Complement]
+- ✔ [Quoted Characters]
 - ✔ [Quantifiers]
 - ✔ [Lazy Quantifiers]
 - ✔ [Possessive Quantifiers]
@@ -56,7 +58,9 @@
 - ✔ [Non-Capturing Groups]
 - ✔ [Backreferences]
 - ✔ [Comments]
+- ✔ [Line Comments]
 - ✔ [Modifiers]
+- ✔ [Branch Reset]
 - ✔ [Lookahead]
 - ✔ [Lookbehind]
 - ✔ [Non-Backtracking Expressions]
@@ -64,18 +68,13 @@
 - ✔ [Conditional Expressions]
 - ✔ [Subroutines]
 - ✔ [Callouts]
+- ✔ [Backtracking Control Verbs]
 
 <a id="not-supported-features"></a>The following features are *not* supported:
 
+- ❌ [Text Segment Boundaries]
 - ❌ [Collating Elements]
 - ❌ [Equivalence Classes]
-- ❌ [Character Class Union]
-- ❌ [Character Class Symmetric Difference]
-- ❌ [Character Class Complement]
-- ❌ [Quoted Characters]
-- ❌ [Line Comments]
-- ❌ [Branch Reset]
-- ❌ [Backtracking Control Verbs]
 
 ## Feature: Flags
 <sup>[Main article][article:Flags]</sup>
@@ -84,7 +83,7 @@
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/flags.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/flags.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/flags.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/flags.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -95,32 +94,24 @@
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/flags.md)
+  - [](../../src/engines/perl/features/flags.md)
 -->
 
 <dfn>Flags</dfn> control certain aspects of the matching behavior of a pattern.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/flags.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/flags.md "source for: syntax")</sup>
 
 
 The following flags are supported:
 - `i` &mdash; Ignore Case. Matches [character classes] using a case-insensitive comparison.
-- `x` &mdash; Extended Mode. Ignores whitespace in a pattern. Spaces must instead be represented by `\s` or `\ ` (an escaped space).
-- `W` &mdash; ASCII-only words (when using `\w`, `\p{Word}`, `[[:word:]]`, `\b`, or `\B`)
-- `D` &mdash; ASCII-only digits (when using `\d`, `\p{Digit}`, `[[:digit:]]`)
-- `S` &mdash; ASCII-only space (when using `\s`, `\p{Space}`, `[[:space:]]`)
-- `P` &mdash; ASCII-only POSIX properties (includes `W`, `D`, and `S` flags)
-- <code>y{<em>?</em>}</code> &mdash; Changes meaning of `\X`, `\y`, and `\Y` in unicode mode:
-  - `y{g}` &mdash; Extended Grapheme Cluster mode
-  - `y{w}` &mdash; Word mode.
-
-Some flags depend on options provided to Oniguruma <sup>[reference](https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L512)</sup>:
-- `ONIG_SYNTAX_ONIGURUMA`:
-  - `m` &mdash; Multiline. Causes the [wildcard] `.` to match newline characters.
-- `ONIG_SYNTAX_PERL` and `ONIG_SYNTAX_JAVA`:
-  - `m` &mdash; Multiline. Causes the [anchors] `^` and `$` to match the start and end of each line (respectively), rather than the start and end of the input.
-  - `s` &mdash; Singleline. Causes the [wildcard] `.` to match newline characters.
+- `m` &mdash; Multiline. Causes the [anchors] `^` and `$` to match the start and end of each line (respectively), rather than the start and end of the input.
+- `s` &mdash; Singleline. Causes the [wildcard] `.` to match newline characters.
+- `x`, `xx` &mdash; Extended Mode. Ignores whitespace in a pattern. Spaces must instead be represented by `\s` or `\ ` (an escaped space).
+- `a`, `aa`, `d`, `l`, `u` &mdash; Character Set Modifiers. Affect which character-set rules are used.
+- `n` &mdash; Explicit Capture. Prevents non-named capture groups from capturing.
+- `c` &mdash; Keep the current position during repeated matching.
+- `g` &mdash; Global. Globally match the pattern repeatedly in the string.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/flags.md "source for: see_also")</sup>
@@ -135,7 +126,7 @@ Some flags depend on options provided to Oniguruma <sup>[reference](https://gith
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/anchors.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/anchors.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/anchors.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/anchors.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -146,7 +137,7 @@ Some flags depend on options provided to Oniguruma <sup>[reference](https://gith
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/anchors.md)
+  - [](../../src/engines/perl/features/anchors.md)
 -->
 
 <dfn>Anchors</dfn> match the start or end of a line.
@@ -174,7 +165,7 @@ Some flags depend on options provided to Oniguruma <sup>[reference](https://gith
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/buffer-boundaries.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/buffer-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/buffer-boundaries.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -185,7 +176,7 @@ Some flags depend on options provided to Oniguruma <sup>[reference](https://gith
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/buffer-boundaries.md)
+  - [](../../src/engines/perl/features/buffer-boundaries.md)
 -->
 
 A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of the input. This differs slightly from `^` and `$` which can be affected by [RegExp flags] like `m`.
@@ -214,7 +205,7 @@ A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of t
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/word-boundaries.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/word-boundaries.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -225,17 +216,19 @@ A <dfn>Buffer Boundary</dfn> is an *Atom* that matches the start or the end of t
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/word-boundaries.md)
+  - [](../../src/engines/perl/features/word-boundaries.md)
 -->
 
 A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a word.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/word-boundaries.md "source for: syntax")</sup>
 
 
 - `\b` &mdash; Matches the start or the end of a word.
 - `\B` &mdash; Matches when *not* at the start or the end of a word.
+- <code>\b{<em>name</em>}</code> &mdash; Matches the start or the end of a unicode boundary specified by *name*.
+- <code>\B{<em>name</em>}</code> &mdash; Matches when *not* at the start or the end of a unicode boundary specified by *name*.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/word-boundaries.md "source for: see_also")</sup>
@@ -249,11 +242,9 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 ## Feature: Text Segment Boundaries
 <sup>[Main article][article:Text Segment Boundaries]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Text Segment Boundaries]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/text-segment-boundaries.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/text-segment-boundaries.md "source for: supported")</sup>
 
 
 <!--
@@ -261,20 +252,7 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
   - [](../../src/features/anchors-and-boundaries/text-segment-boundaries.md)
 -->
 
-
-<!--
-'reference' sources:
-  - [](../../src/engines/oniguruma/features/text-segment-boundaries.md)
--->
-
-A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the end of a text segment.
-
-### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: syntax")</sup>
-
-
-- `\y` &mdash; Matches the start or the end of a text segment.
-- `\Y` &mdash; Matches when *not* at the start or the end of a text segment.
+> ❌ This feature is not supported.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: see_also")</sup>
@@ -292,7 +270,7 @@ A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the en
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/continuation-escape.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/continuation-escape.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -303,7 +281,7 @@ A <dfn>Text Segment Boundary</dfn> is an *Atom* that matches the start or the en
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/continuation-escape.md)
+  - [](../../src/engines/perl/features/continuation-escape.md)
 -->
 
 A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either the start of the input or the start of the last match.
@@ -330,7 +308,7 @@ A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either t
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/alternatives.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/alternatives.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/alternatives.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/alternatives.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -341,7 +319,7 @@ A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either t
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/alternatives.md)
+  - [](../../src/engines/perl/features/alternatives.md)
 -->
 
 An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first branch of a pattern fails to match, each alternative is attempted from left to right until a match is found.
@@ -359,7 +337,7 @@ An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/wildcard.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/wildcard.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/wildcard.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/wildcard.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -370,17 +348,16 @@ An <dfn>Alternative</dfn> represents two or more branches in a pattern. If first
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/wildcard.md)
+  - [](../../src/engines/perl/features/wildcard.md)
 -->
 
 A <dfn>Wildcard</dfn> matches a single, non-newline character.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/wildcard.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/wildcard.md "source for: syntax")</sup>
 
 
-- `.` &mdash; Matches any character except newline characters. If the `m` [flag] is set then this matches any character.
-  - NOTE: The `m`-flag in Oniguruma is equivalent to the `s`-flag (i.e., dot all) in Perl, ECMAScript, .NET, etc.
+- `.` &mdash; Matches any character except newline characters. If the `s` (single-line) [flag] is set then this matches any character.
 
 ## Feature: Character Classes
 <sup>[Main article][article:Character Classes]</sup>
@@ -389,7 +366,7 @@ A <dfn>Wildcard</dfn> matches a single, non-newline character.
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/character-classes.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/character-classes.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -400,18 +377,31 @@ A <dfn>Wildcard</dfn> matches a single, non-newline character.
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/character-classes.md)
+  - [](../../src/engines/perl/features/character-classes.md)
 -->
 
 A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to match a single character in the set.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-classes.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/character-classes.md "source for: syntax")</sup>
 
 
 - `[…]` &mdash; Where `…` is one or more single characters or character class escapes, excluding `^` at the start and `-` between two entries in the set. Matches a character in the set. Example: `[abc]` matches `a`, `b`, or `c`.
 - <a id="negated-character-class"></a>`[^…]` &mdash; Where `…` is one or more single characters or character class escapes, excluding `-` between two entries in the set. Matches any character not in the set. Example: `[^abc]` matches `d`, `e`, or `f`, etc., but not `a`, `b`, or `c`.
 - <a id="character-class-range"></a><code>[<em>a</em>-<em>z</em>]</code> &mdash; Where *a* and *z* are single characters or character escapes. Matches any character in the range between *a* and *z* (inclusive). Example: `[a-c]` matches `a`, `b`, or `c`, but not `d`.
+- `(?[…])` &mdash; Extended Bracketed Character Class, permit the following features:
+  - [Character Class Intersection]
+  - [Character Class Subtraction]
+  - [Character Class Nested Set]
+  - [Character Class Union]
+  - [Character Class Symmetric Difference]
+  - [Character Class Complement]
+
+#### Extended Bracketed Character Class
+
+Inside of `(?[…])`, only meta characters are permitted and whitespace is ignored. Individual characters (like `a`, `1`, etc.) must be enclosed in a [Character Class Nested Set].
+
+In addition, expressions within the bracketed character class may be grouped using `(` and `)`.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-classes.md "source for: see_also")</sup>
@@ -438,7 +428,7 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/posix-character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/posix-character-classes.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/posix-character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/posix-character-classes.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -449,16 +439,17 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/posix-character-classes.md)
+  - [](../../src/engines/perl/features/posix-character-classes.md)
 -->
 
 A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that specifies a named, pre-defined set of characters.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/posix-character-classes.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/posix-character-classes.md "source for: syntax")</sup>
 
 
 - <code>[[:<em>name</em>:]]</code> &mdash; Where *name* is in a set of predefined names. Matches any character in the set.
+- <code>(?[[:<em>name</em>:]])</code> &mdash; Where *name* is in a set of predefined names. Matches any character in the set.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/posix-character-classes.md "source for: see_also")</sup>
@@ -485,7 +476,7 @@ A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that s
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/negated-posix-character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/negated-posix-character-classes.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/negated-posix-character-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/negated-posix-character-classes.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -496,16 +487,17 @@ A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that s
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/negated-posix-character-classes.md)
+  - [](../../src/engines/perl/features/negated-posix-character-classes.md)
 -->
 
 A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] set that specifies a named, pre-defined set of excluded characters.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/negated-posix-character-classes.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/negated-posix-character-classes.md "source for: syntax")</sup>
 
 
 - <code>[[:^<em>name</em>:]]</code> &mdash; Where *name* is in a set of predefined names. Matches any character not in the set.
+- <code>(?[[:^<em>name</em>:]])</code> &mdash; Where *name* is in a set of predefined names. Matches any character not in the set.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/negated-posix-character-classes.md "source for: see_also")</sup>
@@ -530,7 +522,7 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/collating-elements.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/collating-elements.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/collating-elements.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/collating-elements.md "source for: supported")</sup>
 
 
 <!--
@@ -563,7 +555,7 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/equivalence-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/equivalence-classes.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/equivalence-classes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/equivalence-classes.md "source for: supported")</sup>
 
 
 <!--
@@ -598,7 +590,7 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-escapes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/character-class-escapes.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-escapes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/character-class-escapes.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -609,28 +601,21 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/character-class-escapes.md)
+  - [](../../src/engines/perl/features/character-class-escapes.md)
 -->
 
 A <dfn>Character Class Escape</dfn> is a single character escape that represents an entire character class. They can be used as an element of a [Character Class] or as an *Atom*. It is often the case that a lower-case escape character is the inclusive set, while an upper-case variant of the same character excludes that set.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/character-class-escapes.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-escapes.md "source for: syntax")</sup>
 
 
 - `\d` &mdash; A decimal digit character in the range 0-9. Equivalent to `[0-9]`.
 - `\D` &mdash; Any character not in the range 0-9. Equivalent to `[^0-9]`.
-- `\h` &mdash; Any hexadecimal digit character. Equivalent to `[0-9a-fA-F]`.
-- `\H` &mdash; Any non-hexadecimal character. Equivalent to `[^0-9a-fA-F]`.
-- `\w` &mdash; Any "word" character. Equivalent to `[a-zA-Z0-9_]` in non-Unicode mode, `\p{General_Category}` in Unicode mode.
-- `\W` &mdash; Any non-"word" character. Equivalent to `[^a-zA-Z0-9_]` in non-Unicode mode, `\P{General_Category}` in Unicode mode.
+- `\w` &mdash; Any "word" character. Equivalent to `[a-zA-Z0-9_]`.
+- `\W` &mdash; Any non-"word" character. Equivalent to `[^a-zA-Z0-9_]`.
 - `\s` &mdash; Any whitespace character.
 - `\S` &mdash; Any non-whitespace character.
-- `\N` &mdash; Any non-newline character. Equivalent to `(?-m:.)`.
-  - NOTE: The `m`-flag in Oniguruma is equivalent to the `s`-flag (i.e., dot all) in Perl, ECMAScript, .NET, etc.
-- `\O` &mdash; Any character. Equivalent to `(?m:.)`.
-  - NOTE: The `m`-flag in Oniguruma is equivalent to the `s`-flag (i.e., dot all) in Perl, ECMAScript, .NET, etc.
-- `\X` &mdash; Text segment. Equivalent to `(?>\O(?:\Y\O)*)`.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-escapes.md "source for: see_also")</sup>
@@ -657,7 +642,7 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/line-endings-escape.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/line-endings-escape.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/line-endings-escape.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/line-endings-escape.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -668,7 +653,7 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/line-endings-escape.md)
+  - [](../../src/engines/perl/features/line-endings-escape.md)
 -->
 
 A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending character sequence.
@@ -704,7 +689,7 @@ A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending chara
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-property-escapes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/character-property-escapes.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-property-escapes.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/character-property-escapes.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -715,17 +700,18 @@ A <dfn>Line Endings Escape</dfn> is an *Atom* that matches any line ending chara
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/character-property-escapes.md)
+  - [](../../src/engines/perl/features/character-property-escapes.md)
 -->
 
 A <dfn>Character Property Escape</dfn> is an escape sequence used to match a character with a specific character property.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/character-property-escapes.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-property-escapes.md "source for: syntax")</sup>
 
 
+- <code>\p<em>X</em></code> &mdash; Where *X* is a single character. Matches a character that has the property *X*.
 - <code>\p{<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that has the property *name*.
-- <code>\p{^<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that does not have the property *name*.
+- <code>\P<em>X</em></code> &mdash; Where *X* is a single character. Matches a character that does not have the property *X*.
 - <code>\P{<em>name</em>}</code> &mdash; Where *name* is a predefined property name. Matches a character that does not have the property *name*.
 
 ### See Also
@@ -753,7 +739,7 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-nested-set.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/character-class-nested-set.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-nested-set.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/character-class-nested-set.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -764,25 +750,23 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/character-class-nested-set.md)
+  - [](../../src/engines/perl/features/character-class-nested-set.md)
 -->
 
 A <dfn>Character Class Nested Set</dfn> allows you to to define a nested [character class] inside of a [character class].
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-nested-set.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/character-class-nested-set.md "source for: syntax")</sup>
 
 
-- `[[…]]` &mdash; Matches any character in the set, just like a normal [character class].
-- `[[^…]]` &mdash; Where `…` is one or more single characters or character class escapes, excluding `-` between two entries in the set. Matches any character not in the set, just like a normal [negated character class].
-- <code>[[<em>a</em>-<em>z</em>]]</code> &mdash; Where *a* and *z* are single characters or character escapes. Matches any character in the range between *a* and *z* (inclusive), just like a normal [character class range].
+- `(?[ […] ])` &mdash; Where `…` includes any contents allowed in a normal [character class].
 
 ### Example
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-nested-set.md "source for: example")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/character-class-nested-set.md "source for: example")</sup>
 
 
 ```
-[a-z&&[^d-q]]
+(?[[a-z]&[^d-q]])
 ```
 
 Is equivalent to:
@@ -816,7 +800,7 @@ Is equivalent to:
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-intersection.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/character-class-intersection.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-intersection.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/character-class-intersection.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -827,16 +811,16 @@ Is equivalent to:
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/character-class-intersection.md)
+  - [](../../src/engines/perl/features/character-class-intersection.md)
 -->
 
 <dfn>Character Class Intersection</dfn> allows you to indicate that only characters that are in both [character classes] should match.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-intersection.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/character-class-intersection.md "source for: syntax")</sup>
 
 
-- `[…&&…]` &mdash; Matches any character that is in both the left- and right-hand sets of `&&`.
+- <code>(?[ <em>a</em> & <em>b</em> ])</code> &mdash; Where *a* and *b* are metacharacters or other *Class Atoms*.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-intersection.md "source for: see_also")</sup>
@@ -859,9 +843,11 @@ Is equivalent to:
 ## Feature: Character Class Union
 <sup>[Main article][article:Character Class Union]</sup>
 <sup> \| </sup>
+<sup>[Reference][reference:Character Class Union]</sup>
+<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-union.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/character-class-union.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-union.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/character-class-union.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -872,10 +858,17 @@ Is equivalent to:
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/character-class-union.md)
+  - [](../../src/engines/perl/features/character-class-union.md)
 -->
 
-> ❌ This feature is not supported.
+<dfn>Character Class Union</dfn> allows you include multiple classes of characters within a [character class].
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/character-class-union.md "source for: syntax")</sup>
+
+
+- <code>(?[ <em>a</em> + <em>b</em> ])</code> &mdash; Where *a* and *b* are metacharacters or other *Class Atoms*.
+- <code>(?[ <em>a</em> | <em>b</em> ])</code> &mdash; Where *a* and *b* are metacharacters or other *Class Atoms*.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-union.md "source for: see_also")</sup>
@@ -902,7 +895,7 @@ Is equivalent to:
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-subtraction.md "source for: name"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/character-class-subtraction.md "source for: reference, supported, description")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-subtraction.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/character-class-subtraction.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -913,34 +906,16 @@ Is equivalent to:
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/character-class-subtraction.md)
+  - [](../../src/engines/perl/features/character-class-subtraction.md)
 -->
 
 <dfn>Character Class Subtraction</dfn> allows you to exclude a class of characters from another class of characters in a [character class].
 
-> NOTE: Oniguruma does not support character class subtraction directly, instead you must use a combination of [character class intersections] and [character class nested sets]
-
-### Example
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/character-class-subtraction.md "source for: example")</sup>
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/character-class-subtraction.md "source for: syntax")</sup>
 
 
-```
-[a-w&&[^c-g]z]
-```
-
-Is equivalent to the following pseudo pattern:
-
-```
-([a-w] AND ([^c-g] OR z))
-```
-
-Which reduces to:
-
-```re
-[abh-w]
-```
-
-Source for this example comes from Oniguruma: [source](https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L212)
+- <code>(?[ <em>a</em> - <em>b</em> ])</code> &mdash; Where *a* and *b* are metacharacters or other *Class Atoms*.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-subtraction.md "source for: see_also")</sup>
@@ -963,9 +938,11 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 ## Feature: Character Class Symmetric Difference
 <sup>[Main article][article:Character Class Symmetric Difference]</sup>
 <sup> \| </sup>
+<sup>[Reference][reference:Character Class Symmetric Difference]</sup>
+<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-symmetric-difference.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/character-class-symmetric-difference.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-symmetric-difference.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/character-class-symmetric-difference.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -976,10 +953,16 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/character-class-symmetric-difference.md)
+  - [](../../src/engines/perl/features/character-class-symmetric-difference.md)
 -->
 
-> ❌ This feature is not supported.
+<dfn>Character Class Symmetric Difference</dfn> allows you include characters that match either, but not both, of two [character classes].
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/character-class-symmetric-difference.md "source for: syntax")</sup>
+
+
+- <code>(?[ <em>a</em> ^ <em>b</em> ])</code> &mdash; Where *a* and *b* are metacharacters or other *Class Atoms*.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-symmetric-difference.md "source for: see_also")</sup>
@@ -1002,9 +985,11 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 ## Feature: Character Class Complement
 <sup>[Main article][article:Character Class Complement]</sup>
 <sup> \| </sup>
+<sup>[Reference][reference:Character Class Complement]</sup>
+<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-complement.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/character-class-complement.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-complement.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/character-class-complement.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1015,10 +1000,16 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/character-class-complement.md)
+  - [](../../src/engines/perl/features/character-class-complement.md)
 -->
 
-> ❌ This feature is not supported.
+<dfn>Character Class Complement</dfn> allows you to negate a [character class] inside of another [character class].
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/character-class-complement.md "source for: syntax")</sup>
+
+
+- <code>(?[ !<em>a</em> ])</code> &mdash; Where *a* is a metacharacter or other *Class Atom*.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-complement.md "source for: see_also")</sup>
@@ -1041,9 +1032,11 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 ## Feature: Quoted Characters
 <sup>[Main article][article:Quoted Characters]</sup>
 <sup> \| </sup>
+<sup>[Reference][reference:Quoted Characters]</sup>
+<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quoted-characters.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/quoted-characters.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quoted-characters.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/quoted-characters.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1051,7 +1044,20 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
   - [](../../src/features/quoted-characters.md)
 -->
 
-> ❌ This feature is not supported.
+
+<!--
+'reference' sources:
+  - [](../../src/engines/perl/features/quoted-characters.md)
+-->
+
+<dfn>Quoted Characters</dfn> are a sequence of characters treated as literal characters rather than RegExp characters.
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quoted-characters.md "source for: syntax")</sup>
+
+
+- `\Q…\E` &mdash; All characters following `\Q` and preceding the next `\E` are treated as literal characters. Example: `\Q.+\E` matches `.+` but not `aa`.
+- `\Q…` &mdash; If there is no trailing `\E`, all characters until the end of the pattern are treated as literal characters.
 
 ## Feature: Quantifiers
 <sup>[Main article][article:Quantifiers]</sup>
@@ -1060,7 +1066,7 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/quantifiers.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/quantifiers.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1071,13 +1077,13 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/quantifiers.md)
+  - [](../../src/engines/perl/features/quantifiers.md)
 -->
 
 <dfn>Quantifiers</dfn> specify repetition of an *Atom*. By default, quantifiers are "greedy" in that they attempt to match as many instances of the preceding *Atom* as possible to satisfy the pattern before backtracking.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/quantifiers.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/quantifiers.md "source for: syntax")</sup>
 
 
 - `*` &mdash; Matches the preceding *Atom* zero or more times. Example: `a*b` matches `b`, `ab`, `aab`, `aaab`, etc.
@@ -1085,6 +1091,7 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 - `?` &mdash; Matches the preceding *Atom* zero or one times. Example: `a?b` matches `b`, `ab`.
 - <code>{<em>n</em>}</code> &mdash; Where *n* is an integer. Matches the preceding *Atom* exactly *n* times. Example: `a{2}` matches `aa` but not `a` or `aaa`.
 - <code>{<em>n</em>,}</code> &mdash; Where *n* is an integer. Matches the preceding *Atom* at-least *n* times. Example: `a{2,}` matches `aa`, `aaa`, `aaaa`, etc., but not `a`.
+- <code>{,<em>n</em>}</code> &mdash; Where *n* is an integer. Matches the preceding *Atom* at-most *n* times. Example: `a{,2}` matches ``, `a`, `aa`, but not `aaa`, `aaaa`, etc.
 - <code>{<em>n</em>,<em>m</em>}</code> &mdash; Where *n* and *m* are integers, and *m* >= *n*. Matches the preceding *Atom* at-least *n* times and at-most *m* times. Example: `a{2,3}` matches `aa`, `aaa`, `aaaa`, etc., but not `a` or `aaaa`.
 
 ### See Also
@@ -1101,7 +1108,7 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/lazy-quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/lazy-quantifiers.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/lazy-quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/lazy-quantifiers.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1112,13 +1119,13 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/lazy-quantifiers.md)
+  - [](../../src/engines/perl/features/lazy-quantifiers.md)
 -->
 
 <dfn>Lazy Quantifiers</dfn> specify repetition of an *Atom*, but attempt to match as few instances of the preceding *Atom* as possible to satisfy the pattern before advancing.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/lazy-quantifiers.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/lazy-quantifiers.md "source for: syntax")</sup>
 
 
 - `*?` &mdash; Matches the preceding *Atom* zero or more times.
@@ -1126,6 +1133,7 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 - `??` &mdash; Matches the preceding *Atom* zero or one times.
 - <code>{<em>n</em>}?</code> &mdash; Where *n* is an integer. Matches the preceding *Atom* exactly *n* times.
 - <code>{<em>n</em>,}?</code> &mdash; Where *n* is an integer. Matches the preceding *Atom* at-least *n* times.
+- <code>{,<em>n</em>}?</code> &mdash; Where *n* is an integer. Matches the preceding *Atom* at-most *n* times.
 - <code>{<em>n</em>,<em>m</em>}?</code> &mdash; Where *n* and *m* are integers, and *m* >= *n*. Matches the preceding *Atom* at-least *n* times and at-most *m* times.
 
 ### See Also
@@ -1142,7 +1150,7 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/possessive-quantifiers.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/possessive-quantifiers.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1153,19 +1161,21 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/possessive-quantifiers.md)
+  - [](../../src/engines/perl/features/possessive-quantifiers.md)
 -->
 
 <dfn>Possessive Quantifiers</dfn> are like greedy (i.e., regular) [quantifiers], except that backtracking is not performed.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/possessive-quantifiers.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/possessive-quantifiers.md "source for: syntax")</sup>
 
 
 - `*+` &mdash; Match zero or more characters without backtracking.
 - `++` &mdash; Match one or more characters without backtracking.
 - `?+` &mdash; Match zero or one characters without backtracking.
+- <code>{<em>n</em>}+</code> &mdash; Where *n* is an integer. Matches the preceding *Atom* exactly *n* times without backtracking (redundant).
 - <code>{<em>n</em>,}+</code> &mdash; Where *n* is an integer. Matches the preceding *Atom* at-least *n* times without backtracking.
+- <code>{,<em>n</em>}?</code> &mdash; Where *n* is an integer. Matches the preceding *Atom* at-most *n* times without backtracking.
 - <code>{<em>n</em>,<em>m</em>}+</code> &mdash; Where *n* and *m* are integers, and *m* >= *n*. Matches the preceding *Atom* at-least *n* times and at-most *m* times without backtracking.
 
 ### See Also
@@ -1182,7 +1192,7 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/capturing-groups.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/capturing-groups.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1193,7 +1203,7 @@ Source for this example comes from Oniguruma: [source](https://github.com/kkos/o
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/capturing-groups.md)
+  - [](../../src/engines/perl/features/capturing-groups.md)
 -->
 
 A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by index. A Capturing Group can be captured and returned by the matching algorithm.
@@ -1221,7 +1231,7 @@ A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom*
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/named-capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/named-capturing-groups.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/named-capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/named-capturing-groups.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1232,7 +1242,7 @@ A <dfn>Capturing Group</dfn> is a subexpression that can be treated as an *Atom*
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/named-capturing-groups.md)
+  - [](../../src/engines/perl/features/named-capturing-groups.md)
 -->
 
 A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and returned by the matching algorithm. A Named Capturing Group is also an *Atom* and can be repeated using [Quantifiers] and referenced using [Backreferences] by name.
@@ -1261,7 +1271,7 @@ A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and r
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/non-capturing-groups.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-capturing-groups.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/non-capturing-groups.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1272,7 +1282,7 @@ A <dfn>Named Capturing Group</dfn> is a subexpression that can be captured and r
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/non-capturing-groups.md)
+  - [](../../src/engines/perl/features/non-capturing-groups.md)
 -->
 
 A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *Atom* and can be repeated using [Quantifiers] but cannot be referenced using [Backreferences]. A Non-capturing Group is not captured by the matching algorithm.
@@ -1297,7 +1307,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/backreferences.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/backreferences.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1308,24 +1318,26 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/backreferences.md)
+  - [](../../src/engines/perl/features/backreferences.md)
 -->
 
 <dfn>Backreferences</dfn> allow a pattern to re-match a previously matched capture group<sup>[1][Capturing Groups] [2][Named Capturing Groups]</sup> either by number (_n_) or by _name_.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/backreferences.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/backreferences.md "source for: syntax")</sup>
 
 
 - <code>&#x5c;<em>n</em></code> &mdash; Where *n* is a decimal digit in the range 1-9. Matches the same string as the [capture group] *n*.
-- <code>\k&lt;<em>n</em>&gt;</code> &mdash; Where *n* is an integer > 0. Matches the same string as the [capture group] *n*.
-- <code>\k'<em>n</em>'</code> &mdash; Where *n* is an integer > 0. Matches the same string as the [capture group] *n*.
-- <code>\k&lt;-<em>n</em>&gt;</code> &mdash; Where *n* is an integer > 0. Matches the *n*th previous [capture group].
-- <code>\k'-<em>n</em>'</code> &mdash; Where *n* is an integer > 0. Matches the *n*th previous [capture group].
-- <code>\k&lt;+<em>n</em>&gt;</code> &mdash; Where *n* is an integer > 0. Matches the *n*th next [capture group].
-- <code>\k'+<em>n</em>'</code> &mdash; Where *n* is an integer > 0. Matches the *n*th next [capture group].
 - <code>\k&lt;<em>name</em>&gt;</code> &mdash; Matches the same string as the [named capture group] with the name *name*.
-- <code>\k'<em>name</em>'</code> &mdash; Matches the same string as the [named capture group] with the name *name*.
+
+- <code>\g<em>n</em></code> &mdash; Where *n* is an integer >= 1. Matches the same string as the [capture group] *n*.
+- <code>\g-<em>n</em></code> &mdash; Where *n* is an integer >= 1. Matches the *n*th previous [capture group].
+- <code>\g{<em>n</em>}</code> &mdash; Where *n* is an integer >= 1. Matches the same string as the [capture group] *n*.
+- <code>\g{-<em>n</em>}</code> &mdash; Where *n* is an integer >= 1. Matches the *n*th previous [capture group].
+- <code>\g{<em>name</em>}</code> &mdash; Matches the [named capture group] with the name *name*.
+- <code>\k{<em>name</em>}</code> &mdash; Matches the [named capture group] with the name *name*.
+- <code>\k&lt;<em>name</em>&gt;</code> &mdash; Matches the [named capture group] with the name *name*.
+- <code>\k'<em>name</em>'</code> &mdash; Matches the [named capture group] with the name *name*.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backreferences.md "source for: see_also")</sup>
@@ -1341,7 +1353,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/comments.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/comments.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/comments.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/comments.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1352,7 +1364,7 @@ A <dfn>Non-capturing Group</dfn> is a subexpression that can be treated as an *A
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/comments.md)
+  - [](../../src/engines/perl/features/comments.md)
 -->
 
 A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matching and can be used to document a pattern.
@@ -1372,9 +1384,11 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 ## Feature: Line Comments
 <sup>[Main article][article:Line Comments]</sup>
 <sup> \| </sup>
+<sup>[Reference][reference:Line Comments]</sup>
+<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/line-comments.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/line-comments.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/line-comments.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/line-comments.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1382,7 +1396,19 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
   - [](../../src/features/comments/line-comments.md)
 -->
 
-> ❌ This feature is not supported.
+
+<!--
+'reference' sources:
+  - [](../../src/engines/perl/features/line-comments.md)
+-->
+
+A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and ending with `\n` (or the end of the pattern) that is ignored by pattern matching and can be used to document a pattern.
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/line-comments.md "source for: syntax")</sup>
+
+
+- <code>#…<strong>\n</strong></code> &mdash; The rest of the line starting from `#` is removed from the pattern. Only supported when the `x` (extended mode) [RegExp flag] is set.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/line-comments.md "source for: see_also")</sup>
@@ -1397,7 +1423,7 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/modifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/modifiers.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/modifiers.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/modifiers.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1408,21 +1434,19 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/modifiers.md)
+  - [](../../src/engines/perl/features/modifiers.md)
 -->
 
 <dfn>Modifiers</dfn> allow you to change the currently active [RegExp flags] within a subexpression.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/modifiers.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/modifiers.md "source for: syntax")</sup>
 
 
-- `(?imxWDSPy-imxWDSPy)` - Sets or unsets (using `-`) the specified [RegExp flags] starting at the current position until the next closing `)` or the end of the pattern. Example: `(?-i)A(?i)B(?-i)C` matches `ABC`, `AbC`.
-  - NOTE: When option `ONIG_SYNTAX_ONIGURUMA` is specified, the `m`-flag in Oniguruma is equivalent to the `s`-flag (i.e., dot all) in Perl, ECMAScript, .NET, etc. <sup>[reference](https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L512)</sup>
-  - NOTE: When option `ONIG_SYNTAX_PERL` or `ONIG_SYNTAX_JAVA` are specified, the `m` and `s` flags are equivalent to their Perl/Java counterparts. <sup>[reference](https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L512)</sup>
-- `(?imxWDSPy-imxWDSPy:…)` - Sets or unsets (using `-`) the specified [RegExp flags] for the subexpression. Example: `(?-i:A(?i:B)C)` matches `ABC`, `AbC`.
-  - NOTE: When option `ONIG_SYNTAX_ONIGURUMA` is specified, the `m`-flag in Oniguruma is equivalent to the `s`-flag (i.e., dot all) in Perl, ECMAScript, .NET, etc. <sup>[reference](https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L512)</sup>
-  - NOTE: When option `ONIG_SYNTAX_PERL` or `ONIG_SYNTAX_JAVA` are specified, the `m` and `s` flags are equivalent to their Perl/Java counterparts. <sup>[reference](https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L512)</sup>
+- `(?adlupimnsx-imnsx)` - Sets or unsets (using `-`) the specified [RegExp flags] starting at the current position until the next closing `)` or the end of the pattern. Example: `(?-i)A(?i)B(?-i)C` matches `ABC`, `AbC`.
+- `(?adlupimnsx-imnsx:…)` - Sets or unsets (using `-`) the specified [RegExp flags] for the subexpression. Example: `(?-i:A(?i:B)C)` matches `ABC`, `AbC`.
+- `(?^alupimnsx)` - The `^` is a shorthand for `d-imnsx`. Flags other than `d` may follow the caret to override, but `-` is not permitted.
+- `(?^alupimnsx:…)` - The `^` is a shorthand for `d-imnsx`. Flags other than `d` may follow the caret to override, but `-` is not permitted.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/flags-and-modifiers/modifiers.md "source for: see_also")</sup>
@@ -1433,9 +1457,11 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 ## Feature: Branch Reset
 <sup>[Main article][article:Branch Reset]</sup>
 <sup> \| </sup>
+<sup>[Reference][reference:Branch Reset]</sup>
+<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/branch-reset.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/branch-reset.md "source for: supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/branch-reset.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/branch-reset.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1443,7 +1469,19 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
   - [](../../src/features/alternatives/branch-reset.md)
 -->
 
-> ❌ This feature is not supported.
+
+<!--
+'reference' sources:
+  - [](../../src/engines/perl/features/branch-reset.md)
+-->
+
+A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [Alternative] (`|`), which affects numbering for [Backreferences] and captured results returned from the matching algorithm.
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/branch-reset.md "source for: syntax")</sup>
+
+
+- `(?|…)` &mdash; Resets the subexpression count at the start of each [Alternative].
 
 ## Feature: Lookahead
 <sup>[Main article][article:Lookahead]</sup>
@@ -1452,7 +1490,7 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/lookahead.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/lookahead.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1463,17 +1501,21 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/lookahead.md)
+  - [](../../src/engines/perl/features/lookahead.md)
 -->
 
 A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pattern would match the characters to the right of the current position.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/lookahead.md "source for: syntax")</sup>
 
 
 - <a id="positive-lookahead"></a>`(?=…)` &mdash; Positive Lookahead. Matches if the provided pattern would match but does not advance the current position.
+- `(*pla:…)` &mdash; Positive Lookahead. Has the same behavior as `(?=…)`.
+- `(*positive_lookahead:…)` &mdash; Positive Lookahead. Has the same behavior as `(?=…)`.
 - <a id="negative-lookahead"></a>`(?!…)` &mdash; Negative Lookahead. Matches if the provided pattern would not match, but does not advance the current position.
+- `(*nla:…)` &mdash; Negative Lookahead. Has the same behavior as `(?!…)`.
+- `(*negative_lookahead:…)` &mdash; Negative Lookahead. Has the same behavior as `(?!…)`.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.md "source for: see_also")</sup>
@@ -1488,7 +1530,7 @@ A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pa
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookbehind.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/lookbehind.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookbehind.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/lookbehind.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1499,17 +1541,21 @@ A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pa
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/lookbehind.md)
+  - [](../../src/engines/perl/features/lookbehind.md)
 -->
 
 A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided pattern would match the characters to the left of the current position.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookbehind.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/lookbehind.md "source for: syntax")</sup>
 
 
 - <a id="positive-lookbehind"></a>`(?<=…)` &mdash; Positive Lookbehind. Matches if the provided pattern would match the preceding characters, but does not advance the current position. The pattern must have a fixed length (unbounded [quantifiers] are not permitted).
+- `(*plb:…)` &mdash; Positive Lookbehind. Has the same behavior as `(?<=…)`.
+- `(*positive_lookbehind:…)` &mdash; Positive Lookbehind. Has the same behavior as `(?<=…)`.
 - <a id="negative-lookbehind"></a>`(?<!…)` &mdash; Negative Lookbehind. Matches if the provided pattern would not match the preceding characters, but does not advance the current position. The pattern must have a fixed length (unbounded [quantifiers] are not permitted).
+- `(*nlb:…)` &mdash; Negative Lookbehind. Has the same behavior as `(?<!…)`.
+- `(*negative_lookbehind:…)` &mdash; Negative Lookbehind. Has the same behavior as `(?<!…)`.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookbehind.md "source for: see_also")</sup>
@@ -1524,7 +1570,7 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-backtracking-expressions.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/non-backtracking-expression.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-backtracking-expressions.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/non-backtracking-expressions.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1535,16 +1581,17 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/non-backtracking-expression.md)
+  - [](../../src/engines/perl/features/non-backtracking-expressions.md)
 -->
 
 A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring patterns, and will not backtrack in the event of a failed match. This is often used to improve performance.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/non-backtracking-expressions.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/non-backtracking-expressions.md "source for: syntax")</sup>
 
 
 - `(?>…)` &mdash; Matches the provided pattern, but no backtracking is performed if the match fails.
+- `(*atomic:…)` &mdash; Matches the provided pattern, but no backtracking is performed if the match fails.
 
 ## Feature: Recursion
 <sup>[Main article][article:Recursion]</sup>
@@ -1553,7 +1600,7 @@ A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring p
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/recursion.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/recursion.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/recursion.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/recursion.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1564,37 +1611,22 @@ A <dfn>Non-Backtracking Expression</dfn> is matched independent of neighboring p
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/recursion.md)
+  - [](../../src/engines/perl/features/recursion.md)
 -->
 
 A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capture group] inside of itself, to handle cases such as matching balanced parenthesis or brackets, etc.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/recursion.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/recursion.md "source for: syntax")</sup>
 
 
-- <code>\k&lt;<em>n</em>+<em>n</em>&gt;</code> &mdash; Where *n* is an integer >= 1 and *level* is an integer >= 0. Matches the same string as the [capture group] *n* at the recursion level relative to the referenced [capture group].
-- <code>\k'<em>n</em>+<em>n</em>'</code> &mdash; Where *n* is an integer >= 1 and *level* is an integer >= 0. Matches the same string as the [capture group] *n* at the recursion level relative to the referenced [capture group].
-- <code>\k&lt;<em>n</em>-<em>n</em>&gt;</code> &mdash; Where *n* is an integer >= 1 and *level* is an integer >= 0. Matches the same string as the [capture group] *n* at the recursion level relative to the referenced [capture group].
-- <code>\k'<em>n</em>-<em>n</em>'</code> &mdash; Where *n* is an integer >= 1 and *level* is an integer >= 0. Matches the same string as the [capture group] *n* at the recursion level relative to the referenced [capture group].
-- <code>\k&lt;<em>name</em>&gt;</code> &mdash; Where *level* is an integer >= 0. Matches the same string as the [named capture group] with the name *name* at the recursion level relative to the referenced [named capture group].
-- <code>\k'<em>name</em>'</code> &mdash; Where *level* is an integer >= 0. Matches the same string as the [named capture group] with the name *name* at the recursion level relative to the referenced [named capture group].
-- <code>\g&lt;<em>n</em>&gt;</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is *n*.
-- <code>\g'<em>n</em>'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is *n*.
-- `\g<0>` &mdash; Evaluates the entire pattern at the current position.
-- `\g'0'` &mdash; Evaluates the entire pattern at the current position.
-- <code>\g&lt;<em>-n</em>&gt;</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the left of the current *Atom*.
-- <code>\g'<em>-n</em>'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the left of the current *Atom*.
-- <code>\g&lt;<em>+n</em>&gt;</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*.
-- <code>\g'<em>+n</em>'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*.
-- <code>\g&lt;<em>name</em>&gt;</code> &mdash; Evaluates the [named capture group] with the provided *name*.
-- <code>\g'<em>name</em>'</code> &mdash; Evaluates the [named capture group] with the provided *name*.
-
-> NOTE: Left-most recursive calls are forbidden:
-> - `(?<name>a|\g<name>b)` - error
-> - `(?<name>a|b\g<name>c)` - ok
->
-> Source for this example comes from Oniguruma: [source](https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L464-L467)
+- <code>(?R)</code> &mdash; Reevaluates the entire pattern starting at the current position.
+- <code>(?0)</code> &mdash; Reevaluates the entire pattern starting at the current position.
+- <code>(?<em>n</em>)</code> &mdash; Where *n* is an integer >= 1. Re-evaluates the [capture group] whose offset is *n*.
+- <code>(?-<em>n</em>)</code> &mdash; Where *n* is an integer >= 1. Re-evaluates the [capture group] whose offset is the *n*th [capture group] declared to the left of the current *Atom*. Example: `(?-1)` would revaluate the last declared [capture group].
+- <code>(?+<em>n</em>)</code> &mdash; Where *n* is an integer >= 1. Re-evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*. Example: `(?+1)` would evaluate the next declared [capture group].
+- <code>(?&<em>name</em>)</code> &mdash; Re-evaluates the [named capture group] with the provided *name*.
+- <code>(?P><em>name</em>)</code> &mdash; Re-evaluates the [named capture group] with the provided *name*.
 
 ## Feature: Conditional Expressions
 <sup>[Main article][article:Conditional Expressions]</sup>
@@ -1603,7 +1635,7 @@ A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capt
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/conditional-expressions.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/conditional-expressions.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/conditional-expressions.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/conditional-expressions.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1614,35 +1646,32 @@ A <dfn>Recursive Expression</dfn> provides a mechanism for re-evaluating a [capt
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/conditional-expressions.md)
+  - [](../../src/engines/perl/features/conditional-expressions.md)
 -->
 
 A <dfn>Conditional Expression</dfn> checks a condition and evaluates its first alternative if the condition is **true**; otherwise, it evaluates its second alternative.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/conditional-expressions.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/conditional-expressions.md "source for: syntax")</sup>
 
 
-- <code>(?(<em>condition</em>)<em>condition</em>|<em>condition</em>)</code> &mdash; Matches *yes-pattern* if *condition* is **true**; otherwise, matches *no-pattern*.
-- <code>(?(<em>condition</em>)<em>condition</em>)</code> &mdash; Matches *yes-pattern* if *condition* is **true**; otherwise, matches the empty string.
+- <code>(?(<em>condition</em>)<em>yes-pattern</em>|<em>no-pattern</em>)</code> &mdash; Matches *yes-pattern* if *condition* is **true**; otherwise, matches *no-pattern*.
+- <code>(?(<em>condition</em>)<em>yes-pattern</em>)</code> &mdash; Matches *yes-pattern* if *condition* is **true**; otherwise, matches the empty string.
 
 #### Conditions
 
 The following conditions are supported:
 
-- <code>(?(?=<em>test-pattern</em>)…)</code> &mdash; Evaluates to **true** if a [lookahead] for *test-pattern* matches; otherwise, evaluates to **false**.
-- <code>(?(?!<em>test-pattern</em>)…)</code> &mdash; Evaluates to **true** if a negative [lookahead] for *test-pattern* matches; otherwise, evaluates to **false**.
-- <code>(?(<em>n</em>)…)</code> &mdash; Evaluates to **true** if the [capture group] at offset *n* was successfully matched; otherwise, evaluates to **false**.
-- <code>(?(-<em>n</em>)…)</code> &mdash; Evaluates to **true** if the *n*th [capture group] declared to the left of the current *Atom* was successfully matched; otherwise, evaluates to **false**.
-- <code>(?(+<em>n</em>)…)</code> &mdash; Evaluates to **true** if the *n*th [capture group] declared to the right of the current *Atom* was successfully matched; otherwise, evaluates to **false**.
-- <code>(?(<em>n</em>-<em>n</em>)…)</code> &mdash; Evaluates to **true** if the [capture group] at offset *n* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
-- <code>(?(<em>n</em>+<em>n</em>)…)</code> &mdash; Evaluates to **true** if the [capture group] at offset *n* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
-- <code>(?(&lt;<em>name</em>&gt;)…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched; otherwise, evaluates to **false**.
-- <code>(?('<em>name</em>')…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched; otherwise, evaluates to **false**.
-- <code>(?(&lt;<em>name</em>-<em>name</em>&gt;)…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
-- <code>(?('<em>name</em>-<em>name</em>')…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
-- <code>(?(&lt;<em>name</em>+<em>name</em>&gt;)…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
-- <code>(?('<em>name</em>+<em>name</em>')…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched at the recursion level relative to the referenced [capture group]; otherwise, evaluates to **false**.
+- <code>(?(?=<em>test-pattern</em>)…)</code> &mdash; Evaluates to **true** if a [lookahead] for *test-pattern* matches; Otherwise, evaluates to **false**.
+- <code>(?(?!<em>test-pattern</em>)…)</code> &mdash; Evaluates to **true** if a negative [lookahead] for *test-pattern* matches; Otherwise, evaluates to **false**.
+- <code>(?(<em>n</em>)…)</code> &mdash; Evaluates to **true** if the [capture group] at offset *n* was successfully matched; Otherwise, evaluates to **false**.
+- <code>(?(&lt;<em>name</em>&gt;)…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched; Otherwise, evaluates to **false**.
+- <code>(?('<em>name</em>')…)</code> &mdash; Evaluates to **true** if the [named capture group] with the name *name* was successfully matched; Otherwise, evaluates to **false**.
+- <code>(?{<em>code</em>}…)</code> &mdash; Evaluates embedded Perl code whose result is either **true** or **false**.
+- <code>(?(R)…)</code> &mdash; Evaluates to **true** if inside a [recursive expression]; Otherwise, evaluates to **false**.
+- <code>(?(R<em>n</em>)…)</code> &mdash; Evaluates to **true** if inside a [recursive expression] for the [capture group] at offset *n*; Otherwise, evaluates to **false**.
+- <code>(?(R&<em>name</em>)…)</code> &mdash; Evaluates to **true** if inside a [recursive expression] for the [named capture group] with the name *name*; Otherwise, evaluates to **false**.
+- <a name="define-condition"></a><code>(?(DEFINE)…)</code> &mdash; Always evaluates to **false**. This allows you to define [Subroutines].
 
 ## Feature: Subroutines
 <sup>[Main article][article:Subroutines]</sup>
@@ -1651,7 +1680,7 @@ The following conditions are supported:
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/subroutines.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/subroutines.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/subroutines.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/subroutines.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1662,25 +1691,20 @@ The following conditions are supported:
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/subroutines.md)
+  - [](../../src/engines/perl/features/subroutines.md)
 -->
 
 A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group] that can be reused in multiple places within the pattern to re-evaluate the subexpression from the group.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/subroutines.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/subroutines.md "source for: syntax")</sup>
 
 
-- <code>\g&lt;<em>n</em>&gt;</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is *n*.
-- <code>\g'<em>n</em>'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is *n*.
-- `\g<0>` &mdash; Evaluates the entire pattern at the current position.
-- `\g'0'` &mdash; Evaluates the entire pattern at the current position.
-- <code>\g&lt;<em>-n</em>&gt;</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the left of the current *Atom*.
-- <code>\g'<em>-n</em>'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the left of the current *Atom*.
-- <code>\g&lt;<em>+n</em>&gt;</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*.
-- <code>\g'<em>+n</em>'</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*.
-- <code>\g&lt;<em>name</em>&gt;</code> &mdash; Evaluates the [named capture group] with the provided *name*.
-- <code>\g'<em>name</em>'</code> &mdash; Evaluates the [named capture group] with the provided *name*.
+- `(?(DEFINE)…)` &mdash; Defines a set of reusable [capture groups] that can be referenced elsewhere in the pattern.
+- <code>(?<em>n</em>)</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is *n*.
+- <code>(?-<em>n</em>)</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the left of the current *Atom*. Example: `(?-1)` would revaluate the last declared [capture group].
+- <code>(?+<em>n</em>)</code> &mdash; Where *n* is an integer >= 1. Evaluates the [capture group] whose offset is the *n*th [capture group] declared to the right of the current *Atom*. Example: `(?+1)` would evaluate the next declared [capture group].
+- <code>(?&<em>name</em>)</code> &mdash; Evaluates the [named capture group] with the provided *name*.
 
 ### Example
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/subroutines.md "source for: example")</sup>
@@ -1702,7 +1726,7 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/callouts.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/callouts.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/callouts.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/callouts.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1713,38 +1737,26 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/callouts.md)
+  - [](../../src/engines/perl/features/callouts.md)
 -->
 
 A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matching.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/callouts.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/callouts.md "source for: syntax")</sup>
 
 
-- Callouts of contents:
-  - <code>(?{…<em>contents</em>…})</code> &mdash; Invokes the callout with the provided *contents*.
-  - <code>(?{…<em>contents</em>…}<em>D</em>)</code> &mdash; Invokes the callout with the provided *contents* and direction flag character *D*. The direction flag must be one of:
-    - `X` &mdash; Invoked while progressing and retracting.
-    - `<` &mdash; Invoked while retracting.
-    - `>` &mdash; Invoked while progressing.
-  - <code>(?{…<em>contents</em>…}[<em>tag</em>])</code> &mdash; Invokes the callout with the provided *contents* and *tag*.
-  - <code>(?{…<em>contents</em>…}[<em>tag</em>]<em>D</em>)</code> &mdash; Invokes the callout with the provided *contents*, *tag*, and direction flag character *D*. The direction flag must be one of:
-    - `X` &mdash; Invoked while progressing and retracting.
-    - `<` &mdash; Invoked while retracting.
-    - `>` &mdash; Invoked while progressing.
-- Callouts of *name*:
- - <code>(*<em>name</em>)</code> &mdash; Invokes the callout with the provided *name*.
- - <code>(*<em>name</em>{<em>args</em>…})</code> &mdash; Invokes the callout with the provided *name* and *args*.
- - <code>(*<em>name</em>[<em>tag</em>])</code> &mdash; Invokes the callout with the provided *name* and *tag*.
- - <code>(*<em>name</em>[<em>tag</em>]{<em>args</em>…})</code> &mdash; Invokes the callout with the provided *name*, *tag*, and *args*.
+- <code>(?{<em>code</em>})</code> &mdash; - Zero-width assertion that executes embedded Perl code.
+- <code>(??{<em>code</em>})</code> &mdash; - Zero-width assertion that executes embedded Perl code. The return value of the embedded code is interpreted as a pattern to be matched at this position.
 
 ## Feature: Backtracking Control Verbs
 <sup>[Main article][article:Backtracking Control Verbs]</sup>
 <sup> \| </sup>
+<sup>[Reference][reference:Backtracking Control Verbs]</sup>
+<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
-<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backtracking-control-verbs.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/oniguruma/features/backtracking-control-verbs.md "source for: reference, supported")</sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backtracking-control-verbs.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/backtracking-control-verbs.md "source for: reference, supported")</sup>
 
 
 <!--
@@ -1755,10 +1767,22 @@ A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matc
 
 <!--
 'reference' sources:
-  - [](../../src/engines/oniguruma/features/backtracking-control-verbs.md)
+  - [](../../src/engines/perl/features/backtracking-control-verbs.md)
 -->
 
-> ❌ This feature is not supported.
+A <dfn>Backtracking Control Verb</dfn> is a special pattern usually in the form of <code>(*<em>VERB</em>)</code> or <code>(*<em>VERB</em>:<em>arg</em>)</code> that performs some special behavior with respect to backtracking.
+
+### Syntax
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/backtracking-control-verbs.md "source for: syntax")</sup>
+
+
+- `(*PRUNE)`, <code>(*PRUNE:<em>name</em>)</code> &mdash; Prunes the backtracking tree.
+- `(*SKIP)`, <code>(*SKIP:<em>name</em>)</code> &mdash; Prunes the backtracking tree and preceding text cannot be part of any match of the pattern.
+- <code>(*MARK:<em>name</em>)</code>, <code>(*:<em>name</em>)</code> &mdash; Marks a point in the string where a certain part of the pattern has been matched.
+- `(*THEN)`, <code>(*THEN:<em>name</em>)</code> &mdash; When backtracked into on failure causes the engine to attempt the next alternative in the innermost enclosing group with alternatives.
+- `(*COMMIT)`, <code>(*COMMIT:<em>arg</em>)</code> &mdash; When backtracked into on failure causes the match to fail outright.
+- `(*FAIL)`, `(*F)`, <code>(*FAIL:<em>arg</em>)</code> &mdash; Matches nothing and always fails. Equivalent to `(?!)`.
+- `(*ACCEPT)`, <code>(*ACCEPT:<em>arg</em>)</code> &mdash; Causes the end of successful matching at the point where the verb was encountered.
 
 
 
@@ -1897,50 +1921,50 @@ A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matc
 [article:Backtracking Control Verbs]: ../features/backtracking-control-verbs.md
 [article:Flags]: ../features/flags.md
 
-[Reference]: https://github.com/kkos/oniguruma
+[Reference]: https://perldoc.perl.org/perlre
 
-[reference:Flags]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L265-L289
-[reference:Anchors]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L172
-[reference:Buffer Boundaries]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L179-L181
-[reference:Word Boundaries]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L176-L177
-[reference:Text Segment Boundaries]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L186-L201
-[reference:Continuation Escape]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L182
-[reference:Alternatives]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L9
-[reference:Wildcard]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L48
-[reference:Character Classes]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L205
-[reference:Posix Character Classes]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L218
-[reference:Negated Posix Character Classes]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L218
+[reference:Flags]: https://perldoc.perl.org/perlre#Modifiers
+[reference:Anchors]: https://perldoc.perl.org/perlre#Metacharacters
+[reference:Buffer Boundaries]: https://perldoc.perl.org/perlre#Assertions
+[reference:Word Boundaries]: https://perldoc.perl.org/perlre#Assertions
+[reference:Text Segment Boundaries]: #not-supported-features
+[reference:Continuation Escape]: https://perldoc.perl.org/perlre#Assertions
+[reference:Alternatives]: https://perldoc.perl.org/perlre#Metacharacters
+[reference:Wildcard]: https://perldoc.perl.org/perlre#Metacharacters
+[reference:Character Classes]: https://perldoc.perl.org/perlre#Character-Classes-and-other-Special-Escapes
+[reference:Posix Character Classes]: https://perldoc.perl.org/perlrecharclass#POSIX-Character-Classes
+[reference:Negated Posix Character Classes]: https://perldoc.perl.org/perlrecharclass#POSIX-Character-Classes
 [reference:Collating Elements]: #not-supported-features
 [reference:Equivalence Classes]: #not-supported-features
-[reference:Character Class Escapes]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L50-L91
-[reference:Line Endings Escape]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L83-L87
-[reference:Character Property Escapes]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L112
-[reference:Character Class Nested Set]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L210
-[reference:Character Class Intersection]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L210
-[reference:Character Class Union]: #not-supported-features
-[reference:Character Class Subtraction]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L210-L212
-[reference:Character Class Symmetric Difference]: #not-supported-features
-[reference:Character Class Complement]: #not-supported-features
-[reference:Quoted Characters]: #not-supported-features
-[reference:Quantifiers]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L132
-[reference:Lazy Quantifiers]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L145
-[reference:Possessive Quantifiers]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L159
-[reference:Capturing Groups]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L293
-[reference:Named Capturing Groups]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L312
-[reference:Non-Capturing Groups]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L292
-[reference:Backreferences]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L398
-[reference:Comments]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L263
-[reference:Line Comments]: #not-supported-features
-[reference:Modifiers]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L265-L289
-[reference:Branch Reset]: #not-supported-features
-[reference:Lookahead]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L295-L296
-[reference:Lookbehind]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L298-L299
-[reference:Non-Backtracking Expressions]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L309-L310
-[reference:Recursion]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L418
-[reference:Conditional Expressions]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L379
-[reference:Subroutines]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L451
-[reference:Callouts]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L322
-[reference:Backtracking Control Verbs]: #not-supported-features
+[reference:Character Class Escapes]: https://perldoc.perl.org/perlre#Character-Classes-and-other-Special-Escapes
+[reference:Line Endings Escape]: https://perldoc.perl.org/perlre#Character-Classes-and-other-Special-Escapes
+[reference:Character Property Escapes]: https://perldoc.perl.org/perlre#Character-Classes-and-other-Special-Escapes
+[reference:Character Class Nested Set]: https://perldoc.perl.org/perlrecharclass#Extended-Bracketed-Character-Classes
+[reference:Character Class Intersection]: https://perldoc.perl.org/perlrecharclass#Extended-Bracketed-Character-Classes
+[reference:Character Class Union]: https://perldoc.perl.org/perlrecharclass#Extended-Bracketed-Character-Classes
+[reference:Character Class Subtraction]: https://perldoc.perl.org/perlrecharclass#Extended-Bracketed-Character-Classes
+[reference:Character Class Symmetric Difference]: https://perldoc.perl.org/perlrecharclass#Extended-Bracketed-Character-Classes
+[reference:Character Class Complement]: https://perldoc.perl.org/perlrecharclass#Extended-Bracketed-Character-Classes
+[reference:Quoted Characters]: https://perldoc.perl.org/perlre#Escape-sequences
+[reference:Quantifiers]: https://perldoc.perl.org/perlre#Quantifiers
+[reference:Lazy Quantifiers]: https://perldoc.perl.org/perlre#Quantifiers
+[reference:Possessive Quantifiers]: https://perldoc.perl.org/perlre#Quantifiers
+[reference:Capturing Groups]: https://perldoc.perl.org/perlre#Capture-groups
+[reference:Named Capturing Groups]: https://perldoc.perl.org/perlre#Capture-groups
+[reference:Non-Capturing Groups]: https://perldoc.perl.org/perlre#Capture-groups
+[reference:Backreferences]: https://perldoc.perl.org/perlre#Capture-groups
+[reference:Comments]: https://perldoc.perl.org/perlre#Extended-Patterns
+[reference:Line Comments]: https://perldoc.perl.org/perlre#Metacharacters
+[reference:Modifiers]: yhttps://perldoc.perl.org/perlre#Modifiers
+[reference:Branch Reset]: https://perldoc.perl.org/perlre#(?%7Cpattern)
+[reference:Lookahead]: https://perldoc.perl.org/perlre#Lookaround-Assertions
+[reference:Lookbehind]: https://perldoc.perl.org/perlre#Lookaround-Assertions
+[reference:Non-Backtracking Expressions]: https://perldoc.perl.org/perlre#(?%3Epattern)
+[reference:Recursion]: https://perldoc.perl.org/perlre#(?PARNO)-(?-PARNO)-(?+PARNO)-(?R)-(?0)
+[reference:Conditional Expressions]: https://perldoc.perl.org/perlre#(?(condition)yes-pattern%7Cno-pattern)
+[reference:Subroutines]: https://perldoc.perl.org/perlre#(?&amp;amp;NAME)
+[reference:Callouts]: https://perldoc.perl.org/perlre#(?%7B-code-%7D)
+[reference:Backtracking Control Verbs]: https://perldoc.perl.org/perlre#Special-Backtracking-Control-Verbs
 
 [C++]: ../languages/cpp.md
 [C#]: ../languages/csharp.md

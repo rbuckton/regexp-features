@@ -1,42 +1,43 @@
-# Feature: Continuation Escape
+# Feature: Character Class Complement
 <sup>[Home](../index.md)</sup>
 <sup> \| </sup>
 <sup>[Features](index.md)</sup>
 <sup> \| </sup>
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.md "source for: name, description")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-complement.md "source for: name, description")</sup>
 
-A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either the start of the input or the start of the last match.
-
-### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.md "source for: syntax")</sup>
-
-
-> NOTE: The following syntax is an example based on some of the supported engines. For specific engine support, see [Engines](#engines).
-
-- `\G` &mdash; Matches either the start of the input or the start of the last match.
+<dfn>Character Class Complement</dfn> allows you to negate a [character class] inside of another [character class].
 
 ## Engines
 
 | Engine | Supported |
 |:-------|:---------:|
-| [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-continuation-escape) |
-| [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-continuation-escape) |
-| [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-continuation-escape) |
-| [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-continuation-escape) |
-| [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-continuation-escape) |
-| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-continuation-escape) |
-| [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-continuation-escape) |
-| [Glib/GRegex](../engines/glib-gregex.md) | [✔](../engines/glib-gregex.md#feature-continuation-escape) |
-| [Perl](../engines/perl.md) | [✔](../engines/perl.md#feature-continuation-escape) |
+| [PCRE](../engines/pcre.md) | [❌](../engines/pcre.md#feature-character-class-complement) |
+| [Boost.Regex](../engines/boost.regex.md) | [❌](../engines/boost.regex.md#feature-character-class-complement) |
+| [.NET](../engines/dotnet.md) | [❌](../engines/dotnet.md#feature-character-class-complement) |
+| [Oniguruma](../engines/oniguruma.md) | [❌](../engines/oniguruma.md#feature-character-class-complement) |
+| [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-character-class-complement) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-character-class-complement) |
+| [ICU](../engines/icu.md) | [❌](../engines/icu.md#feature-character-class-complement) |
+| [Glib/GRegex](../engines/glib-gregex.md) | [❌](../engines/glib-gregex.md#feature-character-class-complement) |
+| [Perl](../engines/perl.md) | [✔](../engines/perl.md#feature-character-class-complement) |
 
 ### See Also
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.md "source for: see_also")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-complement.md "source for: see_also")</sup>
 
 
-- [Anchors]
-- [Buffer Boundaries]
-- [Word Boundaries]
-- [Text Segment Boundaries]
+- [Character Classes]
+- [Posix Character Classes]
+- [Negated Posix Character Classes]
+- [Collating Elements]
+- [Equivalence Classes]
+- [Character Class Escapes]
+- [Line Endings Escape]
+- [Character Property Escapes]
+- [Character Class Nested Set]
+- [Character Class Intersection]
+- [Character Class Union]
+- [Character Class Subtraction]
+- [Character Class Symmetric Difference]
 
 
 [new engine]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-engines

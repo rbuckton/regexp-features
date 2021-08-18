@@ -68,11 +68,15 @@
 - ❌ [Line Endings Escape]
 - ❌ [Character Class Nested Set]
 - ❌ [Character Class Intersection]
+- ❌ [Character Class Union]
+- ❌ [Character Class Symmetric Difference]
+- ❌ [Character Class Complement]
 - ❌ [Quoted Characters]
 - ❌ [Possessive Quantifiers]
 - ❌ [Branch Reset]
 - ❌ [Subroutines]
 - ❌ [Callouts]
+- ❌ [Backtracking Control Verbs]
 
 ## Feature: Flags
 <sup>[Main article][article:Flags]</sup>
@@ -236,8 +240,6 @@ A <dfn>Word Boundary</dfn> is an *Atom* that matches the start or the end of a w
 ## Feature: Text Segment Boundaries
 <sup>[Main article][article:Text Segment Boundaries]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Text Segment Boundaries]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/text-segment-boundaries.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/dotnet/features/text-segment-boundaries.md "source for: supported")</sup>
@@ -399,12 +401,13 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 - [Character Property Escapes]
 - [Character Class Nested Set]
 - [Character Class Intersection]
+- [Character Class Union]
 - [Character Class Subtraction]
+- [Character Class Symmetric Difference]
+- [Character Class Complement]
 
 ## Feature: Posix Character Classes
 <sup>[Main article][article:Posix Character Classes]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Posix Character Classes]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -431,12 +434,13 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 - [Character Property Escapes]
 - [Character Class Nested Set]
 - [Character Class Intersection]
+- [Character Class Union]
 - [Character Class Subtraction]
+- [Character Class Symmetric Difference]
+- [Character Class Complement]
 
 ## Feature: Negated Posix Character Classes
 <sup>[Main article][article:Negated Posix Character Classes]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Negated Posix Character Classes]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -463,12 +467,13 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 - [Character Property Escapes]
 - [Character Class Nested Set]
 - [Character Class Intersection]
+- [Character Class Union]
 - [Character Class Subtraction]
+- [Character Class Symmetric Difference]
+- [Character Class Complement]
 
 ## Feature: Collating Elements
 <sup>[Main article][article:Collating Elements]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Collating Elements]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -495,12 +500,13 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 - [Character Property Escapes]
 - [Character Class Nested Set]
 - [Character Class Intersection]
+- [Character Class Union]
 - [Character Class Subtraction]
+- [Character Class Symmetric Difference]
+- [Character Class Complement]
 
 ## Feature: Equivalence Classes
 <sup>[Main article][article:Equivalence Classes]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Equivalence Classes]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -527,7 +533,10 @@ A <dfn>Character Class</dfn> is an *Atom* that specifies a set of characters to 
 - [Character Property Escapes]
 - [Character Class Nested Set]
 - [Character Class Intersection]
+- [Character Class Union]
 - [Character Class Subtraction]
+- [Character Class Symmetric Difference]
+- [Character Class Complement]
 
 ## Feature: Character Class Escapes
 <sup>[Main article][article:Character Class Escapes]</sup>
@@ -576,12 +585,13 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
 - [Character Property Escapes]
 - [Character Class Nested Set]
 - [Character Class Intersection]
+- [Character Class Union]
 - [Character Class Subtraction]
+- [Character Class Symmetric Difference]
+- [Character Class Complement]
 
 ## Feature: Line Endings Escape
 <sup>[Main article][article:Line Endings Escape]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Line Endings Escape]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -608,7 +618,10 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
 - [Character Property Escapes]
 - [Character Class Nested Set]
 - [Character Class Intersection]
+- [Character Class Union]
 - [Character Class Subtraction]
+- [Character Class Symmetric Difference]
+- [Character Class Complement]
 
 ## Feature: Character Property Escapes
 <sup>[Main article][article:Character Property Escapes]</sup>
@@ -653,12 +666,13 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 - [Line Endings Escape]
 - [Character Class Nested Set]
 - [Character Class Intersection]
+- [Character Class Union]
 - [Character Class Subtraction]
+- [Character Class Symmetric Difference]
+- [Character Class Complement]
 
 ## Feature: Character Class Nested Set
 <sup>[Main article][article:Character Class Nested Set]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Character Class Nested Set]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -685,12 +699,13 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 - [Line Endings Escape]
 - [Character Property Escapes]
 - [Character Class Intersection]
+- [Character Class Union]
 - [Character Class Subtraction]
+- [Character Class Symmetric Difference]
+- [Character Class Complement]
 
 ## Feature: Character Class Intersection
 <sup>[Main article][article:Character Class Intersection]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Character Class Intersection]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -717,7 +732,49 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 - [Line Endings Escape]
 - [Character Property Escapes]
 - [Character Class Nested Set]
+- [Character Class Union]
 - [Character Class Subtraction]
+- [Character Class Symmetric Difference]
+- [Character Class Complement]
+
+## Feature: Character Class Union
+<sup>[Main article][article:Character Class Union]</sup>
+<sup> \| </sup>
+<sup>[Back to top](#top)</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-union.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/dotnet/features/character-class-union.md "source for: reference, supported")</sup>
+
+
+<!--
+'name' sources:
+  - [](../../src/features/character-classes/character-class-union.md)
+-->
+
+
+<!--
+'reference' sources:
+  - [](../../src/engines/dotnet/features/character-class-union.md)
+-->
+
+> ❌ This feature is not supported.
+
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-union.md "source for: see_also")</sup>
+
+
+- [Character Classes]
+- [Posix Character Classes]
+- [Negated Posix Character Classes]
+- [Collating Elements]
+- [Equivalence Classes]
+- [Character Class Escapes]
+- [Line Endings Escape]
+- [Character Property Escapes]
+- [Character Class Nested Set]
+- [Character Class Intersection]
+- [Character Class Subtraction]
+- [Character Class Symmetric Difference]
+- [Character Class Complement]
 
 ## Feature: Character Class Subtraction
 <sup>[Main article][article:Character Class Subtraction]</sup>
@@ -756,11 +813,90 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 - [Character Property Escapes]
 - [Character Class Nested Set]
 - [Character Class Intersection]
+- [Character Class Union]
+- [Character Class Symmetric Difference]
+- [Character Class Complement]
+
+## Feature: Character Class Symmetric Difference
+<sup>[Main article][article:Character Class Symmetric Difference]</sup>
+<sup> \| </sup>
+<sup>[Back to top](#top)</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-symmetric-difference.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/dotnet/features/character-class-symmetric-difference.md "source for: reference, supported")</sup>
+
+
+<!--
+'name' sources:
+  - [](../../src/features/character-classes/character-class-symmetric-difference.md)
+-->
+
+
+<!--
+'reference' sources:
+  - [](../../src/engines/dotnet/features/character-class-symmetric-difference.md)
+-->
+
+> ❌ This feature is not supported.
+
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-symmetric-difference.md "source for: see_also")</sup>
+
+
+- [Character Classes]
+- [Posix Character Classes]
+- [Negated Posix Character Classes]
+- [Collating Elements]
+- [Equivalence Classes]
+- [Character Class Escapes]
+- [Line Endings Escape]
+- [Character Property Escapes]
+- [Character Class Nested Set]
+- [Character Class Intersection]
+- [Character Class Union]
+- [Character Class Subtraction]
+- [Character Class Complement]
+
+## Feature: Character Class Complement
+<sup>[Main article][article:Character Class Complement]</sup>
+<sup> \| </sup>
+<sup>[Back to top](#top)</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-complement.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/dotnet/features/character-class-complement.md "source for: reference, supported")</sup>
+
+
+<!--
+'name' sources:
+  - [](../../src/features/character-classes/character-class-complement.md)
+-->
+
+
+<!--
+'reference' sources:
+  - [](../../src/engines/dotnet/features/character-class-complement.md)
+-->
+
+> ❌ This feature is not supported.
+
+### See Also
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-complement.md "source for: see_also")</sup>
+
+
+- [Character Classes]
+- [Posix Character Classes]
+- [Negated Posix Character Classes]
+- [Collating Elements]
+- [Equivalence Classes]
+- [Character Class Escapes]
+- [Line Endings Escape]
+- [Character Property Escapes]
+- [Character Class Nested Set]
+- [Character Class Intersection]
+- [Character Class Union]
+- [Character Class Subtraction]
+- [Character Class Symmetric Difference]
 
 ## Feature: Quoted Characters
 <sup>[Main article][article:Quoted Characters]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Quoted Characters]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -806,7 +942,7 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 - `?` &mdash; Matches the preceding *Atom* zero or one times. Example: `a?b` matches `b`, `ab`.
 - <code>{<em>n</em>}</code> &mdash; Where *n* is an integer. Matches the preceding *Atom* exactly *n* times. Example: `a{2}` matches `aa` but not `a` or `aaa`.
 - <code>{<em>n</em>,}</code> &mdash; Where *n* is an integer. Matches the preceding *Atom* at-least *n* times. Example: `a{2,}` matches `aa`, `aaa`, `aaaa`, etc., but not `a`.
-- <code>{<em>n</em>,<em>n</em>}</code> &mdash; Where *n* and *m* are integers, and *m* >= *n*. Matches the preceding *Atom* at-least *n* times and at-most *m* times. Example: `a{2,3}` matches `aa`, `aaa`, `aaaa`, etc., but not `a` or `aaaa`.
+- <code>{<em>n</em>,<em>m</em>}</code> &mdash; Where *n* and *m* are integers, and *m* >= *n*. Matches the preceding *Atom* at-least *n* times and at-most *m* times. Example: `a{2,3}` matches `aa`, `aaa`, `aaaa`, etc., but not `a` or `aaaa`.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/quantifiers.md "source for: see_also")</sup>
@@ -847,7 +983,7 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 - `??` &mdash; Matches the preceding *Atom* zero or one times.
 - <code>{<em>n</em>}?</code> &mdash; Where *n* is an integer. Matches the preceding *Atom* exactly *n* times.
 - <code>{<em>n</em>,}?</code> &mdash; Where *n* is an integer. Matches the preceding *Atom* at-least *n* times.
-- <code>{<em>n</em>,<em>n</em>}?</code> &mdash; Where *n* and *m* are integers, and *m* >= *n*. Matches the preceding *Atom* at-least *n* times and at-most *m* times.
+- <code>{<em>n</em>,<em>m</em>}?</code> &mdash; Where *n* and *m* are integers, and *m* >= *n*. Matches the preceding *Atom* at-least *n* times and at-most *m* times.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/quantifiers/lazy-quantifiers.md "source for: see_also")</sup>
@@ -858,8 +994,6 @@ A <dfn>Character Property Escape</dfn> is an escape sequence used to match a cha
 
 ## Feature: Possessive Quantifiers
 <sup>[Main article][article:Possessive Quantifiers]</sup>
-<sup> \| </sup>
-<sup>[Reference][reference:Possessive Quantifiers]</sup>
 <sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
@@ -1141,8 +1275,6 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 ## Feature: Branch Reset
 <sup>[Main article][article:Branch Reset]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Branch Reset]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/alternatives/branch-reset.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/dotnet/features/branch-reset.md "source for: supported")</sup>
@@ -1182,8 +1314,8 @@ A <dfn>Lookahead</dfn> is a zero-width assertion that matches if the provided pa
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.md "source for: syntax")</sup>
 
 
-- <a id="positive-lookahead"></a>`(?=…)` &mdash; Matches if the provided pattern would match but does not advance the current position.
-- <a id="negative-lookahead"></a>`(?!…)` &mdash; Matches if the provided pattern would not match, but does not advance the current position.
+- <a id="positive-lookahead"></a>`(?=…)` &mdash; Positive Lookahead. Matches if the provided pattern would match but does not advance the current position.
+- <a id="negative-lookahead"></a>`(?!…)` &mdash; Negative Lookahead. Matches if the provided pattern would not match, but does not advance the current position.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookahead.md "source for: see_also")</sup>
@@ -1218,8 +1350,8 @@ A <dfn>Lookbehind</dfn> is a zero-width assertion that matches if the provided p
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookbehind.md "source for: syntax")</sup>
 
 
-- <a id="positive-lookbehind"></a>`(?<=…)` &mdash; Matches if the provided pattern would match the preceding characters, but does not advance the current position. The pattern must have a fixed length (unbounded [quantifiers] are not permitted).
-- <a id="negative-lookbehind"></a>`(?<!…)` &mdash; Matches if the provided pattern would not match the preceding characters, but does not advance the current position. The pattern must have a fixed length (unbounded [quantifiers] are not permitted).
+- <a id="positive-lookbehind"></a>`(?<=…)` &mdash; Positive Lookbehind. Matches if the provided pattern would match the preceding characters, but does not advance the current position. The pattern must have a fixed length (unbounded [quantifiers] are not permitted).
+- <a id="negative-lookbehind"></a>`(?<!…)` &mdash; Negative Lookbehind. Matches if the provided pattern would not match the preceding characters, but does not advance the current position. The pattern must have a fixed length (unbounded [quantifiers] are not permitted).
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/lookaround/lookbehind.md "source for: see_also")</sup>
@@ -1368,8 +1500,6 @@ The following conditions are supported:
 ## Feature: Subroutines
 <sup>[Main article][article:Subroutines]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Subroutines]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/subroutines.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/dotnet/features/subroutines.md "source for: supported")</sup>
@@ -1385,8 +1515,6 @@ The following conditions are supported:
 ## Feature: Callouts
 <sup>[Main article][article:Callouts]</sup>
 <sup> \| </sup>
-<sup>[Reference][reference:Callouts]</sup>
-<sup> \| </sup>
 <sup>[Back to top](#top)</sup>
 <sup> \| </sup>
 <sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/callouts.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/dotnet/features/callouts.md "source for: supported")</sup>
@@ -1395,6 +1523,27 @@ The following conditions are supported:
 <!--
 'name' sources:
   - [](../../src/features/callouts.md)
+-->
+
+> ❌ This feature is not supported.
+
+## Feature: Backtracking Control Verbs
+<sup>[Main article][article:Backtracking Control Verbs]</sup>
+<sup> \| </sup>
+<sup>[Back to top](#top)</sup>
+<sup> \| </sup>
+<sup>Improve this section: [1](https://github.com/rbuckton/regexp-features/edit/main/src/features/groups-and-backtracking/backtracking-control-verbs.md "source for: name, description"), [2](https://github.com/rbuckton/regexp-features/edit/main/src/engines/dotnet/features/backtracking-control-verbs.md "source for: reference, supported")</sup>
+
+
+<!--
+'name' sources:
+  - [](../../src/features/groups-and-backtracking/backtracking-control-verbs.md)
+-->
+
+
+<!--
+'reference' sources:
+  - [](../../src/engines/dotnet/features/backtracking-control-verbs.md)
 -->
 
 > ❌ This feature is not supported.
@@ -1442,7 +1591,13 @@ The following conditions are supported:
 [Character Class Nested Sets]: #feature-character-class-nested-set
 [Character Class Intersection]: #feature-character-class-intersection
 [Character Class Intersections]: #feature-character-class-intersection
+[Character Class Union]: #feature-character-class-union
+[Character Class Unions]: #feature-character-class-union
 [Character Class Subtraction]: #feature-character-class-subtraction
+[Character Class Symmetric Difference]: #feature-character-class-symmetric-difference
+[Character Class Symmetric Differences]: #feature-character-class-symmetric-difference
+[Character Class Complement]: #feature-character-class-complement
+[Character Class Complements]: #feature-character-class-complement
 [Quoted Characters]: #feature-quoted-characters
 [Quantifiers]: #feature-quantifiers
 [Quantifier]: #feature-quantifiers
@@ -1483,6 +1638,8 @@ The following conditions are supported:
 [Subroutine]: #feature-subroutines
 [Callouts]: #feature-callouts
 [Callout]: #feature-callouts
+[Backtracking Control Verbs]: #feature-backtracking-control-verbs
+[Backtracking Control Verb]: #feature-backtracking-control-verbs
 
 
 [article:Anchors]: ../features/anchors.md
@@ -1502,7 +1659,10 @@ The following conditions are supported:
 [article:Character Property Escapes]: ../features/character-property-escapes.md
 [article:Character Class Nested Set]: ../features/character-class-nested-set.md
 [article:Character Class Intersection]: ../features/character-class-intersection.md
+[article:Character Class Union]: ../features/character-class-union.md
 [article:Character Class Subtraction]: ../features/character-class-subtraction.md
+[article:Character Class Symmetric Difference]: ../features/character-class-symmetric-difference.md
+[article:Character Class Complement]: ../features/character-class-complement.md
 [article:Quoted Characters]: ../features/quoted-characters.md
 [article:Quantifiers]: ../features/quantifiers.md
 [article:Lazy Quantifiers]: ../features/lazy-quantifiers.md
@@ -1522,6 +1682,7 @@ The following conditions are supported:
 [article:Conditional Expressions]: ../features/conditional-expressions.md
 [article:Subroutines]: ../features/subroutines.md
 [article:Callouts]: ../features/callouts.md
+[article:Backtracking Control Verbs]: ../features/backtracking-control-verbs.md
 [article:Flags]: ../features/flags.md
 
 [Reference]: http://msdn2.microsoft.com/en-us/library/system.text.regularexpressions.aspx
@@ -1544,7 +1705,10 @@ The following conditions are supported:
 [reference:Character Property Escapes]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p
 [reference:Character Class Nested Set]: #not-supported-features
 [reference:Character Class Intersection]: #not-supported-features
+[reference:Character Class Union]: #not-supported-features
 [reference:Character Class Subtraction]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/character-classes-in-regular-expressions#character-class-subtraction-base_group---excluded_group
+[reference:Character Class Symmetric Difference]: #not-supported-features
+[reference:Character Class Complement]: #not-supported-features
 [reference:Quoted Characters]: #not-supported-features
 [reference:Quantifiers]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/quantifiers-in-regular-expressions
 [reference:Lazy Quantifiers]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/quantifiers-in-regular-expressions#greedy-and-lazy-quantifiers
@@ -1564,6 +1728,7 @@ The following conditions are supported:
 [reference:Conditional Expressions]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/alternation-constructs-in-regular-expressions#Conditional_Expr
 [reference:Subroutines]: #not-supported-features
 [reference:Callouts]: #not-supported-features
+[reference:Backtracking Control Verbs]: #not-supported-features
 
 [C++]: ../languages/cpp.md
 [C#]: ../languages/csharp.md
