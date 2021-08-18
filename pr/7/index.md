@@ -101,7 +101,7 @@ This provides a comparison of features between various regular expression engine
 | [Conditional Expressions](features/conditional-expressions.md) | [✔](engines/perl.md#feature-conditional-expressions) | [✔](engines/pcre.md#feature-conditional-expressions) |
 | [Subroutines](features/subroutines.md) | [✔](engines/perl.md#feature-subroutines) | [✔](engines/pcre.md#feature-subroutines) |
 | [Callouts](features/callouts.md) | [✔](engines/perl.md#feature-callouts) | [✔](engines/pcre.md#feature-callouts) |
-| [Backtracking Control Verbs](features/backtracking-control-verbs.md) | [✔](engines/perl.md#feature-backtracking-control-verbs) | [❌](engines/pcre.md#feature-backtracking-control-verbs) |
+| [Backtracking Control Verbs](features/backtracking-control-verbs.md) | [✔](engines/perl.md#feature-backtracking-control-verbs) | [✔](engines/pcre.md#feature-backtracking-control-verbs) |
 | [Flags](features/flags.md) | [✔](engines/perl.md#feature-flags) | [✔](engines/pcre.md#feature-flags) |
 
 
