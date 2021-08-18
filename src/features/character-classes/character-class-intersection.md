@@ -12,7 +12,10 @@ see_also:
 - line-endings-escape
 - character-property-escapes
 - character-class-nested-set
+- character-class-union
 - character-class-subtraction
+- character-class-symmetric-difference
+- character-class-complement
 aliases:
 - Character Class Intersections
 description: *content.description
