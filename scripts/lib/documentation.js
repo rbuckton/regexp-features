@@ -7,6 +7,7 @@ import { DocumentationBuilder } from "./documentationBuilder.js";
 import { Engine } from "./engine.js";
 import { EngineFeature } from "./engineFeature.js";
 import { Feature } from "./feature.js";
+import { stringifyJSON } from "./jsonSerializer.js";
 import { Language } from "./language.js";
 import { parseMarkdownOverrideFile } from "./markdown.js";
 import { getSchema, getSchemaErrors } from "./schema.js";
@@ -440,6 +441,9 @@ export class Documentation {
         this.#buildLanguagesIndex(docs);
         this.#buildFeaturesIndex(docs);
         this.#buildEnginesIndex(docs);
+
+        /** @type {Map<string, any>} */
+        this.#outputs.set("docs.json", stringifyJSON(docs, undefined, "  "));
     }
 
     /**

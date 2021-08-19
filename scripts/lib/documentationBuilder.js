@@ -127,10 +127,10 @@ export class DocumentationBuilder {
          * @param {import("../templateTypes.js").LanguageTemplateData | import("../templateTypes.js").FeatureTemplateData | import("../templateTypes.js").EngineTemplateData} b
          */
         const compare = (a, b) => {
-            const aPriority = a.priority || Infinity;
-            const aName = a.name || a.id;
-            const bPriority = b.priority || Infinity;
-            const bName = b.name || b.id;
+            const aPriority = a.priority ?? Infinity;
+            const aName = a.name ?? a.id;
+            const bPriority = b.priority ?? Infinity;
+            const bName = b.name ?? b.id;
             return aPriority - bPriority
                 || (aName < bName ? -1 : aName > bName ? +1 : 0);
         };

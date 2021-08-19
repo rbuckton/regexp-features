@@ -3,7 +3,7 @@
 engine: perl
 feature: modifiers
 supported: true
-reference: yhttps://perldoc.perl.org/perlre#Modifiers
+reference: https://perldoc.perl.org/perlre#Modifiers
 #description: *content.description
 syntax: *content.syntax
 #example: *content.example

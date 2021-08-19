@@ -1,10 +1,10 @@
 ### YamlMime:EngineToc
+- perl
 - pcre
 - boost.regex
 - dotnet
 - oniguruma
 - hyperscan
-- ecmascript
 - icu
 - glib-gregex
-- perl
+- ecmascript
