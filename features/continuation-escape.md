@@ -19,15 +19,15 @@ A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either t
 
 | Engine | Supported |
 |:-------|:---------:|
+| [Perl](../engines/perl.md) | [✔](../engines/perl.md#feature-continuation-escape) |
 | [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-continuation-escape) |
 | [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-continuation-escape) |
 | [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-continuation-escape) |
 | [Oniguruma](../engines/oniguruma.md) | [✔](../engines/oniguruma.md#feature-continuation-escape) |
 | [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-continuation-escape) |
-| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-continuation-escape) |
 | [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-continuation-escape) |
 | [Glib/GRegex](../engines/glib-gregex.md) | [✔](../engines/glib-gregex.md#feature-continuation-escape) |
-| [Perl](../engines/perl.md) | [✔](../engines/perl.md#feature-continuation-escape) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-continuation-escape) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/anchors-and-boundaries/continuation-escape.md "source for: see_also")</sup>
@@ -43,6 +43,10 @@ A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either t
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
+[Flags]: flags.md
+[Flag]: flags.md
+[RegExp Flags]: flags.md
+[RegExp Flag]: flags.md
 [Anchors]: anchors.md
 [Anchor]: anchors.md
 [Buffer Boundaries]: buffer-boundaries.md
@@ -124,12 +128,9 @@ A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either t
 [Callout]: callouts.md
 [Backtracking Control Verbs]: backtracking-control-verbs.md
 [Backtracking Control Verb]: backtracking-control-verbs.md
-[Flags]: flags.md
-[Flag]: flags.md
-[RegExp Flags]: flags.md
-[RegExp Flag]: flags.md
 
 
+[article:Flags]: flags.md
 [article:Anchors]: anchors.md
 [article:Buffer Boundaries]: buffer-boundaries.md
 [article:Word Boundaries]: word-boundaries.md
@@ -171,11 +172,11 @@ A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either t
 [article:Subroutines]: subroutines.md
 [article:Callouts]: callouts.md
 [article:Backtracking Control Verbs]: backtracking-control-verbs.md
-[article:Flags]: flags.md
 
 [Reference]: #
 
 
+[C]: ../languages/c.md
 [C++]: ../languages/cpp.md
 [C#]: ../languages/csharp.md
 [D]: ../languages/d.md
@@ -192,4 +193,3 @@ A <dfn>Continuation Escape</dfn> is a zero-width assertion that matches either t
 [Rust]: ../languages/rust.md
 [Tcl]: ../languages/tcl.md
 [VB.net]: ../languages/vbnet.md
-[C]: ../languages/c.md

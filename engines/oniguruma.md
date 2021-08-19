@@ -1854,6 +1854,7 @@ A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matc
 [Backtracking Control Verb]: #feature-backtracking-control-verbs
 
 
+[article:Flags]: ../features/flags.md
 [article:Anchors]: ../features/anchors.md
 [article:Buffer Boundaries]: ../features/buffer-boundaries.md
 [article:Word Boundaries]: ../features/word-boundaries.md
@@ -1895,7 +1896,6 @@ A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matc
 [article:Subroutines]: ../features/subroutines.md
 [article:Callouts]: ../features/callouts.md
 [article:Backtracking Control Verbs]: ../features/backtracking-control-verbs.md
-[article:Flags]: ../features/flags.md
 
 [Reference]: https://github.com/kkos/oniguruma
 
@@ -1942,6 +1942,7 @@ A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matc
 [reference:Callouts]: https://github.com/kkos/oniguruma/blob/0bbd64dbfb7cd23646cc798470daa5223964cf5b/doc/RE#L322
 [reference:Backtracking Control Verbs]: #not-supported-features
 
+[C]: ../languages/c.md
 [C++]: ../languages/cpp.md
 [C#]: ../languages/csharp.md
 [D]: ../languages/d.md
@@ -1958,4 +1959,3 @@ A <dfn>Callout</dfn> is a user-defined function that can be evaluated while matc
 [Rust]: ../languages/rust.md
 [Tcl]: ../languages/tcl.md
 [VB.net]: ../languages/vbnet.md
-[C]: ../languages/c.md

@@ -1787,6 +1787,7 @@ A <dfn>Backtracking Control Verb</dfn> is a special pattern usually in the form 
 [Backtracking Control Verb]: #feature-backtracking-control-verbs
 
 
+[article:Flags]: ../features/flags.md
 [article:Anchors]: ../features/anchors.md
 [article:Buffer Boundaries]: ../features/buffer-boundaries.md
 [article:Word Boundaries]: ../features/word-boundaries.md
@@ -1828,7 +1829,6 @@ A <dfn>Backtracking Control Verb</dfn> is a special pattern usually in the form 
 [article:Subroutines]: ../features/subroutines.md
 [article:Callouts]: ../features/callouts.md
 [article:Backtracking Control Verbs]: ../features/backtracking-control-verbs.md
-[article:Flags]: ../features/flags.md
 
 [Reference]: http://www.pcre.org/current/doc/html/pcre2pattern.html
 
@@ -1875,6 +1875,7 @@ A <dfn>Backtracking Control Verb</dfn> is a special pattern usually in the form 
 [reference:Callouts]: http://www.pcre.org/current/doc/html/pcre2pattern.html#SEC28
 [reference:Backtracking Control Verbs]: http://www.pcre.org/current/doc/html/pcre2pattern.html#SEC29
 
+[C]: ../languages/c.md
 [C++]: ../languages/cpp.md
 [C#]: ../languages/csharp.md
 [D]: ../languages/d.md
@@ -1891,4 +1892,3 @@ A <dfn>Backtracking Control Verb</dfn> is a special pattern usually in the form 
 [Rust]: ../languages/rust.md
 [Tcl]: ../languages/tcl.md
 [VB.net]: ../languages/vbnet.md
-[C]: ../languages/c.md

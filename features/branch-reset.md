@@ -19,15 +19,15 @@ A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [A
 
 | Engine | Supported |
 |:-------|:---------:|
+| [Perl](../engines/perl.md) | [✔](../engines/perl.md#feature-branch-reset) |
 | [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-branch-reset) |
 | [Boost.Regex](../engines/boost.regex.md) | [✔](../engines/boost.regex.md#feature-branch-reset) |
 | [.NET](../engines/dotnet.md) | [❌](../engines/dotnet.md#feature-branch-reset) |
 | [Oniguruma](../engines/oniguruma.md) | [❌](../engines/oniguruma.md#feature-branch-reset) |
 | [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-branch-reset) |
-| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-branch-reset) |
 | [ICU](../engines/icu.md) | [❌](../engines/icu.md#feature-branch-reset) |
 | [Glib/GRegex](../engines/glib-gregex.md) | [❌](../engines/glib-gregex.md#feature-branch-reset) |
-| [Perl](../engines/perl.md) | [✔](../engines/perl.md#feature-branch-reset) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-branch-reset) |
 
 
 
@@ -35,6 +35,10 @@ A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [A
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
+[Flags]: flags.md
+[Flag]: flags.md
+[RegExp Flags]: flags.md
+[RegExp Flag]: flags.md
 [Anchors]: anchors.md
 [Anchor]: anchors.md
 [Buffer Boundaries]: buffer-boundaries.md
@@ -116,12 +120,9 @@ A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [A
 [Callout]: callouts.md
 [Backtracking Control Verbs]: backtracking-control-verbs.md
 [Backtracking Control Verb]: backtracking-control-verbs.md
-[Flags]: flags.md
-[Flag]: flags.md
-[RegExp Flags]: flags.md
-[RegExp Flag]: flags.md
 
 
+[article:Flags]: flags.md
 [article:Anchors]: anchors.md
 [article:Buffer Boundaries]: buffer-boundaries.md
 [article:Word Boundaries]: word-boundaries.md
@@ -163,11 +164,11 @@ A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [A
 [article:Subroutines]: subroutines.md
 [article:Callouts]: callouts.md
 [article:Backtracking Control Verbs]: backtracking-control-verbs.md
-[article:Flags]: flags.md
 
 [Reference]: #
 
 
+[C]: ../languages/c.md
 [C++]: ../languages/cpp.md
 [C#]: ../languages/csharp.md
 [D]: ../languages/d.md
@@ -184,4 +185,3 @@ A <dfn>Branch Reset</dfn> resets the subexpression count at the start of each [A
 [Rust]: ../languages/rust.md
 [Tcl]: ../languages/tcl.md
 [VB.net]: ../languages/vbnet.md
-[C]: ../languages/c.md

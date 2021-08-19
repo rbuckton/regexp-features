@@ -1494,6 +1494,7 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 [Backtracking Control Verb]: #feature-backtracking-control-verbs
 
 
+[article:Flags]: ../features/flags.md
 [article:Anchors]: ../features/anchors.md
 [article:Buffer Boundaries]: ../features/buffer-boundaries.md
 [article:Word Boundaries]: ../features/word-boundaries.md
@@ -1535,7 +1536,6 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 [article:Subroutines]: ../features/subroutines.md
 [article:Callouts]: ../features/callouts.md
 [article:Backtracking Control Verbs]: ../features/backtracking-control-verbs.md
-[article:Flags]: ../features/flags.md
 
 [Reference]: https://www.hyperscan.io/
 
@@ -1582,6 +1582,7 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 [reference:Callouts]: #not-supported-features
 [reference:Backtracking Control Verbs]: #not-supported-features
 
+[C]: ../languages/c.md
 [C++]: ../languages/cpp.md
 [C#]: ../languages/csharp.md
 [D]: ../languages/d.md
@@ -1598,4 +1599,3 @@ A <dfn>Comment</dfn> is a sequence of characters that is ignored by pattern matc
 [Rust]: ../languages/rust.md
 [Tcl]: ../languages/tcl.md
 [VB.net]: ../languages/vbnet.md
-[C]: ../languages/c.md

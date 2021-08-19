@@ -22,6 +22,10 @@
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
+[Flags]: ../features/flags.md
+[Flag]: ../features/flags.md
+[RegExp Flags]: ../features/flags.md
+[RegExp Flag]: ../features/flags.md
 [Anchors]: ../features/anchors.md
 [Anchor]: ../features/anchors.md
 [Buffer Boundaries]: ../features/buffer-boundaries.md
@@ -103,12 +107,9 @@
 [Callout]: ../features/callouts.md
 [Backtracking Control Verbs]: ../features/backtracking-control-verbs.md
 [Backtracking Control Verb]: ../features/backtracking-control-verbs.md
-[Flags]: ../features/flags.md
-[Flag]: ../features/flags.md
-[RegExp Flags]: ../features/flags.md
-[RegExp Flag]: ../features/flags.md
 
 
+[article:Flags]: ../features/flags.md
 [article:Anchors]: ../features/anchors.md
 [article:Buffer Boundaries]: ../features/buffer-boundaries.md
 [article:Word Boundaries]: ../features/word-boundaries.md
@@ -150,11 +151,11 @@
 [article:Subroutines]: ../features/subroutines.md
 [article:Callouts]: ../features/callouts.md
 [article:Backtracking Control Verbs]: ../features/backtracking-control-verbs.md
-[article:Flags]: ../features/flags.md
 
 [Reference]: #
 
 
+[C]: c.md
 [C++]: cpp.md
 [C#]: csharp.md
 [D]: d.md
@@ -171,4 +172,3 @@
 [Rust]: rust.md
 [Tcl]: tcl.md
 [VB.net]: vbnet.md
-[C]: c.md

@@ -1642,6 +1642,7 @@ The following conditions are supported:
 [Backtracking Control Verb]: #feature-backtracking-control-verbs
 
 
+[article:Flags]: ../features/flags.md
 [article:Anchors]: ../features/anchors.md
 [article:Buffer Boundaries]: ../features/buffer-boundaries.md
 [article:Word Boundaries]: ../features/word-boundaries.md
@@ -1683,7 +1684,6 @@ The following conditions are supported:
 [article:Subroutines]: ../features/subroutines.md
 [article:Callouts]: ../features/callouts.md
 [article:Backtracking Control Verbs]: ../features/backtracking-control-verbs.md
-[article:Flags]: ../features/flags.md
 
 [Reference]: http://msdn2.microsoft.com/en-us/library/system.text.regularexpressions.aspx
 
@@ -1730,6 +1730,7 @@ The following conditions are supported:
 [reference:Callouts]: #not-supported-features
 [reference:Backtracking Control Verbs]: #not-supported-features
 
+[C]: ../languages/c.md
 [C++]: ../languages/cpp.md
 [C#]: ../languages/csharp.md
 [D]: ../languages/d.md
@@ -1746,4 +1747,3 @@ The following conditions are supported:
 [Rust]: ../languages/rust.md
 [Tcl]: ../languages/tcl.md
 [VB.net]: ../languages/vbnet.md
-[C]: ../languages/c.md

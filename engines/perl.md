@@ -1878,6 +1878,7 @@ A <dfn>Backtracking Control Verb</dfn> is a special pattern usually in the form 
 [Backtracking Control Verb]: #feature-backtracking-control-verbs
 
 
+[article:Flags]: ../features/flags.md
 [article:Anchors]: ../features/anchors.md
 [article:Buffer Boundaries]: ../features/buffer-boundaries.md
 [article:Word Boundaries]: ../features/word-boundaries.md
@@ -1919,7 +1920,6 @@ A <dfn>Backtracking Control Verb</dfn> is a special pattern usually in the form 
 [article:Subroutines]: ../features/subroutines.md
 [article:Callouts]: ../features/callouts.md
 [article:Backtracking Control Verbs]: ../features/backtracking-control-verbs.md
-[article:Flags]: ../features/flags.md
 
 [Reference]: https://perldoc.perl.org/perlre
 
@@ -1955,7 +1955,7 @@ A <dfn>Backtracking Control Verb</dfn> is a special pattern usually in the form 
 [reference:Backreferences]: https://perldoc.perl.org/perlre#Capture-groups
 [reference:Comments]: https://perldoc.perl.org/perlre#Extended-Patterns
 [reference:Line Comments]: https://perldoc.perl.org/perlre#Metacharacters
-[reference:Modifiers]: yhttps://perldoc.perl.org/perlre#Modifiers
+[reference:Modifiers]: https://perldoc.perl.org/perlre#Modifiers
 [reference:Branch Reset]: https://perldoc.perl.org/perlre#(?%7Cpattern)
 [reference:Lookahead]: https://perldoc.perl.org/perlre#Lookaround-Assertions
 [reference:Lookbehind]: https://perldoc.perl.org/perlre#Lookaround-Assertions
@@ -1966,6 +1966,7 @@ A <dfn>Backtracking Control Verb</dfn> is a special pattern usually in the form 
 [reference:Callouts]: https://perldoc.perl.org/perlre#(?%7B-code-%7D)
 [reference:Backtracking Control Verbs]: https://perldoc.perl.org/perlre#Special-Backtracking-Control-Verbs
 
+[C]: ../languages/c.md
 [C++]: ../languages/cpp.md
 [C#]: ../languages/csharp.md
 [D]: ../languages/d.md
@@ -1982,4 +1983,3 @@ A <dfn>Backtracking Control Verb</dfn> is a special pattern usually in the form 
 [Rust]: ../languages/rust.md
 [Tcl]: ../languages/tcl.md
 [VB.net]: ../languages/vbnet.md
-[C]: ../languages/c.md

@@ -1715,6 +1715,7 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 [Backtracking Control Verb]: #feature-backtracking-control-verbs
 
 
+[article:Flags]: ../features/flags.md
 [article:Anchors]: ../features/anchors.md
 [article:Buffer Boundaries]: ../features/buffer-boundaries.md
 [article:Word Boundaries]: ../features/word-boundaries.md
@@ -1756,7 +1757,6 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 [article:Subroutines]: ../features/subroutines.md
 [article:Callouts]: ../features/callouts.md
 [article:Backtracking Control Verbs]: ../features/backtracking-control-verbs.md
-[article:Flags]: ../features/flags.md
 
 [Reference]: https://developer-old.gnome.org/glib/unstable/glib-regex-syntax.html
 
@@ -1803,6 +1803,7 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 [reference:Callouts]: #not-supported-features
 [reference:Backtracking Control Verbs]: #not-supported-features
 
+[C]: ../languages/c.md
 [C++]: ../languages/cpp.md
 [C#]: ../languages/csharp.md
 [D]: ../languages/d.md
@@ -1819,4 +1820,3 @@ A <dfn>Subroutine</dfn> is a pre-defined [capture group] or [named capture group
 [Rust]: ../languages/rust.md
 [Tcl]: ../languages/tcl.md
 [VB.net]: ../languages/vbnet.md
-[C]: ../languages/c.md

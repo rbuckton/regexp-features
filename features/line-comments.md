@@ -19,15 +19,15 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 
 | Engine | Supported |
 |:-------|:---------:|
+| [Perl](../engines/perl.md) | [✔](../engines/perl.md#feature-line-comments) |
 | [PCRE](../engines/pcre.md) | [✔](../engines/pcre.md#feature-line-comments) |
 | [Boost.Regex](../engines/boost.regex.md) | [❌](../engines/boost.regex.md#feature-line-comments) |
 | [.NET](../engines/dotnet.md) | [✔](../engines/dotnet.md#feature-line-comments) |
 | [Oniguruma](../engines/oniguruma.md) | [❌](../engines/oniguruma.md#feature-line-comments) |
 | [Hyperscan](../engines/hyperscan.md) | [❌](../engines/hyperscan.md#feature-line-comments) |
-| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-line-comments) |
 | [ICU](../engines/icu.md) | [✔](../engines/icu.md#feature-line-comments) |
 | [Glib/GRegex](../engines/glib-gregex.md) | [✔](../engines/glib-gregex.md#feature-line-comments) |
-| [Perl](../engines/perl.md) | [✔](../engines/perl.md#feature-line-comments) |
+| [ECMAScript](../engines/ecmascript.md) | [❌](../engines/ecmascript.md#feature-line-comments) |
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/comments/line-comments.md "source for: see_also")</sup>
@@ -40,6 +40,10 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 [new feature]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-features
 [new language]: https://github.com/rbuckton/regexp-features/blob/main/CONTRIBUTING.md#adding-new-languages
 
+[Flags]: flags.md
+[Flag]: flags.md
+[RegExp Flags]: flags.md
+[RegExp Flag]: flags.md
 [Anchors]: anchors.md
 [Anchor]: anchors.md
 [Buffer Boundaries]: buffer-boundaries.md
@@ -121,12 +125,9 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 [Callout]: callouts.md
 [Backtracking Control Verbs]: backtracking-control-verbs.md
 [Backtracking Control Verb]: backtracking-control-verbs.md
-[Flags]: flags.md
-[Flag]: flags.md
-[RegExp Flags]: flags.md
-[RegExp Flag]: flags.md
 
 
+[article:Flags]: flags.md
 [article:Anchors]: anchors.md
 [article:Buffer Boundaries]: buffer-boundaries.md
 [article:Word Boundaries]: word-boundaries.md
@@ -168,11 +169,11 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 [article:Subroutines]: subroutines.md
 [article:Callouts]: callouts.md
 [article:Backtracking Control Verbs]: backtracking-control-verbs.md
-[article:Flags]: flags.md
 
 [Reference]: #
 
 
+[C]: ../languages/c.md
 [C++]: ../languages/cpp.md
 [C#]: ../languages/csharp.md
 [D]: ../languages/d.md
@@ -189,4 +190,3 @@ A <dfn>Line Comment</dfn> is a sequence of characters starting with `#` and endi
 [Rust]: ../languages/rust.md
 [Tcl]: ../languages/tcl.md
 [VB.net]: ../languages/vbnet.md
-[C]: ../languages/c.md
