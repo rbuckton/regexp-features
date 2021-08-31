@@ -607,15 +607,15 @@ A <dfn>Negated Posix Character Class</dfn> is a member of a [Character Class] se
 A <dfn>Character Class Escape</dfn> is a single character escape that represents an entire character class. They can be used as an element of a [Character Class] or as an *Atom*. It is often the case that a lower-case escape character is the inclusive set, while an upper-case variant of the same character excludes that set.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-escapes.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/perl/features/character-class-escapes.md "source for: syntax")</sup>
 
 
-- `\d` &mdash; A decimal digit character in the range 0-9. Equivalent to `[0-9]`.
-- `\D` &mdash; Any character not in the range 0-9. Equivalent to `[^0-9]`.
-- `\w` &mdash; Any "word" character. Equivalent to `[a-zA-Z0-9_]`.
-- `\W` &mdash; Any non-"word" character. Equivalent to `[^a-zA-Z0-9_]`.
-- `\s` &mdash; Any whitespace character.
-- `\S` &mdash; Any non-whitespace character.
+- `\d` &mdash; Any decimal digit character. Equivalent to `\p{Nd}` unless in ASCII-only (`a`) mode, in which case `\d` is equivalent to `[0-9]`.
+- `\D` &mdash; Any non-decimal digit character. Equivalent to `\P{Nd}` unless in ASCII-only (`a`) mode, in which case `\D` is equivalent to `[^0-9]`.
+- `\w` &mdash; Any "word" character. Equivalent to [`\p{Word}`](https://perldoc.perl.org/perluniprops#Properties-accessible-through-%5Cp%7B%7D-and-%5CP%7B%7D) unless in ASCII-only (`a`) mode, in which case `\w` is equivalent to `[a-zA-Z0-9_]`.
+- `\W` &mdash; Any non-"word" character. Equivalent to [`\P{Word}`](https://perldoc.perl.org/perluniprops#Properties-accessible-through-%5Cp%7B%7D-and-%5CP%7B%7D) unless in ASCII-only (`a`) mode, in which case `\w` is equivalent to `[a-zA-Z0-9_]`.
+- `\s` &mdash; Any whitespace character. Equivalent to [`\p{SpacePerl}`](https://perldoc.perl.org/perluniprops#Properties-accessible-through-%5Cp%7B%7D-and-%5CP%7B%7D) (which includes `\p{Z}`, among others) unless in ASCII-only (`a`) mode, in which case `\s` is equivalent to `[ \f\n\r\t\x0b]`.
+- `\S` &mdash; Any non-whitespace character. Equivalent to [`\P{SpacePerl}`](https://perldoc.perl.org/perluniprops#Properties-accessible-through-%5Cp%7B%7D-and-%5CP%7B%7D) (which includes `\p{Z}`, among others) unless in ASCII-only (`a`) mode, in which case `\s` is equivalent to `[^ \f\n\r\t\x0b]`.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-escapes.md "source for: see_also")</sup>
