@@ -602,10 +602,10 @@ A <dfn>Character Class Escape</dfn> is a single character escape that represents
   - If PCRE2_UCP option is set, this is equivalent to `[\p{L}\p{N}_]` instead.
 - `\W` &mdash; Any non-"word" character. Equivalent to `[^a-zA-Z0-9_]`.
   - If PCRE2_UCP option is set, this is equivalent to `[^\p{L}\p{N}_]` instead.
-- `\s` &mdash; Any whitespace character. Equivalent to HT (9), LF (10), VT (11), FF (12), CR (13), and space (32), but may depend on locale.
-  - If PCRE2_UCP option is set, this is equivalent to `[\p{Z}\h\v]` instead.
+- `\s` &mdash; Any whitespace character. Equivalent to `[\x09-\x0d\x20]`, but may depend on locale.
+  - If PCRE2_UCP option is set, this is equivalent to `[\p{Z}\h\v]` instead (where `\h` and `\v` are defined below).
 - `\S` &mdash; Any non-whitespace character.
-  - If PCRE2_UCP option is set, this is equivalent to `[^\p{Z}\h\v]` instead.
+  - If PCRE2_UCP option is set, this is equivalent to `[^\p{Z}\h\v]` instead (where `\h` and `\v` are defined below).
 - `\h` &mdash; Any horizontal whitespace character. Equivalent to `[\x09\x20\xa0\u{1680}\u{180e}\u{2000}-\u{200a}\u{202f}\u{205f}\u{3000}]`.
 - `\H` &mdash; Any non-horizontal whitespace character. Equivalent to `[^\x09\x20\xa0\u{1680}\u{180e}\u{2000}-\u{200a}\u{202f}\u{205f}\u{3000}]`.
 - `\v` &mdash; Any vertical whitespace character. Equivalent to `[\x0a-x0d\x85\u{2028}\u{2029}]`.
