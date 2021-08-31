@@ -574,15 +574,15 @@ A <dfn>Posix Character Class</dfn> is a member of a [Character Class] set that s
 A <dfn>Character Class Escape</dfn> is a single character escape that represents an entire character class. They can be used as an element of a [Character Class] or as an *Atom*. It is often the case that a lower-case escape character is the inclusive set, while an upper-case variant of the same character excludes that set.
 
 ### Syntax
-<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-escapes.md "source for: syntax")</sup>
+<sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/engines/icu/features/character-class-escapes.md "source for: syntax")</sup>
 
 
-- `\d` &mdash; A decimal digit character in the range 0-9. Equivalent to `[0-9]`.
-- `\D` &mdash; Any character not in the range 0-9. Equivalent to `[^0-9]`.
-- `\w` &mdash; Any "word" character. Equivalent to `[a-zA-Z0-9_]`.
-- `\W` &mdash; Any non-"word" character. Equivalent to `[^a-zA-Z0-9_]`.
-- `\s` &mdash; Any whitespace character.
-- `\S` &mdash; Any non-whitespace character.
+- `\d` &mdash; Match any character with the Unicode General Category of Nd (Number, Decimal Digit.)
+- `\D` &mdash; Match any character not in the Unicode General Category of Nd (Number, Decimal Digit.)
+- `\w` &mdash; Match any "word" character. Word characters are `[\p{Alphabetic}\p{Mark}\p{Decimal_Number}\p{Connector_Punctuation}\u200c\u200d]`.
+- `\W` &mdash; Match any non-"word" character. Word characters are `[\p{Alphabetic}\p{Mark}\p{Decimal_Number}\p{Connector_Punctuation}\u200c\u200d]`.
+- `\s` &mdash; Match any white space character. Whitespace is defined as `[\t\n\f\r\p{Z}]`.
+- `\S` &mdash; Match any non-whitespace character. Whitespace is defined as `[\t\n\f\r\p{Z}]`.
 
 ### See Also
 <sup>[Improve this section](https://github.com/rbuckton/regexp-features/edit/main/src/features/character-classes/character-class-escapes.md "source for: see_also")</sup>
